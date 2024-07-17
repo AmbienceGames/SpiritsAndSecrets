@@ -23,3 +23,21 @@ visible = false
 
 [node name="IngredientScreen" parent="Screens" instance=ExtResource("3_jik6f")]
 visible = false
+
+[node name="HUD" type="Node" parent="."]
+
+[node name="RightArrow" type="Button" parent="HUD"]
+offset_left = 1765.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_font_sizes/font_size = 100
+text = ">"
+
+[node name="LeftArrow" type="Button" parent="HUD"]
+offset_right = 155.0
+offset_bottom = 1080.0
+theme_override_font_sizes/font_size = 100
+text = "<"
+
+[connection signal="pressed" from="HUD/RightArrow" to="." method="_cycle_right"]
+[connection signal="pressed" from="HUD/LeftArrow" to="." method="_cycle_left"]
