@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpu1cjjf0dv3x"]
+
+[ext_resource type="Script" path="res://Scripts/screen_switcher.gd" id="1_uvpce"]
+[ext_resource type="PackedScene" uid="uid://7kcetgwojuqy" path="res://Scenes/bar_screen.tscn" id="2_jhhkw"]
+[ext_resource type="PackedScene" uid="uid://cigb8hma3u4u6" path="res://Scenes/ingredient_screen.tscn" id="3_jik6f"]
+[ext_resource type="PackedScene" uid="uid://cdokfy3ehg4v3" path="res://Scenes/maint_screen.tscn" id="4_ndhab"]
+[ext_resource type="PackedScene" uid="uid://chffl4ymlsb0" path="res://Scenes/mystery_screen.tscn" id="5_crxro"]
+
+[node name="Tavern" type="Node2D" node_paths=PackedStringArray("tavern_screens")]
+script = ExtResource("1_uvpce")
+tavern_screens = [NodePath("Screens/BarScreen"), NodePath("Screens/IngredientScreen"), NodePath("Screens/MaintScreen"), NodePath("Screens/MysteryScreen")]
+
+[node name="Screens" type="Node" parent="."]
+
+[node name="BarScreen" parent="Screens" instance=ExtResource("2_jhhkw")]
+visible = false
+
+[node name="MysteryScreen" parent="Screens" instance=ExtResource("5_crxro")]
+visible = false
+
+[node name="MaintScreen" parent="Screens" instance=ExtResource("4_ndhab")]
+visible = false
+
+[node name="IngredientScreen" parent="Screens" instance=ExtResource("3_jik6f")]
+visible = false

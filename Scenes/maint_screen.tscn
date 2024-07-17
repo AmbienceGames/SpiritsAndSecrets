@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdokfy3ehg4v3"]
+
+[ext_resource type="Texture2D" uid="uid://br357k56o4x3b" path="res://Assets/Art/maint_screen.png" id="1_dd6l5"]
+
+[node name="MaintScreen" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_dd6l5")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://7kcetgwojuqy"]
+
+[ext_resource type="Texture2D" uid="uid://dywohg8m6dnxo" path="res://Assets/Art/bar_screen.png" id="1_hdnv4"]
+
+[node name="BarScreen" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_hdnv4")

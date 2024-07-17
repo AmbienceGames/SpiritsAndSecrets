@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cigb8hma3u4u6"]
+
+[ext_resource type="Texture2D" uid="uid://dlffl2hxs5q4y" path="res://Assets/Art/ingredient_screen.png" id="1_mkj5w"]
+
+[node name="IngredientScreen" type="Node2D"]
+
+[node name="IngredientScreen" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_mkj5w")
