@@ -1,23 +1,30 @@
 extends Node2D
 
-const BarPatron = preload("res://Scripts/bar_patron.gd")
-const TablePatron = preload("res://Scripts/table_patron.gd")
+const BarPatron = preload("res://Scripts/bar_patron.gd");
+const TablePatron = preload("res://Scripts/table_patron.gd");
 
 @export
 var bar_positions: Array[Node2D] = []
+var bar_seats: Array[Node2D] = [null, null, null, null]
+var available_bar_seats: Array[int] = [0, 1, 2, 3]
+
 @export
 var ordering_position: Node2D = null
+var ordering_patron: Node2D = null
+
 @export
 var table_positions: Array[Node2D] = []
+var table_seats: Array[Node2D] = [null, null, null, null]
+var available_table_seats: Array[int] = [0, 1, 2, 3]
+
+@export
+var choices: Array[Button] = []
+@export
+var patron_response: Label = null
+var current_dialogue: Patron = null
 
 @export
 var patron_factory: Node2D = null
-
-var bar_seats: Array[Node2D] = [null, null, null, null]
-var available_bar_seats: Array[int] = [0, 1, 2, 3]
-var ordering_patron: Node2D = null
-var table_seats: Array[Node2D] = [null, null, null, null]
-var available_table_seats: Array[int] = [0, 1, 2, 3]
 
 
 # Called when the node enters the scene tree for the first time.
@@ -51,6 +58,7 @@ func _spawn_patron() -> void:
 		
 		# Place the patron in it
 		patron.global_position = bar_positions[seat].global_position
+		patron.sprite_clicked.connect(_start_dialogue)
 		bar_seats[seat] = patron
 		add_child(patron)
 	
@@ -64,3 +72,8 @@ func _spawn_patron() -> void:
 		patron.global_position = table_positions[seat].global_position
 		table_seats[seat] = patron
 		add_child(patron)
+
+
+func _start_dialogue(assoc) -> void:
+	print("Starting dialogue")
+	print(assoc)

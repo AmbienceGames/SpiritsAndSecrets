@@ -12,8 +12,11 @@ tavern_screens = [NodePath("Screens/BarScreen"), NodePath("Screens/MaintScreen")
 
 [node name="Screens" type="Node" parent="."]
 
-[node name="BarScreen" parent="Screens" instance=ExtResource("2_jhhkw")]
+[node name="BarScreen" parent="Screens" node_paths=PackedStringArray("bar_positions", "table_positions", "choices") instance=ExtResource("2_jhhkw")]
 visible = false
+bar_positions = []
+table_positions = []
+choices = []
 
 [node name="MysteryScreen" parent="Screens" instance=ExtResource("5_crxro")]
 visible = false
