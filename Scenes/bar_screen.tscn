@@ -49,8 +49,10 @@ position = Vector2(1328, 76)
 [node name="PatronFactory" parent="." instance=ExtResource("3_pufqt")]
 
 [node name="SpawnPatron" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 863.0
+offset_top = 805.0
+offset_right = 923.0
+offset_bottom = 836.0
 text = "Spawn"
 
 [connection signal="pressed" from="SpawnPatron" to="." method="_spawn_patron"]
