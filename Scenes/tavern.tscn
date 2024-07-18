@@ -8,7 +8,7 @@
 
 [node name="Tavern" type="Node2D" node_paths=PackedStringArray("tavern_screens")]
 script = ExtResource("1_uvpce")
-tavern_screens = [NodePath("Screens/BarScreen"), NodePath("Screens/IngredientScreen"), NodePath("Screens/MaintScreen"), NodePath("Screens/MysteryScreen")]
+tavern_screens = [NodePath("Screens/BarScreen"), NodePath("Screens/MaintScreen"), NodePath("Screens/IngredientScreen"), NodePath("Screens/MysteryScreen")]
 
 [node name="Screens" type="Node" parent="."]
 
