@@ -4,6 +4,6 @@
 
 [node name="MysteryScreen" type="Node2D"]
 
-[node name="MysteryScreen" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("1_ysei2")

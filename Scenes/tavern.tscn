@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpu1cjjf0dv3x"]
 
-[ext_resource type="Script" path="res://Scripts/screen_switcher.gd" id="1_uvpce"]
+[ext_resource type="Script" path="res://Scripts/tavern_manager.gd" id="1_uvpce"]
 [ext_resource type="PackedScene" uid="uid://7kcetgwojuqy" path="res://Scenes/bar_screen.tscn" id="2_jhhkw"]
 [ext_resource type="PackedScene" uid="uid://cigb8hma3u4u6" path="res://Scenes/ingredient_screen.tscn" id="3_jik6f"]
 [ext_resource type="PackedScene" uid="uid://cdokfy3ehg4v3" path="res://Scenes/maint_screen.tscn" id="4_ndhab"]

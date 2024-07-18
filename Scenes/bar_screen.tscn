@@ -1,9 +1,56 @@
-[gd_scene load_steps=2 format=3 uid="uid://7kcetgwojuqy"]
+[gd_scene load_steps=4 format=3 uid="uid://7kcetgwojuqy"]
 
+[ext_resource type="Script" path="res://Scripts/bar_manager.gd" id="1_8lkx7"]
 [ext_resource type="Texture2D" uid="uid://dywohg8m6dnxo" path="res://Assets/Art/bar_screen.png" id="1_hdnv4"]
+[ext_resource type="PackedScene" uid="uid://qbx6i5yd14y6" path="res://Scenes/patron_factory.tscn" id="3_pufqt"]
 
-[node name="BarScreen" type="Node2D"]
+[node name="BarScreen" type="Node2D" node_paths=PackedStringArray("bar_positions", "ordering_position", "table_positions", "patron_factory")]
+script = ExtResource("1_8lkx7")
+bar_positions = [NodePath("BarPositions/bp1"), NodePath("BarPositions/bp2"), NodePath("BarPositions/bp3"), NodePath("BarPositions/bp4")]
+ordering_position = NodePath("BarPositions/o")
+table_positions = [NodePath("TablePositions/tp1"), NodePath("TablePositions/tp2"), NodePath("TablePositions/tp3"), NodePath("TablePositions/tp4")]
+patron_factory = NodePath("PatronFactory")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("1_hdnv4")
+
+[node name="BarPositions" type="Node" parent="."]
+
+[node name="bp1" type="Node2D" parent="BarPositions"]
+position = Vector2(20, 212)
+
+[node name="bp2" type="Node2D" parent="BarPositions"]
+position = Vector2(316, 212)
+
+[node name="bp3" type="Node2D" parent="BarPositions"]
+position = Vector2(612, 212)
+
+[node name="bp4" type="Node2D" parent="BarPositions"]
+position = Vector2(908, 212)
+
+[node name="o" type="Node2D" parent="BarPositions"]
+position = Vector2(1268, 212)
+
+[node name="TablePositions" type="Node" parent="."]
+
+[node name="tp1" type="Node2D" parent="TablePositions"]
+position = Vector2(280, 76)
+
+[node name="tp2" type="Node2D" parent="TablePositions"]
+position = Vector2(584, 76)
+
+[node name="tp3" type="Node2D" parent="TablePositions"]
+position = Vector2(1024, 76)
+
+[node name="tp4" type="Node2D" parent="TablePositions"]
+position = Vector2(1328, 76)
+
+[node name="PatronFactory" parent="." instance=ExtResource("3_pufqt")]
+
+[node name="SpawnPatron" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Spawn"
+
+[connection signal="pressed" from="SpawnPatron" to="." method="_spawn_patron"]

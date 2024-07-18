@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://qbx6i5yd14y6"]
+
+[ext_resource type="Script" path="res://Scripts/patron_factory.gd" id="1_1q488"]
+[ext_resource type="PackedScene" uid="uid://bv60js1b7s0hx" path="res://Scenes/bar_patron.tscn" id="2_s0u16"]
+[ext_resource type="PackedScene" uid="uid://klwqmxrykumw" path="res://Scenes/table_patron.tscn" id="3_i1g0g"]
+
+[node name="PatronFactory" type="Node2D"]
+script = ExtResource("1_1q488")
+possible_patrons = Array[PackedScene]([ExtResource("2_s0u16"), ExtResource("3_i1g0g")])
