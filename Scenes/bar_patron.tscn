@@ -1,14 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://bv60js1b7s0hx"]
+[gd_scene load_steps=5 format=3 uid="uid://bv60js1b7s0hx"]
 
 [ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="1_7xgfs"]
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_b8qst"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_hxcs4"]
+[ext_resource type="PackedScene" uid="uid://df4hgcktk7idp" path="res://Scenes/conversations.tscn" id="4_vkbl7"]
 
-[node name="BarPatron" type="Node2D"]
+[node name="BarPatron" type="Node2D" node_paths=PackedStringArray("conversations")]
 script = ExtResource("1_b8qst")
+conversations = [NodePath("Conservations/ConversationItem"), NodePath("Conservations/ConversationItem2"), NodePath("Conservations/ConversationItem3"), NodePath("Conservations/ConversationItem4")]
 
 [node name="BarPatron" type="Sprite2D" parent="."]
 position = Vector2(128, 176)
 scale = Vector2(4, 4)
 texture = ExtResource("1_7xgfs")
 script = ExtResource("3_hxcs4")
+
+[node name="Conservations" parent="." instance=ExtResource("4_vkbl7")]
+
+[editable path="Conservations"]

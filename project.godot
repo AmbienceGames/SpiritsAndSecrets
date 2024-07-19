@@ -14,6 +14,10 @@ config/name="SpiritsAndSecrets"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+BartenderMemory="*res://Scripts/bartender_memory.gd"
+
 [display]
 
 window/size/viewport_width=1920
