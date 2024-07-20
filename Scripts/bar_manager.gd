@@ -21,7 +21,6 @@ var available_table_seats: Array[int] = [0, 1, 2, 3]
 var choices: Array[Button] = []
 @export
 var patron_response: Label = null
-var current_dialogue: Patron = null
 
 @export
 var patron_factory: Node2D = null
@@ -74,6 +73,39 @@ func _spawn_patron() -> void:
 		add_child(patron)
 
 
-func _start_dialogue(assoc) -> void:
-	print("Starting dialogue")
-	print(assoc)
+func _start_dialogue(patron: BarPatron) -> void:
+	patron_response.text = ""
+	_refresh_choices(patron)
+
+func _choice_pressed(conversation: ConversationItem, patron: BarPatron):
+	patron_response.text = conversation.patron_response
+	patron_response.visible = true
+	conversation.complete()
+	
+	for choice in choices:
+		if choice.pressed.is_connected(_choice_pressed):
+			choice.pressed.disconnect(_choice_pressed)
+	
+	_refresh_choices(patron)
+
+func _refresh_choices(patron: BarPatron):
+	var conversations: Array[ConversationItem] = patron.get_conversations()
+	var conversation: ConversationItem
+	for index in conversations.size():
+		conversation = conversations[index]
+		var choice_button = choices[index]
+		
+		# Disable choice button if no conversation available
+		if conversation == null:
+			choice_button.text = ""
+			choice_button.disabled = true
+			choice_button.visible = false
+			continue
+
+		# Update choice buttons
+		choice_button.text = conversation.player_choice
+		choice_button.pressed.connect(
+			_choice_pressed.bind(conversation, patron)
+		)
+		choice_button.disabled = false
+		choice_button.visible = true

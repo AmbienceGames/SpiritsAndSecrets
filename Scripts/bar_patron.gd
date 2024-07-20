@@ -1,6 +1,5 @@
 extends Patron
 
-var ConversationItem = load("res://Scripts/conversation_item.gd")
 
 signal sprite_clicked(assoc)
 
@@ -15,3 +14,17 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func get_conversations():
+	var returned_conversations: Array[ConversationItem] = [null, null, null]
+	conversations.sort_custom(func(a, b): return a.priority > b.priority)
+	
+	var pos: int = 0
+	for conversation in conversations:
+		if conversation.can_access():
+			returned_conversations[pos] = conversation
+			pos += 1 
+		if pos >= len(returned_conversations):
+			break;
+	
+	return returned_conversations
