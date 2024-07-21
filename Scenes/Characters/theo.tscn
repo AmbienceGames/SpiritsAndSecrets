@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://s57nlx2auv5j"]
+
+[ext_resource type="PackedScene" uid="uid://bv60js1b7s0hx" path="res://Scenes/bar_patron.tscn" id="1_hbjok"]
+[ext_resource type="Texture2D" uid="uid://cabk47crbc55m" path="res://Assets/Art/klaus.png" id="2_0gigr"]
+[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="3_x04x7"]
+
+[sub_resource type="Resource" id="Resource_brylq"]
+script = ExtResource("3_x04x7")
+memory_name = "GreetedTheo"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_bxf1n"]
+script = ExtResource("3_x04x7")
+memory_name = "GreetedTheo"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_ko8io"]
+script = ExtResource("3_x04x7")
+memory_name = "RentLate"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_blomc"]
+script = ExtResource("3_x04x7")
+memory_name = "RentLate"
+inverse_memory = false
+
+[node name="Theo" node_paths=PackedStringArray("conversations") instance=ExtResource("1_hbjok")]
+conversations = [NodePath("Conversations/ConversationItem"), NodePath("Conversations/ConversationItem2"), NodePath("Conversations/ConversationItem3")]
+
+[node name="BarPatron" parent="." index="0"]
+texture = ExtResource("2_0gigr")
+
+[node name="ConversationItem" parent="Conversations" index="0"]
+player_choice = "Evening, Theo."
+patron_response = "Evening, [name]. You'll need to get me your cheapest stuff. Got tenants behind on rent again."
+memories_unlocked = Array[ExtResource("3_x04x7")]([SubResource("Resource_brylq")])
+
+[node name="ConversationItem2" parent="Conversations" index="1"]
+player_choice = "How have things been with you?"
+patron_response = "Didn't you hear me? Tenants are behind on rent, again. I know Trent isn't rich, but damn him. I swear it's always somthing with him."
+memories_required = Array[ExtResource("3_x04x7")]([SubResource("Resource_bxf1n")])
+memories_unlocked = Array[ExtResource("3_x04x7")]([SubResource("Resource_ko8io")])
+
+[node name="ConversationItem3" parent="Conversations" index="2"]
+player_choice = "Why is Trent always behind on rent?"
+patron_response = "Oh, I shouldn't talk, you know? It's his business."
+memories_required = Array[ExtResource("3_x04x7")]([SubResource("Resource_blomc")])
+memories_unlocked = Array[ExtResource("3_x04x7")]([])

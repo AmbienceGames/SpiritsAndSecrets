@@ -25,6 +25,8 @@ var patron_response: Label = null
 @export
 var patron_factory: Node2D = null
 
+@export
+var exit_button: Button = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -46,7 +48,7 @@ func _spawn_patron() -> void:
 	
 	while len(available_bar_seats) == 0 and patron is BarPatron:
 		patron = patron_factory.get_random_patron()
-	while len(available_table_seats) == 0 and patron is TablePatron:
+	while len(available_table_seats) == 0 and patron is TablePatron or patron in bar_seats:
 		patron = patron_factory.get_random_patron()
 	
 	if patron is BarPatron:
@@ -77,10 +79,22 @@ func _start_dialogue(patron: BarPatron) -> void:
 	patron_response.text = ""
 	_refresh_choices(patron)
 
+func _end_dialogue(patron: BarPatron) -> void:
+	patron_response.visible = false
+	
+	for i in patron.get_conversations().size():
+		var button = choices[i]
+		button.disabled = true
+		button.visible = false
+	
+	exit_button.visible = false
+		
+
 func _choice_pressed(conversation: ConversationItem, patron: BarPatron):
 	patron_response.text = conversation.patron_response
 	patron_response.visible = true
 	conversation.complete()
+	
 	
 	for choice in choices:
 		if choice.pressed.is_connected(_choice_pressed):
@@ -89,6 +103,9 @@ func _choice_pressed(conversation: ConversationItem, patron: BarPatron):
 	_refresh_choices(patron)
 
 func _refresh_choices(patron: BarPatron):
+	exit_button.pressed.connect(_end_dialogue.bind(patron))
+	exit_button.visible = true
+	
 	var conversations: Array[ConversationItem] = patron.get_conversations()
 	var conversation: ConversationItem
 	for index in conversations.size():
@@ -102,8 +119,11 @@ func _refresh_choices(patron: BarPatron):
 			choice_button.visible = false
 			continue
 
+
 		# Update choice buttons
 		choice_button.text = conversation.player_choice
+		#disconnect choice from last character's dialogue
+		choice_button.pressed.disconnect(_choice_pressed)
 		choice_button.pressed.connect(
 			_choice_pressed.bind(conversation, patron)
 		)
