@@ -39,6 +39,8 @@ texture = ExtResource("2_0cq7m")
 player_choice = "Hello, Ethred!"
 patron_response = "Hello, good to see you!"
 memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_65qpq")])
+startDay = 1
+endDay = 80
 
 [node name="ConversationItem2" parent="Conversations" index="1"]
 player_choice = "What have you been up to?"

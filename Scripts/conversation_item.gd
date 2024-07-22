@@ -27,13 +27,24 @@ var priority: int
 @export
 var done: bool = false
 
+@export
+var startDay: int = 0
+
+@export
+var endDay: int = 100
+
 # If this conversation is accessible via memory restrictions
 func can_access():
 	if done:
 		return false
 	if len(memories_required) == 0:
 		return true
-		
+
+	
+
+	if startDay > Globals.day or endDay <= Globals.day:
+		return false
+
 	var memory_required: String
 	var inverse_memory: bool
 	
