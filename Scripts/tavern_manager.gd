@@ -33,5 +33,54 @@ func _cycle_left() -> void:
 	tavern_screens[current_screen].visible = false
 	current_screen = next_screen
 
-func load_dialogue() -> void:
-	var file = 
+func load_dialogue(path: String, ) -> void:
+	var file = FileAccess.open(path,FileAccess.READ)
+	
+	file.get_csv_line()
+	
+	var convs = []
+	
+	while not file.eof_reached():
+		var line = file.get_csv_line()
+		var current = ConversationItem.new()
+		current.player_choice = line[0]
+		current.patron_response = line[1]
+		
+		var temp
+		
+		for s in line[2].split(","):
+			if s == "":
+				break
+			temp = ReferenceMemory.new()
+			temp.memory_name = s
+			current.memories_required.append(temp)
+	
+		for s in line[3].split(","):
+			if s == "":
+				break
+			temp = ReferenceMemory.new()
+			temp.memory_name = s
+			current.memories_unlocked.append(temp)
+		
+		for s in line[4].split(","):
+			if s == "":
+				break
+			temp = ReferenceMemory.new()
+			temp.memory_name = s
+			temp.inverse_memory = true
+			current.memories_required.append(temp)
+	
+		for s in line[5].split(","):
+			if s == "":
+				break
+			temp = ReferenceMemory.new()
+			temp.memory_name = s
+			temp.inverse_memory = true
+			current.memories_unlocked.append(temp)
+		
+		current.startDay = int(line[6])
+		current.endDay = int(line[7])
+		
+		convs.append(current)
+		
+	

@@ -3,8 +3,9 @@ extends Node2D
 const BarPatron = preload("res://Scripts/bar_patron.gd");
 const TablePatron = preload("res://Scripts/table_patron.gd");
 
-@export
-var bar_positions: Array[Node2D] = []
+
+@onready
+var bar_positions: Array[Node] = get_node("BarPositions").get_children()
 var bar_seats: Array[Node2D] = [null, null, null, null]
 var available_bar_seats: Array[int] = [0, 1, 2, 3]
 
@@ -12,13 +13,13 @@ var available_bar_seats: Array[int] = [0, 1, 2, 3]
 var ordering_position: Node2D = null
 var ordering_patron: Node2D = null
 
-@export
-var table_positions: Array[Node2D] = []
+@onready
+var table_positions: Array[Node] = get_node("TablePositions").get_children()
 var table_seats: Array[Node2D] = [null, null, null, null]
 var available_table_seats: Array[int] = [0, 1, 2, 3]
 
-@export
-var choices: Array[Button] = []
+@onready
+var choices: Array[Node] = [get_node("HUD/Choice1"),get_node("HUD/Choice2"),get_node("HUD/Choice3")]
 @export
 var patron_response: Label = null
 
@@ -30,7 +31,8 @@ var exit_button: Button = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
+	# Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -48,7 +50,7 @@ func _spawn_patron() -> void:
 	
 	while len(available_bar_seats) == 0 and patron is BarPatron:
 		patron = patron_factory.get_random_patron()
-	while len(available_table_seats) == 0 and patron is TablePatron or patron in bar_seats:
+	while len(available_table_seats) == 0 and patron is TablePatron:
 		patron = patron_factory.get_random_patron()
 	
 	if patron is BarPatron:

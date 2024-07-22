@@ -8,15 +8,12 @@
 
 [node name="Tavern" type="Node2D" node_paths=PackedStringArray("tavern_screens")]
 script = ExtResource("1_uvpce")
-tavern_screens = [NodePath("Screens/BarScreen"), NodePath("Screens/MaintScreen"), NodePath("Screens/IngredientScreen"), NodePath("Screens/MysteryScreen")]
+tavern_screens = [NodePath("Screens/BarScreen"), NodePath("Screens/MysteryScreen"), NodePath("Screens/MaintScreen"), NodePath("Screens/IngredientScreen")]
 
 [node name="Screens" type="Node" parent="."]
 
-[node name="BarScreen" parent="Screens" node_paths=PackedStringArray("bar_positions", "table_positions", "choices") instance=ExtResource("2_jhhkw")]
+[node name="BarScreen" parent="Screens" instance=ExtResource("2_jhhkw")]
 visible = false
-bar_positions = []
-table_positions = []
-choices = []
 
 [node name="MysteryScreen" parent="Screens" instance=ExtResource("5_crxro")]
 visible = false
@@ -44,3 +41,5 @@ text = "<"
 
 [connection signal="pressed" from="HUD/RightArrow" to="." method="_cycle_right"]
 [connection signal="pressed" from="HUD/LeftArrow" to="." method="_cycle_left"]
+
+[editable path="Screens/BarScreen"]

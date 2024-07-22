@@ -1,0 +1,9 @@
+choice,response,requires,unlocks,notrequires,locks,startday,endday
+"You seem nervous, what's bothering you?","Oh, you know, old things. Just been thinking a lot lately.",,ConstOldTimes,,,,
+Thinking about what?,"Back in Ravenwood - I still haven't gotten over it. We were sent to rescue them, and I killed them. I know, it was an accident, but we lied, blamed the kidnappers. We were wrong, and we knew it. It's been twenty five years and I still think about it. Do you think we would have ever succeeded if we didn't? All of our careers started with a lie.",ConstOldTimes,RavenwoodAccident,,,,
+,,,,,,,
+How have things been going lately?,"Things have been improving at the bank since the theft last month. I don't think the guard has caught the thief yet, though. Wish I did when I had the chance. If I ever see him again, I swear, he's done for.",,BankRobbery,,,,
+What was the robber like?,"Unremarkable, really. He was skinny, I guess. Black hair. Big ears, sort of.",BankRobbery,RobberDesc,,,,
+,,,,,,,
+"Bar's closing, Constantine. You've got to get home","I know, I know. Would it really be so bad if I stayed a while longer? I just want to sit and think, alone. ",,StayTheNight,,,,
+"Alright, man. Don't make a mess of things. ",Thanks. Goodnight.,StayTheNight,,,,,

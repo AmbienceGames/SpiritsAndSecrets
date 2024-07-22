@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2kradyuylbs0"]
+[gd_scene load_steps=5 format=3 uid="uid://b2kradyuylbs0"]
 
 [ext_resource type="PackedScene" uid="uid://bv60js1b7s0hx" path="res://Scenes/bar_patron.tscn" id="1_6iy88"]
 [ext_resource type="Texture2D" uid="uid://ypgkqkd25aej" path="res://Assets/Art/ethred.png" id="2_0cq7m"]
@@ -9,28 +9,7 @@ script = ExtResource("3_xujja")
 memory_name = "GreetedEthred"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_y8qtw"]
-script = ExtResource("3_xujja")
-memory_name = "GreetedEthred"
-inverse_memory = false
-
-[sub_resource type="Resource" id="Resource_sa7k8"]
-script = ExtResource("3_xujja")
-memory_name = "EthredWork"
-inverse_memory = false
-
-[sub_resource type="Resource" id="Resource_ckl3u"]
-script = ExtResource("3_xujja")
-memory_name = "EthredWork"
-inverse_memory = false
-
-[sub_resource type="Resource" id="Resource_01ym0"]
-script = ExtResource("3_xujja")
-memory_name = "EthredWork"
-inverse_memory = false
-
-[node name="Ethred" node_paths=PackedStringArray("conversations") instance=ExtResource("1_6iy88")]
-conversations = [NodePath("Conversations/ConversationItem"), NodePath("Conversations/ConversationItem2"), NodePath("Conversations/ConversationItem3"), NodePath("Conversations/ConversationItem4")]
+[node name="Ethred" instance=ExtResource("1_6iy88")]
 
 [node name="BarPatron" parent="." index="0"]
 texture = ExtResource("2_0cq7m")
@@ -41,20 +20,3 @@ patron_response = "Hello, good to see you!"
 memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_65qpq")])
 startDay = 1
 endDay = 80
-
-[node name="ConversationItem2" parent="Conversations" index="1"]
-player_choice = "What have you been up to?"
-patron_response = "The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. "
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_y8qtw")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_sa7k8")])
-
-[node name="ConversationItem3" parent="Conversations" index="2"]
-player_choice = "How's the new party been treating you?"
-patron_response = "Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_ckl3u")])
-memories_unlocked = Array[ExtResource("3_xujja")]([])
-
-[node name="ConversationItem4" parent="Conversations" index="3"]
-player_choice = "Necromancer been causing trouble?"
-patron_response = "Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_01ym0")])

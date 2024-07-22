@@ -81,3 +81,7 @@ func complete():
 
 func _to_string():
 	return player_choice + " -> " + patron_response
+
+
+func _on_table_patron_sprite_clicked(assoc):
+	pass # Replace with function body.

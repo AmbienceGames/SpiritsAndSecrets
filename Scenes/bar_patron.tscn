@@ -11,9 +11,8 @@ script = ExtResource("5_8qlmt")
 memory_name = "knife"
 inverse_memory = false
 
-[node name="BarPatron" type="Node2D" node_paths=PackedStringArray("conversations")]
+[node name="BarPatron" type="Node2D"]
 script = ExtResource("1_b8qst")
-conversations = [NodePath("Conversations/ConversationItem"), null, null, null]
 
 [node name="BarPatron" type="Sprite2D" parent="."]
 position = Vector2(128, 176)
@@ -25,21 +24,6 @@ script = ExtResource("3_hxcs4")
 
 [node name="ConversationItem" type="Node" parent="Conversations"]
 script = ExtResource("4_a27h4")
-player_choice = "y r u nervy uwu"
-patron_response = "Last night, I was walking, and I found this knife by Lilianne’s house. I saw Trent walking around too. I think he killed her"
-memories_unlocked = Array[ExtResource("5_8qlmt")]([SubResource("Resource_7xokx")])
-
-[node name="ConversationItem2" type="Node" parent="Conversations"]
-script = ExtResource("4_a27h4")
-
-[node name="ConversationItem3" type="Node" parent="Conversations"]
-script = ExtResource("4_a27h4")
-player_choice = "y r u nervy uwu"
-patron_response = "Last night, I was walking, and I found this knife by Lilianne’s house. I saw Trent walking around too. I think he killed her"
-memories_unlocked = Array[ExtResource("5_8qlmt")]([SubResource("Resource_7xokx")])
-
-[node name="ConversationItem4" type="Node" parent="Conversations"]
-script = ExtResource("4_a27h4")
-player_choice = "y r u nervy uwu"
-patron_response = "Last night, I was walking, and I found this knife by Lilianne’s house. I saw Trent walking around too. I think he killed her"
+player_choice = "Good evening"
+patron_response = "Good evening"
 memories_unlocked = Array[ExtResource("5_8qlmt")]([SubResource("Resource_7xokx")])

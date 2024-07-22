@@ -1,13 +1,7 @@
-res://Scenes/tavern.tscn
+res://Scenes/bar_patron.tscn
 res://Scripts/patron_factory.gd
-res://Scripts/conversation_item.gd
-res://Scripts/globals.gd
-res://Scripts/tavern_manager.gd
+res://Scenes/tavern.tscn
 res://Scenes/Characters/ethred.tscn
-res://Scenes/Characters/trent.tscn
 res://Scenes/Characters/lucius.tscn
 res://Scenes/Characters/theo.tscn
-res://Scenes/patron_factory.tscn
-res://Scenes/bar_patron.tscn
-res://Scenes/table_patron.tscn
-res://Scenes/bar_screen.tscn
+res://Scenes/Characters/trent.tscn

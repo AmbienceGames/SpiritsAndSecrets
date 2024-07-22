@@ -1,0 +1,5 @@
+choice,response,requires,unlocks,notrequires,locks,startday,endday
+Hello Ethred!,"Hello, [name]! Good to see you.",,GreetedEthred,,,,
+What have you been up to?,"The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. ",GreetedEthred,EthredWork,,,,
+How's the new party been treating you?,"Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years.",EthredWork,,,,,
+Necromancer been causing trouble?,"Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps",EthredWork,,,,,

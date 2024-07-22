@@ -4,12 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dywohg8m6dnxo" path="res://Assets/Art/bar_screen.png" id="1_hdnv4"]
 [ext_resource type="PackedScene" uid="uid://qbx6i5yd14y6" path="res://Scenes/patron_factory.tscn" id="3_pufqt"]
 
-[node name="BarScreen" type="Node2D" node_paths=PackedStringArray("bar_positions", "ordering_position", "table_positions", "choices", "patron_response", "patron_factory", "exit_button")]
+[node name="BarScreen" type="Node2D" node_paths=PackedStringArray("ordering_position", "patron_response", "patron_factory", "exit_button")]
 script = ExtResource("1_8lkx7")
-bar_positions = [NodePath("BarPositions/bp1"), NodePath("BarPositions/bp2"), NodePath("BarPositions/bp3"), NodePath("BarPositions/bp4")]
 ordering_position = NodePath("BarPositions/o")
-table_positions = [NodePath("TablePositions/tp1"), NodePath("TablePositions/tp2"), NodePath("TablePositions/tp3"), NodePath("TablePositions/tp4")]
-choices = [NodePath("HUD/Choice1"), NodePath("HUD/Choice2"), NodePath("HUD/Choice3")]
 patron_response = NodePath("HUD/Response")
 patron_factory = NodePath("PatronFactory")
 exit_button = NodePath("HUD/Exit")

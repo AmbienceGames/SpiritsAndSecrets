@@ -12,7 +12,10 @@ func _process(delta: float) -> void:
 	pass
 
 func get_random_patron() -> Patron:
-	var base: PackedScene = possible_patrons.pick_random()
+	if len(possible_patrons) == 0:
+		return null
+	var index = randi() % len(possible_patrons)
+	var base: PackedScene = possible_patrons.pop_at(index)
 	var patron = get_instance(base)
 
 	return patron
