@@ -1,7 +1,16 @@
 res://Scenes/bar_patron.tscn
 res://Scripts/patron_factory.gd
+res://Scripts/tavern_manager.gd
 res://Scenes/tavern.tscn
 res://Scenes/Characters/ethred.tscn
 res://Scenes/Characters/lucius.tscn
 res://Scenes/Characters/theo.tscn
 res://Scenes/Characters/trent.tscn
+res://Scenes/bar_screen.tscn
+res://Editor Scripts/load_dialogue.gd
+res://Scenes/patron_factory.tscn
+res://Dialogue/ethred.txt
+res://Scripts/bar_patron.gd
+res://Scenes/Characters/newethred.tscn
+res://Scripts/bar_manager.gd
+res://Scenes/Characters/constantine.tscn

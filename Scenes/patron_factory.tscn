@@ -1,12 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://qbx6i5yd14y6"]
+[gd_scene load_steps=5 format=3 uid="uid://qbx6i5yd14y6"]
 
 [ext_resource type="Script" path="res://Scripts/patron_factory.gd" id="1_1q488"]
 [ext_resource type="PackedScene" uid="uid://klwqmxrykumw" path="res://Scenes/table_patron.tscn" id="3_i1g0g"]
-[ext_resource type="PackedScene" uid="uid://dn07j4suiqwf6" path="res://Scenes/Characters/lucius.tscn" id="3_shn4l"]
 [ext_resource type="PackedScene" uid="uid://b2kradyuylbs0" path="res://Scenes/Characters/ethred.tscn" id="4_ot0lg"]
-[ext_resource type="PackedScene" uid="uid://s57nlx2auv5j" path="res://Scenes/Characters/theo.tscn" id="5_xofnt"]
-[ext_resource type="PackedScene" uid="uid://cbu201fal8k42" path="res://Scenes/Characters/trent.tscn" id="6_566fn"]
+[ext_resource type="PackedScene" uid="uid://qvyi1fv2peie" path="res://Scenes/Characters/constantine.tscn" id="4_xs122"]
 
 [node name="PatronFactory" type="Node2D"]
 script = ExtResource("1_1q488")
-possible_patrons = Array[PackedScene]([ExtResource("3_i1g0g"), ExtResource("3_shn4l"), ExtResource("4_ot0lg"), ExtResource("5_xofnt"), ExtResource("6_566fn"), ExtResource("3_i1g0g"), ExtResource("3_i1g0g"), ExtResource("3_i1g0g")])
+possible_patrons = Array[PackedScene]([ExtResource("3_i1g0g"), ExtResource("4_ot0lg"), ExtResource("3_i1g0g"), ExtResource("3_i1g0g"), ExtResource("3_i1g0g"), ExtResource("4_xs122"), ExtResource("4_xs122"), ExtResource("4_ot0lg")])

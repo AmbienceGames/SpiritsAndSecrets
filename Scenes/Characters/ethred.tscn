@@ -1,22 +1,68 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2kradyuylbs0"]
+[gd_scene load_steps=11 format=3 uid="uid://b2kradyuylbs0"]
 
-[ext_resource type="PackedScene" uid="uid://bv60js1b7s0hx" path="res://Scenes/bar_patron.tscn" id="1_6iy88"]
+[ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_meqax"]
 [ext_resource type="Texture2D" uid="uid://ypgkqkd25aej" path="res://Assets/Art/ethred.png" id="2_0cq7m"]
+[ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_v7iaf"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="3_xujja"]
+[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_aoja3"]
 
-[sub_resource type="Resource" id="Resource_65qpq"]
+[sub_resource type="Resource" id="Resource_8ms7v"]
 script = ExtResource("3_xujja")
 memory_name = "GreetedEthred"
 inverse_memory = false
 
-[node name="Ethred" instance=ExtResource("1_6iy88")]
+[sub_resource type="Resource" id="Resource_tqyah"]
+script = ExtResource("3_xujja")
+memory_name = "GreetedEthred"
+inverse_memory = false
 
-[node name="BarPatron" parent="." index="0"]
+[sub_resource type="Resource" id="Resource_56rgj"]
+script = ExtResource("3_xujja")
+memory_name = "EthredWork"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_dcsbc"]
+script = ExtResource("3_xujja")
+memory_name = "EthredWork"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_gva05"]
+script = ExtResource("3_xujja")
+memory_name = "EthredWork"
+inverse_memory = false
+
+[node name="Ethred" type="Node2D"]
+script = ExtResource("1_meqax")
+
+[node name="BarPatron" type="Sprite2D" parent="."]
+position = Vector2(128, 176)
+scale = Vector2(4, 4)
 texture = ExtResource("2_0cq7m")
+script = ExtResource("3_v7iaf")
 
-[node name="ConversationItem" parent="Conversations" index="0"]
-player_choice = "Hello, Ethred!"
-patron_response = "Hello, good to see you!"
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_65qpq")])
-startDay = 1
-endDay = 80
+[node name="Conversations" type="Node" parent="."]
+
+[node name="conv0" type="Node" parent="Conversations"]
+script = ExtResource("4_aoja3")
+player_choice = "Hello Ethred!"
+patron_response = "Hello, [name]! Good to see you."
+memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_8ms7v")])
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("4_aoja3")
+player_choice = "What have you been up to?"
+patron_response = "The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. "
+memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_tqyah")])
+memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_56rgj")])
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("4_aoja3")
+player_choice = "How's the new party been treating you?"
+patron_response = "Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years."
+memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_dcsbc")])
+
+[node name="conv3" type="Node" parent="Conversations"]
+script = ExtResource("4_aoja3")
+player_choice = "Necromancer been causing trouble?"
+patron_response = "Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps"
+memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_gva05")])
