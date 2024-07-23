@@ -9,29 +9,26 @@ func _run():
 	var characters = script_dir.get_files()
 	
 	for filename in characters:
-		print(filename)
+		print("Loading dialogue for " + filename)
 		var character = load(path + "/" + filename) as PackedScene
 		var root = character.instantiate()
 		var temp = root.find_child("Conversations")
 		if temp != null:
 			root.remove_child(temp)
-		print(root.get_children())
+
 		var node = Node.new()
 		node.name = "Conversations"
 		root.add_child(node)
-		print(root.get_children())
-		print(script_path + filename.replace("tscn","txt"))
 		load_dialogue(script_path + filename.replace("tscn","txt"), root)
-		print("postload")
-		print(root.get_children())
+		print("Dialogue loaded")
+
 		root.find_child("Conversations",true,false).set_owner(root)
 		for i in root.find_child("Conversations").get_children():
 			i.set_owner(root)
-		print(character)
 		character.pack(root)
 	
 		
-		print(path + "/" + filename)
+		print("Saving to " + path + "/" + filename)
 		ResourceSaver.save(character,path + "/" + filename)
 
 
@@ -40,7 +37,6 @@ func load_dialogue(path: String, patron: Node) -> void:
 	
 	file.get_csv_line()
 	var conv = patron.find_child("Conversations",true,false)
-	print(conv)
 	var convs = []
 	var conv_index = 0
 	while not file.eof_reached():
@@ -86,7 +82,6 @@ func load_dialogue(path: String, patron: Node) -> void:
 		
 		current.startDay = int(line[6])
 		if (int(line[7]) == 0):
-			print(">100")
 			current.endDay = 100
 		else:
 			current.endDay = int(line[7])
@@ -96,7 +91,6 @@ func load_dialogue(path: String, patron: Node) -> void:
 		current.set_owner(conv)
 		convs.append(current)
 		conv_index += 1
-	print(convs)
 	
 	
 

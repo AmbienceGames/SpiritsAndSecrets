@@ -6,42 +6,42 @@
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="3_toxus"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_2gu1s"]
 
-[sub_resource type="Resource" id="Resource_jhws8"]
+[sub_resource type="Resource" id="Resource_olg7o"]
 script = ExtResource("3_toxus")
 memory_name = "ConstOldTimes"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_tav8u"]
+[sub_resource type="Resource" id="Resource_u04q0"]
 script = ExtResource("3_toxus")
 memory_name = "ConstOldTimes"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_khg2j"]
+[sub_resource type="Resource" id="Resource_xp3km"]
 script = ExtResource("3_toxus")
 memory_name = "RavenwoodAccident"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_f24ok"]
+[sub_resource type="Resource" id="Resource_h41vf"]
 script = ExtResource("3_toxus")
 memory_name = "BankRobbery"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_17k72"]
+[sub_resource type="Resource" id="Resource_o3yll"]
 script = ExtResource("3_toxus")
 memory_name = "BankRobbery"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_1lin5"]
+[sub_resource type="Resource" id="Resource_ts3lx"]
 script = ExtResource("3_toxus")
 memory_name = "RobberDesc"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_pd5kk"]
+[sub_resource type="Resource" id="Resource_0ewyn"]
 script = ExtResource("3_toxus")
 memory_name = "StayTheNight"
 inverse_memory = false
 
-[sub_resource type="Resource" id="Resource_rkxyl"]
+[sub_resource type="Resource" id="Resource_r28ng"]
 script = ExtResource("3_toxus")
 memory_name = "StayTheNight"
 inverse_memory = false
@@ -61,36 +61,36 @@ script = ExtResource("3_86nnr")
 script = ExtResource("4_2gu1s")
 player_choice = "You seem nervous, what's bothering you?"
 patron_response = "Oh, you know, old things. Just been thinking a lot lately."
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_jhws8")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_olg7o")])
 
 [node name="conv1" type="Node" parent="Conversations"]
 script = ExtResource("4_2gu1s")
 player_choice = "Thinking about what?"
 patron_response = "Back in Ravenwood - I still haven't gotten over it. We were sent to rescue them, and I killed them. I know, it was an accident, but we lied, blamed the kidnappers. We were wrong, and we knew it. It's been twenty five years and I still think about it. Do you think we would have ever succeeded if we didn't? All of our careers started with a lie."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_tav8u")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_khg2j")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_u04q0")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_xp3km")])
 
 [node name="conv2" type="Node" parent="Conversations"]
 script = ExtResource("4_2gu1s")
 player_choice = "How have things been going lately?"
 patron_response = "Things have been improving at the bank since the theft last month. I don't think the guard has caught the thief yet, though. Wish I did when I had the chance. If I ever see him again, I swear, he's done for."
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_f24ok")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_h41vf")])
 
 [node name="conv3" type="Node" parent="Conversations"]
 script = ExtResource("4_2gu1s")
 player_choice = "What was the robber like?"
 patron_response = "Unremarkable, really. He was skinny, I guess. Black hair. Big ears, sort of."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_17k72")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_1lin5")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_o3yll")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_ts3lx")])
 
 [node name="conv4" type="Node" parent="Conversations"]
 script = ExtResource("4_2gu1s")
 player_choice = "Bar's closing, Constantine. You've got to get home"
 patron_response = "I know, I know. Would it really be so bad if I stayed a while longer? I just want to sit and think, alone. "
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_pd5kk")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_0ewyn")])
 
 [node name="conv5" type="Node" parent="Conversations"]
 script = ExtResource("4_2gu1s")
 player_choice = "Alright, man. Don't make a mess of things. "
 patron_response = "Thanks. Goodnight."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_rkxyl")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_r28ng")])
