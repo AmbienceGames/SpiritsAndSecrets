@@ -31,7 +31,8 @@ var exit_button: Button = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	print(bar_positions)
+	
 	# Replace with function body.
 
 
@@ -39,6 +40,42 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func _fill_bar() -> void:
+	for i in range(len(available_table_seats)):
+		var tpat = patron_factory.get_table_patron()
+		var seat = available_table_seats[i]
+		tpat.global_position = table_positions[seat].global_position
+		table_seats[seat] = tpat
+		add_child(tpat)
+	available_table_seats = []
+	
+	for i in range(len(available_bar_seats)):
+		var bpat = patron_factory.get_random_patron()
+		print(bpat)
+		var seat = available_bar_seats[i]
+		bpat.global_position = bar_positions[seat].global_position
+		bpat.sprite_clicked.connect(_start_dialogue)
+		bar_seats[seat] = bpat
+		add_child(bpat)
+	print()
+	available_bar_seats = []
+	
+		
+func _empty_bar() -> void:
+	for index in range(len(table_seats)):
+		var tpat = table_seats[index]
+		tpat.queue_free()
+		table_seats[index] = null
+		available_table_seats.append(index)
+	
+	for index in range(len(bar_seats)):
+		var bpat = bar_seats[index]
+		bpat.sprite_clicked.disconnect(_start_dialogue)
+		patron_factory.add_patron(bpat)
+		bpat.queue_free()
+		bar_seats[index] = null
+		available_bar_seats.append(index)
+		
 
 func _spawn_patron() -> void:
 

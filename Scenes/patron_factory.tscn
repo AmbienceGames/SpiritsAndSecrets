@@ -1,10 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://qbx6i5yd14y6"]
+[gd_scene load_steps=12 format=3 uid="uid://qbx6i5yd14y6"]
 
 [ext_resource type="Script" path="res://Scripts/patron_factory.gd" id="1_1q488"]
 [ext_resource type="PackedScene" uid="uid://klwqmxrykumw" path="res://Scenes/table_patron.tscn" id="3_i1g0g"]
+[ext_resource type="PackedScene" uid="uid://dk82hd3qv3811" path="res://Scenes/Characters/glanthor.tscn" id="4_dp4ab"]
 [ext_resource type="PackedScene" uid="uid://b2kradyuylbs0" path="res://Scenes/Characters/ethred.tscn" id="4_ot0lg"]
 [ext_resource type="PackedScene" uid="uid://qvyi1fv2peie" path="res://Scenes/Characters/constantine.tscn" id="4_xs122"]
+[ext_resource type="PackedScene" uid="uid://bs0n4v0ek7125" path="res://Scenes/Characters/klaus.tscn" id="5_s0ngd"]
+[ext_resource type="PackedScene" uid="uid://dtvcyaew16lfn" path="res://Scenes/Characters/lucius.tscn" id="6_3jiwb"]
+[ext_resource type="PackedScene" uid="uid://05loujsr87g5" path="res://Scenes/Characters/lilianne.tscn" id="6_a08jv"]
+[ext_resource type="PackedScene" uid="uid://cc3a1v1k1bxd7" path="res://Scenes/Characters/theo.tscn" id="7_opxmn"]
+[ext_resource type="PackedScene" uid="uid://f26ertkimhya" path="res://Scenes/Characters/traveler.tscn" id="8_lynvo"]
+[ext_resource type="PackedScene" uid="uid://cfoc2qc6o2xd7" path="res://Scenes/Characters/trent.tscn" id="9_nf6vf"]
 
 [node name="PatronFactory" type="Node2D"]
 script = ExtResource("1_1q488")
-possible_patrons = Array[PackedScene]([ExtResource("3_i1g0g"), ExtResource("4_ot0lg"), ExtResource("3_i1g0g"), ExtResource("3_i1g0g"), ExtResource("3_i1g0g"), ExtResource("4_xs122"), ExtResource("4_xs122"), ExtResource("4_ot0lg")])
+bar_patrons = Array[PackedScene]([ExtResource("4_xs122"), ExtResource("4_ot0lg"), ExtResource("4_dp4ab"), ExtResource("5_s0ngd"), ExtResource("6_a08jv"), ExtResource("6_3jiwb"), ExtResource("7_opxmn"), ExtResource("8_lynvo"), ExtResource("9_nf6vf")])
+table_patron = ExtResource("3_i1g0g")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://dtvcyaew16lfn"]
+
+[ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_4xtvn"]
+[ext_resource type="Texture2D" uid="uid://48gs1at5s7va" path="res://Assets/Art/lucius.png" id="2_xies0"]
+[ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_asd2j"]
+[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_dhak0"]
+[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_bqf5p"]
+
+[sub_resource type="Resource" id="Resource_7xokx"]
+script = ExtResource("5_bqf5p")
+memory_name = "knife"
+inverse_memory = false
+
+[node name="BarPatron" type="Node2D"]
+script = ExtResource("1_4xtvn")
+
+[node name="BarPatron" type="Sprite2D" parent="."]
+position = Vector2(128, 176)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_xies0")
+script = ExtResource("3_asd2j")
+
+[node name="Conversations" type="Node" parent="."]
+
+[node name="ConversationItem" type="Node" parent="Conversations"]
+script = ExtResource("4_dhak0")
+player_choice = "Good evening"
+patron_response = "Good evening"
+memories_unlocked = Array[ExtResource("5_bqf5p")]([SubResource("Resource_7xokx")])
