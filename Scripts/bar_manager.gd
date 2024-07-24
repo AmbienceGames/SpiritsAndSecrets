@@ -40,6 +40,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func advance_day() -> void:
+	_empty_bar()
+	Globals.day += 1
+	patron_factory.bar_patrons = Globals.get_cast_for_day()
+	_fill_bar()
+
 func _fill_bar() -> void:
 	for i in range(len(available_table_seats)):
 		var tpat = patron_factory.get_table_patron()
@@ -64,12 +70,20 @@ func _fill_bar() -> void:
 func _empty_bar() -> void:
 	for index in range(len(table_seats)):
 		var tpat = table_seats[index]
+		
+		if tpat == null:
+			continue
+		
 		tpat.queue_free()
 		table_seats[index] = null
 		available_table_seats.append(index)
 	
 	for index in range(len(bar_seats)):
 		var bpat = bar_seats[index]
+		
+		if bpat == null:
+			continue
+		
 		bpat.sprite_clicked.disconnect(_start_dialogue)
 		patron_factory.add_patron(bpat)
 		bpat.queue_free()

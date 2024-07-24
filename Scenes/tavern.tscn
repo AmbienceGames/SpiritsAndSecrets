@@ -29,6 +29,13 @@ offset_right = 1607.0
 offset_bottom = 728.0
 text = "Empty bar"
 
+[node name="NextDay" type="Button" parent="Screens/BarScreen/HUD" index="8"]
+offset_left = 1484.0
+offset_top = 808.0
+offset_right = 1626.0
+offset_bottom = 887.0
+text = "Advance day"
+
 [node name="MysteryScreen" parent="Screens" instance=ExtResource("5_crxro")]
 visible = false
 
@@ -55,6 +62,7 @@ text = "<"
 
 [connection signal="pressed" from="Screens/BarScreen/HUD/FillBar" to="Screens/BarScreen" method="_fill_bar"]
 [connection signal="pressed" from="Screens/BarScreen/HUD/EmptyBar" to="Screens/BarScreen" method="_empty_bar"]
+[connection signal="pressed" from="Screens/BarScreen/HUD/NextDay" to="Screens/BarScreen" method="advance_day"]
 [connection signal="pressed" from="HUD/RightArrow" to="." method="_cycle_right"]
 [connection signal="pressed" from="HUD/LeftArrow" to="." method="_cycle_left"]
 

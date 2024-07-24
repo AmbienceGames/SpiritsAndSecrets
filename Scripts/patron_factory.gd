@@ -8,11 +8,11 @@ var table_patron: PackedScene = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print(bar_patrons)
-	pass
+	bar_patrons = Globals.get_cast_for_day()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
 
 func get_table_patron() -> Patron:
 	return get_instance(table_patron)
