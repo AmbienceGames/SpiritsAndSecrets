@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://tc8nbtibrapt"]
+
+[ext_resource type="Script" path="res://Scripts/droppable.gd" id="1_5fi52"]
+[ext_resource type="Texture2D" uid="uid://84jt668lxcxu" path="res://Assets/Art/bottle.png" id="2_h8tnq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1usx"]
+size = Vector2(46, 79)
+
+[node name="Dropable" type="Node2D"]
+script = ExtResource("1_5fi52")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_h8tnq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_g1usx")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -21.0
+offset_top = 40.0
+offset_right = 19.0
+offset_bottom = 63.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

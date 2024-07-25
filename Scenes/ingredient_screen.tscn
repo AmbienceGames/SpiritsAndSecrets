@@ -1,9 +1,80 @@
-[gd_scene load_steps=2 format=3 uid="uid://cigb8hma3u4u6"]
+[gd_scene load_steps=4 format=3 uid="uid://cigb8hma3u4u6"]
 
-[ext_resource type="Texture2D" uid="uid://dlffl2hxs5q4y" path="res://Assets/Art/ingredient_screen.png" id="1_mkj5w"]
+[ext_resource type="Texture2D" uid="uid://hwgkg1get0o6" path="res://Assets/Art/mix_page.png" id="1_jn45u"]
+[ext_resource type="PackedScene" uid="uid://co7pe5w5djh2j" path="res://Scenes/drop_area.tscn" id="2_gdkpq"]
+[ext_resource type="PackedScene" uid="uid://tc8nbtibrapt" path="res://Scenes/dropable.tscn" id="3_rfcpd"]
 
 [node name="IngredientScreen" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("1_mkj5w")
+texture = ExtResource("1_jn45u")
+
+[node name="oj" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
+position = Vector2(321, 404)
+start_position = NodePath("../mixer shelf/mixshelf1")
+item_name = "Orange Juice"
+
+[node name="booze" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
+position = Vector2(339, 133)
+start_position = NodePath("../alcohol shelf/alcshelf1")
+item_name = "booze"
+
+[node name="everclear" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
+position = Vector2(456, 141)
+start_position = NodePath("../alcohol shelf/alcshelf2")
+item_name = "everclear"
+
+[node name="workspace" type="Node" parent="."]
+
+[node name="work1" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(282, 911)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="work2" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(432, 911)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="work3" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(589, 909)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="work4" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(737, 912)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="alcohol shelf" type="Node" parent="."]
+
+[node name="alcshelf1" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(332, 136)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="alcshelf2" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(458, 138)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="alcshelf3" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(584, 143)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="alcshelf4" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(718, 141)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="mixer shelf" type="Node" parent="."]
+
+[node name="mixshelf1" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(320, 398)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="mixshelf2" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(475, 390)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="mixshelf3" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(610, 393)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="mixshelf4" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(753, 391)
+scale = Vector2(0.891663, 0.979441)

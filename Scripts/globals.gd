@@ -13,6 +13,8 @@ var cast: Array = [
 	["trent","glanthor","klaus","theo","lucius","ethred","traveler"],
 ]
 
+var is_dragging = false
+
 func get_cast_for_day() -> Array[PackedScene]:
 	var names = cast[day-1]
 	var path = "res://Scenes/Characters"

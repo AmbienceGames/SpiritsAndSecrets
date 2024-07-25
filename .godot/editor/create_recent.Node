@@ -1,2 +1,10 @@
+Node
+Label
+CollisionShape2D
+Area2D
+Sprite2D
+StaticBody2D
+ColorRect
+Node2D
 Button
 ConversationItem
