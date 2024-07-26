@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4fpmvnsx4nb0"]
+
+[ext_resource type="Texture2D" uid="uid://ck50u3tn6myox" path="res://Assets/Art/cup.png" id="1_27aok"]
+[ext_resource type="Script" path="res://Scripts/glass.gd" id="1_114i8"]
+[ext_resource type="PackedScene" uid="uid://cqfafc57hyqm2" path="res://Scenes/cup_sprite.tscn" id="2_o3wd3"]
+[ext_resource type="Script" path="res://Scripts/ice_cube.gd" id="4_jdk74"]
+[ext_resource type="Texture2D" uid="uid://drp28q6lypscu" path="res://Assets/Art/ice.png" id="4_tcd57"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1kfhe"]
+size = Vector2(66, 81)
+
+[node name="Glass" type="Node2D" groups=["container"]]
+script = ExtResource("1_114i8")
+
+[node name="CupSprite" parent="." instance=ExtResource("2_o3wd3")]
+position = Vector2(-2.69749, -8.85852)
+texture = ExtResource("1_27aok")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["container"]]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_1kfhe")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = -34.0
+offset_right = 75.0
+offset_bottom = -11.0
+
+[node name="Ice" type="Node2D" parent="."]
+visible = false
+script = ExtResource("4_jdk74")
+
+[node name="cube" type="Sprite2D" parent="Ice"]
+position = Vector2(-0.999999, -25)
+rotation = 0.680807
+scale = Vector2(1.39972, 1.39972)
+texture = ExtResource("4_tcd57")
+
+[node name="BottomIce" type="Node2D" parent="."]
+visible = false
+position = Vector2(3, 43)
+
+[node name="cube" type="Sprite2D" parent="BottomIce"]
+position = Vector2(-0.999999, -25)
+rotation = 0.680807
+scale = Vector2(1.39972, 1.39972)
+texture = ExtResource("4_tcd57")
+
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[connection signal="area_shape_exited" from="Area2D" to="." method="_on_area_2d_area_shape_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

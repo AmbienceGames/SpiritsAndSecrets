@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://tc8nbtibrapt"]
 
-[ext_resource type="Script" path="res://Scripts/droppable.gd" id="1_5fi52"]
+[ext_resource type="Script" path="res://Scripts/dropable.gd" id="1_5fi52"]
 [ext_resource type="Texture2D" uid="uid://84jt668lxcxu" path="res://Assets/Art/bottle.png" id="2_h8tnq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g1usx"]
@@ -25,6 +25,8 @@ offset_top = 40.0
 offset_right = 19.0
 offset_bottom = 63.0
 
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[connection signal="area_shape_exited" from="Area2D" to="." method="_on_area_2d_area_shape_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

@@ -1,10 +1,12 @@
-Node
-Label
 CollisionShape2D
 Area2D
 Sprite2D
-StaticBody2D
-ColorRect
 Node2D
+Ice
+Polygon2D
+ColorRect
+Label
+StaticBody2D
+Node
 Button
 ConversationItem

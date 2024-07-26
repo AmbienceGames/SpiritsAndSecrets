@@ -1,80 +1,158 @@
-[gd_scene load_steps=4 format=3 uid="uid://cigb8hma3u4u6"]
+[gd_scene load_steps=15 format=3 uid="uid://cigb8hma3u4u6"]
 
-[ext_resource type="Texture2D" uid="uid://hwgkg1get0o6" path="res://Assets/Art/mix_page.png" id="1_jn45u"]
+[ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_5grc5"]
 [ext_resource type="PackedScene" uid="uid://co7pe5w5djh2j" path="res://Scenes/drop_area.tscn" id="2_gdkpq"]
+[ext_resource type="PackedScene" uid="uid://crdf2j3g21hjo" path="res://Scenes/mixer.tscn" id="3_dyj68"]
 [ext_resource type="PackedScene" uid="uid://tc8nbtibrapt" path="res://Scenes/dropable.tscn" id="3_rfcpd"]
+[ext_resource type="Script" path="res://Scripts/liquid.gd" id="4_70tpp"]
+[ext_resource type="PackedScene" uid="uid://c4fpmvnsx4nb0" path="res://Scenes/glass.tscn" id="5_w4ck4"]
+[ext_resource type="PackedScene" uid="uid://dqkdcqfmgy1wh" path="res://Scenes/dump_area.tscn" id="6_af824"]
+[ext_resource type="PackedScene" uid="uid://h425s3lrwqnw" path="res://Scenes/ice_spawner.tscn" id="6_tepou"]
+[ext_resource type="PackedScene" uid="uid://bori6crjasqob" path="res://Scenes/glass_spawner.tscn" id="7_gjsbr"]
+
+[sub_resource type="Resource" id="Resource_6xjd3"]
+script = ExtResource("4_70tpp")
+liquid_name = "Goblin Juice"
+flavors = Array[String]([])
+cost = 0
+color = Color(0.54531, 0.833507, 0.48095, 1)
+
+[sub_resource type="Resource" id="Resource_2js7e"]
+script = ExtResource("4_70tpp")
+liquid_name = "Orange Juice"
+flavors = Array[String]([])
+cost = 10
+color = Color(0.801837, 0.518154, 0.146937, 1)
+
+[sub_resource type="Resource" id="Resource_2xqkf"]
+script = ExtResource("4_70tpp")
+liquid_name = "Booze"
+flavors = Array[String]([])
+cost = 0
+color = Color(0.376471, 0.2, 0.0431373, 0.788235)
+
+[sub_resource type="Resource" id="Resource_je0i8"]
+script = ExtResource("4_70tpp")
+liquid_name = "Everclear"
+flavors = Array[String]([])
+cost = 0
+color = Color(0.752941, 0.737255, 0.686275, 0.0666667)
+
+[sub_resource type="Resource" id="Resource_cw705"]
+script = ExtResource("4_70tpp")
+liquid_name = "Blue Juice"
+flavors = Array[String]([])
+cost = 0
+color = Color(0.054, 0, 100, 1)
 
 [node name="IngredientScreen" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("1_jn45u")
+scale = Vector2(4, 4)
+texture = ExtResource("1_5grc5")
+
+[node name="goblin juice" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
+position = Vector2(454, 314)
+start_position = NodePath("../mixer shelf/mixshelf2")
+item_name = "Goblin Juice"
+liquid_inside = SubResource("Resource_6xjd3")
+
+[node name="mixer" parent="." node_paths=PackedStringArray("pos") instance=ExtResource("3_dyj68")]
+position = Vector2(1054, 592)
+pos = NodePath("../workspace/mixerspot")
+item_name = "mixer"
 
 [node name="oj" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
-position = Vector2(321, 404)
+position = Vector2(349, 309)
 start_position = NodePath("../mixer shelf/mixshelf1")
 item_name = "Orange Juice"
+liquid_inside = SubResource("Resource_2js7e")
 
 [node name="booze" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
-position = Vector2(339, 133)
+position = Vector2(324, 136)
 start_position = NodePath("../alcohol shelf/alcshelf1")
 item_name = "booze"
+liquid_inside = SubResource("Resource_2xqkf")
 
 [node name="everclear" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
-position = Vector2(456, 141)
+position = Vector2(450, 136)
 start_position = NodePath("../alcohol shelf/alcshelf2")
 item_name = "everclear"
+liquid_inside = SubResource("Resource_je0i8")
+
+[node name="blue juice" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("3_rfcpd")]
+position = Vector2(573, 314)
+start_position = NodePath("../mixer shelf/mixshelf3")
+item_name = "Blue Juice"
+liquid_inside = SubResource("Resource_cw705")
+
+[node name="Glass" parent="." node_paths=PackedStringArray("pos") instance=ExtResource("5_w4ck4")]
+position = Vector2(610, 595)
+pos = NodePath("../workspace/work1")
+
+[node name="IceSpawner" parent="." instance=ExtResource("6_tepou")]
+position = Vector2(469, 496)
+scale = Vector2(2, 2)
+
+[node name="GlassSpawner" parent="." instance=ExtResource("7_gjsbr")]
+position = Vector2(308, 467)
+glass_to_spawn = ExtResource("5_w4ck4")
+
+[node name="DumpArea" parent="." instance=ExtResource("6_af824")]
+position = Vector2(1393, 553)
+scale = Vector2(2, 2)
 
 [node name="workspace" type="Node" parent="."]
 
 [node name="work1" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(282, 911)
+position = Vector2(612, 596)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="work2" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(432, 911)
+position = Vector2(753, 592)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="work3" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(589, 909)
+position = Vector2(897, 591)
 scale = Vector2(0.891663, 0.979441)
 
-[node name="work4" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(737, 912)
+[node name="mixerspot" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(1054, 591)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcohol shelf" type="Node" parent="."]
 
 [node name="alcshelf1" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(332, 136)
+position = Vector2(323, 136)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcshelf2" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(458, 138)
+position = Vector2(450, 137)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcshelf3" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(584, 143)
+position = Vector2(574, 137)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcshelf4" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(718, 141)
+position = Vector2(697, 137)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixer shelf" type="Node" parent="."]
 
 [node name="mixshelf1" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(320, 398)
+position = Vector2(325, 311)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf2" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(475, 390)
+position = Vector2(454, 310)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf3" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(610, 393)
+position = Vector2(577, 310)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf4" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(753, 391)
+position = Vector2(703, 310)
 scale = Vector2(0.891663, 0.979441)

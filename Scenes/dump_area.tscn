@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqkdcqfmgy1wh"]
+
+[ext_resource type="Texture2D" uid="uid://lx1apugebtpo" path="res://Assets/Art/dump.png" id="1_jjapq"]
+[ext_resource type="Script" path="res://Scripts/dump_area.gd" id="1_t6k13"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_axhf0"]
+size = Vector2(64, 64)
+
+[node name="DumpArea" type="Node2D" groups=["container"]]
+script = ExtResource("1_t6k13")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jjapq")
+
+[node name="Area2D" type="Area2D" parent="." groups=["container"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_axhf0")
