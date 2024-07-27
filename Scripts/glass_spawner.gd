@@ -16,6 +16,7 @@ func _process(delta):
 	#when this is clicked, if possible, it creates a glass, and sets it to drag
 	if Input.is_action_just_pressed("click") and not Globals.is_dragging and active:
 		var glass = glass_to_spawn.instantiate()
+		print(glass)
 		self.get_parent().add_child(glass)
 		Globals.is_dragging = true
 		glass.draggable = true

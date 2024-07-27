@@ -1,11 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dnqqbg6774aan"]
+[gd_scene load_steps=3 format=3 uid="uid://dnqqbg6774aan"]
 
 [ext_resource type="PackedScene" uid="uid://dieewwsv8s7rc" path="res://Scenes/dropper.tscn" id="1_8nbre"]
-[ext_resource type="Script" path="res://Scripts/combination.gd" id="2_d3ytx"]
 [ext_resource type="PackedScene" uid="uid://cqfafc57hyqm2" path="res://Scenes/Dropper_Sprites/cup_sprite.tscn" id="2_rx5iv"]
-
-[sub_resource type="Resource" id="Resource_5xuq4"]
-script = ExtResource("2_d3ytx")
 
 [node name="Glass" groups=["container"] instance=ExtResource("1_8nbre")]
 item_name = "Glass"
@@ -14,6 +10,5 @@ can_be_emptied = true
 is_container = true
 has_label = true
 has_contents = true
-contents = SubResource("Resource_5xuq4")
 uses_cup_sprite = true
 sprite_scene = ExtResource("2_rx5iv")

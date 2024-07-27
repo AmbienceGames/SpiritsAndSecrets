@@ -1,19 +1,14 @@
-[gd_scene load_steps=17 format=3 uid="uid://cigb8hma3u4u6"]
+[gd_scene load_steps=14 format=3 uid="uid://cigb8hma3u4u6"]
 
 [ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_5grc5"]
 [ext_resource type="PackedScene" uid="uid://co7pe5w5djh2j" path="res://Scenes/drop_area.tscn" id="2_gdkpq"]
 [ext_resource type="PackedScene" uid="uid://dieewwsv8s7rc" path="res://Scenes/dropper.tscn" id="2_lpye2"]
-[ext_resource type="Script" path="res://Scripts/combination.gd" id="3_78alo"]
 [ext_resource type="PackedScene" uid="uid://d30vs3g80d8px" path="res://Scenes/Dropper_Sprites/bottle.tscn" id="4_6jw1l"]
 [ext_resource type="Script" path="res://Scripts/liquid.gd" id="4_70tpp"]
-[ext_resource type="PackedScene" uid="uid://cqfafc57hyqm2" path="res://Scenes/Dropper_Sprites/cup_sprite.tscn" id="4_hvr5u"]
 [ext_resource type="PackedScene" uid="uid://dqkdcqfmgy1wh" path="res://Scenes/dump_area.tscn" id="6_af824"]
 [ext_resource type="PackedScene" uid="uid://h425s3lrwqnw" path="res://Scenes/ice_spawner.tscn" id="6_tepou"]
 [ext_resource type="PackedScene" uid="uid://dnqhlsm1evnx1" path="res://Scenes/Dropper_Sprites/mixer.tscn" id="7_7x3af"]
 [ext_resource type="PackedScene" uid="uid://bori6crjasqob" path="res://Scenes/glass_spawner.tscn" id="7_gjsbr"]
-
-[sub_resource type="Resource" id="Resource_fbvj1"]
-script = ExtResource("3_78alo")
 
 [sub_resource type="Resource" id="Resource_pjmo8"]
 script = ExtResource("4_70tpp")
@@ -50,26 +45,12 @@ position = Vector2(960, 540)
 scale = Vector2(4, 4)
 texture = ExtResource("1_5grc5")
 
-[node name="Glass" parent="." node_paths=PackedStringArray("start_position") groups=["container"] instance=ExtResource("2_lpye2")]
-position = Vector2(612, 588)
-start_position = NodePath("../workspace/work1")
-item_name = "Glass"
-position_changeable = true
-can_be_emptied = true
-is_container = true
-has_label = true
-has_contents = true
-contents = SubResource("Resource_fbvj1")
-uses_cup_sprite = true
-sprite_scene = ExtResource("4_hvr5u")
-
 [node name="Booze" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
 position = Vector2(328, 133)
 start_position = NodePath("../alcohol shelf/alcshelf4")
 item_name = "Booze"
 can_be_emptied = true
 has_label = true
-contents = SubResource("Resource_fbvj1")
 has_just_one_liquid = true
 liquid_inside = SubResource("Resource_pjmo8")
 sprite_scene = ExtResource("4_6jw1l")
@@ -80,7 +61,6 @@ start_position = NodePath("../alcohol shelf/alcshelf2")
 item_name = "Everclear"
 position_changeable = true
 has_label = true
-contents = SubResource("Resource_fbvj1")
 has_just_one_liquid = true
 liquid_inside = SubResource("Resource_qxb7v")
 sprite_scene = ExtResource("4_6jw1l")
@@ -91,7 +71,6 @@ start_position = NodePath("../mixer shelf/mixshelf1")
 item_name = "Orange Juice"
 position_changeable = true
 has_label = true
-contents = SubResource("Resource_fbvj1")
 has_just_one_liquid = true
 liquid_inside = SubResource("Resource_ykm7r")
 sprite_scene = ExtResource("4_6jw1l")
@@ -102,7 +81,6 @@ start_position = NodePath("../mixer shelf/mixshelf2")
 item_name = "Blue Juice"
 position_changeable = true
 has_label = true
-contents = SubResource("Resource_fbvj1")
 has_just_one_liquid = true
 liquid_inside = SubResource("Resource_2tith")
 can_shake = true
@@ -116,7 +94,6 @@ can_be_emptied = true
 is_container = true
 has_label = true
 has_contents = true
-contents = SubResource("Resource_fbvj1")
 can_shake = true
 sprite_scene = ExtResource("7_7x3af")
 

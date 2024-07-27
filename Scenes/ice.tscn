@@ -1,16 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://ct6fcskj1fgvf"]
+[gd_scene load_steps=3 format=3 uid="uid://ct6fcskj1fgvf"]
 
 [ext_resource type="PackedScene" uid="uid://dieewwsv8s7rc" path="res://Scenes/dropper.tscn" id="1_hqp5y"]
-[ext_resource type="Script" path="res://Scripts/combination.gd" id="2_yoaak"]
 [ext_resource type="PackedScene" uid="uid://cw8qb6l52b045" path="res://Scenes/Dropper_Sprites/ice.tscn" id="3_uxxk5"]
-
-[sub_resource type="Resource" id="Resource_b87vg"]
-script = ExtResource("2_yoaak")
 
 [node name="Ice" instance=ExtResource("1_hqp5y")]
 item_name = "Ice"
 is_container = true
 has_contents = true
-contents = SubResource("Resource_b87vg")
 sprite_scene = ExtResource("3_uxxk5")
 destroy_on_placement = true

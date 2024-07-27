@@ -3,7 +3,7 @@ extends Resource
 var recipe: String = ""
 var flavors: Array[String] = []
 
-func compare_to(g: Glass) -> float:
+func compare_to(g) -> float:
 	if recipe != "":
 		pass
 	else:

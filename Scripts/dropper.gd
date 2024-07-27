@@ -32,8 +32,8 @@ var label
 
 @export 
 var has_contents: bool
-@export
-var contents: Combination
+@onready
+var contents: Combination = Combination.new()
 
 @export
 var has_just_one_liquid: bool
@@ -114,13 +114,14 @@ func _process(delta):
 		elif Input.is_action_just_released("click"):
 			
 			Globals.is_dragging = false
-			var tween = get_tree().create_tween()
+			
 			
 			if position_changeable and not drop_areas.is_empty(): #is there a place to go back to?
 				current = drop_areas.back()
 				if current == null:
 					self.queue_free()
 				else:
+					var tween = get_tree().create_tween()
 					tween.tween_property(self,"position",current.position,0.1).set_ease(Tween.EASE_OUT)
 					current.is_occupied = true
 					drop_areas.clear()
@@ -129,6 +130,7 @@ func _process(delta):
 				if current == null:
 					self.queue_free()
 				else:
+					var tween = get_tree().create_tween()
 					current.is_occupied = true
 					tween.tween_property(self,"position",current.position,0.1).set_ease(Tween.EASE_OUT)
 			
