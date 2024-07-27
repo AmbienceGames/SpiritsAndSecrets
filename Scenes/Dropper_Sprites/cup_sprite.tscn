@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqfafc57hyqm2"]
+
+[ext_resource type="Script" path="res://Scripts/cup_sprite.gd" id="1_ia2q0"]
+[ext_resource type="Texture2D" uid="uid://ck50u3tn6myox" path="res://Assets/Art/cup.png" id="2_8cd5y"]
+[ext_resource type="Texture2D" uid="uid://b24gd55p7w0yy" path="res://Assets/Art/drink_texture.png" id="3_u7atr"]
+[ext_resource type="Texture2D" uid="uid://drp28q6lypscu" path="res://Assets/Art/ice.png" id="4_ncwd5"]
+
+[node name="CupSprite" type="Sprite2D"]
+texture = ExtResource("2_8cd5y")
+script = ExtResource("1_ia2q0")
+
+[node name="Drink" type="Polygon2D" parent="."]
+position = Vector2(-33, -37)
+texture = ExtResource("3_u7atr")
+polygon = PackedVector2Array(6.94165, 21.831, 59.0543, 21.7304, 50.7042, 76.8612, 15.2918, 77.0624)
+uv = PackedVector2Array(8.4507, 11.8712, 55.6338, 11.9718, 46.4789, 76.4588, 15.2918, 77.0624)
+
+[node name="Ice" type="Node2D" parent="."]
+visible = false
+position = Vector2(4, 8)
+
+[node name="cube" type="Sprite2D" parent="Ice"]
+position = Vector2(-0.999999, -25)
+rotation = 0.680807
+scale = Vector2(1.39972, 1.39972)
+texture = ExtResource("4_ncwd5")
+
+[node name="BottomIce" type="Node2D" parent="."]
+visible = false
+position = Vector2(3, 43)
+
+[node name="cube" type="Sprite2D" parent="BottomIce"]
+position = Vector2(-0.999999, -25)
+rotation = 0.680807
+scale = Vector2(1.39972, 1.39972)
+texture = ExtResource("4_ncwd5")

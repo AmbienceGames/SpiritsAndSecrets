@@ -7,19 +7,31 @@ extends Node2D
 
 var drink: Polygon2D
 
-@export
-var texture: Texture
+
+@onready
+var top_ice: Node2D = find_child("Ice")
+
+@onready
+var bottom_ice: Node2D = find_child("BottomIce")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	find_child("Sprite2D").texture = texture
 	drink = find_child("Drink")
 	drink.set_color(Color(Color.AQUA, 0.0))
-	pass # Replace with function body.
 
 func update_color(combination: Combination):
 	combination._update_color()
 	drink.set_color(combination.color)
+
+func update_sprite(combination: Combination):
+	update_color(combination)
+	top_ice.visible = false
+	bottom_ice.visible = false
+	if combination.has_ice:
+		if combination.liquids.is_empty():
+			bottom_ice.visible = true
+		else:
+			top_ice.visible = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

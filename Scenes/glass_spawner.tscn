@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bori6crjasqob"]
+[gd_scene load_steps=5 format=3 uid="uid://bori6crjasqob"]
 
 [ext_resource type="Script" path="res://Scripts/glass_spawner.gd" id="1_4int4"]
 [ext_resource type="Texture2D" uid="uid://ck50u3tn6myox" path="res://Assets/Art/cup.png" id="2_d33qo"]
+[ext_resource type="PackedScene" uid="uid://dnqqbg6774aan" path="res://Scenes/glass.tscn" id="2_ds4rv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rs8fr"]
 size = Vector2(68, 84)
 
 [node name="GlassSpawner" type="Node2D"]
 script = ExtResource("1_4int4")
+glass_to_spawn = ExtResource("2_ds4rv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_d33qo")

@@ -16,6 +16,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("click") and not Globals.is_dragging and active:
 		var i = ice.instantiate()
 		Globals.is_dragging = true
+		i.contents.has_ice = true
 		i.draggable = true
 		i.global_position = get_global_mouse_position()
 		self.get_parent().add_child(i)
