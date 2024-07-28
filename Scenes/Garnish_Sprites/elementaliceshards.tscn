@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://biq4pbi21cg6j"]
+
+[ext_resource type="Texture2D" uid="uid://cuxro6yxigq16" path="res://Assets/Art/single garnishes/elemental-ice-shards-single.png" id="1_l8x0m"]
+
+[node name="Elementaliceshards" type="Sprite2D"]
+texture = ExtResource("1_l8x0m")

@@ -3,7 +3,7 @@ class_name Garnish
 
 #resource to represent a liquid and its attributes
 
-var name = "Liquid"
+var name = "Garnish"
 
 @export
 var garnish_name: String

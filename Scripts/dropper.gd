@@ -1,5 +1,6 @@
 extends Node2D
 
+class_name Dropper
 
 #applicable to ALL droppers
 var draggable = false #can you drag it now?
@@ -102,7 +103,7 @@ func _process(delta):
 				if tmp1 > 0 and tmp2 < 0 or tmp2 > 0 and tmp1 < 0:
 					shakes += 1
 					if shakes > 7:
-						contents.mix_type = "Mixed"
+						contents.mix("Shaken")
 						_update_label()
 				last_velocity = velocity
 				last_position = global_position

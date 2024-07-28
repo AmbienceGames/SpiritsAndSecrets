@@ -6,6 +6,7 @@ var name = "Combination"
 var mix_type: String = "none" #none, shaken, stirred
 var liquids: Array[Liquid] = []
 var garnishes: Array[Garnish] = []
+var mixed_garnishes: Array[Garnish] = []
 var flavors: Array[String] = []
 var color: Color = Color(0,0,0,0)
 var cost: int
@@ -24,11 +25,12 @@ func add(new):
 
 func _add_garnish(g: Garnish):
 	garnishes.append(g)
+	print(garnishes)
 	for f in g.flavors:
 		if not f in flavors:
 			flavors.append(g)
 	cost += g.cost
-	mix_type = "Unmixed"
+	
 
 func _add_liquid(l: Liquid):
 	liquids.append(l)
@@ -48,7 +50,10 @@ func _add_combination(c: Combination):
 	for f in c.flavors:
 		if not f in flavors:
 			flavors.append(f)
-	
+	for g in c.garnishes:
+		garnishes.append(g)
+	for g in c.mixed_garnishes:
+		mixed_garnishes.append(g)
 	if c.has_ice:
 		self.has_ice = true
 	
@@ -80,8 +85,19 @@ func get_content_list() -> String:
 	var st = ""
 	for l in liquids:
 		st += "\n- " + l.liquid_name
-	for g in garnishes:
+	for g in mixed_garnishes:
 		st += "\n- " + g.garnish_name
 	if has_ice:
 		st += "\n- Ice"
+	if (garnishes.is_empty()):
+		return st
+	st += "\nGarnished with:"
+	for g in garnishes:
+		st += "\n- " + g.garnish_name
 	return st
+
+func mix(mixtype: String):
+	mix_type = mixtype
+	for g in garnishes:
+		mixed_garnishes.append(g)
+	garnishes.clear()

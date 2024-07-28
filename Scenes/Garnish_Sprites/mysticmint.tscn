@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dynh11jbk48wc"]
+
+[ext_resource type="Texture2D" uid="uid://dpvkw83fs38ot" path="res://Assets/Art/single garnishes/mystic-mint-single.png" id="1_ek5nk"]
+
+[node name="Mysticmint" type="Sprite2D"]
+texture = ExtResource("1_ek5nk")

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://drp28q6lypscu" path="res://Assets/Art/ice.png" id="4_ncwd5"]
 
 [node name="CupSprite" type="Sprite2D"]
+scale = Vector2(2, 2)
 texture = ExtResource("2_8cd5y")
 script = ExtResource("1_ia2q0")
 

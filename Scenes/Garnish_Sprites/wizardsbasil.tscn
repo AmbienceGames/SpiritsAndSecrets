@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnra168ldv35r"]
+
+[ext_resource type="Texture2D" uid="uid://blkso455p54p5" path="res://Assets/Art/single garnishes/wizards-basil-single.png" id="1_1b4wa"]
+
+[node name="Wizardsbasil" type="Sprite2D"]
+texture = ExtResource("1_1b4wa")

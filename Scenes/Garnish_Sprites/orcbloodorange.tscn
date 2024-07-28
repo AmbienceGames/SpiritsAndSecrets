@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhjl8x66fqpq1"]
+
+[ext_resource type="Texture2D" uid="uid://couvpi6rpppmm" path="res://Assets/Art/single garnishes/orcish-blood-orange-zest-single.png" id="1_ygg6l"]
+
+[node name="Orcbloodorange" type="Sprite2D"]
+texture = ExtResource("1_ygg6l")

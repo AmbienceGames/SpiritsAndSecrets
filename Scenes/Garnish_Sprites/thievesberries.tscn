@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6afye5ynssg0"]
+
+[ext_resource type="Texture2D" uid="uid://dubibea42ihiy" path="res://Assets/Art/single garnishes/thieves-blackberries-single.png" id="1_48jkl"]
+
+[node name="Thievesberries" type="Sprite2D"]
+texture = ExtResource("1_48jkl")

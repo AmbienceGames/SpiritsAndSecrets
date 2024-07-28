@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cigb8hma3u4u6" path="res://Scenes/ingredient_screen.tscn" id="3_jik6f"]
 [ext_resource type="PackedScene" uid="uid://cdokfy3ehg4v3" path="res://Scenes/maint_screen.tscn" id="4_ndhab"]
 [ext_resource type="PackedScene" uid="uid://chffl4ymlsb0" path="res://Scenes/mystery_screen.tscn" id="5_crxro"]
-[ext_resource type="Script" path="res://Scenes/menu.gd" id="6_b4r7a"]
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="6_b4r7a"]
 
 [node name="Tavern" type="Node2D" node_paths=PackedStringArray("tavern_screens")]
 script = ExtResource("1_uvpce")

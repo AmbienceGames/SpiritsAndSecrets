@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://1ftgdtcichku"]
+
+[ext_resource type="Script" path="res://Scripts/garnish_spawner.gd" id="1_dap3k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g7lbs"]
+size = Vector2(60, 60)
+
+[node name="GarnishSpawner" type="Node2D"]
+script = ExtResource("1_dap3k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.5, 2.5)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_g7lbs")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+z_index = 2
+offset_left = 30.0
+offset_top = -20.0
+offset_right = 70.0
+offset_bottom = 3.0
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

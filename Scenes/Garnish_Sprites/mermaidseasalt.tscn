@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://l6f00sfc8gy4"]
+
+[ext_resource type="Texture2D" uid="uid://dro0sfl56e8tf" path="res://Assets/Art/single garnishes/mermaids-sea-salt-single.png" id="1_ehrvk"]
+
+[node name="Mermaidseasalt" type="Sprite2D"]
+texture = ExtResource("1_ehrvk")

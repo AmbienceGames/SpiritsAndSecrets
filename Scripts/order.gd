@@ -1,24 +1,31 @@
 extends Resource
 
-var recipe: String = ""
-var flavors: Array[String] = []
+var recipe: Recipe = null
+var demands: Array[String] = []
 
 func compare_to(g) -> float:
-	if recipe != "":
+	if not g is Dropper or not g.has_contents:
+		return 0.0
+	
+	var glass_contents: Combination = g.contents
+	var score = 1.0
+	
+	if recipe != null:
 		pass
 	else:
-		for f in flavors:
-			pass
-	return 0.0
-	
-	
+		for d in demands:
+			if d == "cold":
+				if not glass_contents.has_ice:
+					score -= .2
+			else:
+				if not d in glass_contents.flavors:
+					score -= .3
+		var extra_flavors = 1
+		for f in glass_contents.flavors:
+			if not f in demands:
+				extra_flavors -= 1
+		
+		score += extra_flavors * 0.1
+			
+	return score
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

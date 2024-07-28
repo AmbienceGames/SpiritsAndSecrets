@@ -1,12 +1,6 @@
-res://Scenes/PauseMenu.gd
-res://Scenes/bar_screen.tscn
-res://Scripts/patron_factory.gd
 res://Scenes/ingredient_screen.tscn
-res://Scripts/bar_manager.gd
-res://Scenes/pause_menu.gd
-res://Scenes/mystery_screen.tscn
-res://Scenes/maint_screen.tscn
-res://Scripts/pause_menu.gd
-res://Scripts/tavern_manager.gd
-res://Scenes/menu.gd
-res://Scenes/tavern.tscn
+res://Scripts/patron_factory.gd
+res://Scenes/garnish_spawner.tscn
+res://Scenes/garnish.tscn
+res://Scenes/Garnish_Sprites/goblinspice.tscn
+res://Scenes/dropper.tscn

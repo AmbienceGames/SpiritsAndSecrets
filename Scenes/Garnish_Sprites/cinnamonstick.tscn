@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdsvontcfqq7k"]
+
+[ext_resource type="Texture2D" uid="uid://c1nc0jbpoi6sy" path="res://Assets/Art/single garnishes/infernal-cinnamon-sticks-single.png" id="1_xx5kg"]
+
+[node name="Cinnamonstick" type="Sprite2D"]
+texture = ExtResource("1_xx5kg")

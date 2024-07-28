@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://qvvm5ww0o5cu"]
+
+[ext_resource type="Texture2D" uid="uid://b7dv8sil8en0s" path="res://Assets/Art/single garnishes/sylvan-sage-single.png" id="1_xrhfp"]
+
+[node name="Sylvansage" type="Sprite2D"]
+texture = ExtResource("1_xrhfp")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://deadbe2at2bpt"]
+
+[ext_resource type="Texture2D" uid="uid://evjab4wsqrsl" path="res://Assets/Art/garnish.png" id="1_s18gy"]
+
+[node name="Garnish" type="Sprite2D"]
+texture = ExtResource("1_s18gy")

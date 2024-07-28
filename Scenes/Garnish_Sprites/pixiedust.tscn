@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cenmd0t4ofrta"]
+
+[ext_resource type="Texture2D" uid="uid://b5js8xvqhw83r" path="res://Assets/Art/single garnishes/pixie-dust-sugar-single.png" id="1_y05gt"]
+
+[node name="Pixiedust" type="Sprite2D"]
+texture = ExtResource("1_y05gt")

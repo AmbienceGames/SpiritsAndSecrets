@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://btt586qntp67r"]
+
+[ext_resource type="Texture2D" uid="uid://chuxksot5y73j" path="res://Assets/Art/single garnishes/pheonix-feathers-single.png" id="1_04uqy"]
+
+[node name="Phoenixfeathers" type="Sprite2D"]
+texture = ExtResource("1_04uqy")

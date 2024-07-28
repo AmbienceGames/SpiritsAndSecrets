@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbecl4ihr5e7k"]
+
+[ext_resource type="Script" path="res://Scripts/glass_spawner.gd" id="1_y7cta"]
+[ext_resource type="PackedScene" uid="uid://djgc52h8v1u11" path="res://Scenes/Glasses/flagon.tscn" id="2_7wm5v"]
+[ext_resource type="Texture2D" uid="uid://dr6iya30nevyb" path="res://Assets/Art/Glasses/beer-mug.png" id="3_cnog5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rs8fr"]
+size = Vector2(93, 111)
+
+[node name="GlassSpawner" type="Node2D"]
+script = ExtResource("1_y7cta")
+glass_to_spawn = ExtResource("2_7wm5v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("3_cnog5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-14.5, 7.5)
+shape = SubResource("RectangleShape2D_rs8fr")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

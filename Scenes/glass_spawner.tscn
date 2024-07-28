@@ -1,23 +1,25 @@
 [gd_scene load_steps=5 format=3 uid="uid://bori6crjasqob"]
 
 [ext_resource type="Script" path="res://Scripts/glass_spawner.gd" id="1_4int4"]
-[ext_resource type="Texture2D" uid="uid://ck50u3tn6myox" path="res://Assets/Art/cup.png" id="2_d33qo"]
-[ext_resource type="PackedScene" uid="uid://dnqqbg6774aan" path="res://Scenes/glass.tscn" id="2_ds4rv"]
+[ext_resource type="PackedScene" uid="uid://dnqqbg6774aan" path="res://Scenes/Glasses/tall_glass.tscn" id="2_gg1p1"]
+[ext_resource type="Texture2D" uid="uid://i3cfgse4nuqo" path="res://Assets/Art/Glasses/tall-glass.png" id="3_fb66m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rs8fr"]
-size = Vector2(68, 84)
+size = Vector2(56, 80.9994)
 
 [node name="GlassSpawner" type="Node2D"]
 script = ExtResource("1_4int4")
-glass_to_spawn = ExtResource("2_ds4rv")
+glass_to_spawn = ExtResource("2_gg1p1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_d33qo")
+scale = Vector2(2, 2)
+texture = ExtResource("3_fb66m")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-2, 1)
+position = Vector2(-1, 3.23124)
+scale = Vector2(1, 1.4872)
 shape = SubResource("RectangleShape2D_rs8fr")
 
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

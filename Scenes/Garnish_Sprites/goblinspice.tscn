@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bstej3x6i6sgs"]
+
+[ext_resource type="Texture2D" uid="uid://b86rcmqm210j7" path="res://Assets/Art/single garnishes/goblin-spice-single.png" id="1_gd36h"]
+
+[node name="Goblinspice" type="Sprite2D"]
+texture = ExtResource("1_gd36h")

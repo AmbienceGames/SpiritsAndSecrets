@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://djgc52h8v1u11"]
+
+[ext_resource type="PackedScene" uid="uid://dieewwsv8s7rc" path="res://Scenes/dropper.tscn" id="1_rf31o"]
+[ext_resource type="PackedScene" uid="uid://ngvvbbhekjlt" path="res://Scenes/Dropper_Sprites/flagon.tscn" id="2_64abn"]
+
+[node name="Glass" groups=["container"] instance=ExtResource("1_rf31o")]
+item_name = "Glass"
+position_changeable = true
+can_be_emptied = true
+is_container = true
+has_label = true
+has_contents = true
+uses_cup_sprite = true
+sprite_scene = ExtResource("2_64abn")
