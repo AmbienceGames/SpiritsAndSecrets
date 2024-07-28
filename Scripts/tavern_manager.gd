@@ -32,4 +32,3 @@ func _cycle_left() -> void:
 	tavern_screens[next_screen].visible = true
 	tavern_screens[current_screen].visible = false
 	current_screen = next_screen
-	

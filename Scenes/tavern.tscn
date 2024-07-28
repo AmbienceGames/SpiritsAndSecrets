@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpu1cjjf0dv3x"]
+[gd_scene load_steps=7 format=3 uid="uid://dpu1cjjf0dv3x"]
 
 [ext_resource type="Script" path="res://Scripts/tavern_manager.gd" id="1_uvpce"]
 [ext_resource type="PackedScene" uid="uid://7kcetgwojuqy" path="res://Scenes/bar_screen.tscn" id="2_jhhkw"]
 [ext_resource type="PackedScene" uid="uid://cigb8hma3u4u6" path="res://Scenes/ingredient_screen.tscn" id="3_jik6f"]
 [ext_resource type="PackedScene" uid="uid://cdokfy3ehg4v3" path="res://Scenes/maint_screen.tscn" id="4_ndhab"]
 [ext_resource type="PackedScene" uid="uid://chffl4ymlsb0" path="res://Scenes/mystery_screen.tscn" id="5_crxro"]
+[ext_resource type="Script" path="res://Scenes/menu.gd" id="6_b4r7a"]
 
 [node name="Tavern" type="Node2D" node_paths=PackedStringArray("tavern_screens")]
 script = ExtResource("1_uvpce")
@@ -62,10 +63,50 @@ offset_bottom = 1080.0
 theme_override_font_sizes/font_size = 100
 text = "<"
 
+[node name="Pause" type="Button" parent="HUD"]
+offset_left = 1856.0
+offset_top = 28.0
+offset_right = 1882.0
+offset_bottom = 59.0
+text = "||"
+
+[node name="menu" type="Node2D" parent="HUD"]
+position = Vector2(936, 458)
+script = ExtResource("6_b4r7a")
+
+[node name="ExitGame" type="Button" parent="HUD/menu"]
+offset_left = -409.0
+offset_top = -422.0
+offset_right = -322.0
+offset_bottom = -391.0
+scale = Vector2(10, 10)
+text = "Exit Game"
+
+[node name="Settings" type="Button" parent="HUD/menu"]
+offset_left = -332.0
+offset_top = -103.0
+offset_right = -262.0
+offset_bottom = -72.0
+scale = Vector2(10, 10)
+text = "Settings"
+
+[node name="Back" type="Button" parent="HUD/menu"]
+offset_left = -331.0
+offset_top = 215.0
+offset_right = -261.0
+offset_bottom = 246.0
+scale = Vector2(10, 10)
+text = "Back"
+
 [connection signal="pressed" from="Screens/BarScreen/HUD/FillBar" to="Screens/BarScreen" method="_fill_bar"]
 [connection signal="pressed" from="Screens/BarScreen/HUD/EmptyBar" to="Screens/BarScreen" method="_empty_bar"]
 [connection signal="pressed" from="Screens/BarScreen/HUD/NextDay" to="Screens/BarScreen" method="advance_day"]
 [connection signal="pressed" from="HUD/RightArrow" to="." method="_cycle_right"]
 [connection signal="pressed" from="HUD/LeftArrow" to="." method="_cycle_left"]
+[connection signal="pressed" from="HUD/Pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="HUD/Pause" to="HUD/menu" method="_on_pause_pressed"]
+[connection signal="pressed" from="HUD/menu/ExitGame" to="HUD/menu" method="_on_exit_game_pressed"]
+[connection signal="pressed" from="HUD/menu/Settings" to="HUD/menu" method="_on_settings_pressed"]
+[connection signal="pressed" from="HUD/menu/Back" to="HUD/menu" method="_on_back_pressed"]
 
 [editable path="Screens/BarScreen"]
