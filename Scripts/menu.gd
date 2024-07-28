@@ -12,10 +12,10 @@ func _process(delta):
 func _on_pause_pressed():
 	visible = true
 	#make it so that time stops
-	#disable other functions of the game so that players cannot just make drinks/talk while clock is stopped
+
 
 func _on_exit_game_pressed():
-	print("me when i exit the game")
+	get_tree().quit(0)
 
 func _on_settings_pressed():
 	print("me when i set the things")

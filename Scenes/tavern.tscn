@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpu1cjjf0dv3x"]
+[gd_scene load_steps=8 format=3 uid="uid://dpu1cjjf0dv3x"]
 
 [ext_resource type="Script" path="res://Scripts/tavern_manager.gd" id="1_uvpce"]
 [ext_resource type="PackedScene" uid="uid://7kcetgwojuqy" path="res://Scenes/bar_screen.tscn" id="2_jhhkw"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cdokfy3ehg4v3" path="res://Scenes/maint_screen.tscn" id="4_ndhab"]
 [ext_resource type="PackedScene" uid="uid://chffl4ymlsb0" path="res://Scenes/mystery_screen.tscn" id="5_crxro"]
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="6_b4r7a"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_63bxj"]
 
 [node name="Tavern" type="Node2D" node_paths=PackedStringArray("tavern_screens")]
 script = ExtResource("1_uvpce")
@@ -75,28 +77,35 @@ position = Vector2(936, 458)
 script = ExtResource("6_b4r7a")
 
 [node name="ExitGame" type="Button" parent="HUD/menu"]
-offset_left = -409.0
-offset_top = -422.0
-offset_right = -322.0
-offset_bottom = -391.0
-scale = Vector2(10, 10)
+offset_left = -143.0
+offset_top = -347.0
+offset_right = -56.0
+offset_bottom = -316.0
+scale = Vector2(5, 5)
 text = "Exit Game"
 
 [node name="Settings" type="Button" parent="HUD/menu"]
-offset_left = -332.0
-offset_top = -103.0
-offset_right = -262.0
-offset_bottom = -72.0
-scale = Vector2(10, 10)
+offset_left = -96.0
+offset_top = -51.0
+offset_right = -26.0
+offset_bottom = -20.0
+scale = Vector2(5, 5)
 text = "Settings"
 
 [node name="Back" type="Button" parent="HUD/menu"]
-offset_left = -331.0
-offset_top = 215.0
-offset_right = -261.0
-offset_bottom = 246.0
-scale = Vector2(10, 10)
+offset_left = -95.0
+offset_top = 267.0
+offset_right = -25.0
+offset_bottom = 298.0
+scale = Vector2(5, 5)
 text = "Back"
+
+[node name="MenuBackground" type="Sprite2D" parent="HUD/menu"]
+modulate = Color(0.0627451, 0.0627451, 0.0627451, 1)
+show_behind_parent = true
+position = Vector2(38, 88)
+scale = Vector2(1960.25, 1102.75)
+texture = SubResource("PlaceholderTexture2D_63bxj")
 
 [connection signal="pressed" from="Screens/BarScreen/HUD/FillBar" to="Screens/BarScreen" method="_fill_bar"]
 [connection signal="pressed" from="Screens/BarScreen/HUD/EmptyBar" to="Screens/BarScreen" method="_empty_bar"]
