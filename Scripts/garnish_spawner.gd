@@ -38,6 +38,7 @@ func _process(delta):
 		var g = garnish.instantiate()
 		g.sprite_scene = garnish_scene
 		self.get_parent().add_child(g)
+		content.texture = g.get_child(2).texture
 		Globals.is_dragging = true
 		g.contents.add(content)
 		g.draggable = true

@@ -33,6 +33,17 @@ visible = false
 position = Vector2(4, 48)
 
 [node name="cube" type="Sprite2D" parent="BottomIce"]
+visible = false
 position = Vector2(-0.999999, -25)
 rotation = 0.680807
 texture = ExtResource("4_wytfy")
+
+[node name="Garnish1" type="Node2D" parent="."]
+position = Vector2(-5, -7.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Garnish1"]
+
+[node name="Garnish2" type="Node2D" parent="."]
+position = Vector2(3.5, 12)
+
+[node name="Sprite2D" type="Sprite2D" parent="Garnish2"]

@@ -11,3 +11,5 @@ var garnish_name: String
 var flavors: Array[String]
 @export
 var cost: int
+@export
+var texture: Texture2D

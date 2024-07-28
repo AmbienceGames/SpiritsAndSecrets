@@ -36,3 +36,15 @@ position = Vector2(-0.999999, -25)
 rotation = 0.680807
 scale = Vector2(1.39972, 1.39972)
 texture = ExtResource("4_vybyl")
+
+[node name="Garnish1" type="Node2D" parent="."]
+position = Vector2(-19, -16)
+
+[node name="Sprite2D" type="Sprite2D" parent="Garnish1"]
+position = Vector2(-0.5, 0.5)
+
+[node name="Garnish2" type="Node2D" parent="."]
+position = Vector2(-8.5, -15.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Garnish2"]
+position = Vector2(0, -0.5)

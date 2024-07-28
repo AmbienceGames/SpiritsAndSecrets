@@ -36,3 +36,15 @@ position = Vector2(3.5, 10.5)
 position = Vector2(-0.999999, -25)
 rotation = 0.680807
 texture = ExtResource("4_ddqs8")
+
+[node name="Garnish1" type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Garnish1"]
+position = Vector2(6.5, -13)
+
+[node name="Garnish2" type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Garnish2"]
+position = Vector2(-5.5, -13)
