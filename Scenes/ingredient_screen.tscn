@@ -265,67 +265,67 @@ position = Vector2(1655, 551)
 scale = Vector2(2, 2)
 
 [node name="ShardSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(50, 153)
+position = Vector2(32, 155)
 jar_texture = ExtResource("21_y0rp6")
 garnish_scene = ExtResource("22_1k7pc")
 garnish_name = "Ice Shards"
 
 [node name="SpiceSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(116, 153)
+position = Vector2(95, 155)
 jar_texture = ExtResource("23_scq5n")
 garnish_scene = ExtResource("24_jribf")
 garnish_name = "Goblin Spice"
 
 [node name="CinnamonSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(183, 152)
+position = Vector2(158, 155)
 jar_texture = ExtResource("24_lnhxu")
 garnish_scene = ExtResource("25_vnsfe")
 garnish_name = "Cinnamon Stick"
 
 [node name="SaltSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(255, 154)
+position = Vector2(222, 156)
 jar_texture = ExtResource("27_1yigw")
 garnish_scene = ExtResource("28_h7y20")
 garnish_name = "Mermaid's Sea Salt"
 
 [node name="MintSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(324, 154)
+position = Vector2(286, 157)
 jar_texture = ExtResource("29_kmfjd")
 garnish_scene = ExtResource("30_tyabu")
 garnish_name = "Mystic Mint"
 
 [node name="ZestSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(393, 153)
+position = Vector2(349, 158)
 jar_texture = ExtResource("31_e2ra6")
 garnish_scene = ExtResource("32_m4jjg")
 garnish_name = "Orcish Blood Orange Zests"
 
 [node name="FeatherSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(51, 342)
+position = Vector2(414, 159)
 jar_texture = ExtResource("33_8wna3")
 garnish_scene = ExtResource("34_eaq1q")
 garnish_name = "Phoenix Feather"
 
 [node name="PixieSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(122, 339)
+position = Vector2(478, 159)
 jar_texture = ExtResource("35_ph3rv")
 garnish_scene = ExtResource("36_4qffm")
 garnish_name = "Pixie Dust"
 
 [node name="SageSpawn" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(188, 338)
+position = Vector2(542, 158)
 jar_texture = ExtResource("37_aptpi")
 garnish_scene = ExtResource("38_pgb20")
 garnish_name = "Sylvan Sage"
 
 [node name="BlackberrySpawn" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(258, 339)
+position = Vector2(605, 159)
 jar_texture = ExtResource("39_54j5b")
 garnish_scene = ExtResource("40_puq84")
 garnish_name = "Thieves' Blackberries"
 
 [node name="BasilSpawn" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(320, 342)
+position = Vector2(671, 159)
 jar_texture = ExtResource("41_b3qyl")
 garnish_scene = ExtResource("42_rracr")
 garnish_name = "Wizard's Basil"
@@ -333,11 +333,11 @@ garnish_name = "Wizard's Basil"
 [node name="workspace" type="Node" parent="."]
 
 [node name="work1" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(974, 627)
+position = Vector2(487, 581)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="work2" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1098, 620)
+position = Vector2(624, 578)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="work3" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
@@ -351,23 +351,23 @@ scale = Vector2(0.891663, 0.979441)
 [node name="alcohol shelf" type="Node" parent="."]
 
 [node name="alcshelf1" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1382, 74)
+position = Vector2(52.9999, 308)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcshelf2" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1505, 73)
+position = Vector2(169, 309)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcshelf3" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1624, 72)
+position = Vector2(287, 309)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcshelf4" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1745, 72)
+position = Vector2(403, 309)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcshelf5" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1863, 72)
+position = Vector2(524, 310)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixer shelf" type="Node" parent="."]

@@ -1,13 +1,4 @@
-res://Scenes/garnish.tscn
-res://Scripts/patron_factory.gd
-res://Scripts/garnish.gd
-res://Scenes/garnish_spawner.tscn
-res://Scripts/garnish_spawner.gd
-res://Scenes/ingredient_screen.tscn
-res://Scenes/Garnish_Sprites/goblinspice.tscn
-res://Scenes/dropper.tscn
-res://Scenes/Glasses/flagon.tscn
-res://Scenes/Dropper_Sprites/cocktail_glass.tscn
-res://Scripts/cup_sprite.gd
-res://Scenes/Dropper_Sprites/tall_glass.tscn
 res://Scenes/Dropper_Sprites/flagon.tscn
+res://Scripts/patron_factory.gd
+res://Scenes/ingredient_screen.tscn
+res://Scenes/Dropper_Sprites/cocktail_glass.tscn

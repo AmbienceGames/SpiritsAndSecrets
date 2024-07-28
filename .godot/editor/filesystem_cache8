@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722202781
+::res://::1722205262
 icon.svg::CompressedTexture2D::9160160928714798160::1721526242::1721526261::1::::<><>::
 ::res://Assets/::1722197406
 ::res://Assets/Art/::1722200954
@@ -118,21 +118,21 @@ constantine.txt::TextFile::-1::1721609692::0::1::::<><>::
 ethred.txt::TextFile::-1::1721696778::0::1::::<><>::
 ::res://Editor Scripts/::1721699138
 load_dialogue.gd::GDScript::-1::1721699138::0::1::::<>EditorScript<>::
-::res://Scenes/::1722202705
+::res://Scenes/::1722204593
 bar_patron.tscn::PackedScene::3925917093106092057::1721787045::0::1::::<><>::uid://cvd516ypo233p::::res://Assets/Art/bar_patron.png<>res://Scripts/bar_patron.gd<>res://Scripts/sprite_clicked.gd<>res://Scripts/conversation_item.gd<>res://Scripts/ref_memory.gd
 bar_screen.tscn::PackedScene::2266816359349931248::1722191394::0::1::::<><>::res://Scripts/bar_manager.gd<>uid://dywohg8m6dnxo::::res://Assets/Art/bar_screen.png<>uid://qbx6i5yd14y6::::res://Scenes/patron_factory.tscn
 cocktail_glass_spawner.tscn::PackedScene::4765141630298211933::1722200525::0::1::::<><>::res://Scripts/glass_spawner.gd<>uid://8oq1srgtawi1::::res://Scenes/Glasses/cocktail_glass.tscn<>uid://40jqbia6wnoh::::res://Assets/Art/Glasses/cocktail-glass.png
 dropable.tscn::PackedScene::8069376053684644479::1722135578::0::1::::<><>::res://Scripts/dropable.gd<>uid://84jt668lxcxu::::res://Assets/Art/bottle.png
-dropper.tscn::PackedScene::7729313650955945604::1722202705::0::1::::<><>::res://Scripts/dropper.gd
+dropper.tscn::PackedScene::7729313650955945604::1722203886::0::1::::<><>::res://Scripts/dropper.gd
 drop_area.tscn::PackedScene::5822464775569320819::1722118687::0::1::::<><>::res://Scripts/drop_area.gd
 dump_area.tscn::PackedScene::8303113898046369851::1722017880::0::1::::<><>::uid://lx1apugebtpo::::res://Assets/Art/dump.png<>res://Scripts/dump_area.gd
 flagon_spawner.tscn::PackedScene::2465009651943399354::1722198638::0::1::::<><>::res://Scripts/glass_spawner.gd<>uid://djgc52h8v1u11::::res://Scenes/Glasses/flagon.tscn<>uid://dr6iya30nevyb::::res://Assets/Art/Glasses/beer-mug.png
-garnish.tscn::PackedScene::3233795564766888729::1722202696::0::1::::<><>::uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>uid://deadbe2at2bpt::::res://Scenes/Dropper_Sprites/garnish.tscn
-garnish_spawner.tscn::PackedScene::1836396348008115988::1722202696::0::1::::<><>::res://Scripts/garnish_spawner.gd
+garnish.tscn::PackedScene::3233795564766888729::1722203886::0::1::::<><>::uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>uid://deadbe2at2bpt::::res://Scenes/Dropper_Sprites/garnish.tscn
+garnish_spawner.tscn::PackedScene::1836396348008115988::1722203898::0::1::::<><>::res://Scripts/garnish_spawner.gd
 glass_spawner.tscn::PackedScene::3404700143715774733::1722198638::0::1::::<><>::res://Scripts/glass_spawner.gd<>uid://dnqqbg6774aan::::res://Scenes/Glasses/tall_glass.tscn<>uid://i3cfgse4nuqo::::res://Assets/Art/Glasses/tall-glass.png
 ice.tscn::PackedScene::6170733224748527055::1722197962::0::1::::<><>::uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>uid://cw8qb6l52b045::::res://Scenes/Dropper_Sprites/ice.tscn
 ice_spawner.tscn::PackedScene::552882782154018864::1722197962::0::1::::<><>::res://Scripts/IceSpawner.gd<>uid://ct6fcskj1fgvf::::res://Scenes/ice.tscn<>uid://di2pppjiuiltc::::res://Assets/Art/ice_bin.png
-ingredient_screen.tscn::PackedScene::5346858417445789595::1722202696::0::1::::<><>::uid://dm4ceqs7j6f7j::::res://Assets/Art/mixing_screen.png<>uid://co7pe5w5djh2j::::res://Scenes/drop_area.tscn<>uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>res://Scripts/liquid.gd<>uid://ctcwgmsr4ma1l::::res://Scenes/Dropper_Sprites/dragonfruit.tscn<>uid://7awn1i1slafh::::res://Scenes/Dropper_Sprites/elvenhoney.tscn<>uid://dqkdcqfmgy1wh::::res://Scenes/dump_area.tscn<>uid://h425s3lrwqnw::::res://Scenes/ice_spawner.tscn<>uid://dwasrmpbkpysb::::res://Scenes/Dropper_Sprites/feywildberry.tscn<>uid://dnqhlsm1evnx1::::res://Scenes/Dropper_Sprites/mixer.tscn<>uid://bori6crjasqob::::res://Scenes/glass_spawner.tscn<>uid://di10noeq5fwxx::::res://Scenes/Dropper_Sprites/shadowroot.tscn<>uid://dl42sih3e53jj::::res://Scenes/Dropper_Sprites/celestialcitrus.tscn<>uid://bntga4nq8x8lv::::res://Scenes/Dropper_Sprites/gnomishginger.tscn<>uid://dqngpk6l4qv5::::res://Scenes/Dropper_Sprites/halflingcider.tscn<>uid://c77je0hwfrrur::::res://Scenes/Dropper_Sprites/moonlitlavender.tscn<>uid://d2sg28ul16y10::::res://Scenes/Dropper_Sprites/treantsap.tscn<>uid://ispkis03ssy5::::res://Scenes/Dropper_Sprites/runewater.tscn<>uid://com2kc04sd041::::res://Scenes/Dropper_Sprites/ghostpepper.tscn<>uid://1ftgdtcichku::::res://Scenes/garnish_spawner.tscn<>uid://bbecl4ihr5e7k::::res://Scenes/flagon_spawner.tscn<>uid://cn7yifail4ijk::::res://Assets/Art/Garnishes/elemental-ice-shards-full.png<>uid://biq4pbi21cg6j::::res://Scenes/Garnish_Sprites/elementaliceshards.tscn<>uid://b85jglsow24hd::::res://Scenes/cocktail_glass_spawner.tscn<>uid://bdwcwx065bmca::::res://Assets/Art/Garnishes/goblin-spice-full.png<>uid://bstej3x6i6sgs::::res://Scenes/Garnish_Sprites/goblinspice.tscn<>uid://16ttpbo6ypum::::res://Assets/Art/Garnishes/infernal-cinnamon-sticks-full.png<>uid://cdsvontcfqq7k::::res://Scenes/Garnish_Sprites/cinnamonstick.tscn<>uid://bv7eekk5ckjeg::::res://Assets/Art/Garnishes/mermaids-sea-salt-full.png<>uid://l6f00sfc8gy4::::res://Scenes/Garnish_Sprites/mermaidseasalt.tscn<>uid://0f241qc038s4::::res://Assets/Art/Garnishes/mystic-mint-leaves-full.png<>uid://dynh11jbk48wc::::res://Scenes/Garnish_Sprites/mysticmint.tscn<>uid://dykpletvrmgc1::::res://Assets/Art/Garnishes/orcish-blood-orange-zest-full.png<>uid://bhjl8x66fqpq1::::res://Scenes/Garnish_Sprites/orcbloodorange.tscn<>uid://dmjifr5covdbe::::res://Assets/Art/Garnishes/pheonix-feathers-full.png<>uid://btt586qntp67r::::res://Scenes/Garnish_Sprites/phoenixfeathers.tscn<>uid://dw7vja6puoqy0::::res://Assets/Art/Garnishes/pixie-dust-sugar-full.png<>uid://cenmd0t4ofrta::::res://Scenes/Garnish_Sprites/pixiedust.tscn<>uid://c35ch7v0q75rg::::res://Assets/Art/Garnishes/sylvan-sage-full.png<>uid://qvvm5ww0o5cu::::res://Scenes/Garnish_Sprites/sylvansage.tscn<>uid://bgyxkh86f3qwt::::res://Assets/Art/Garnishes/thieves-blackberries-full.png<>uid://c6afye5ynssg0::::res://Scenes/Garnish_Sprites/thievesberries.tscn<>uid://hjlgfjru2uow::::res://Assets/Art/Garnishes/wizards-basil-full.png<>uid://bnra168ldv35r::::res://Scenes/Garnish_Sprites/wizardsbasil.tscn
+ingredient_screen.tscn::PackedScene::5346858417445789595::1722204593::0::1::::<><>::uid://dm4ceqs7j6f7j::::res://Assets/Art/mixing_screen.png<>uid://co7pe5w5djh2j::::res://Scenes/drop_area.tscn<>uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>res://Scripts/liquid.gd<>uid://ctcwgmsr4ma1l::::res://Scenes/Dropper_Sprites/dragonfruit.tscn<>uid://7awn1i1slafh::::res://Scenes/Dropper_Sprites/elvenhoney.tscn<>uid://dqkdcqfmgy1wh::::res://Scenes/dump_area.tscn<>uid://h425s3lrwqnw::::res://Scenes/ice_spawner.tscn<>uid://dwasrmpbkpysb::::res://Scenes/Dropper_Sprites/feywildberry.tscn<>uid://dnqhlsm1evnx1::::res://Scenes/Dropper_Sprites/mixer.tscn<>uid://bori6crjasqob::::res://Scenes/glass_spawner.tscn<>uid://di10noeq5fwxx::::res://Scenes/Dropper_Sprites/shadowroot.tscn<>uid://dl42sih3e53jj::::res://Scenes/Dropper_Sprites/celestialcitrus.tscn<>uid://bntga4nq8x8lv::::res://Scenes/Dropper_Sprites/gnomishginger.tscn<>uid://dqngpk6l4qv5::::res://Scenes/Dropper_Sprites/halflingcider.tscn<>uid://c77je0hwfrrur::::res://Scenes/Dropper_Sprites/moonlitlavender.tscn<>uid://d2sg28ul16y10::::res://Scenes/Dropper_Sprites/treantsap.tscn<>uid://ispkis03ssy5::::res://Scenes/Dropper_Sprites/runewater.tscn<>uid://com2kc04sd041::::res://Scenes/Dropper_Sprites/ghostpepper.tscn<>uid://1ftgdtcichku::::res://Scenes/garnish_spawner.tscn<>uid://bbecl4ihr5e7k::::res://Scenes/flagon_spawner.tscn<>uid://cn7yifail4ijk::::res://Assets/Art/Garnishes/elemental-ice-shards-full.png<>uid://biq4pbi21cg6j::::res://Scenes/Garnish_Sprites/elementaliceshards.tscn<>uid://b85jglsow24hd::::res://Scenes/cocktail_glass_spawner.tscn<>uid://bdwcwx065bmca::::res://Assets/Art/Garnishes/goblin-spice-full.png<>uid://bstej3x6i6sgs::::res://Scenes/Garnish_Sprites/goblinspice.tscn<>uid://16ttpbo6ypum::::res://Assets/Art/Garnishes/infernal-cinnamon-sticks-full.png<>uid://cdsvontcfqq7k::::res://Scenes/Garnish_Sprites/cinnamonstick.tscn<>uid://bv7eekk5ckjeg::::res://Assets/Art/Garnishes/mermaids-sea-salt-full.png<>uid://l6f00sfc8gy4::::res://Scenes/Garnish_Sprites/mermaidseasalt.tscn<>uid://0f241qc038s4::::res://Assets/Art/Garnishes/mystic-mint-leaves-full.png<>uid://dynh11jbk48wc::::res://Scenes/Garnish_Sprites/mysticmint.tscn<>uid://dykpletvrmgc1::::res://Assets/Art/Garnishes/orcish-blood-orange-zest-full.png<>uid://bhjl8x66fqpq1::::res://Scenes/Garnish_Sprites/orcbloodorange.tscn<>uid://dmjifr5covdbe::::res://Assets/Art/Garnishes/pheonix-feathers-full.png<>uid://btt586qntp67r::::res://Scenes/Garnish_Sprites/phoenixfeathers.tscn<>uid://dw7vja6puoqy0::::res://Assets/Art/Garnishes/pixie-dust-sugar-full.png<>uid://cenmd0t4ofrta::::res://Scenes/Garnish_Sprites/pixiedust.tscn<>uid://c35ch7v0q75rg::::res://Assets/Art/Garnishes/sylvan-sage-full.png<>uid://qvvm5ww0o5cu::::res://Scenes/Garnish_Sprites/sylvansage.tscn<>uid://bgyxkh86f3qwt::::res://Assets/Art/Garnishes/thieves-blackberries-full.png<>uid://c6afye5ynssg0::::res://Scenes/Garnish_Sprites/thievesberries.tscn<>uid://hjlgfjru2uow::::res://Assets/Art/Garnishes/wizards-basil-full.png<>uid://bnra168ldv35r::::res://Scenes/Garnish_Sprites/wizardsbasil.tscn
 maint_screen.tscn::PackedScene::5012926589760618490::1722191394::0::1::::<><>::uid://br357k56o4x3b::::res://Assets/Art/maint_screen.png
 mystery_screen.tscn::PackedScene::155141469150959067::1722191394::0::1::::<><>::uid://d1cls3gw7q8bs::::res://Assets/Art/mystery_screen.png
 patron.tscn::PackedScene::1846378907260033555::1721689598::0::1::::<><>::res://Scripts/patron.gd
@@ -149,15 +149,15 @@ lucius.tscn::PackedScene::8536366313291197243::1721783892::0::1::::<><>::res://S
 theo.tscn::PackedScene::4971069206061900746::1721783892::0::1::::<><>::res://Scripts/bar_patron.gd<>uid://cvd516ypo233p::::res://Assets/Art/bar_patron.png<>res://Scripts/sprite_clicked.gd<>res://Scripts/conversation_item.gd<>res://Scripts/ref_memory.gd
 traveler.tscn::PackedScene::408572710214917676::1721936169::0::1::::<><>::res://Scripts/bar_patron.gd<>uid://c563fpvnj0k1u::::res://Assets/Art/traveler.png<>res://Scripts/sprite_clicked.gd<>res://Scripts/conversation_item.gd<>res://Scripts/ref_memory.gd
 trent.tscn::PackedScene::5152857369445671930::1721783892::0::1::::<><>::res://Scripts/bar_patron.gd<>uid://cvd516ypo233p::::res://Assets/Art/bar_patron.png<>res://Scripts/sprite_clicked.gd<>res://Scripts/conversation_item.gd<>res://Scripts/ref_memory.gd
-::res://Scenes/Dropper_Sprites/::1722200525
+::res://Scenes/Dropper_Sprites/::1722204621
 bottle.tscn::PackedScene::9177467799389652705::1722197962::0::1::::<><>::uid://84jt668lxcxu::::res://Assets/Art/bottle.png
 celestialcitrus.tscn::PackedScene::7992878221339556635::1722185307::0::1::::<><>::uid://ti0wfp12ue1e::::res://Assets/Art/Mixers/celestial-citrus-blend-full.png
-cocktail_glass.tscn::PackedScene::1169604024952547190::1722200525::0::1::::<><>::uid://40jqbia6wnoh::::res://Assets/Art/Glasses/cocktail-glass.png<>res://Scripts/cup_sprite.gd<>uid://b24gd55p7w0yy::::res://Assets/Art/drink_texture.png<>uid://drp28q6lypscu::::res://Assets/Art/ice.png
+cocktail_glass.tscn::PackedScene::1169604024952547190::1722204593::0::1::::<><>::uid://40jqbia6wnoh::::res://Assets/Art/Glasses/cocktail-glass.png<>res://Scripts/cup_sprite.gd<>uid://b24gd55p7w0yy::::res://Assets/Art/drink_texture.png<>uid://drp28q6lypscu::::res://Assets/Art/ice.png
 cup_sprite.tscn::PackedScene::5906193836189626531::1722197962::0::1::::<><>::res://Scripts/cup_sprite.gd<>uid://ck50u3tn6myox::::res://Assets/Art/cup.png<>uid://b24gd55p7w0yy::::res://Assets/Art/drink_texture.png<>uid://drp28q6lypscu::::res://Assets/Art/ice.png
 dragonfruit.tscn::PackedScene::6111905299519538255::1722185307::0::1::::<><>::uid://cvhld84wjepqc::::res://Assets/Art/Mixers/dragonfruit-extract-full.png
 elvenhoney.tscn::PackedScene::2247403364750008809::1722185307::0::1::::<><>::uid://dus5bje2ohwk8::::res://Assets/Art/Mixers/elven-honey-full.png
 feywildberry.tscn::PackedScene::8704540528993879869::1722185307::0::1::::<><>::uid://8sy2wus6x107::::res://Assets/Art/Mixers/feywild-berry-juice-full.png
-flagon.tscn::PackedScene::926153846730829917::1722200525::0::1::::<><>::uid://dr6iya30nevyb::::res://Assets/Art/Glasses/beer-mug.png<>res://Scripts/cup_sprite.gd<>uid://b24gd55p7w0yy::::res://Assets/Art/drink_texture.png<>uid://drp28q6lypscu::::res://Assets/Art/ice.png
+flagon.tscn::PackedScene::926153846730829917::1722204621::0::1::::<><>::uid://dr6iya30nevyb::::res://Assets/Art/Glasses/beer-mug.png<>res://Scripts/cup_sprite.gd<>uid://b24gd55p7w0yy::::res://Assets/Art/drink_texture.png<>uid://drp28q6lypscu::::res://Assets/Art/ice.png
 garnish.tscn::PackedScene::7440201614233210077::1722192234::0::1::::<><>::uid://evjab4wsqrsl::::res://Assets/Art/garnish.png
 ghostpepper.tscn::PackedScene::5781915073119756144::1722185307::0::1::::<><>::uid://4bi3iuhqgrbr::::res://Assets/Art/Mixers/ghost-pepper-elixir-full.png
 gnomishginger.tscn::PackedScene::3338464674302876567::1722185307::0::1::::<><>::uid://c3bjs5c3027tv::::res://Assets/Art/Mixers/gnomish-ginger-brew-full.png
@@ -168,12 +168,12 @@ mixer.tscn::PackedScene::8105192690266462852::1722135578::0::1::::<><>::uid://di
 moonlitlavender.tscn::PackedScene::7085499372948003029::1722185307::0::1::::<><>::uid://ok8kdh8p0x1f::::res://Assets/Art/Mixers/moonlit-lavender-essence-full.png
 runewater.tscn::PackedScene::599598610675193734::1722185307::0::1::::<><>::uid://dhr2uqoggc30l::::res://Assets/Art/Mixers/rune-infused-rose-water-full.png
 shadowroot.tscn::PackedScene::7775988504202440965::1722185307::0::1::::<><>::uid://7f4ed7y81jau::::res://Assets/Art/Mixers/shadowroot-syrup-full.png
-tall_glass.tscn::PackedScene::110522243153787803::1722200525::0::1::::<><>::uid://i3cfgse4nuqo::::res://Assets/Art/Glasses/tall-glass.png<>res://Scripts/cup_sprite.gd<>uid://b24gd55p7w0yy::::res://Assets/Art/drink_texture.png<>uid://drp28q6lypscu::::res://Assets/Art/ice.png
+tall_glass.tscn::PackedScene::110522243153787803::1722204545::0::1::::<><>::uid://i3cfgse4nuqo::::res://Assets/Art/Glasses/tall-glass.png<>res://Scripts/cup_sprite.gd<>uid://b24gd55p7w0yy::::res://Assets/Art/drink_texture.png<>uid://drp28q6lypscu::::res://Assets/Art/ice.png
 treantsap.tscn::PackedScene::9091933911973709029::1722185307::0::1::::<><>::uid://n4rmx1fve51r::::res://Assets/Art/Mixers/treant-sap-full.png
-::res://Scenes/Garnish_Sprites/::1722202696
+::res://Scenes/Garnish_Sprites/::1722203886
 cinnamonstick.tscn::PackedScene::5021867468089176282::1722201094::0::1::::<><>::uid://c1nc0jbpoi6sy::::res://Assets/Art/single garnishes/infernal-cinnamon-sticks-single.png
 elementaliceshards.tscn::PackedScene::2982749122704490703::1722201158::0::1::::<><>::uid://cuxro6yxigq16::::res://Assets/Art/single garnishes/elemental-ice-shards-single.png
-goblinspice.tscn::PackedScene::3689303494225763518::1722202696::0::1::::<><>::uid://b86rcmqm210j7::::res://Assets/Art/single garnishes/goblin-spice-single.png
+goblinspice.tscn::PackedScene::3689303494225763518::1722203886::0::1::::<><>::uid://b86rcmqm210j7::::res://Assets/Art/single garnishes/goblin-spice-single.png
 mermaidseasalt.tscn::PackedScene::836422561327051693::1722201013::0::1::::<><>::uid://dro0sfl56e8tf::::res://Assets/Art/single garnishes/mermaids-sea-salt-single.png
 mysticmint.tscn::PackedScene::8871104038356071002::1722201061::0::1::::<><>::uid://dpvkw83fs38ot::::res://Assets/Art/single garnishes/mystic-mint-single.png
 orcbloodorange.tscn::PackedScene::2897050064406975206::1722201045::0::1::::<><>::uid://couvpi6rpppmm::::res://Assets/Art/single garnishes/orcish-blood-orange-zest-single.png
@@ -182,24 +182,24 @@ pixiedust.tscn::PackedScene::5081168957807611314::1722201025::0::1::::<><>::uid:
 sylvansage.tscn::PackedScene::1167671528138502160::1722201129::0::1::::<><>::uid://b7dv8sil8en0s::::res://Assets/Art/single garnishes/sylvan-sage-single.png
 thievesberries.tscn::PackedScene::6949042221728839949::1722201148::0::1::::<><>::uid://dubibea42ihiy::::res://Assets/Art/single garnishes/thieves-blackberries-single.png
 wizardsbasil.tscn::PackedScene::3334018183155123189::1722201078::0::1::::<><>::uid://blkso455p54p5::::res://Assets/Art/single garnishes/wizards-basil-single.png
-::res://Scenes/Glasses/::1722200526
+::res://Scenes/Glasses/::1722203886
 cocktail_glass.tscn::PackedScene::2346152003117702578::1722200526::0::1::::<><>::uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>uid://qwthb1ba3n3k::::res://Scenes/Dropper_Sprites/cocktail_glass.tscn
-flagon.tscn::PackedScene::7803524348621195870::1722200525::0::1::::<><>::uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>uid://ngvvbbhekjlt::::res://Scenes/Dropper_Sprites/flagon.tscn
+flagon.tscn::PackedScene::7803524348621195870::1722203886::0::1::::<><>::uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>uid://ngvvbbhekjlt::::res://Scenes/Dropper_Sprites/flagon.tscn
 tall_glass.tscn::PackedScene::8105720684643722805::1722200526::0::1::::<><>::uid://dieewwsv8s7rc::::res://Scenes/dropper.tscn<>uid://btsjxxnltpbv::::res://Scenes/Dropper_Sprites/tall_glass.tscn
 ::res://Scenes/Spawner_Sprites/::1722200595
-::res://Scripts/::1722202696
+::res://Scripts/::1722204425
 bartender_memory.gd::GDScript::-1::1721526242::0::1::::<>Node<>::
 bar_manager.gd::GDScript::-1::1721786059::0::1::::<>Node2D<>::
 bar_patron.gd::GDScript::-1::1721777413::0::1::::<>Patron<>::
 combination.gd::GDScript::-1::1722197557::0::1::::Combination<>Resource<>::
 conversation_item.gd::GDScript::-1::1721687817::0::1::::ConversationItem<>Node<>::
-cup_sprite.gd::GDScript::-1::1722118983::0::1::::<>Node2D<>::
+cup_sprite.gd::GDScript::-1::1722204425::0::1::::<>Node2D<>::
 dropable.gd::GDScript::-1::1722135578::0::1::::<>Node2D<>::
 dropper.gd::GDScript::-1::1722194453::0::1::::Dropper<>Node2D<>::
 drop_area.gd::GDScript::-1::1721946115::0::1::::DropArea<>StaticBody2D<>::
 dump_area.gd::GDScript::-1::1722015391::0::1::::<>Node2D<>::
-garnish.gd::GDScript::-1::1722189341::0::1::::Garnish<>Resource<>::
-garnish_spawner.gd::GDScript::-1::1722202360::0::1::::<>Node2D<>::
+garnish.gd::GDScript::-1::1722203690::0::1::::Garnish<>Resource<>::
+garnish_spawner.gd::GDScript::-1::1722203898::0::1::::<>Node2D<>::
 glass_spawner.gd::GDScript::-1::1722135578::0::1::::<>Node2D<>::
 globals.gd::GDScript::-1::1722194339::0::1::::<>Node<>::
 IceSpawner.gd::GDScript::-1::1722191392::0::1::::<>Node2D<>::
@@ -209,7 +209,7 @@ memory_handler.gd::GDScript::-1::1721526242::0::1::::<>Node<>::
 menu.gd::GDScript::-1::1722186076::0::1::::<>Node2D<>::
 order.gd::GDScript::-1::1722195006::0::1::::<>Resource<>::
 patron.gd::GDScript::-1::1721689227::0::1::::Patron<>Node2D<>::
-patron_factory.gd::GDScript::-1::1722202696::0::1::::<>Node2D<>::
+patron_factory.gd::GDScript::-1::1722203688::0::1::::<>Node2D<>::
 recipe.gd::GDScript::-1::1722194762::0::1::::Recipe<>Resource<>::
 ref_memory.gd::GDScript::-1::1721526242::0::1::::ReferenceMemory<>Resource<>::
 sprite_clicked.gd::GDScript::-1::1721526242::0::1::::<>Sprite2D<>::
