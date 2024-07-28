@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl42sih3e53jj"]
+
+[ext_resource type="Texture2D" uid="uid://ti0wfp12ue1e" path="res://Assets/Art/Mixers/celestial-citrus-blend-full.png" id="1_dpruv"]
+
+[node name="Celestialcitrus" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_dpruv")

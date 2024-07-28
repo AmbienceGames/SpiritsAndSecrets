@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctcwgmsr4ma1l"]
+
+[ext_resource type="Texture2D" uid="uid://cvhld84wjepqc" path="res://Assets/Art/Mixers/dragonfruit-extract-full.png" id="1_ntcgx"]
+
+[node name="Dragonfruit" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_ntcgx")

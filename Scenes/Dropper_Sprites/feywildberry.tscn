@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwasrmpbkpysb"]
+
+[ext_resource type="Texture2D" uid="uid://8sy2wus6x107" path="res://Assets/Art/Mixers/feywild-berry-juice-full.png" id="1_y1sw1"]
+
+[node name="Feywildberry" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_y1sw1")

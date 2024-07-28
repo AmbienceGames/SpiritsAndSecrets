@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2sg28ul16y10"]
+
+[ext_resource type="Texture2D" uid="uid://n4rmx1fve51r" path="res://Assets/Art/Mixers/treant-sap-full.png" id="1_ehs84"]
+
+[node name="Treantsap" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_ehs84")

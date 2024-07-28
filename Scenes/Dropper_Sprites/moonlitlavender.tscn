@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c77je0hwfrrur"]
+
+[ext_resource type="Texture2D" uid="uid://ok8kdh8p0x1f" path="res://Assets/Art/Mixers/moonlit-lavender-essence-full.png" id="1_ugxi5"]
+
+[node name="Moonlitlavender" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_ugxi5")

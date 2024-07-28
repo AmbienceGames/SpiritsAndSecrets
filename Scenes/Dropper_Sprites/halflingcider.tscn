@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqngpk6l4qv5"]
+
+[ext_resource type="Texture2D" uid="uid://b8motte0yr1ws" path="res://Assets/Art/Mixers/halflings-apple-cider-full.png" id="1_xstw1"]
+
+[node name="Halflingcider" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_xstw1")

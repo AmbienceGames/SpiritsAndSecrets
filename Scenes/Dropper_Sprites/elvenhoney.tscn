@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://7awn1i1slafh"]
+
+[ext_resource type="Texture2D" uid="uid://dus5bje2ohwk8" path="res://Assets/Art/Mixers/elven-honey-full.png" id="1_txqb5"]
+
+[node name="Elvenhoney" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_txqb5")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bntga4nq8x8lv"]
+
+[ext_resource type="Texture2D" uid="uid://c3bjs5c3027tv" path="res://Assets/Art/Mixers/gnomish-ginger-brew-full.png" id="1_tjd44"]
+
+[node name="Gnomishginger" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_tjd44")

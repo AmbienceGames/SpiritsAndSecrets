@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://com2kc04sd041"]
+
+[ext_resource type="Texture2D" uid="uid://4bi3iuhqgrbr" path="res://Assets/Art/Mixers/ghost-pepper-elixir-full.png" id="1_omdlv"]
+
+[node name="Ghostpepper" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_omdlv")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://di10noeq5fwxx"]
+
+[ext_resource type="Texture2D" uid="uid://7f4ed7y81jau" path="res://Assets/Art/Mixers/shadowroot-syrup-full.png" id="1_muci6"]
+
+[node name="Shadowroot" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_muci6")
