@@ -1,6 +1,0 @@
-res://Scenes/tavern.tscn
-res://Scripts/patron_factory.gd
-res://Scripts/menu.gd
-res://Scenes/ingredient_screen.tscn
-res://Scenes/Dropper_Sprites/cocktail_glass.tscn
-res://Scenes/Dropper_Sprites/flagon.tscn
