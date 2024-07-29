@@ -256,7 +256,7 @@ position = Vector2(310, 556)
 position = Vector2(161, 556)
 
 [node name="DumpArea" parent="." instance=ExtResource("6_af824")]
-position = Vector2(1482, 668)
+position = Vector2(1412, 664)
 scale = Vector2(2, 2)
 
 [node name="ShardSpawner" parent="." instance=ExtResource("18_axy5h")]
