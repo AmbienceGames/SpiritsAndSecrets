@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://cw8qb6l52b045"]
 
-[ext_resource type="Texture2D" uid="uid://drp28q6lypscu" path="res://Assets/Art/ice.png" id="1_ribuf"]
+[ext_resource type="Texture2D" uid="uid://d02gvxs4g165v" path="res://Assets/Art/ice_cube.png" id="1_wpmhn"]
 
 [node name="Ice" type="Sprite2D"]
-texture = ExtResource("1_ribuf")
+scale = Vector2(2, 2)
+texture = ExtResource("1_wpmhn")

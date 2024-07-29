@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cjap4wpif4yqe" path="res://Assets/Art/Glasses/rocks-glass.png" id="1_b246x"]
 [ext_resource type="Script" path="res://Scripts/cup_sprite.gd" id="2_1itnp"]
 [ext_resource type="Texture2D" uid="uid://b24gd55p7w0yy" path="res://Assets/Art/drink_texture.png" id="3_ecmog"]
-[ext_resource type="Texture2D" uid="uid://drp28q6lypscu" path="res://Assets/Art/ice.png" id="4_ai8jv"]
+[ext_resource type="Texture2D" uid="uid://d02gvxs4g165v" path="res://Assets/Art/ice_cube.png" id="4_31fwo"]
 
 [node name="CupSprite" type="Sprite2D"]
 z_index = 1
@@ -24,28 +24,29 @@ visible = false
 position = Vector2(4, 8)
 
 [node name="cube" type="Sprite2D" parent="Ice"]
-position = Vector2(-0.999999, -25)
+z_index = -1
+position = Vector2(-0.999999, -2.5)
 rotation = 0.680807
-texture = ExtResource("4_ai8jv")
+texture = ExtResource("4_31fwo")
 
 [node name="BottomIce" type="Node2D" parent="."]
 visible = false
 position = Vector2(4, 48)
 
 [node name="cube" type="Sprite2D" parent="BottomIce"]
-visible = false
-position = Vector2(-0.999999, -25)
+z_index = -1
+position = Vector2(-2.5, -26)
 rotation = 0.680807
-texture = ExtResource("4_ai8jv")
+texture = ExtResource("4_31fwo")
 
 [node name="Garnish1" type="Node2D" parent="."]
-position = Vector2(-5, -7.5)
+position = Vector2(-9, -0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="Garnish1"]
 scale = Vector2(0.25, 0.25)
 
 [node name="Garnish2" type="Node2D" parent="."]
-position = Vector2(3.5, 12)
+position = Vector2(9.5, 7)
 
 [node name="Sprite2D" type="Sprite2D" parent="Garnish2"]
 scale = Vector2(0.25, 0.25)

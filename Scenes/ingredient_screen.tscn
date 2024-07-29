@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://cigb8hma3u4u6"]
+[gd_scene load_steps=57 format=3 uid="uid://cigb8hma3u4u6"]
 
 [ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_5grc5"]
 [ext_resource type="PackedScene" uid="uid://co7pe5w5djh2j" path="res://Scenes/drop_area.tscn" id="2_gdkpq"]
@@ -96,13 +96,6 @@ flavors = Array[String]([])
 cost = 0
 color = Color(0.74902, 0.482353, 0.172549, 1)
 
-[sub_resource type="Resource" id="Resource_wktgx"]
-script = ExtResource("4_70tpp")
-liquid_name = "Moonlit Lavender Essence"
-flavors = Array[String]([])
-cost = 0
-color = Color(0.666667, 0.356863, 0.701961, 1)
-
 [sub_resource type="Resource" id="Resource_u5jxb"]
 script = ExtResource("4_70tpp")
 liquid_name = "Treant Sap"
@@ -140,6 +133,16 @@ has_label = true
 has_just_one_liquid = true
 liquid_inside = SubResource("Resource_2w3wk")
 sprite_scene = ExtResource("4_towsi")
+
+[node name="MoonlitLavenderEssence" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
+position = Vector2(909, 81)
+start_position = NodePath("../mixer shelf/mixshelf1")
+item_name = "Moonlit Lavender Essence"
+position_changeable = true
+has_label = true
+has_just_one_liquid = true
+liquid_inside = SubResource("Resource_2w3wk")
+sprite_scene = ExtResource("11_myfpo")
 
 [node name="ElvenHoney" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
 position = Vector2(201, 81)
@@ -201,16 +204,6 @@ has_just_one_liquid = true
 liquid_inside = SubResource("Resource_nixnn")
 sprite_scene = ExtResource("10_m6yv8")
 
-[node name="MoonlitLavender" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(909, 81)
-start_position = NodePath("../mixer shelf/mixshelf8")
-item_name = "Moonlit Lavender Essence"
-position_changeable = true
-has_label = true
-has_just_one_liquid = true
-liquid_inside = SubResource("Resource_wktgx")
-sprite_scene = ExtResource("11_myfpo")
-
 [node name="TreantSap" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
 position = Vector2(1027, 82)
 start_position = NodePath("../mixer shelf/mixshelf9")
@@ -253,7 +246,7 @@ can_shake = true
 sprite_scene = ExtResource("7_7x3af")
 
 [node name="IceSpawner" parent="." instance=ExtResource("6_tepou")]
-position = Vector2(1874, 558)
+position = Vector2(1285, 342)
 scale = Vector2(2, 2)
 
 [node name="GlassSpawner" parent="." instance=ExtResource("7_gjsbr")]
@@ -263,7 +256,7 @@ position = Vector2(310, 556)
 position = Vector2(161, 556)
 
 [node name="DumpArea" parent="." instance=ExtResource("6_af824")]
-position = Vector2(1416, 556)
+position = Vector2(1482, 668)
 scale = Vector2(2, 2)
 
 [node name="ShardSpawner" parent="." instance=ExtResource("18_axy5h")]
@@ -314,17 +307,17 @@ jar_texture = ExtResource("35_ph3rv")
 garnish_scene = ExtResource("36_4qffm")
 garnish_name = "Pixie Dust"
 
+[node name="BerrySpawn" parent="." instance=ExtResource("18_axy5h")]
+position = Vector2(746, 342)
+jar_texture = ExtResource("39_54j5b")
+garnish_scene = ExtResource("40_puq84")
+garnish_name = "Thieve's Berries"
+
 [node name="SageSpawn" parent="." instance=ExtResource("18_axy5h")]
 position = Vector2(1290, 230)
 jar_texture = ExtResource("37_aptpi")
 garnish_scene = ExtResource("38_pgb20")
 garnish_name = "Sylvan Sage"
-
-[node name="BlackberrySpawn" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(746, 342)
-jar_texture = ExtResource("39_54j5b")
-garnish_scene = ExtResource("40_puq84")
-garnish_name = "Thieves' Blackberries"
 
 [node name="BasilSpawn" parent="." instance=ExtResource("18_axy5h")]
 position = Vector2(814, 342)

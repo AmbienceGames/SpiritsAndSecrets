@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dnqhlsm1evnx1"]
 
-[ext_resource type="Texture2D" uid="uid://di81r5tdt6ymv" path="res://Assets/Art/mixer.png" id="1_8mkx1"]
+[ext_resource type="Texture2D" uid="uid://cydvfj0vsqgmg" path="res://Assets/Art/Glasses/shaker.png" id="1_mdo47"]
 
 [node name="Mixer" type="Sprite2D"]
-texture = ExtResource("1_8mkx1")
+scale = Vector2(2, 2)
+texture = ExtResource("1_mdo47")
