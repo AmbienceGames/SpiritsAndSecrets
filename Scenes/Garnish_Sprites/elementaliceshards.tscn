@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://biq4pbi21cg6j"]
 
-[ext_resource type="Texture2D" uid="uid://cuxro6yxigq16" path="res://Assets/Art/single garnishes/elemental-ice-shards-single.png" id="1_l8x0m"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4q6f2"]
+load_path = "res://.godot/imported/elemental-ice-shards-single.png-9d0b0af4d3cda142788399e94a7b445c.ctex"
 
 [node name="Elementaliceshards" type="Sprite2D"]
-texture = ExtResource("1_l8x0m")
+texture = SubResource("CompressedTexture2D_4q6f2")

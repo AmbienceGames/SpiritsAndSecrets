@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://i3cfgse4nuqo" path="res://Assets/Art/Glasses/tall-glass.png" id="3_fb66m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rs8fr"]
-size = Vector2(56, 80.9994)
+size = Vector2(56, 48.724)
 
 [node name="GlassSpawner" type="Node2D"]
 script = ExtResource("1_4int4")

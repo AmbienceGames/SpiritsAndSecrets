@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://cigb8hma3u4u6"]
+[gd_scene load_steps=58 format=3 uid="uid://cigb8hma3u4u6"]
 
 [ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_5grc5"]
 [ext_resource type="PackedScene" uid="uid://co7pe5w5djh2j" path="res://Scenes/drop_area.tscn" id="2_gdkpq"]
@@ -43,7 +43,9 @@
 [ext_resource type="Texture2D" uid="uid://bgyxkh86f3qwt" path="res://Assets/Art/Garnishes/thieves-blackberries-full.png" id="39_54j5b"]
 [ext_resource type="PackedScene" uid="uid://c6afye5ynssg0" path="res://Scenes/Garnish_Sprites/thievesberries.tscn" id="40_puq84"]
 [ext_resource type="Texture2D" uid="uid://hjlgfjru2uow" path="res://Assets/Art/Garnishes/wizards-basil-full.png" id="41_b3qyl"]
+[ext_resource type="PackedScene" uid="uid://ch3or4twqixex" path="res://Scenes/rocks_spawner.tscn" id="41_s3cms"]
 [ext_resource type="PackedScene" uid="uid://bnra168ldv35r" path="res://Scenes/Garnish_Sprites/wizardsbasil.tscn" id="42_rracr"]
+[ext_resource type="PackedScene" uid="uid://1i5ip8onnttw" path="res://Scenes/keg_area.tscn" id="46_6vyvu"]
 
 [sub_resource type="Resource" id="Resource_2w3wk"]
 script = ExtResource("4_70tpp")
@@ -130,7 +132,7 @@ scale = Vector2(4, 4)
 texture = ExtResource("1_5grc5")
 
 [node name="DragonfruitExtract" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(777, 132)
+position = Vector2(83, 81)
 start_position = NodePath("../mixer shelf/mixshelf1")
 item_name = "Dragonfruit Extract"
 position_changeable = true
@@ -140,7 +142,7 @@ liquid_inside = SubResource("Resource_2w3wk")
 sprite_scene = ExtResource("4_towsi")
 
 [node name="ElvenHoney" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(868, 128)
+position = Vector2(201, 81)
 start_position = NodePath("../mixer shelf/mixshelf2")
 item_name = "Elven Honey"
 position_changeable = true
@@ -150,7 +152,7 @@ liquid_inside = SubResource("Resource_8x1wk")
 sprite_scene = ExtResource("5_s4d1j")
 
 [node name="FeywildBerryJuice" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(986, 128)
+position = Vector2(319, 81)
 start_position = NodePath("../mixer shelf/mixshelf3")
 item_name = "Feywild Berry Juice"
 position_changeable = true
@@ -160,7 +162,7 @@ liquid_inside = SubResource("Resource_ybhtd")
 sprite_scene = ExtResource("6_xxyws")
 
 [node name="ShadowrootSyrup" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(1105, 129)
+position = Vector2(437, 81)
 start_position = NodePath("../mixer shelf/mixshelf4")
 item_name = "Shadowroot Syrup"
 position_changeable = true
@@ -170,7 +172,7 @@ liquid_inside = SubResource("Resource_2s46h")
 sprite_scene = ExtResource("7_li0ko")
 
 [node name="CelestialCitrusBlend" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(1222, 128)
+position = Vector2(554, 81)
 start_position = NodePath("../mixer shelf/mixshelf5")
 item_name = "Celestial Citrus Blend"
 position_changeable = true
@@ -180,7 +182,7 @@ liquid_inside = SubResource("Resource_hjaq5")
 sprite_scene = ExtResource("8_bj2xj")
 
 [node name="GnomishGingerBrew" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(646, 306)
+position = Vector2(673, 81)
 start_position = NodePath("../mixer shelf/mixshelf6")
 item_name = "Gnomish Ginger Brew"
 position_changeable = true
@@ -190,7 +192,7 @@ liquid_inside = SubResource("Resource_4xmp0")
 sprite_scene = ExtResource("9_ght57")
 
 [node name="HalflingCider" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(765, 307)
+position = Vector2(791, 81)
 start_position = NodePath("../mixer shelf/mixshelf7")
 item_name = "Halfling Apple Cider"
 position_changeable = true
@@ -200,7 +202,7 @@ liquid_inside = SubResource("Resource_nixnn")
 sprite_scene = ExtResource("10_m6yv8")
 
 [node name="MoonlitLavender" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(885, 306)
+position = Vector2(909, 81)
 start_position = NodePath("../mixer shelf/mixshelf8")
 item_name = "Moonlit Lavender Essence"
 position_changeable = true
@@ -210,7 +212,7 @@ liquid_inside = SubResource("Resource_wktgx")
 sprite_scene = ExtResource("11_myfpo")
 
 [node name="TreantSap" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(999, 305)
+position = Vector2(1027, 82)
 start_position = NodePath("../mixer shelf/mixshelf9")
 item_name = "Treant Sap"
 position_changeable = true
@@ -220,7 +222,7 @@ liquid_inside = SubResource("Resource_u5jxb")
 sprite_scene = ExtResource("12_6fful")
 
 [node name="RuneWater" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(1116, 305)
+position = Vector2(1145, 82)
 start_position = NodePath("../mixer shelf/mixshelf10")
 item_name = "Rune-Infused Rose Water"
 position_changeable = true
@@ -230,7 +232,7 @@ liquid_inside = SubResource("Resource_w503t")
 sprite_scene = ExtResource("13_dguxw")
 
 [node name="GhostPepper" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
-position = Vector2(1236, 305)
+position = Vector2(1263, 82)
 start_position = NodePath("../mixer shelf/mixshelf11")
 item_name = "Ghost Pepper Elixir"
 position_changeable = true
@@ -240,7 +242,7 @@ liquid_inside = SubResource("Resource_u71fg")
 sprite_scene = ExtResource("14_lgdyt")
 
 [node name="Mixer" parent="." node_paths=PackedStringArray("start_position") groups=["container"] instance=ExtResource("2_lpye2")]
-position = Vector2(1466, 606)
+position = Vector2(412, 568)
 start_position = NodePath("../workspace/mixerspot")
 item_name = "Mixer"
 can_be_emptied = true
@@ -251,170 +253,176 @@ can_shake = true
 sprite_scene = ExtResource("7_7x3af")
 
 [node name="IceSpawner" parent="." instance=ExtResource("6_tepou")]
-position = Vector2(308, 577)
+position = Vector2(1874, 558)
 scale = Vector2(2, 2)
 
 [node name="GlassSpawner" parent="." instance=ExtResource("7_gjsbr")]
-position = Vector2(216, 576)
+position = Vector2(310, 556)
 
 [node name="FlagonSpawner" parent="." instance=ExtResource("18_slwtt")]
-position = Vector2(147, 577)
+position = Vector2(161, 556)
 
 [node name="DumpArea" parent="." instance=ExtResource("6_af824")]
-position = Vector2(1655, 551)
+position = Vector2(1416, 556)
 scale = Vector2(2, 2)
 
 [node name="ShardSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(32, 155)
+position = Vector2(746, 230)
 jar_texture = ExtResource("21_y0rp6")
 garnish_scene = ExtResource("22_1k7pc")
 garnish_name = "Ice Shards"
 
 [node name="SpiceSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(95, 155)
+position = Vector2(814, 230)
 jar_texture = ExtResource("23_scq5n")
 garnish_scene = ExtResource("24_jribf")
 garnish_name = "Goblin Spice"
 
 [node name="CinnamonSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(158, 155)
+position = Vector2(882, 230)
 jar_texture = ExtResource("24_lnhxu")
 garnish_scene = ExtResource("25_vnsfe")
 garnish_name = "Cinnamon Stick"
 
 [node name="SaltSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(222, 156)
+position = Vector2(950, 230)
 jar_texture = ExtResource("27_1yigw")
 garnish_scene = ExtResource("28_h7y20")
 garnish_name = "Mermaid's Sea Salt"
 
 [node name="MintSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(286, 157)
+position = Vector2(1018, 230)
 jar_texture = ExtResource("29_kmfjd")
 garnish_scene = ExtResource("30_tyabu")
 garnish_name = "Mystic Mint"
 
 [node name="ZestSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(349, 158)
+position = Vector2(1086, 230)
 jar_texture = ExtResource("31_e2ra6")
 garnish_scene = ExtResource("32_m4jjg")
 garnish_name = "Orcish Blood Orange Zests"
 
 [node name="FeatherSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(414, 159)
+position = Vector2(1154, 230)
 jar_texture = ExtResource("33_8wna3")
 garnish_scene = ExtResource("34_eaq1q")
 garnish_name = "Phoenix Feather"
 
 [node name="PixieSpawner" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(478, 159)
+position = Vector2(1222, 230)
 jar_texture = ExtResource("35_ph3rv")
 garnish_scene = ExtResource("36_4qffm")
 garnish_name = "Pixie Dust"
 
 [node name="SageSpawn" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(542, 158)
+position = Vector2(1290, 230)
 jar_texture = ExtResource("37_aptpi")
 garnish_scene = ExtResource("38_pgb20")
 garnish_name = "Sylvan Sage"
 
 [node name="BlackberrySpawn" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(605, 159)
+position = Vector2(746, 342)
 jar_texture = ExtResource("39_54j5b")
 garnish_scene = ExtResource("40_puq84")
 garnish_name = "Thieves' Blackberries"
 
 [node name="BasilSpawn" parent="." instance=ExtResource("18_axy5h")]
-position = Vector2(671, 159)
+position = Vector2(814, 342)
 jar_texture = ExtResource("41_b3qyl")
 garnish_scene = ExtResource("42_rracr")
 garnish_name = "Wizard's Basil"
 
+[node name="CocktailSpawner" parent="." instance=ExtResource("23_c5evq")]
+position = Vector2(59, 556)
+
+[node name="RocksSpawner" parent="." instance=ExtResource("41_s3cms")]
+position = Vector2(240, 556)
+
 [node name="workspace" type="Node" parent="."]
 
 [node name="work1" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(487, 581)
+position = Vector2(934, 557)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="work2" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(624, 578)
+position = Vector2(1100, 557)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="work3" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1226, 615)
+position = Vector2(1266, 557)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixerspot" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1463, 607)
+position = Vector2(412, 557)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="work4" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(768, 557)
+scale = Vector2(0.891663, 0.979441)
+
+[node name="work5" parent="workspace" groups=["dropable"] instance=ExtResource("2_gdkpq")]
+position = Vector2(603, 557)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="alcohol shelf" type="Node" parent="."]
 
-[node name="alcshelf1" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(52.9999, 308)
-scale = Vector2(0.891663, 0.979441)
-
-[node name="alcshelf2" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(169, 309)
-scale = Vector2(0.891663, 0.979441)
-
-[node name="alcshelf3" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(287, 309)
-scale = Vector2(0.891663, 0.979441)
-
-[node name="alcshelf4" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(403, 309)
-scale = Vector2(0.891663, 0.979441)
-
-[node name="alcshelf5" parent="alcohol shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(524, 310)
-scale = Vector2(0.891663, 0.979441)
-
 [node name="mixer shelf" type="Node" parent="."]
 
 [node name="mixshelf1" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(766, 131)
+position = Vector2(82.9999, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf2" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(884, 130)
+position = Vector2(201, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf3" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(999, 130)
+position = Vector2(319, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf4" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1115, 131)
+position = Vector2(437, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf5" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1233, 131)
+position = Vector2(555, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf6" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(646, 306)
+position = Vector2(673, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf7" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(764, 306)
+position = Vector2(791, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf8" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(883, 306)
+position = Vector2(909, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf9" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(999, 306)
+position = Vector2(1027, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf10" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1116, 306)
+position = Vector2(1145, 81)
 scale = Vector2(0.891663, 0.979441)
 
 [node name="mixshelf11" parent="mixer shelf" groups=["dropable"] instance=ExtResource("2_gdkpq")]
-position = Vector2(1235, 306)
+position = Vector2(1263, 81)
 scale = Vector2(0.891663, 0.979441)
 
-[node name="CocktailSpawner" parent="." instance=ExtResource("23_c5evq")]
-position = Vector2(45, 577)
+[node name="KegArea" parent="." instance=ExtResource("46_6vyvu")]
+position = Vector2(68, 244)
+
+[node name="KegArea2" parent="." instance=ExtResource("46_6vyvu")]
+position = Vector2(612, 244)
+
+[node name="KegArea3" parent="." instance=ExtResource("46_6vyvu")]
+position = Vector2(476, 244)
+
+[node name="KegArea4" parent="." instance=ExtResource("46_6vyvu")]
+position = Vector2(340, 244)
+
+[node name="KegArea5" parent="." instance=ExtResource("46_6vyvu")]
+position = Vector2(204, 244)

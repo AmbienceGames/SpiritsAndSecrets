@@ -10,7 +10,7 @@ var drop_areas = [] #where can it be dropped?
 var containers = [] #where can it be emptied?
 var current #what was the last used drop_area?
 
-#specific to certian droppers
+#specific to certain droppers
 
 @export
 var start_position: DropArea

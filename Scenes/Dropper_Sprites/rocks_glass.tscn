@@ -1,23 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://btsjxxnltpbv"]
+[gd_scene load_steps=5 format=3 uid="uid://cuet6dv5b82is"]
 
-[ext_resource type="Texture2D" uid="uid://i3cfgse4nuqo" path="res://Assets/Art/Glasses/tall-glass.png" id="1_c05a0"]
-[ext_resource type="Script" path="res://Scripts/cup_sprite.gd" id="2_2inct"]
-[ext_resource type="Texture2D" uid="uid://b24gd55p7w0yy" path="res://Assets/Art/drink_texture.png" id="3_hd1mq"]
-[ext_resource type="Texture2D" uid="uid://drp28q6lypscu" path="res://Assets/Art/ice.png" id="4_wytfy"]
+[ext_resource type="Texture2D" uid="uid://cjap4wpif4yqe" path="res://Assets/Art/Glasses/rocks-glass.png" id="1_b246x"]
+[ext_resource type="Script" path="res://Scripts/cup_sprite.gd" id="2_1itnp"]
+[ext_resource type="Texture2D" uid="uid://b24gd55p7w0yy" path="res://Assets/Art/drink_texture.png" id="3_ecmog"]
+[ext_resource type="Texture2D" uid="uid://drp28q6lypscu" path="res://Assets/Art/ice.png" id="4_ai8jv"]
 
 [node name="CupSprite" type="Sprite2D"]
 z_index = 1
 scale = Vector2(2, 2)
-texture = ExtResource("1_c05a0")
-script = ExtResource("2_2inct")
+texture = ExtResource("1_b246x")
+script = ExtResource("2_1itnp")
 
 [node name="Drink" type="Polygon2D" parent="."]
 z_as_relative = false
 y_sort_enabled = true
 position = Vector2(-26, -22)
 color = Color(0.411765, 1, 1, 1)
-texture = ExtResource("3_hd1mq")
-polygon = PackedVector2Array(16, 50, 17, 50, 17, 51, 18, 51, 18, 52, 21, 52, 21, 53, 31, 53, 31, 52, 34, 52, 34, 51, 35, 51, 35, 50, 36, 50, 36, 5, 16, 5)
+texture = ExtResource("3_ecmog")
+polygon = PackedVector2Array(13, 34, 13, 34, 14, 34, 14, 50, 15, 50, 15, 51, 19, 51, 33, 51, 34, 51, 37, 51, 37, 50, 38, 50, 38, 34, 39, 34, 39, 22, 37, 22, 37, 21, 15, 21, 15, 22, 13, 22)
 
 [node name="Ice" type="Node2D" parent="."]
 visible = false
@@ -26,7 +26,7 @@ position = Vector2(4, 8)
 [node name="cube" type="Sprite2D" parent="Ice"]
 position = Vector2(-0.999999, -25)
 rotation = 0.680807
-texture = ExtResource("4_wytfy")
+texture = ExtResource("4_ai8jv")
 
 [node name="BottomIce" type="Node2D" parent="."]
 visible = false
@@ -36,7 +36,7 @@ position = Vector2(4, 48)
 visible = false
 position = Vector2(-0.999999, -25)
 rotation = 0.680807
-texture = ExtResource("4_wytfy")
+texture = ExtResource("4_ai8jv")
 
 [node name="Garnish1" type="Node2D" parent="."]
 position = Vector2(-5, -7.5)

@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://deadbe2at2bpt" path="res://Scenes/Dropper_Sprites/garnish.tscn" id="2_l5vew"]
 
 [node name="Garnish" instance=ExtResource("1_mno23")]
-scale = Vector2(4, 4)
 item_name = "Garnish"
 is_container = true
 has_contents = true

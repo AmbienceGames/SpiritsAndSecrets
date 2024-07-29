@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtpsb4f1q20ao"]
+
+[ext_resource type="PackedScene" uid="uid://dieewwsv8s7rc" path="res://Scenes/dropper.tscn" id="1_lh6ag"]
+[ext_resource type="PackedScene" uid="uid://cuet6dv5b82is" path="res://Scenes/Dropper_Sprites/rocks_glass.tscn" id="2_pygpo"]
+
+[node name="Glass" groups=["container"] instance=ExtResource("1_lh6ag")]
+item_name = "Glass"
+position_changeable = true
+can_be_emptied = true
+is_container = true
+has_label = true
+has_contents = true
+uses_cup_sprite = true
+sprite_scene = ExtResource("2_pygpo")
