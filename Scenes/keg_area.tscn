@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://1i5ip8onnttw"]
 
-[ext_resource type="Texture2D" uid="uid://gk2hbll1c7el" path="res://Assets/Art/Alcohol/dwarven-stout-cask.png" id="1_7514n"]
+[ext_resource type="Texture2D" uid="uid://ipwmvqc2uno1" path="res://Assets/Art/Alcohol/dwarven-stout-cask.png" id="1_7514n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_axhf0"]
 size = Vector2(64, 64)

@@ -219,3 +219,4 @@ func _on_area_2d_area_shape_exited(area_rid, area, area_shape_index, local_shape
 		if c.is_in_group('container'):
 			containers.erase(c)
 
+

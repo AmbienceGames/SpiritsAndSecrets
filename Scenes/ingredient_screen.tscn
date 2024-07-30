@@ -1,6 +1,6 @@
-[gd_scene load_steps=57 format=3 uid="uid://cigb8hma3u4u6"]
+[gd_scene load_steps=59 format=3 uid="uid://cigb8hma3u4u6"]
 
-[ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_5grc5"]
+[ext_resource type="Texture2D" uid="uid://13tj15b6eva1" path="res://Assets/Art/mixing_screen.png" id="1_5grc5"]
 [ext_resource type="PackedScene" uid="uid://co7pe5w5djh2j" path="res://Scenes/drop_area.tscn" id="2_gdkpq"]
 [ext_resource type="PackedScene" uid="uid://dieewwsv8s7rc" path="res://Scenes/dropper.tscn" id="2_lpye2"]
 [ext_resource type="Script" path="res://Scripts/liquid.gd" id="4_70tpp"]
@@ -21,31 +21,32 @@
 [ext_resource type="PackedScene" uid="uid://com2kc04sd041" path="res://Scenes/Dropper_Sprites/ghostpepper.tscn" id="14_lgdyt"]
 [ext_resource type="PackedScene" uid="uid://1ftgdtcichku" path="res://Scenes/garnish_spawner.tscn" id="18_axy5h"]
 [ext_resource type="PackedScene" uid="uid://bbecl4ihr5e7k" path="res://Scenes/flagon_spawner.tscn" id="18_slwtt"]
-[ext_resource type="Texture2D" uid="uid://cn7yifail4ijk" path="res://Assets/Art/Garnishes/elemental-ice-shards-full.png" id="21_y0rp6"]
+[ext_resource type="Texture2D" uid="uid://be0ybmyy12gd1" path="res://Assets/Art/Garnishes/elemental-ice-shards-full.png" id="21_y0rp6"]
 [ext_resource type="PackedScene" uid="uid://biq4pbi21cg6j" path="res://Scenes/Garnish_Sprites/elementaliceshards.tscn" id="22_1k7pc"]
 [ext_resource type="PackedScene" uid="uid://b85jglsow24hd" path="res://Scenes/cocktail_glass_spawner.tscn" id="23_c5evq"]
-[ext_resource type="Texture2D" uid="uid://bdwcwx065bmca" path="res://Assets/Art/Garnishes/goblin-spice-full.png" id="23_scq5n"]
+[ext_resource type="Texture2D" uid="uid://4wbnhg4jo3ck" path="res://Assets/Art/Garnishes/goblin-spice-full.png" id="23_scq5n"]
 [ext_resource type="PackedScene" uid="uid://bstej3x6i6sgs" path="res://Scenes/Garnish_Sprites/goblinspice.tscn" id="24_jribf"]
-[ext_resource type="Texture2D" uid="uid://16ttpbo6ypum" path="res://Assets/Art/Garnishes/infernal-cinnamon-sticks-full.png" id="24_lnhxu"]
+[ext_resource type="Texture2D" uid="uid://dd61xfq0rl7yn" path="res://Assets/Art/Garnishes/infernal-cinnamon-sticks-full.png" id="24_lnhxu"]
 [ext_resource type="PackedScene" uid="uid://cdsvontcfqq7k" path="res://Scenes/Garnish_Sprites/cinnamonstick.tscn" id="25_vnsfe"]
-[ext_resource type="Texture2D" uid="uid://bv7eekk5ckjeg" path="res://Assets/Art/Garnishes/mermaids-sea-salt-full.png" id="27_1yigw"]
+[ext_resource type="Texture2D" uid="uid://b1r5dvcupjsrp" path="res://Assets/Art/Garnishes/mermaids-sea-salt-full.png" id="27_1yigw"]
 [ext_resource type="PackedScene" uid="uid://l6f00sfc8gy4" path="res://Scenes/Garnish_Sprites/mermaidseasalt.tscn" id="28_h7y20"]
-[ext_resource type="Texture2D" uid="uid://0f241qc038s4" path="res://Assets/Art/Garnishes/mystic-mint-leaves-full.png" id="29_kmfjd"]
+[ext_resource type="Texture2D" uid="uid://onvfp87tk3x5" path="res://Assets/Art/Garnishes/mystic-mint-leaves-full.png" id="29_kmfjd"]
 [ext_resource type="PackedScene" uid="uid://dynh11jbk48wc" path="res://Scenes/Garnish_Sprites/mysticmint.tscn" id="30_tyabu"]
-[ext_resource type="Texture2D" uid="uid://dykpletvrmgc1" path="res://Assets/Art/Garnishes/orcish-blood-orange-zest-full.png" id="31_e2ra6"]
+[ext_resource type="Texture2D" uid="uid://dt3bwhy5dxjj2" path="res://Assets/Art/Garnishes/orcish-blood-orange-zest-full.png" id="31_e2ra6"]
 [ext_resource type="PackedScene" uid="uid://bhjl8x66fqpq1" path="res://Scenes/Garnish_Sprites/orcbloodorange.tscn" id="32_m4jjg"]
-[ext_resource type="Texture2D" uid="uid://dmjifr5covdbe" path="res://Assets/Art/Garnishes/pheonix-feathers-full.png" id="33_8wna3"]
+[ext_resource type="Texture2D" uid="uid://87i46b1ovnri" path="res://Assets/Art/Garnishes/pheonix-feathers-full.png" id="33_8wna3"]
 [ext_resource type="PackedScene" uid="uid://btt586qntp67r" path="res://Scenes/Garnish_Sprites/phoenixfeathers.tscn" id="34_eaq1q"]
-[ext_resource type="Texture2D" uid="uid://dw7vja6puoqy0" path="res://Assets/Art/Garnishes/pixie-dust-sugar-full.png" id="35_ph3rv"]
+[ext_resource type="Texture2D" uid="uid://bg0lyhqwwh6yv" path="res://Assets/Art/Garnishes/pixie-dust-sugar-full.png" id="35_ph3rv"]
 [ext_resource type="PackedScene" uid="uid://cenmd0t4ofrta" path="res://Scenes/Garnish_Sprites/pixiedust.tscn" id="36_4qffm"]
-[ext_resource type="Texture2D" uid="uid://c35ch7v0q75rg" path="res://Assets/Art/Garnishes/sylvan-sage-full.png" id="37_aptpi"]
+[ext_resource type="Texture2D" uid="uid://t31rp821or2e" path="res://Assets/Art/Garnishes/sylvan-sage-full.png" id="37_aptpi"]
 [ext_resource type="PackedScene" uid="uid://qvvm5ww0o5cu" path="res://Scenes/Garnish_Sprites/sylvansage.tscn" id="38_pgb20"]
-[ext_resource type="Texture2D" uid="uid://bgyxkh86f3qwt" path="res://Assets/Art/Garnishes/thieves-blackberries-full.png" id="39_54j5b"]
+[ext_resource type="Texture2D" uid="uid://bymxth0qk3g23" path="res://Assets/Art/Garnishes/thieves-blackberries-full.png" id="39_54j5b"]
 [ext_resource type="PackedScene" uid="uid://c6afye5ynssg0" path="res://Scenes/Garnish_Sprites/thievesberries.tscn" id="40_puq84"]
-[ext_resource type="Texture2D" uid="uid://hjlgfjru2uow" path="res://Assets/Art/Garnishes/wizards-basil-full.png" id="41_b3qyl"]
+[ext_resource type="Texture2D" uid="uid://dp85j0tnmgqpd" path="res://Assets/Art/Garnishes/wizards-basil-full.png" id="41_b3qyl"]
 [ext_resource type="PackedScene" uid="uid://ch3or4twqixex" path="res://Scenes/rocks_spawner.tscn" id="41_s3cms"]
 [ext_resource type="PackedScene" uid="uid://bnra168ldv35r" path="res://Scenes/Garnish_Sprites/wizardsbasil.tscn" id="42_rracr"]
 [ext_resource type="PackedScene" uid="uid://1i5ip8onnttw" path="res://Scenes/keg_area.tscn" id="46_6vyvu"]
+[ext_resource type="Script" path="res://Scripts/get_recipe.gd" id="47_ivxe2"]
 
 [sub_resource type="Resource" id="Resource_2w3wk"]
 script = ExtResource("4_70tpp")
@@ -117,6 +118,9 @@ flavors = Array[String]([])
 cost = 0
 color = Color(0.921569, 0.443137, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_275yv"]
+font_size = 22
+
 [node name="IngredientScreen" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -136,7 +140,7 @@ sprite_scene = ExtResource("4_towsi")
 
 [node name="MoonlitLavenderEssence" parent="." node_paths=PackedStringArray("start_position") instance=ExtResource("2_lpye2")]
 position = Vector2(909, 81)
-start_position = NodePath("../mixer shelf/mixshelf1")
+start_position = NodePath("../mixer shelf/mixshelf8")
 item_name = "Moonlit Lavender Essence"
 position_changeable = true
 has_label = true
@@ -419,3 +423,31 @@ position = Vector2(340, 244)
 
 [node name="KegArea5" parent="." instance=ExtResource("46_6vyvu")]
 position = Vector2(204, 244)
+
+[node name="RecipeBook" type="Label" parent="."]
+offset_left = 1361.0
+offset_top = 8.0
+offset_right = 1907.0
+offset_bottom = 479.0
+label_settings = SubResource("LabelSettings_275yv")
+horizontal_alignment = 1
+script = ExtResource("47_ivxe2")
+
+[node name="LeftArrow" type="Button" parent="."]
+offset_left = 1353.0
+offset_top = 490.0
+offset_right = 1478.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 50
+text = "<"
+
+[node name="RightArrow" type="Button" parent="."]
+offset_left = 1778.0
+offset_top = 486.0
+offset_right = 1903.0
+offset_bottom = 566.0
+theme_override_font_sizes/font_size = 50
+text = ">"
+
+[connection signal="pressed" from="LeftArrow" to="RecipeBook" method="_on_left_arrow_pressed"]
+[connection signal="pressed" from="RightArrow" to="RecipeBook" method="_on_right_arrow_pressed"]

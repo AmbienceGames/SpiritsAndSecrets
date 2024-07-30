@@ -1,0 +1,307 @@
+~Dragon’s Breath~
+
+Ingredients:
+Elven Moonshine
+Dragonfruit Extract
+Goblin Spice
+
+Instructions:
+Add - Shaker
+Add - Elven Moonshine 
+Add - Dragonfruit Extract
+Shake
+Add - Goblin Spice
+Shake
+Strain - Cocktail Glass        
+Garnish - Goblin Spice
+
+~Honey Blossom~
+
+Ingredients:
+Elderflower Liqueur
+Elven Honey
+Sylvan Sage
+
+Instructions:
+Add - Shaker
+Add - Elderflower Liqueur
+Add - Elven Honey
+Shake
+Strain - Cocktail Glass
+Garnish - Sylvan Sage
+
+~Spiced Stout~
+
+Ingredients:
+Dwarven Stout
+Goblin Spice
+Infernal Cinnamon Stick
+
+Instructions:
+Add - Beer Mug
+Add - Dwarven Stout
+Add - Goblin Spice
+Stir
+Garnish - Infernal Cinnamon Stick
+
+~Citrus Breeze~
+
+Ingredients:
+Pirate's Dark Rum
+Celestial Citrus Blend
+Mystic Mint Leaves
+
+Instructions:
+Add - Shaker
+Add - Pirate's Dark Rum
+Add - Celestial Citrus Blend
+Shake
+Strain - Cocktail Glass
+Garnish - Mystic Mint Leaves
+
+~Enchanted Berry~
+
+Ingredients:
+Elven Moonshine
+Feywild Berry Juice
+Mystic Mint Leaves
+
+Instructions:
+Add - Shaker
+Add - Elven Moonshine
+Add - Feywild Berry Juice
+Shake
+Strain - Tall Glass
+Garnish - Mystic Mint Leaves
+
+~Halfling's Apple Whiskey Surprise~
+
+Ingredients:
+Halfling's Whiskey
+Halfling's Apple Cider
+Ghost Pepper Extract
+
+Instructions:
+Add - Beer Mug
+Add - Halfling's Whiskey
+Add - Halfling's Apple Cider
+Stir
+Add - Ghost Pepper Extract
+
+~Treant’s Whisper~
+
+Ingredients:
+Halfling Whiskey
+Treant Sap
+Wizard's Basil
+Ice
+
+Instructions:
+Add - Rocks Glass
+Add - Halfling Whiskey
+Add - Treant Sap
+Stir
+Add - Wizard’s Basil
+Stir
+Strain - Rocks Glass 
+Add - Ice
+Garnish - Wizard’s Basil
+
+~Pixie’s Delight~
+
+Ingredients:
+Elderflower Liqueur
+Rune-Infused Rose Water
+Pixie Dust Sugar
+Sylvan Sage
+
+Instructions:
+Add - Shaker
+Add - Elderflower Liqueur
+Add - Rune-Infused Rose Water
+Shake
+Strain - Cocktail Glass
+Garnish - Pixie Dust Sugar
+Garnish - Sylvan Sage
+
+~Fire and Ice~
+
+Ingredients:
+Elven Moonshine
+Ghost Pepper Elixir
+Elemental Ice Shards
+Phoenix Feather
+
+Instructions:
+Add - Shaker
+Add - Elven Moonshine
+Add - Ghost Pepper Elixir
+Shake
+Strain - Rocks Glass 
+Add - Elemental Ice Shards
+Garnish - Phoenix Feather
+
+~Caramel Spiced Rum~
+
+Ingredients:
+Pirate's Dark Rum
+Ghost Pepper Elixir
+Infernal Cinnamon Stick
+Ice
+
+Instructions:
+Add - Rocks Glass
+Add - Pirate's Dark Rum
+Add - Ghost Pepper Elixir
+Stir
+Strain - Rocks Glass
+Add - Ice
+Garnish - Infernal Cinnamon Stick
+
+~Midnight Berry Bliss~
+
+Ingredients:
+Pirate's Dark Rum
+Thieves’ Blackberries
+Halfling’s Apple Cider
+Ice
+
+Instructions:
+Add - Rocks Glass
+Add - Pirate's Dark Rum
+Add - Halfling’s Apple Cider
+Add - Thieves’ Blackberries
+Stir
+Add - Ice
+Garnish - Thieves’ Blackberries
+
+~Thick Thadrick~
+
+Ingredients:
+Dwarven Stout
+Elven Honey
+Treant Sap
+Shadowroot Syrup
+
+Instructions:
+Add - Beer Mug
+Add - Dwarven Stout
+Add - Elven Honey
+Add - Treant Sap
+Add - Shadowroot Syrup
+Stir
+
+~Celestial Sparkle~
+
+Ingredients: 
+Elderflower Liqueur
+Celestial Citrus Blend
+Moonlit Lavender Essence
+Ice
+Soda Water
+
+Instructions:
+Add - Shaker
+Add - Elderflower Liqueur
+Add - Celestial Citrus Blend
+Add - Moonlit Lavender Essence
+Shake
+Strain - Tall Glass
+Add - Ice
+Add - Soda Water
+Garnish - Moonlit Lavender Essence
+
+~Frosty Fruit Fizz~
+
+Ingredients:
+Elven Moonshine
+Feywild Berry Juice
+Thieves’ Blackberries
+Elemental Ice Shards
+Ice
+
+Instructions:
+Add - Shaker
+Add - Elven Moonshine
+Add - Feywild Berry Juice
+Add - Thieves’ Blackberries
+Shake
+Strain - Rocks Glass
+Add - Elemental Ice Shards
+Add - Ice
+Garnish - Thieves’ Blackberries
+
+~Small Guys Only~
+
+Ingredients:
+Dwarven Stout
+Gnomish Ginger Brew
+Pixie Dust Sugar
+Soda Water
+Ice
+
+Instructions:
+Add - Beer Mug
+Add - Ice
+Add - Dwarven Stout
+Add - Gnomish Ginger Brew
+Stir
+Add - Soda Water
+Garnish - Pixie Dust Sugar
+
+~Sea of Blood~
+
+Ingredients:
+Pirate's Dark Rum
+Celestial Citrus Blend
+Dragonfruit Extract
+Orcish Blood Orange Zest
+Mermaid's Sea Salt
+
+Instructions:
+Add - Shaker
+Add - Pirate's Dark Rum
+Add - Celestial Citrus Blend
+Shake
+Add - Dragonfruit Extract
+Shake
+Strain - Cocktail Glass
+Garnish - Orcish Blood Orange Zest
+Garnish - Mermaid's Sea Salt
+
+~Shadow Over The Sun~
+
+Ingredients:
+Elderflower Liqueur
+Rune-Infused Rose Water
+Moonlit Lavender Essence
+Shadowroot Syrup
+Thieves' Blackberries
+
+Instructions:
+Add - Cocktail Glass
+Add - Elderflower Liqueur
+Add - Rune-Infused Rose Water
+Stir
+Add - Shadow Root Syrup
+Garnish - Thieves' Blackberries
+
+~Revivification Needed~
+
+Ingredients:
+Halfling's Whiskey
+Ghost Pepper Elixir
+Gnomish Ginger Brew
+Goblin Spice
+Infernal Cinnamon Stick
+Phoenix Feather
+
+Instructions:
+Add - Beer Mug
+Add - Halfling's Whiskey
+Add - Ghost Pepper Elixir
+Add - Gnomish Ginger Brew
+Stir
+Garnish - Goblin Spice
+Garnish - Infernal Cinnamon Stick
+Garnish - Phoenix Feather
