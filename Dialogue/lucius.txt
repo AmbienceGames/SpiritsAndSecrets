@@ -1,0 +1,7 @@
+choice,response,requires,unlocks,notrequires,locks,startday,endday
+Good evening. New in town?,"Yes! I am Lucius, devoted knight of the Order of the White Lady. It is a pleasure to make your acquaintance",,WhiteLady,,,,
+What is the Order of the White Lady?,"I am apalled that you do not know us! We are devoted to the White Lady, our patron of justice. I, like all other knights of my order, travel to bring justice to the lands, to rid them of evildoers. ",WhiteLady,Justice,,,,
+Is there much justice to do here?,"Justice must be delivered everywhere, my friend. It is my sacred duty to ensure that those who do wrong are given their fit punishment.",Justice,Vengeance,,,,
+Where are you from?,I hail from a small town far away. You would not know it.,WhiteLady,,,,,
+"Where did you say you were from, again?","Whuh? Oh, Ravenwood. Far away, you know. Little town. I miss it sometimes.","WhiteLady, LuciusDrunk",FromRavenwood,,,,
+"You know, if you want to serve some justice, Ethred tells me there's been a necromancer causing trouble","Is that so? Well, then I must see about this. Those who raise the dead deserve themselves to be buried. ",EthredWork,,,,,

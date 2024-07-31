@@ -1,5 +1,28 @@
 choice,response,requires,unlocks,notrequires,locks,startday,endday
-Hello Ethred!,"Hello, [name]! Good to see you.",,GreetedEthred,,,,
-What have you been up to?,"The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. ",GreetedEthred,EthredWork,,,,
-How's the new party been treating you?,"Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years.",EthredWork,,,,,
-Necromancer been causing trouble?,"Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps",EthredWork,,,,,
+Hello Ethred!,"Hello, [name]! Good to see you.",,GreetedEthred,,,1,1
+What have you been up to?,"The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. ",GreetedEthred,EthredWork,,,1,1
+How's the new party been treating you?,"Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years.",EthredWork,,,,1,1
+Necromancer been causing trouble?,"Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps",EthredWork,EthredNext,,,1,1
+"Hey, Ethred. You heard?","Oh! You startled me. Yeah, I heard. Can you get me something strong and solid.",EthredNext,EthredTwo,,,2,2
+I'm in shock. Any ideas who could've done it?,"No, no idea. Get me another drink when you have the chance, please. Make it two.",EthredTwo,EthredRattled,,,2,2
+Ethred! What can I get you.,Ah... just a Celestial Sparkle. I may have overdone it last night.,EthredRattled,EthredThree,,,3,3
+No kidding. ,Just feeling a little off-kilter since Constantine.,EthredThree,OffKilter,,,3,3
+It's understandable. I'm still waiting for him to walk through the door and ask for a Constantine Special.,Yeah. I guess. I wish there was a little more activity with my party. Give me something to do. Someplace to be besides here.,OffKilter,EthredDistraction,,,3,3
+People are saying it was a vampire. I heard they're trying to organize a hunt.,I know. Everyone's talking about it. ,"EthredDistraction, VampireHunt",EthredVampireHunt,,,3,3
+You don't want to find who it is?,Of course I do. I just. I'm scared.,EthredDistraction,EthredScared,EthredVampireHunt,,3,3
+"Ethred, you can more than handle a vampire. We've fought much worse together.",That's not what I'm scared of.,EthredScared,EthredScaredWhy,,,3,3
+"What is it, then? I don't think I've ever seen you like this.","*there is a long pause* You're a very good friend of mine, y/n",EthredScaredWhy,EthredFriend,,,3,3
+Of course. We adventured together for years.,Can you keep a secret?,EthredFriend,EthredSecret,,,3,3
+Yes,I think I may have killed Constantine.,EthredSecret,EthredKiller,,,3,3
+What!,"Shhhh! You wanna let the whole tavern know? Obviously, I would never do it on purpose. I don't even know if it was me, okay?",EthredKiller,EthredUnsure,,,3,3
+May have?,"It's complicated. I don't remember, but it could have been me.",EthredKiller,EthredUnsure,,,3,3
+How could it be you?,I'm a vampire.,EthredUnsure,EthredVampire,,,3,3
+What?,"I said I'm a vampire. I have to kill to feed. Usually sheep or other animals, but I can't control myself when I get really hungry. And I haven't eaten in a while.",EthredVampire,EthredAmnesia,,,3,3
+You killed Constantine!,You don't know that! I don't remember what happened that night. I would never kill Constantine. But sometimes I get hungry and I just can't control myself.,EthredVampire,EthredAmnesia,,,3,3
+How can you just not remember?,Sometimes my instincts just take over. All I remember is going to sleep at night and waking up in the morning. Please don't turn me in. No one else knows.,EthredAmnesia,EthredGuilt,,,3,3
+But you would never do that,I don't know. I don't know. Sometimes my instincts take over. I hope it wasn't me. Please don't turn me in. No one else knows.,EthredAmnesia,EthredGuilt,,,3,3
+*call the guard and have her arrested*,,EthredGuilt,,,,3,3
+I won't,,EthredGuilt,,,,3,3
+I figured you'd jump on the chance to hunt a vampire. Especially if it killed Constantine,Theres no proof this vampire even exists. This could all be Trent getting people worked up over nothing,EthredVampireHunt,NoVampire,EthredScared,,3,3
+You think Trent would do that?,I think Trent will take any excuse to be irrationally angry.,NoVampire,AngryTrent,,,3,3
+,,AngryTrent,,,,3,3

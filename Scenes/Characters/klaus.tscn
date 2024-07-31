@@ -1,14 +1,49 @@
-[gd_scene load_steps=7 format=3 uid="uid://bs0n4v0ek7125"]
+[gd_scene load_steps=14 format=3 uid="uid://bs0n4v0ek7125"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_70xry"]
-[ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="2_o07g0"]
+[ext_resource type="Texture2D" uid="uid://cfp6b3wbjg7n2" path="res://Assets/Art/bar_patron.png" id="2_o07g0"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_mlnaa"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_b5x7o"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_wtm7e"]
 
-[sub_resource type="Resource" id="Resource_7xokx"]
+[sub_resource type="Resource" id="Resource_5ka75"]
 script = ExtResource("5_wtm7e")
-memory_name = "knife"
+memory_name = "GreetedKlaus"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_560ue"]
+script = ExtResource("5_wtm7e")
+memory_name = "GreetedKlaus"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_ceh22"]
+script = ExtResource("5_wtm7e")
+memory_name = "KlausSmallTalk"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_61262"]
+script = ExtResource("5_wtm7e")
+memory_name = "KlausSmallTalk"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_oc6gi"]
+script = ExtResource("5_wtm7e")
+memory_name = "KlausCheerUp"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_m2mr2"]
+script = ExtResource("5_wtm7e")
+memory_name = "KlausCheerUp"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_njn63"]
+script = ExtResource("5_wtm7e")
+memory_name = "KlausResentment"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_ifjxk"]
+script = ExtResource("5_wtm7e")
+memory_name = "KlausResentment"
 inverse_memory = false
 
 [node name="BarPatron" type="Node2D"]
@@ -22,8 +57,40 @@ script = ExtResource("3_mlnaa")
 
 [node name="Conversations" type="Node" parent="."]
 
-[node name="ConversationItem" type="Node" parent="Conversations"]
+[node name="conv0" type="Node" parent="Conversations"]
 script = ExtResource("4_b5x7o")
-player_choice = "Good evening"
-patron_response = "Good evening"
-memories_unlocked = Array[ExtResource("5_wtm7e")]([SubResource("Resource_7xokx")])
+player_choice = "Klaus! What can I get you?"
+patron_response = "Something spicy and bright, if you please. Need my energy tonight."
+memories_unlocked = Array[ExtResource("5_wtm7e")]([SubResource("Resource_5ka75")])
+startDay = 1
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("4_b5x7o")
+player_choice = "Ah, that's a shame. I was hoping you'd get to try the Halfling Whiskey you delivered yesterday. It's marvelous."
+patron_response = "No thanks. Spicy and bright for me."
+memories_required = Array[ExtResource("5_wtm7e")]([SubResource("Resource_560ue")])
+memories_unlocked = Array[ExtResource("5_wtm7e")]([SubResource("Resource_ceh22")])
+startDay = 1
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("4_b5x7o")
+player_choice = "It's been some time since you've sat and had a drink. How are you?"
+patron_response = "Alright, I guess. The winery has been a bit slow. Can't seem to make a name for myself."
+memories_required = Array[ExtResource("5_wtm7e")]([SubResource("Resource_61262")])
+memories_unlocked = Array[ExtResource("5_wtm7e")]([SubResource("Resource_oc6gi")])
+startDay = 1
+
+[node name="conv3" type="Node" parent="Conversations"]
+script = ExtResource("4_b5x7o")
+player_choice = "I'm sure business will pick up."
+patron_response = "At least I've still got your business to rely on, eh? Not like you've ever realy had a slow day."
+memories_required = Array[ExtResource("5_wtm7e")]([SubResource("Resource_m2mr2")])
+memories_unlocked = Array[ExtResource("5_wtm7e")]([SubResource("Resource_njn63")])
+startDay = 1
+
+[node name="conv4" type="Node" parent="Conversations"]
+script = ExtResource("4_b5x7o")
+player_choice = "I am lucky. Let me know if you need anything else."
+patron_response = "Thanks."
+memories_required = Array[ExtResource("5_wtm7e")]([SubResource("Resource_ifjxk")])
+startDay = 1

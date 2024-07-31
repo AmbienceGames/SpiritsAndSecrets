@@ -1,9 +1,19 @@
 choice,response,requires,unlocks,notrequires,locks,startday,endday
-"You seem nervous, what's bothering you?","Oh, you know, old things. Just been thinking a lot lately.",,ConstOldTimes,,,,
-Thinking about what?,"Back in Ravenwood - I still haven't gotten over it. We were sent to rescue them, and I killed them. I know, it was an accident, but we lied, blamed the kidnappers. We were wrong, and we knew it. It's been twenty five years and I still think about it. Do you think we would have ever succeeded if we didn't? All of our careers started with a lie.",ConstOldTimes,RavenwoodAccident,,,,
-,,,,,,,
-How have things been going lately?,"Things have been improving at the bank since the theft last month. I don't think the guard has caught the thief yet, though. Wish I did when I had the chance. If I ever see him again, I swear, he's done for.",,BankRobbery,,,,
-What was the robber like?,"Unremarkable, really. He was skinny, I guess. Black hair. Big ears, sort of.",BankRobbery,RobberDesc,,,,
-,,,,,,,
-"Bar's closing, Constantine. You've got to get home","I know, I know. Would it really be so bad if I stayed a while longer? I just want to sit and think, alone. ",,StayTheNight,,,,
-"Alright, man. Don't make a mess of things. ",Thanks. Goodnight.,StayTheNight,,,,,
+What happened?,You don’t remember? I’d think a barkeep would know how to hold their liquor a little better.,,StartToutorial,,,1,1
+Ugh...,I don't think I've seen you down that much in 30 years. Remember that night at the lion’s head? Me neither.,StartToutorial,GotVeryDrunk,,,1,1
+What happened?,"Well, as I remember it, I helped you clean up, we decided to stay late and have a couple of drinks. After that… it all gets a little fuzzy. Considering it’s almost time for you to open again, I don’t suppose you’d be willing to mix me a drink?",GotVeryDrunk,MixDrink,,,1,1
+A drink?,"Still a little drunk, eh? You have the recipe in your book there. But before you get to mixing, I should tell you that you may have misplaced some things last night. I can't find you cleaning supplies anywhere.",MixDrink,Misplaced,,,1,1
+Do you remember where?,I don't remember much after my first three Constantine Specials. I do know we sat at that table there.,Misplaced,SatTable,,,1,
+Is this some sort of prank? Where did you put them?,I don't remember much after my first three Constantine Specials. I do know we sat at that table there.,Misplaced,SatTable,,,1,1
+,*you can keep track of what you know with the mystery board*,SatTable,Board,,,1,1
+What else do you remember?,"Hm… we talked a lot about the old days, before your injury. You were under the table for a bit *laughs*",Board,OldDays,,,1,1
+Old days?,"Oh, don’t make me talk about adventuring. I get tired just thinking about it. Regardless, I looked under the table. Nothing but some keys. I hung them over there with the rest.",OldDays,KeysHook,,,1,1
+The keys go to the rooms. Maybe we went there. Do you remember which key it was?,"No idea. Just put them on the empty hook. I don’t remember going to the rooms, though anything could’ve happened after that fourth drink. ",KeysHook,VeryVeryDrunk,,,1,1
+Pretty far gone?,"Yep. You tried to clean up a few spills, but I think you just spilled the cleaning solution everywhere. Say, where do you keep your backup solution?",VeryVeryDrunk,BackupSolution,,,1,1
+The supplies must be there!,,BackupSolution,EndToutorial,,,1,1
+"You seem nervous, what's bothering you?","Oh, you know, old things. Just been thinking a lot lately.",EndToutorial,ConstOldTimes,,,1,1
+Thinking about what?,"Back in Ravenwood - I still haven't gotten over it. We were sent to rescue them, and I killed them. I know, it was an accident, but we lied, blamed the kidnappers. We were wrong, and we knew it. It's been twenty five years and I still think about it. Do you think we would have ever succeeded if we didn't? All of our careers started with a lie.",ConstOldTimes,RavenwoodAccident,,,1,1
+How have things been going lately?,"Things have been improving at the bank since the theft last month. I don't think the guard has caught the thief yet, though. Wish I did when I had the chance. If I ever see him again, I swear, he's done for.",RavenwoodAccident,BankRobbery,,,1,1
+What was the robber like?,"Unremarkable, really. He was skinny, I guess. Black hair. Big ears, sort of.",BankRobbery,RobberDesc,,,1,1
+"Bar's closing, Constantine. You've got to get home","I know, I know. Would it really be so bad if I stayed a while longer? I just want to sit and think, alone. ",RobberDesc,StayTheNight,,,1,1
+"Alright, man. Don't make a mess of things. ",Thanks. Goodnight.,StayTheNight,,,,1,1

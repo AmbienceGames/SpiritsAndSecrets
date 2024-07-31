@@ -1,0 +1,15 @@
+choice,response,requires,unlocks,notrequires,locks,startday,endday
+"Evening, Trent! How've you been?",I've been better. Miserable day at the bank. Don't feel like going home yet. The usual.,,TrentDown,,,1,2
+I see. What's the problem at work?,"What isn't? ... Well, actually, I guess it's just my boss. I don't want to talk about it.",TrentDown,TrentBoss,,,1,2
+"You know, Trent, if you're short on cash, you can start a tab. I don't mind.","Who told you I'm short on cash, huh? Stay out of my business, man.",RentLate,TrentRude,,,1,2
+,"Hey, there. I've got a few questions about the murder. He was found here, right?",TrentRude,TrentQuestions,,,3,3
+He was,"Did you happen to catch the marks on his neck? Looked like a vampire, right?",TrentQuestions,VampireSuspect,,,3,3
+Questions?,"Word is that a vampire killed him. You were the one who found him, so you might know something.",TrentQuestions,VampireSuspect,,,3,3
+I don't think I should talk about it.,"Come on! I know I wasn't his biggest fan, but you can't just not talk to me. I'm trying to find the vampire who killed him.",TrentQuestions,VampireSuspect,,,3,3
+Vampire?,"There were two small puncture wounds on his neck. I'm a friend of the capitan of the guard, I've seen it myself. All of us at work are real worried. A vampire living among us... any one of us could be next.",VampireSuspect,ScaredOfVampire,,,3,3
+What are you going to do about it?,What do you think? Hunt the bloodsucker down! We aren't going to sit around and get picked off.,ScaredOfVampire,VampireHunt,,,3,3
+Why are talking to me if you've seen him?,"Well, it happened here. You see everyone who goes in and out. The vampire had to pass through at some point.",ScaredOfVampire,VampirePatron,,,3,3
+We?,Just me and some other citizens. Mostly people from the guard. We just want to get this whole mess wrapped up. Find the killer.,VampireHunt,TrentWantsJustice,,,3,3
+You think it was one of my customers?,"It makes the most sense. The faster we find the bloodsucker, the faster we can put this all behind us.",VampirePatron,TrentWantsJustice,,,3,3
+Why are you so eager?,"Listen, I just need this to be over. You gotta want this too, I know they suspect you. If we find a vampire, It'll all be over. Everybody'll stop asking questions.","TrentWantsJustice, Drunk",TrentWantOver,,,3,3
+"You hated Constantine, why do you care so much?","What, just because we didn't get along, I can't want to find his killer? Give me a break. Murder is muder.",TrentWantsJustice,,,,3,3

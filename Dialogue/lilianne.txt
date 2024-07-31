@@ -1,0 +1,7 @@
+choice,response,requires,unlocks,notrequires,locks,startday,endday
+Lilianne! How do you do?,Ugh. Have I told you about the party I'm with right now? Had to revive three of them last week alone. You all weren't nearly as bothersome back in the day.,WhiteLady,DyingParty,,,1,
+Sounds tiring.,Tell me about it. Should've quit years ago with you and Constantine.,DyingParty,LilyTired,,,1,
+You can always join us.,"Bah, that party wouldn't be able to kill a cockroach without me to nurse their wounds. Leaving them would be as good as killing them.",LilyTired,LoserParty,,,1,
+"To talented to quit, huh?",Unfortunately so.,LoserParty,,,,1,
+,You seen that kight fellow? I don't like the look of him.,"WhiteLady, LoserParty",DislikeLucius,,,1,
+Lucius?,"Him. He is too brash for my liking. When you adventure as much as we have, you know there is no such thing as justice.",DislikeLucius,,,,1,

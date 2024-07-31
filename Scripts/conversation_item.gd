@@ -35,15 +35,13 @@ var endDay: int = 100
 
 # If this conversation is accessible via memory restrictions
 func can_access():
-	if done:
+	if done or startDay > Globals.day or endDay < Globals.day:
 		return false
 	if len(memories_required) == 0:
 		return true
 
 	
 
-	if startDay > Globals.day or endDay <= Globals.day:
-		return false
 
 	var memory_required: String
 	var inverse_memory: bool

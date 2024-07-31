@@ -1,0 +1,4 @@
+choice,response,requires,unlocks,notrequires,locks,startday,endday
+"Evening, Theo.",Evening. You'll need to get me your cheapest stuff. Got tenants behind on rent again.,,GreetedTheo,,,1,
+How have things been with you?,"Didn't you hear me? Tenants are behind on rent, again. I know Trent isn't rich, but damn him. I swear it's always something with him.",GreetedTheo,RentLate,,,1,
+Why is Trent always behind on rent?,"Oh, I shouldn't talk, you know? It's his business.",RentLate,,,,1,

@@ -1,14 +1,29 @@
-[gd_scene load_steps=7 format=3 uid="uid://cc3a1v1k1bxd7"]
+[gd_scene load_steps=10 format=3 uid="uid://cc3a1v1k1bxd7"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_oexvf"]
-[ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="2_sg5nw"]
+[ext_resource type="Texture2D" uid="uid://cfp6b3wbjg7n2" path="res://Assets/Art/bar_patron.png" id="2_sg5nw"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_uqlcj"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_587pq"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_xktvr"]
 
-[sub_resource type="Resource" id="Resource_7xokx"]
+[sub_resource type="Resource" id="Resource_28brp"]
 script = ExtResource("5_xktvr")
-memory_name = "knife"
+memory_name = "GreetedTheo"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_nbxvo"]
+script = ExtResource("5_xktvr")
+memory_name = "GreetedTheo"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_tfbic"]
+script = ExtResource("5_xktvr")
+memory_name = "RentLate"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_w6b28"]
+script = ExtResource("5_xktvr")
+memory_name = "RentLate"
 inverse_memory = false
 
 [node name="BarPatron" type="Node2D"]
@@ -22,8 +37,24 @@ script = ExtResource("3_uqlcj")
 
 [node name="Conversations" type="Node" parent="."]
 
-[node name="ConversationItem" type="Node" parent="Conversations"]
+[node name="conv0" type="Node" parent="Conversations"]
 script = ExtResource("4_587pq")
-player_choice = "Good evening"
-patron_response = "Good evening"
-memories_unlocked = Array[ExtResource("5_xktvr")]([SubResource("Resource_7xokx")])
+player_choice = "Evening, Theo."
+patron_response = "Evening. You'll need to get me your cheapest stuff. Got tenants behind on rent again."
+memories_unlocked = Array[ExtResource("5_xktvr")]([SubResource("Resource_28brp")])
+startDay = 1
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("4_587pq")
+player_choice = "How have things been with you?"
+patron_response = "Didn't you hear me? Tenants are behind on rent, again. I know Trent isn't rich, but damn him. I swear it's always something with him."
+memories_required = Array[ExtResource("5_xktvr")]([SubResource("Resource_nbxvo")])
+memories_unlocked = Array[ExtResource("5_xktvr")]([SubResource("Resource_tfbic")])
+startDay = 1
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("4_587pq")
+player_choice = "Why is Trent always behind on rent?"
+patron_response = "Oh, I shouldn't talk, you know? It's his business."
+memories_required = Array[ExtResource("5_xktvr")]([SubResource("Resource_w6b28")])
+startDay = 1

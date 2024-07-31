@@ -1,0 +1,6 @@
+choice,response,requires,unlocks,notrequires,locks,startday,endday
+Klaus! What can I get you?,"Something spicy and bright, if you please. Need my energy tonight.",,GreetedKlaus,,,1,
+"Ah, that's a shame. I was hoping you'd get to try the Halfling Whiskey you delivered yesterday. It's marvelous.",No thanks. Spicy and bright for me.,GreetedKlaus,KlausSmallTalk,,,1,
+It's been some time since you've sat and had a drink. How are you?,"Alright, I guess. The winery has been a bit slow. Can't seem to make a name for myself.",KlausSmallTalk,KlausCheerUp,,,1,
+I'm sure business will pick up.,"At least I've still got your business to rely on, eh? Not like you've ever realy had a slow day.",KlausCheerUp,KlausResentment,,,1,
+I am lucky. Let me know if you need anything else.,Thanks.,KlausResentment,,,,1,

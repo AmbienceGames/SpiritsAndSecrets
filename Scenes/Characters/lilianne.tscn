@@ -1,14 +1,49 @@
-[gd_scene load_steps=7 format=3 uid="uid://05loujsr87g5"]
+[gd_scene load_steps=14 format=3 uid="uid://05loujsr87g5"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_7ox62"]
-[ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="2_pdq7n"]
+[ext_resource type="Texture2D" uid="uid://cfp6b3wbjg7n2" path="res://Assets/Art/bar_patron.png" id="2_pdq7n"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_2gxo5"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_a1w8s"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_achob"]
 
-[sub_resource type="Resource" id="Resource_7xokx"]
+[sub_resource type="Resource" id="Resource_05hvr"]
 script = ExtResource("5_achob")
-memory_name = "knife"
+memory_name = "WhiteLady"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_xqxpf"]
+script = ExtResource("5_achob")
+memory_name = "DyingParty"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_uwc44"]
+script = ExtResource("5_achob")
+memory_name = "DyingParty"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_phbby"]
+script = ExtResource("5_achob")
+memory_name = "LilyTired"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_1xaqw"]
+script = ExtResource("5_achob")
+memory_name = "LilyTired"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_cnnx2"]
+script = ExtResource("5_achob")
+memory_name = "LoserParty"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_hsr0r"]
+script = ExtResource("5_achob")
+memory_name = "LoserParty"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_w4dbc"]
+script = ExtResource("5_achob")
+memory_name = "DislikeLucius"
 inverse_memory = false
 
 [node name="BarPatron" type="Node2D"]
@@ -22,8 +57,40 @@ script = ExtResource("3_2gxo5")
 
 [node name="Conversations" type="Node" parent="."]
 
-[node name="ConversationItem" type="Node" parent="Conversations"]
+[node name="conv0" type="Node" parent="Conversations"]
 script = ExtResource("4_a1w8s")
-player_choice = "Good evening"
-patron_response = "Good evening"
-memories_unlocked = Array[ExtResource("5_achob")]([SubResource("Resource_7xokx")])
+player_choice = "Lilianne! How do you do?"
+patron_response = "Ugh. Have I told you about the party I'm with right now? Had to revive three of them last week alone. You all weren't nearly as bothersome back in the day."
+memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_05hvr")])
+memories_unlocked = Array[ExtResource("5_achob")]([SubResource("Resource_xqxpf")])
+startDay = 1
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("4_a1w8s")
+player_choice = "Sounds tiring."
+patron_response = "Tell me about it. Should've quit years ago with you and Constantine."
+memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_uwc44")])
+memories_unlocked = Array[ExtResource("5_achob")]([SubResource("Resource_phbby")])
+startDay = 1
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("4_a1w8s")
+player_choice = "You can always join us."
+patron_response = "Bah, that party wouldn't be able to kill a cockroach without me to nurse their wounds. Leaving them would be as good as killing them."
+memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_1xaqw")])
+memories_unlocked = Array[ExtResource("5_achob")]([SubResource("Resource_cnnx2")])
+startDay = 1
+
+[node name="conv3" type="Node" parent="Conversations"]
+script = ExtResource("4_a1w8s")
+player_choice = "To talented to quit, huh?"
+patron_response = "Unfortunately so."
+memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_hsr0r")])
+startDay = 1
+
+[node name="conv4" type="Node" parent="Conversations"]
+script = ExtResource("4_a1w8s")
+player_choice = "Lucius?"
+patron_response = "Him. He is too brash for my liking. When you adventure as much as we have, you know there is no such thing as justice."
+memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_w4dbc")])
+startDay = 1
