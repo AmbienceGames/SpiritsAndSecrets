@@ -14,6 +14,7 @@ var cast: Array = [
 ]
 
 var is_dragging = false
+var dragged_container = null
 
 func get_cast_for_day() -> Array[PackedScene]:
 	var names = cast[day-1]

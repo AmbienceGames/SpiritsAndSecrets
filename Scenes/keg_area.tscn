@@ -1,12 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://1i5ip8onnttw"]
+[gd_scene load_steps=8 format=3 uid="uid://1i5ip8onnttw"]
 
-[ext_resource type="Texture2D" uid="uid://ipwmvqc2uno1" path="res://Assets/Art/Alcohol/dwarven-stout-cask.png" id="1_7514n"]
+[ext_resource type="Texture2D" uid="uid://brotktt4jcii0" path="res://Assets/Art/Alcohol/dwarven-stout-cask.png" id="1_7514n"]
+[ext_resource type="Script" path="res://Scripts/keg_area.gd" id="1_rnmyy"]
+[ext_resource type="Script" path="res://Scripts/liquid.gd" id="2_mqgcq"]
+[ext_resource type="Script" path="res://Scripts/combination.gd" id="2_s6oib"]
+
+[sub_resource type="Resource" id="Resource_gc11o"]
+script = ExtResource("2_mqgcq")
+liquid_name = "Liquid"
+flavors = Array[String](["Bitter idk"])
+cost = 1
+color = Color(0, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_t5yi0"]
+script = ExtResource("2_s6oib")
+liquids = Array[ExtResource("2_mqgcq")]([SubResource("Resource_gc11o")])
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_axhf0"]
 size = Vector2(64, 64)
 
 [node name="KegArea" type="Node2D"]
 scale = Vector2(2, 2)
+script = ExtResource("1_rnmyy")
+whats_inside = SubResource("Resource_t5yi0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_7514n")
@@ -15,3 +31,11 @@ texture = ExtResource("1_7514n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_axhf0")
+
+[node name="TimeToFill" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
+[connection signal="timeout" from="TimeToFill" to="." method="_on_time_to_fill_timeout"]

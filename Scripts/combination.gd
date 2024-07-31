@@ -4,6 +4,7 @@ class_name Combination
 var name = "Combination"
 
 var mix_type: String = "none" #none, shaken, stirred
+@export
 var liquids: Array[Liquid] = []
 var garnishes: Array[Garnish] = []
 var mixed_garnishes: Array[Garnish] = []

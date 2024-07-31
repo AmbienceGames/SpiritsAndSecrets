@@ -17,6 +17,7 @@ func _process(delta):
 		var i = ice.instantiate()
 		self.get_parent().add_child(i)
 		Globals.is_dragging = true
+		Globals.dragged_container = null
 		i.contents.has_ice = true
 		i.draggable = true
 		i.global_position = get_global_mouse_position()

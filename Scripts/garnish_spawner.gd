@@ -40,6 +40,7 @@ func _process(delta):
 		self.get_parent().add_child(g)
 		content.texture = g.get_child(2).texture
 		Globals.is_dragging = true
+		Globals.dragged_container = null
 		g.contents.add(content)
 		g.draggable = true
 		g.global_position = get_global_mouse_position()

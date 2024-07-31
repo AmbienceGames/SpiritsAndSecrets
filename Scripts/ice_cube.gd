@@ -22,6 +22,7 @@ func _process(delta):
 		if Input.is_action_just_pressed("click"): #pick it up
 			offset = get_global_mouse_position() - global_position
 			Globals.is_dragging = true
+			Globals.dragged_container = null
 			
 		if Input.is_action_pressed("click") and Globals.is_dragging: 
 			global_position = get_global_mouse_position() #snap to mouse
@@ -29,7 +30,8 @@ func _process(delta):
 		elif Input.is_action_just_released("click"):
 			
 			Globals.is_dragging = false
-
+			Globals.dragged_container = null
+	
 			if not containers.is_empty(): #is there a place to empty into?
 				print("HERE")
 				var cont = containers.back()

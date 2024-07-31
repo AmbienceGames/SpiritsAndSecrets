@@ -19,6 +19,8 @@ func _process(delta):
 		print(glass)
 		self.get_parent().add_child(glass)
 		Globals.is_dragging = true
+		Globals.dragged_container = glass
+		print(Globals.dragged_container)
 		glass.draggable = true
 		glass.current = null
 		glass.global_position = get_global_mouse_position()

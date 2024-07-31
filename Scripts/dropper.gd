@@ -89,6 +89,8 @@ func _process(delta):
 		if Input.is_action_just_pressed("click"): #pick it up
 			offset = get_global_mouse_position() - global_position
 			Globals.is_dragging = true
+			if item_name == "Glass":
+				Globals.dragged_container = self
 			drop_areas.clear()
 			drop_areas.append(current) #fallback if they don't put it anywhere
 			current.is_occupied =false #set space to be open
@@ -115,6 +117,7 @@ func _process(delta):
 		elif Input.is_action_just_released("click"):
 			
 			Globals.is_dragging = false
+			Globals.dragged_container = null
 			
 			
 			if position_changeable and not drop_areas.is_empty(): #is there a place to go back to?

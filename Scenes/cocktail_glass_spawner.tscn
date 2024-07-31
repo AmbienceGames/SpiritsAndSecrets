@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/glass_spawner.gd" id="1_2lhwr"]
 [ext_resource type="PackedScene" uid="uid://8oq1srgtawi1" path="res://Scenes/Glasses/cocktail_glass.tscn" id="2_ek5ci"]
-[ext_resource type="Texture2D" uid="uid://40jqbia6wnoh" path="res://Assets/Art/Glasses/cocktail-glass.png" id="3_byc4p"]
+[ext_resource type="Texture2D" uid="uid://cfbh21ohhl0ey" path="res://Assets/Art/Glasses/cocktail-glass.png" id="3_byc4p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rs8fr"]
 size = Vector2(56, 80.9994)
