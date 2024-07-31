@@ -20,6 +20,10 @@ func _on_area_2d_mouse_entered():
 	if Globals.is_dragging:
 		$TimeToFill.start(time_to_fill)
 
+func _on_area_2d_mouse_exited():
+	if Globals.is_dragging:
+		$TimeToFill.stop()
+
 func _on_time_to_fill_timeout() -> void:
 	if Globals.is_dragging and Globals.dragged_container != null:
 		print("The keg strikes again")
