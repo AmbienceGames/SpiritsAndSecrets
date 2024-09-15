@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6afye5ynssg0"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6crvm"]
-load_path = "res://.godot/imported/thieves-blackberries-single.png-db727ed681d0eed01a9e9bbcd4c21cf9.ctex"
-
-[node name="Thievesberries" type="Sprite2D"]
-texture = SubResource("CompressedTexture2D_6crvm")

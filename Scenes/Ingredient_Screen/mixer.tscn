@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5v03gw33flhr"]
+
+[ext_resource type="Script" path="res://Scripts/Ingredient Screen/mixer.gd" id="1_56uwl"]
+[ext_resource type="Texture2D" uid="uid://cydvfj0vsqgmg" path="res://Assets/Art/Glasses/shaker.png" id="2_6xh62"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2put"]
+size = Vector2(32, 64)
+
+[node name="Mixer" type="Node2D"]
+script = ExtResource("1_56uwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_6xh62")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_e2put")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

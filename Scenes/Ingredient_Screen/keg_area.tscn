@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ktsyw0h4o0ly"]
+
+[ext_resource type="Script" path="res://Scripts/Ingredient Screen/keg_area.gd" id="1_eis67"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6eud"]
+size = Vector2(64, 64)
+
+[node name="KegArea" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_eis67")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_t6eud")
+
+[node name="TimeToFill" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="TimeToFill" to="." method="_on_time_to_fill_timeout"]

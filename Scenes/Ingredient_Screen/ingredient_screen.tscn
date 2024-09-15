@@ -1,0 +1,282 @@
+[gd_scene load_steps=51 format=3 uid="uid://bsn2bqb5h34na"]
+
+[ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_wdbaw"]
+[ext_resource type="PackedScene" uid="uid://c0fm2d1mpfa0n" path="res://Scenes/Ingredient_Screen/trash.tscn" id="2_0a21t"]
+[ext_resource type="PackedScene" uid="uid://brtd4nvi77owc" path="res://Scenes/Ingredient_Screen/drink_space.tscn" id="2_a40mp"]
+[ext_resource type="Texture2D" uid="uid://cn7yifail4ijk" path="res://Assets/Art/Garnishes/elemental-ice-shards-full.png" id="3_5jxt1"]
+[ext_resource type="PackedScene" uid="uid://dvv5i83nub1s0" path="res://Scenes/Ingredient_Screen/ingredient.tscn" id="3_18743"]
+[ext_resource type="Texture2D" uid="uid://8mya4jv0o5sa" path="res://Assets/Art/single garnishes/elemental-ice-shards-single.png" id="4_cpnuv"]
+[ext_resource type="Texture2D" uid="uid://c5ju6nlrymuqv" path="res://Assets/Art/single garnishes/goblin-spice-single.png" id="5_eyf1p"]
+[ext_resource type="Texture2D" uid="uid://bdwcwx065bmca" path="res://Assets/Art/Garnishes/goblin-spice-full.png" id="6_q72xf"]
+[ext_resource type="Texture2D" uid="uid://brmcpt263vr24" path="res://Assets/Art/single garnishes/infernal-cinnamon-sticks-single.png" id="6_qxqnf"]
+[ext_resource type="Texture2D" uid="uid://b0w23oj8jn4wm" path="res://Assets/Art/single garnishes/mermaids-sea-salt-single.png" id="7_vgqjo"]
+[ext_resource type="Texture2D" uid="uid://16ttpbo6ypum" path="res://Assets/Art/Garnishes/infernal-cinnamon-sticks-full.png" id="8_b21ty"]
+[ext_resource type="Texture2D" uid="uid://ti0wfp12ue1e" path="res://Assets/Art/Mixers/celestial-citrus-blend-full.png" id="8_fvq6v"]
+[ext_resource type="Texture2D" uid="uid://cvhld84wjepqc" path="res://Assets/Art/Mixers/dragonfruit-extract-full.png" id="9_87k6q"]
+[ext_resource type="Texture2D" uid="uid://i3cfgse4nuqo" path="res://Assets/Art/Glasses/tall-glass.png" id="10_1yeqd"]
+[ext_resource type="Texture2D" uid="uid://bv7eekk5ckjeg" path="res://Assets/Art/Garnishes/mermaids-sea-salt-full.png" id="10_s0lph"]
+[ext_resource type="Texture2D" uid="uid://cjap4wpif4yqe" path="res://Assets/Art/Glasses/rocks-glass.png" id="11_hvvcs"]
+[ext_resource type="Texture2D" uid="uid://0f241qc038s4" path="res://Assets/Art/Garnishes/mystic-mint-leaves-full.png" id="13_exw68"]
+[ext_resource type="Texture2D" uid="uid://2fte3etpbpbr" path="res://Assets/Art/single garnishes/mystic-mint-single.png" id="14_y6hkf"]
+[ext_resource type="Texture2D" uid="uid://dykpletvrmgc1" path="res://Assets/Art/Garnishes/orcish-blood-orange-zest-full.png" id="15_p6g3i"]
+[ext_resource type="Texture2D" uid="uid://c0uvyg4gvsjrs" path="res://Assets/Art/single garnishes/orcish-blood-orange-zest-single.png" id="16_uvt5h"]
+[ext_resource type="Texture2D" uid="uid://dmjifr5covdbe" path="res://Assets/Art/Garnishes/pheonix-feathers-full.png" id="17_2s8x8"]
+[ext_resource type="PackedScene" uid="uid://ktsyw0h4o0ly" path="res://Scenes/Ingredient_Screen/keg_area.tscn" id="17_dh574"]
+[ext_resource type="Texture2D" uid="uid://40jqbia6wnoh" path="res://Assets/Art/Glasses/cocktail-glass.png" id="17_t4sdx"]
+[ext_resource type="Texture2D" uid="uid://gk2hbll1c7el" path="res://Assets/Art/Alcohol/dwarven-stout-cask.png" id="18_ad0qa"]
+[ext_resource type="Texture2D" uid="uid://dr6iya30nevyb" path="res://Assets/Art/Glasses/beer-mug.png" id="18_gduhj"]
+[ext_resource type="Texture2D" uid="uid://ukw2k76jx0y0" path="res://Assets/Art/single garnishes/pheonix-feathers-single.png" id="18_v4ird"]
+[ext_resource type="Texture2D" uid="uid://dw7vja6puoqy0" path="res://Assets/Art/Garnishes/pixie-dust-sugar-full.png" id="19_i7o54"]
+[ext_resource type="Texture2D" uid="uid://cb6pdrs7j4on8" path="res://Assets/Art/single garnishes/pixie-dust-sugar-single.png" id="20_ru7ta"]
+[ext_resource type="Texture2D" uid="uid://c35ch7v0q75rg" path="res://Assets/Art/Garnishes/sylvan-sage-full.png" id="21_yj5u2"]
+[ext_resource type="Texture2D" uid="uid://uuhcjx5q85b8" path="res://Assets/Art/single garnishes/sylvan-sage-single.png" id="22_lw6lm"]
+[ext_resource type="Texture2D" uid="uid://bgyxkh86f3qwt" path="res://Assets/Art/Garnishes/thieves-blackberries-full.png" id="23_rlwoe"]
+[ext_resource type="Texture2D" uid="uid://b7tmkqox24v6e" path="res://Assets/Art/single garnishes/thieves-blackberries-single.png" id="24_we1gd"]
+[ext_resource type="Texture2D" uid="uid://hjlgfjru2uow" path="res://Assets/Art/Garnishes/wizards-basil-full.png" id="25_h33l2"]
+[ext_resource type="Texture2D" uid="uid://kwgck3y2i8eg" path="res://Assets/Art/single garnishes/wizards-basil-single.png" id="26_rbrty"]
+[ext_resource type="Texture2D" uid="uid://ce7w5jfxywvw" path="res://Assets/Art/ice-bin.png" id="27_tvsje"]
+[ext_resource type="Texture2D" uid="uid://d02gvxs4g165v" path="res://Assets/Art/ice_cube.png" id="28_y76wq"]
+[ext_resource type="Texture2D" uid="uid://dus5bje2ohwk8" path="res://Assets/Art/Mixers/elven-honey-full.png" id="29_3qh3w"]
+[ext_resource type="Texture2D" uid="uid://8sy2wus6x107" path="res://Assets/Art/Mixers/feywild-berry-juice-full.png" id="30_rjprn"]
+[ext_resource type="Texture2D" uid="uid://4bi3iuhqgrbr" path="res://Assets/Art/Mixers/ghost-pepper-elixir-full.png" id="31_4sa8d"]
+[ext_resource type="Texture2D" uid="uid://c3bjs5c3027tv" path="res://Assets/Art/Mixers/gnomish-ginger-brew-full.png" id="32_82iek"]
+[ext_resource type="Texture2D" uid="uid://b8motte0yr1ws" path="res://Assets/Art/Mixers/halflings-apple-cider-full.png" id="33_he8bh"]
+[ext_resource type="Texture2D" uid="uid://ok8kdh8p0x1f" path="res://Assets/Art/Mixers/moonlit-lavender-essence-full.png" id="34_lddch"]
+[ext_resource type="Texture2D" uid="uid://dhr2uqoggc30l" path="res://Assets/Art/Mixers/rune-infused-rose-water-full.png" id="35_1u1go"]
+[ext_resource type="Texture2D" uid="uid://7f4ed7y81jau" path="res://Assets/Art/Mixers/shadowroot-syrup-full.png" id="36_6mfe1"]
+[ext_resource type="Texture2D" uid="uid://n4rmx1fve51r" path="res://Assets/Art/Mixers/treant-sap-full.png" id="37_5djly"]
+[ext_resource type="PackedScene" uid="uid://b5v03gw33flhr" path="res://Scenes/Ingredient_Screen/mixer.tscn" id="44_1egko"]
+[ext_resource type="Texture2D" uid="uid://dgethgq1etria" path="res://Assets/Art/Alcohol/elderflower-liqueur-cask.png" id="44_dgvaj"]
+[ext_resource type="Texture2D" uid="uid://dr8feqi00wbgw" path="res://Assets/Art/Alcohol/elven-moonshine-cask.png" id="45_ffbi4"]
+[ext_resource type="Texture2D" uid="uid://bbu1jg414kle1" path="res://Assets/Art/Alcohol/halfling-whiskey-cask.png" id="46_85tr4"]
+[ext_resource type="Texture2D" uid="uid://bdrga6krtj1it" path="res://Assets/Art/Alcohol/pirates-dark-rum-cask.png" id="47_dkiiw"]
+
+[node name="IngredientScreen" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(4, 4)
+texture = ExtResource("1_wdbaw")
+
+[node name="Trash" parent="." instance=ExtResource("2_0a21t")]
+position = Vector2(1444, 648)
+scale = Vector2(4, 4)
+
+[node name="Drink_Space" parent="." instance=ExtResource("2_a40mp")]
+position = Vector2(591, 648)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(764, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("3_5jxt1")
+
+[node name="Ingredient Elemental Ice Shards" parent="." instance=ExtResource("3_18743")]
+position = Vector2(764, 221)
+image = ExtResource("4_cpnuv")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(828, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("6_q72xf")
+
+[node name="Ingredient Goblin Spice" parent="." instance=ExtResource("3_18743")]
+position = Vector2(828, 221)
+image = ExtResource("5_eyf1p")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(892, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("8_b21ty")
+
+[node name="Ingredient Infernal Cinnamon Sticks" parent="." instance=ExtResource("3_18743")]
+position = Vector2(892, 221)
+image = ExtResource("6_qxqnf")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(956, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("10_s0lph")
+
+[node name="Ingredient Mermaid Sea Salt" parent="." instance=ExtResource("3_18743")]
+position = Vector2(956, 221)
+image = ExtResource("7_vgqjo")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(1020, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("13_exw68")
+
+[node name="Ingredient Mystic Mint" parent="." instance=ExtResource("3_18743")]
+position = Vector2(1020, 221)
+image = ExtResource("14_y6hkf")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(1084, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("15_p6g3i")
+
+[node name="Ingredient Orcish Blood Orange Zest" parent="." instance=ExtResource("3_18743")]
+position = Vector2(1084, 221)
+image = ExtResource("16_uvt5h")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(1148, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("17_2s8x8")
+
+[node name="Ingredient Pheonix Feathers" parent="." instance=ExtResource("3_18743")]
+position = Vector2(1148, 221)
+image = ExtResource("18_v4ird")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(1212, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("19_i7o54")
+
+[node name="Ingredient Pixie Dust Sugar" parent="." instance=ExtResource("3_18743")]
+position = Vector2(1212, 221)
+image = ExtResource("20_ru7ta")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(1276, 221)
+scale = Vector2(2, 2)
+texture = ExtResource("21_yj5u2")
+
+[node name="Ingredient Sylvan Sage" parent="." instance=ExtResource("3_18743")]
+position = Vector2(1276, 221)
+image = ExtResource("22_lw6lm")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(764, 349)
+scale = Vector2(2, 2)
+texture = ExtResource("23_rlwoe")
+
+[node name="Ingredient Thieves Blackberries" parent="." instance=ExtResource("3_18743")]
+position = Vector2(764, 349)
+image = ExtResource("24_we1gd")
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(828, 349)
+scale = Vector2(2, 2)
+texture = ExtResource("25_h33l2")
+
+[node name="Ingredient Wizards Basil" parent="." instance=ExtResource("3_18743")]
+position = Vector2(828, 349)
+image = ExtResource("26_rbrty")
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(1268, 140)
+scale = Vector2(2, 2)
+texture = ExtResource("27_tvsje")
+
+[node name="Ingredient Ice" parent="." instance=ExtResource("3_18743")]
+position = Vector2(1268, 108)
+rotation = 1.5708
+image = ExtResource("28_y76wq")
+
+[node name="Ingredient Celestial Citrus Blend" parent="." instance=ExtResource("3_18743")]
+position = Vector2(40, 88)
+pickup = true
+image = ExtResource("8_fvq6v")
+
+[node name="Ingredient Dragonfruit Extract" parent="." instance=ExtResource("3_18743")]
+position = Vector2(104, 88)
+pickup = true
+image = ExtResource("9_87k6q")
+
+[node name="Ingredient Elven Honey" parent="." instance=ExtResource("3_18743")]
+position = Vector2(168, 88)
+pickup = true
+image = ExtResource("29_3qh3w")
+
+[node name="Ingredient Feywild Berry Juice" parent="." instance=ExtResource("3_18743")]
+position = Vector2(232, 88)
+pickup = true
+image = ExtResource("30_rjprn")
+
+[node name="Ingredient Ghost Pepper Elixir" parent="." instance=ExtResource("3_18743")]
+position = Vector2(296, 88)
+pickup = true
+image = ExtResource("31_4sa8d")
+
+[node name="Ingredient Gnomish Ginger Brew" parent="." instance=ExtResource("3_18743")]
+position = Vector2(360, 88)
+pickup = true
+image = ExtResource("32_82iek")
+
+[node name="Ingredient Halflings Apple Cider" parent="." instance=ExtResource("3_18743")]
+position = Vector2(424, 88)
+pickup = true
+image = ExtResource("33_he8bh")
+
+[node name="Ingredient Moonlit Lavender Essence" parent="." instance=ExtResource("3_18743")]
+position = Vector2(488, 88)
+pickup = true
+image = ExtResource("34_lddch")
+
+[node name="Ingredient Rune Infused Rose Water" parent="." instance=ExtResource("3_18743")]
+position = Vector2(552, 88)
+pickup = true
+image = ExtResource("35_1u1go")
+
+[node name="Ingredient Shadowroot Syrup" parent="." instance=ExtResource("3_18743")]
+position = Vector2(616, 88)
+pickup = true
+image = ExtResource("36_6mfe1")
+
+[node name="Ingredient Treant Sap" parent="." instance=ExtResource("3_18743")]
+position = Vector2(680, 88)
+pickup = true
+image = ExtResource("37_5djly")
+
+[node name="Ingredient Tall Glass" parent="." instance=ExtResource("3_18743")]
+position = Vector2(36, 596)
+pickup = true
+image = ExtResource("10_1yeqd")
+is_bottle = true
+
+[node name="Ingredient Rocks Glass" parent="." instance=ExtResource("3_18743")]
+position = Vector2(108, 596)
+pickup = true
+image = ExtResource("11_hvvcs")
+is_bottle = true
+
+[node name="Ingredient Cocktail Glass" parent="." instance=ExtResource("3_18743")]
+position = Vector2(180, 596)
+pickup = true
+image = ExtResource("17_t4sdx")
+is_bottle = true
+
+[node name="Ingredient Beer Mug" parent="." instance=ExtResource("3_18743")]
+position = Vector2(256, 596)
+pickup = true
+image = ExtResource("18_gduhj")
+is_bottle = true
+
+[node name="Mixer" parent="." instance=ExtResource("44_1egko")]
+position = Vector2(720, 596)
+
+[node name="KegArea" parent="." instance=ExtResource("17_dh574")]
+position = Vector2(88, 244)
+whats_inside = "Dwarven Stout"
+jar_texture = ExtResource("18_ad0qa")
+
+[node name="KegArea2" parent="." instance=ExtResource("17_dh574")]
+position = Vector2(216, 244)
+whats_inside = "Elderflower Liqueur"
+jar_texture = ExtResource("44_dgvaj")
+
+[node name="KegArea3" parent="." instance=ExtResource("17_dh574")]
+position = Vector2(344, 244)
+whats_inside = "Elven Moonshine"
+jar_texture = ExtResource("45_ffbi4")
+
+[node name="KegArea4" parent="." instance=ExtResource("17_dh574")]
+position = Vector2(472, 244)
+whats_inside = "Halfling Whiskey"
+jar_texture = ExtResource("46_85tr4")
+
+[node name="KegArea5" parent="." instance=ExtResource("17_dh574")]
+position = Vector2(600, 244)
+whats_inside = "Pirates Dark Rum"
+jar_texture = ExtResource("47_dkiiw")

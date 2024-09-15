@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://brtd4nvi77owc"]
+
+[ext_resource type="Script" path="res://Scripts/Ingredient Screen/Drink_Space.gd" id="1_4p8a7"]
+[ext_resource type="Texture2D" uid="uid://jol5a8lbk6en" path="res://Assets/Art/drink_place.png" id="2_vird8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u71t"]
+size = Vector2(64, 64)
+
+[node name="Drink_Space" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_4p8a7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_6u71t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_vird8")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

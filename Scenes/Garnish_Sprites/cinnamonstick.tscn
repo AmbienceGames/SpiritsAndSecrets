@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdsvontcfqq7k"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pmypo"]
-load_path = "res://.godot/imported/infernal-cinnamon-sticks-single.png-f3f7254b1134b360591afefe882a7ebe.ctex"
-
-[node name="Cinnamonstick" type="Sprite2D"]
-texture = SubResource("CompressedTexture2D_pmypo")

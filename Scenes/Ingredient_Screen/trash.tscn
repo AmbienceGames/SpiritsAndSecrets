@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0fm2d1mpfa0n"]
+
+[ext_resource type="Script" path="res://Scripts/Ingredient Screen/Trash.gd" id="1_tugko"]
+[ext_resource type="Texture2D" uid="uid://b6my77hflkxu1" path="res://Assets/Art/garbage_hole.png" id="2_h50di"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cw0ru"]
+size = Vector2(46, 22)
+
+[node name="Trash" type="Node2D"]
+script = ExtResource("1_tugko")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_h50di")
+
+[node name="TrashArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TrashArea"]
+shape = SubResource("RectangleShape2D_cw0ru")
