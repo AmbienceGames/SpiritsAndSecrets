@@ -35,7 +35,7 @@ func _process(delta):
 				print("shook")
 				ingredients.insert(0, "Shaken")
 				var text = $Label.text
-				$Label.text = "Shaken \n" + text
+				$Label.text = text.substr(0, 8) + "Shaken \n" + text.substr(8)
 				shakeable = false
 		last_velocity = velocity
 		last_position = global_position
@@ -46,8 +46,8 @@ func _process(delta):
 
 
 func _on_area_2d_area_entered(area):
-	drink = area.get_parent()
-	if drink and drink.name == "Drink":
+	if area.get_parent().name == "Drink":
+		drink = area.get_parent()
 		mixer_transfer = true
 		if not drink.is_connected("send_mixer", Callable(self, "on_receive_list")) and drink.ingredients:
 			drink.connect("send_mixer", Callable(self, "on_receive_list"))

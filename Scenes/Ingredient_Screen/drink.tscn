@@ -23,8 +23,14 @@ visible = false
 
 [node name="Label" type="Label" parent="."]
 visible = false
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -32.0
+offset_top = 32.0
+offset_right = 8.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 

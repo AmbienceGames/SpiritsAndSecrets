@@ -1,0 +1,112 @@
+{
+  "recipes": [
+	{
+	  "recipe_name": "Dragon’s Breath",
+	  "glass_type": "Cocktail Glass",
+	  "ingredients": ["Shaken", "Elven Moonshine", "Dragonfruit Extract", "Goblin Spice"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Honey Blossom",
+	  "glass_type": "Cocktail Glass",
+	  "ingredients": ["Shaken", "Elderflower Liqueur", "Elven Honey", "Sylvan Sage"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Spiced Stout",
+	  "glass_type": "Beer Mug",
+	  "ingredients": ["Stirred", "Dwarven Stout", "Goblin Spice", "Infernal Cinnamon Stick"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Citrus Breeze",
+	  "glass_type": "Cocktail Glass",
+	  "ingredients": ["Shaken", "Pirates Dark Rum", "Celestial Citrus Blend", "Mystic Mint Leaves"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Enchanted Berry",
+	  "glass_type": "Tall Glass",
+	  "ingredients": ["Shaken", "Elven Moonshine", "Feywild Berry Juice", "Mystic Mint Leaves"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Halfling's Apple Whiskey Surprise",
+	  "glass_type": "Beer Mug",
+	  "ingredients": ["Stirred", "Halflings Whiskey", "Halflings Apple Cider", "Ghost Pepper Extract"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Treant’s Whisper",
+	  "glass_type": "Rocks Glass",
+	  "ingredients": ["Stirred", "Halfling Whiskey", "Treant Sap", "Wizards Basil", "Ice"],
+	  "has_ice": true
+	},
+	{
+	  "recipe_name": "Pixie’s Delight",
+	  "glass_type": "Cocktail Glass",
+	  "ingredients": ["Shaken", "Elderflower Liqueur", "Rune-Infused Rose Water", "Pixie Dust Sugar", "Sylvan Sage"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Fire and Ice",
+	  "glass_type": "Rocks Glass",
+	  "ingredients": ["Shaken", "Elven Moonshine", "Ghost Pepper Elixir", "Elemental Ice Shards", "Phoenix Feather"],
+	  "has_ice": true
+	},
+	{
+	  "recipe_name": "Caramel Spiced Rum",
+	  "glass_type": "Rocks Glass",
+	  "ingredients": ["Stirred", "Pirates Dark Rum", "Ghost Pepper Elixir", "Infernal Cinnamon Stick", "Ice"],
+	  "has_ice": true
+	},
+	{
+	  "recipe_name": "Midnight Berry Bliss",
+	  "glass_type": "Rocks Glass",
+	  "ingredients": ["Stirred", "Pirates Dark Rum", "Thieves Blackberries", "Halflings Apple Cider", "Ice"],
+	  "has_ice": true
+	},
+	{
+	  "recipe_name": "Thick Thadrick",
+	  "glass_type": "Beer Mug",
+	  "ingredients": ["Stirred", "Dwarven Stout", "Elven Honey", "Treant Sap", "Shadowroot Syrup"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Celestial Sparkle",
+	  "glass_type": "Tall Glass",
+	  "ingredients": ["Shaken", "Elderflower Liqueur", "Celestial Citrus Blend", "Moonlit Lavender Essence", "Ice", "Soda Water"],
+	  "has_ice": true
+	},
+	{
+	  "recipe_name": "Frosty Fruit Fizz",
+	  "glass_type": "Rocks Glass",
+	  "ingredients": ["Shaken", "Elven Moonshine", "Feywild Berry Juice", "Thieves Blackberries", "Elemental Ice Shards", "Ice"],
+	  "has_ice": true
+	},
+	{
+	  "recipe_name": "Small Guys Only",
+	  "glass_type": "Beer Mug",
+	  "ingredients": ["Stirred", "Dwarven Stout", "Gnomish Ginger Brew", "Pixie Dust Sugar", "Soda Water", "Ice"],
+	  "has_ice": true
+	},
+	{
+	  "recipe_name": "Sea of Blood",
+	  "glass_type": "Cocktail Glass",
+	  "ingredients": ["Shaken", "Pirates Dark Rum", "Celestial Citrus Blend", "Dragonfruit Extract", "Orcish Blood Orange Zest", "Mermaids Sea Salt"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Shadow Over The Sun",
+	  "glass_type": "Cocktail Glass",
+	  "ingredients": ["Stirred", "Elderflower Liqueur", "Rune-Infused Rose Water", "Moonlit Lavender Essence", "Shadowroot Syrup", "Thieves Blackberries"],
+	  "has_ice": false
+	},
+	{
+	  "recipe_name": "Revivification Needed",
+	  "glass_type": "Beer Mug",
+	  "ingredients": ["Stirred", "Halflings Whiskey", "Ghost Pepper Elixir", "Gnomish Ginger Brew", "Goblin Spice", "Infernal Cinnamon Stick", "Phoenix Feather"],
+	  "has_ice": false
+	}
+  ]
+}

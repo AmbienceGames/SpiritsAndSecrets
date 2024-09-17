@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgaqe57rshkmh"]
+
+[ext_resource type="Script" path="res://Scripts/Ingredient Screen/garnish_background.gd" id="1_0eoum"]
+
+[node name="GarnishBackground" type="Node2D"]
+script = ExtResource("1_0eoum")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)

@@ -8,6 +8,7 @@ var glass_name = ""
 var place
 var hovered_ingredient
 var ingredients = []
+var flavors = []
 var in_garbage
 var timer_active = false
 var can_transfer = true  # To manage cooldown between transfers
@@ -72,7 +73,7 @@ func _on_area_2d_area_entered(area):
 	if area.name == "TrashArea":
 		print("deleting")
 		in_garbage = true
-	elif parent.name.begins_with("Ingredient") and not parent.is_bottle:
+	elif parent.name.begins_with("Ingredient") and not parent.is_bottle and parent.curr_count > 0:
 		hovered_ingredient = parent.name.substr("Ingredients".length())
 	elif parent.name == "Mixer":
 		mixer_transfer = true
@@ -99,17 +100,22 @@ func on_receive_list(list_data):
 	ingredients = list_data
 	for ingredient in ingredients:
 		$Label.text += ingredient + "\n"
+		if ingredients.find(ingredient) != 0:
+			add_flavors(ingredient)
 		
 func update_insides():
 	$Label.text += ingredients[-1] + "\n"
+	add_flavors(ingredients[-1])
 
 func clear_insides():
 	$Label.text = glass_name + "\n"
+	flavors = []
 	
 func _on_area_2d_mouse_entered():
 	$Label.show()
 
-
+func add_flavors(ingredient):
+	flavors += Globals.ingredient_flavors[ingredient]
 
 func _on_area_2d_mouse_exited():
 	$Label.hide()
