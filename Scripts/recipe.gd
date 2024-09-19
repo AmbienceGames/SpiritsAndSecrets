@@ -25,7 +25,7 @@ func generate_recipe_string() -> String:
 		ingredients = ingredients.slice(1)
 	
 	
-	var str = "Add to " + glass_type + ":"
+	var str = recipe_name + ":\nAdd to " + glass_type + ":"
 	
 	for i in ingredients:
 		str += "\n- " + i

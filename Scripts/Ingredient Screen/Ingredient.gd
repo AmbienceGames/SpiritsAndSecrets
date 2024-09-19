@@ -28,12 +28,11 @@ func _ready():
 		$Outside.show()
 	else:
 		$Outside.scale = Vector2(.5,.5)
-	$Label.text = self.name + "\nCount: " + str(count) + "\nPrice per Count:" + str(price)
 	
 	$Outside.texture = image
 	place = position
 	curr_count = count
-	
+	set_label()
 	
 	
 func _process(delta):
@@ -64,8 +63,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			if is_removing and curr_count > 0:
 				$Label.hide()
 				curr_count -= 1
-				$Label.text = self.name + "\nCount: " + str(curr_count) + "\nPrice per Count:" + str(price)
-				print(curr_count)
+				set_label()
 
 
 func _on_area_2d_area_entered(area):
@@ -76,8 +74,9 @@ func _on_area_2d_area_exited(area):
 	if area.get_parent().name == "Drink":
 		is_removing = false
 
-
-
+func set_label():
+	$Label.text = self.name + "\nCount: " + str(curr_count) + "\nPrice per Count:" + str(price)
+	
 func _on_area_2d_mouse_entered():
 	if has_label:
 		$Label.show()

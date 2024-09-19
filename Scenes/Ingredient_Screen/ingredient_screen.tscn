@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=3 uid="uid://bsn2bqb5h34na"]
+[gd_scene load_steps=97 format=3 uid="uid://bsn2bqb5h34na"]
 
 [ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_wdbaw"]
 [ext_resource type="PackedScene" uid="uid://c0fm2d1mpfa0n" path="res://Scenes/Ingredient_Screen/trash.tscn" id="2_0a21t"]
@@ -93,35 +93,38 @@
 [ext_resource type="Texture2D" uid="uid://d3w73dxhrapg0" path="res://Assets/Art/Mixers/shadowroot-syrup-empty.png" id="56_2pbhy"]
 [ext_resource type="Texture2D" uid="uid://duel4qogeegsi" path="res://Assets/Art/Mixers/treant-sap-half.png" id="58_ypd86"]
 [ext_resource type="Texture2D" uid="uid://dalr7lplqbd6x" path="res://Assets/Art/Mixers/treant-sap-empty.png" id="59_8ef0v"]
+[ext_resource type="Texture2D" uid="uid://b1ivhfxr5vit8" path="res://Assets/Art/Mixers/celestial-citrus-blend-half.png" id="59_ypfoe"]
+[ext_resource type="Texture2D" uid="uid://2km68g6cna28" path="res://Assets/Art/Mixers/celestial-citrus-blend-empty.png" id="60_20o5d"]
+[ext_resource type="PackedScene" uid="uid://jg3wpvyafcb5" path="res://Scenes/Ingredient_Screen/inventory_manager.tscn" id="96_07lwm"]
 
 [node name="IngredientScreen" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(4, 4)
 texture = ExtResource("1_wdbaw")
 
-[node name="KegArea" parent="." instance=ExtResource("17_dh574")]
+[node name="KegArea Stout" parent="." instance=ExtResource("17_dh574")]
 position = Vector2(88, 244)
 whats_inside = "Dwarven Stout"
 jar_texture = ExtResource("18_ad0qa")
 
-[node name="KegArea2" parent="." instance=ExtResource("17_dh574")]
+[node name="KegArea Liqueur" parent="." instance=ExtResource("17_dh574")]
 position = Vector2(216, 244)
 whats_inside = "Elderflower Liqueur"
 jar_texture = ExtResource("44_dgvaj")
 
-[node name="KegArea3" parent="." instance=ExtResource("17_dh574")]
+[node name="KegArea Moonshine" parent="." instance=ExtResource("17_dh574")]
 position = Vector2(344, 244)
 whats_inside = "Elven Moonshine"
 jar_texture = ExtResource("45_ffbi4")
 
-[node name="KegArea4" parent="." instance=ExtResource("17_dh574")]
+[node name="KegArea Whiskey" parent="." instance=ExtResource("17_dh574")]
 position = Vector2(472, 244)
-whats_inside = "Halfling Whiskey"
+whats_inside = "Halflings Whiskey"
 jar_texture = ExtResource("46_85tr4")
 
-[node name="KegArea5" parent="." instance=ExtResource("17_dh574")]
+[node name="KegArea Rum" parent="." instance=ExtResource("17_dh574")]
 position = Vector2(600, 244)
 whats_inside = "Pirates Dark Rum"
 jar_texture = ExtResource("47_dkiiw")
@@ -144,6 +147,7 @@ empty_image = ExtResource("13_tdpul")
 position = Vector2(764, 221)
 image = ExtResource("4_cpnuv")
 count = 10
+price = 5
 
 [node name="Goblin Spice Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(828, 221)
@@ -156,6 +160,7 @@ empty_image = ExtResource("18_0rbj6")
 position = Vector2(828, 221)
 image = ExtResource("5_eyf1p")
 count = 10
+price = 5
 
 [node name="Infernal Cinnamon Sticks Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(892, 221)
@@ -168,6 +173,7 @@ empty_image = ExtResource("22_af3r4")
 position = Vector2(892, 221)
 image = ExtResource("6_qxqnf")
 count = 10
+price = 5
 
 [node name="Mermaids Sea Salt Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(956, 221)
@@ -180,6 +186,7 @@ empty_image = ExtResource("26_ejry5")
 position = Vector2(956, 221)
 image = ExtResource("7_vgqjo")
 count = 10
+price = 5
 
 [node name="Mystic Mint Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(1020, 221)
@@ -192,6 +199,7 @@ empty_image = ExtResource("30_dhjf5")
 position = Vector2(1020, 221)
 image = ExtResource("14_y6hkf")
 count = 10
+price = 5
 
 [node name="Orcish Blood Orange Zest Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(1084, 221)
@@ -204,18 +212,20 @@ empty_image = ExtResource("34_5h1ly")
 position = Vector2(1084, 221)
 image = ExtResource("16_uvt5h")
 count = 10
+price = 5
 
-[node name="Pheonix Feathers Background" parent="." instance=ExtResource("10_n0tdo")]
+[node name="Phoenix Feathers Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(1148, 221)
-ingredient_path = NodePath("../Ingredient Pheonix Feathers")
+ingredient_path = NodePath("../Ingredient Phoenix Feathers")
 image = ExtResource("17_2s8x8")
 half_image = ExtResource("37_0wv6x")
 empty_image = ExtResource("38_stvfr")
 
-[node name="Ingredient Pheonix Feathers" parent="." instance=ExtResource("3_18743")]
+[node name="Ingredient Phoenix Feathers" parent="." instance=ExtResource("3_18743")]
 position = Vector2(1148, 221)
 image = ExtResource("18_v4ird")
 count = 10
+price = 10
 
 [node name="Pixie Dust Sugar Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(1212, 221)
@@ -228,6 +238,7 @@ empty_image = ExtResource("42_r3dnm")
 position = Vector2(1212, 221)
 image = ExtResource("20_ru7ta")
 count = 10
+price = 10
 
 [node name="Sylvan Sage Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(1276, 221)
@@ -240,6 +251,7 @@ empty_image = ExtResource("46_y86c1")
 position = Vector2(1276, 221)
 image = ExtResource("22_lw6lm")
 count = 10
+price = 10
 
 [node name="Thieves Blackberries Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(764, 349)
@@ -252,6 +264,7 @@ empty_image = ExtResource("50_pku5m")
 position = Vector2(764, 349)
 image = ExtResource("24_we1gd")
 count = 10
+price = 10
 
 [node name="Wizards Basil Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(828, 349)
@@ -264,6 +277,7 @@ empty_image = ExtResource("54_6by4m")
 position = Vector2(828, 349)
 image = ExtResource("26_rbrty")
 count = 10
+price = 10
 
 [node name="Ice Sprite" type="Sprite2D" parent="."]
 position = Vector2(1268, 140)
@@ -280,6 +294,10 @@ has_label = false
 position = Vector2(40, 88)
 pickup = true
 image = ExtResource("8_fvq6v")
+half_image = ExtResource("59_ypfoe")
+empty_image = ExtResource("60_20o5d")
+count = 10
+price = 5
 
 [node name="Ingredient Dragonfruit Extract" parent="." instance=ExtResource("3_18743")]
 position = Vector2(104, 88)
@@ -288,6 +306,7 @@ image = ExtResource("9_87k6q")
 half_image = ExtResource("31_i7oml")
 empty_image = ExtResource("32_6n5gy")
 count = 10
+price = 5
 
 [node name="Ingredient Elven Honey" parent="." instance=ExtResource("3_18743")]
 position = Vector2(168, 88)
@@ -296,6 +315,7 @@ image = ExtResource("29_3qh3w")
 half_image = ExtResource("34_ss2w0")
 empty_image = ExtResource("35_ak5o1")
 count = 10
+price = 5
 
 [node name="Ingredient Feywild Berry Juice" parent="." instance=ExtResource("3_18743")]
 position = Vector2(232, 88)
@@ -304,6 +324,7 @@ image = ExtResource("30_rjprn")
 half_image = ExtResource("37_togch")
 empty_image = ExtResource("38_ol8e7")
 count = 10
+price = 5
 
 [node name="Ingredient Ghost Pepper Elixir" parent="." instance=ExtResource("3_18743")]
 position = Vector2(296, 88)
@@ -312,6 +333,7 @@ image = ExtResource("31_4sa8d")
 half_image = ExtResource("40_fvgk3")
 empty_image = ExtResource("41_b2ykw")
 count = 10
+price = 5
 
 [node name="Ingredient Gnomish Ginger Brew" parent="." instance=ExtResource("3_18743")]
 position = Vector2(360, 88)
@@ -320,6 +342,7 @@ image = ExtResource("32_82iek")
 half_image = ExtResource("43_1jaiv")
 empty_image = ExtResource("44_gpsyk")
 count = 10
+price = 10
 
 [node name="Ingredient Halflings Apple Cider" parent="." instance=ExtResource("3_18743")]
 position = Vector2(424, 88)
@@ -328,6 +351,7 @@ image = ExtResource("33_he8bh")
 half_image = ExtResource("46_3bkop")
 empty_image = ExtResource("47_qlkmp")
 count = 10
+price = 10
 
 [node name="Ingredient Moonlit Lavender Essence" parent="." instance=ExtResource("3_18743")]
 position = Vector2(488, 88)
@@ -336,6 +360,7 @@ image = ExtResource("34_lddch")
 half_image = ExtResource("49_wtl48")
 empty_image = ExtResource("50_ii5nu")
 count = 10
+price = 10
 
 [node name="Ingredient Rune Infused Rose Water" parent="." instance=ExtResource("3_18743")]
 position = Vector2(552, 88)
@@ -344,6 +369,7 @@ image = ExtResource("35_1u1go")
 half_image = ExtResource("52_yok1j")
 empty_image = ExtResource("53_kuegg")
 count = 10
+price = 10
 
 [node name="Ingredient Shadowroot Syrup" parent="." instance=ExtResource("3_18743")]
 position = Vector2(616, 88)
@@ -352,6 +378,7 @@ image = ExtResource("36_6mfe1")
 half_image = ExtResource("55_oh0hu")
 empty_image = ExtResource("56_2pbhy")
 count = 10
+price = 10
 
 [node name="Ingredient Treant Sap" parent="." instance=ExtResource("3_18743")]
 position = Vector2(680, 88)
@@ -360,6 +387,7 @@ image = ExtResource("37_5djly")
 half_image = ExtResource("58_ypd86")
 empty_image = ExtResource("59_8ef0v")
 count = 10
+price = 10
 
 [node name="Ingredient Tall Glass" parent="." instance=ExtResource("3_18743")]
 position = Vector2(36, 596)
@@ -391,3 +419,6 @@ has_label = false
 
 [node name="Mixer" parent="." instance=ExtResource("44_1egko")]
 position = Vector2(720, 596)
+
+[node name="Inventory Manager" parent="." instance=ExtResource("96_07lwm")]
+position = Vector2(1358, 12)

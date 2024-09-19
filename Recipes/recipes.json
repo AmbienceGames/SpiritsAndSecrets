@@ -15,7 +15,7 @@
 	{
 	  "recipe_name": "Spiced Stout",
 	  "glass_type": "Beer Mug",
-	  "ingredients": ["Stirred", "Dwarven Stout", "Goblin Spice", "Infernal Cinnamon Stick"],
+	  "ingredients": ["Stirred", "Dwarven Stout", "Goblin Spice", "Infernal Cinnamon Sticks"],
 	  "has_ice": false
 	},
 	{
@@ -51,13 +51,13 @@
 	{
 	  "recipe_name": "Fire and Ice",
 	  "glass_type": "Rocks Glass",
-	  "ingredients": ["Shaken", "Elven Moonshine", "Ghost Pepper Elixir", "Elemental Ice Shards", "Phoenix Feather"],
+	  "ingredients": ["Shaken", "Elven Moonshine", "Ghost Pepper Elixir", "Elemental Ice Shards", "Phoenix Feathers"],
 	  "has_ice": true
 	},
 	{
 	  "recipe_name": "Caramel Spiced Rum",
 	  "glass_type": "Rocks Glass",
-	  "ingredients": ["Stirred", "Pirates Dark Rum", "Ghost Pepper Elixir", "Infernal Cinnamon Stick", "Ice"],
+	  "ingredients": ["Stirred", "Pirates Dark Rum", "Ghost Pepper Elixir", "Infernal Cinnamon Sticks", "Ice"],
 	  "has_ice": true
 	},
 	{
@@ -105,7 +105,7 @@
 	{
 	  "recipe_name": "Revivification Needed",
 	  "glass_type": "Beer Mug",
-	  "ingredients": ["Stirred", "Halflings Whiskey", "Ghost Pepper Elixir", "Gnomish Ginger Brew", "Goblin Spice", "Infernal Cinnamon Stick", "Phoenix Feather"],
+	  "ingredients": ["Stirred", "Halflings Whiskey", "Ghost Pepper Elixir", "Gnomish Ginger Brew", "Goblin Spice", "Infernal Cinnamon Sticks", "Phoenix Feathers"],
 	  "has_ice": false
 	}
   ]

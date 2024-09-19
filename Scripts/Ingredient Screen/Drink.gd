@@ -73,7 +73,7 @@ func _on_area_2d_area_entered(area):
 	if area.name == "TrashArea":
 		print("deleting")
 		in_garbage = true
-	elif parent.name.begins_with("Ingredient") and not parent.is_bottle and parent.curr_count > 0:
+	elif parent.name.begins_with("Ingredient") and not parent.is_bottle and parent.curr_count != 0:
 		hovered_ingredient = parent.name.substr("Ingredients".length())
 	elif parent.name == "Mixer":
 		mixer_transfer = true
@@ -115,7 +115,8 @@ func _on_area_2d_mouse_entered():
 	$Label.show()
 
 func add_flavors(ingredient):
-	flavors += Globals.ingredient_flavors[ingredient]
+	if ingredient in Globals.ingredient_flavors.keys():
+		flavors += Globals.ingredient_flavors[ingredient]
 
 func _on_area_2d_mouse_exited():
 	$Label.hide()

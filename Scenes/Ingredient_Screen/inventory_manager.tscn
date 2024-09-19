@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://jg3wpvyafcb5"]
+
+[ext_resource type="Script" path="res://Scenes/Ingredient_Screen/inventory_manager.gd" id="1_cqtwg"]
+
+[node name="Inventory Manager" type="Node2D"]
+script = ExtResource("1_cqtwg")
+
+[node name="Refill" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Refill"
+
+[node name="NewOrder" type="Button" parent="."]
+offset_top = 31.0
+offset_right = 93.0
+offset_bottom = 62.0
+text = "New Order"
+
+[node name="SubmitDrink" type="Button" parent="."]
+offset_top = 62.0
+offset_right = 110.0
+offset_bottom = 93.0
+text = "Submit Drink"
+
+[node name="Order" type="Label" parent="."]
+offset_left = 170.0
+offset_top = 2.0
+offset_right = 523.0
+offset_bottom = 105.0
+
+[node name="Warning" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 133.0
+offset_right = 152.0
+offset_bottom = 289.0
+autowrap_mode = 2
+
+[node name="CurrrentPrice" type="Label" parent="."]
+offset_left = 3.0
+offset_top = 276.0
+offset_right = 136.0
+offset_bottom = 365.0
+
+[connection signal="pressed" from="Refill" to="." method="_on_refill_pressed"]
+[connection signal="pressed" from="NewOrder" to="." method="_on_new_order_pressed"]
+[connection signal="button_down" from="SubmitDrink" to="." method="_on_submit_drink_button_down"]

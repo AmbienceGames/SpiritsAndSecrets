@@ -22,3 +22,5 @@ func _process(delta):
 			$Sprite2D.texture = empty_image
 		elif ingredient.curr_count <= ingredient.count / 2:
 			$Sprite2D.texture = half_image
+		else:
+			$Sprite2D.texture = image
