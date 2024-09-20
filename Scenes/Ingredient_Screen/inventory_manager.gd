@@ -32,7 +32,19 @@ func _on_refill_pressed():
 		$Warning.text = "You don't have enough money, complete some orders first!"
 	
 func _on_new_order_pressed():
-	recipe = Globals.recipes[(randi_range(0, Globals.recipes.size()-1))]
+	var viable_recipes = []
+	for single_recipe in Globals.recipes:
+		var check = false
+		for single_ingredient in single_recipe.ingredients:
+			print(single_ingredient)
+			if single_ingredient not in Globals.unlocked_ingredients and single_ingredient not in Globals.special_ingredients:
+				check = true
+				break
+		if not check:
+			viable_recipes.append(single_recipe)
+	print(viable_recipes)
+	recipe = viable_recipes[(randi_range(0, viable_recipes.size()-1))]
+	
 	$Order.text = recipe.generate_recipe_string()
 	order = load("res://Scripts/order.gd").new()
 	order.recipe = recipe

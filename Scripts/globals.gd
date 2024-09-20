@@ -19,7 +19,7 @@ var ingredient_flavors = {
 	"Dwarven Stout": ["strong", "alcoholic", "liquid", "dark"],
 	"Elderflower Liqueur": ["light", "alcoholic", "liquid", "floral"],
 	"Elven Moonshine": ["strong", "alcoholic", "liquid", "smooth"],
-	"Halfling Whiskey": ["smooth", "alcoholic", "liquid", "caramel"],
+	"Halflings Whiskey": ["smooth", "alcoholic", "liquid", "caramel"],
 	"Pirates Dark Rum": ["strong", "alcoholic", "liquid", "dark", "caramel"],
 	"Dragonfruit Extract": ["sweet", "liquid", "colorful"],
 	"Elven Honey": ["sweet", "liquid", "floral"],
@@ -37,16 +37,17 @@ var ingredient_flavors = {
 	"Orcish Blood Orange Zest": ["tart", "solid", "citrus"],
 	"Wizards Basil": ["aromatic", "solid", "herb"],
 	"Pixie Dust Sugar": ["sweet", "solid", "colorful", "powder"],
-	"Infernal Cinnamon Stick": ["spicy", "solid", "warm"],
+	"Infernal Cinnamon Sticks": ["spicy", "solid", "warm"],
 	"Elemental Ice Shards": ["cold", "solid", "magical"],
 	"Mermaids Sea Salt": ["salty", "solid", "powder"],
-	"Phoenix Feather": ["bright", "solid", "bold"],
+	"Phoenix Feathers": ["bright", "solid", "bold"],
 	"Sylvan Sage": ["aromatic", "solid", "herb"],
 	"Thieves Blackberries": ["tart", "solid", "fruity"]
 }
+var special_ingredients = ["Ice", "Soda Water", "Dwarven Stout", "Elderflower Liqueur", "Elven Moonshine", "Halflings Whiskey", "Pirates Dark Rum"]
+var unlocked_ingredients = []
 
 var recipes = []
-
 func get_cast_for_day() -> Array[PackedScene]:
 	var names = cast[day-1]
 	var path = "res://Scenes/Characters"

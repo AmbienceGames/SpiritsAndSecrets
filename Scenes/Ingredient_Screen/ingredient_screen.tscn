@@ -239,6 +239,8 @@ position = Vector2(1212, 221)
 image = ExtResource("20_ru7ta")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Sylvan Sage Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(1276, 221)
@@ -252,6 +254,8 @@ position = Vector2(1276, 221)
 image = ExtResource("22_lw6lm")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Thieves Blackberries Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(764, 349)
@@ -265,6 +269,8 @@ position = Vector2(764, 349)
 image = ExtResource("24_we1gd")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Wizards Basil Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(828, 349)
@@ -278,6 +284,8 @@ position = Vector2(828, 349)
 image = ExtResource("26_rbrty")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Ice Sprite" type="Sprite2D" parent="."]
 position = Vector2(1268, 140)
@@ -361,6 +369,8 @@ half_image = ExtResource("49_wtl48")
 empty_image = ExtResource("50_ii5nu")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Ingredient Rune Infused Rose Water" parent="." instance=ExtResource("3_18743")]
 position = Vector2(552, 88)
@@ -370,6 +380,8 @@ half_image = ExtResource("52_yok1j")
 empty_image = ExtResource("53_kuegg")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Ingredient Shadowroot Syrup" parent="." instance=ExtResource("3_18743")]
 position = Vector2(616, 88)
@@ -379,6 +391,8 @@ half_image = ExtResource("55_oh0hu")
 empty_image = ExtResource("56_2pbhy")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Ingredient Treant Sap" parent="." instance=ExtResource("3_18743")]
 position = Vector2(680, 88)
@@ -388,6 +402,8 @@ half_image = ExtResource("58_ypd86")
 empty_image = ExtResource("59_8ef0v")
 count = 10
 price = 10
+unlocked = false
+unlock_cost = 50
 
 [node name="Ingredient Tall Glass" parent="." instance=ExtResource("3_18743")]
 position = Vector2(36, 596)

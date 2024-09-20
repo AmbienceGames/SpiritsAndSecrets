@@ -33,7 +33,7 @@
 	{
 	  "recipe_name": "Halfling's Apple Whiskey Surprise",
 	  "glass_type": "Beer Mug",
-	  "ingredients": ["Stirred", "Halflings Whiskey", "Halflings Apple Cider", "Ghost Pepper Extract"],
+	  "ingredients": ["Stirred", "Halflings Whiskey", "Halflings Apple Cider", "Ghost Pepper Elixir"],
 	  "has_ice": false
 	},
 	{
@@ -45,7 +45,7 @@
 	{
 	  "recipe_name": "Pixie’s Delight",
 	  "glass_type": "Cocktail Glass",
-	  "ingredients": ["Shaken", "Elderflower Liqueur", "Rune-Infused Rose Water", "Pixie Dust Sugar", "Sylvan Sage"],
+	  "ingredients": ["Shaken", "Elderflower Liqueur", "Rune Infused Rose Water", "Pixie Dust Sugar", "Sylvan Sage"],
 	  "has_ice": false
 	},
 	{
@@ -99,7 +99,7 @@
 	{
 	  "recipe_name": "Shadow Over The Sun",
 	  "glass_type": "Cocktail Glass",
-	  "ingredients": ["Stirred", "Elderflower Liqueur", "Rune-Infused Rose Water", "Moonlit Lavender Essence", "Shadowroot Syrup", "Thieves Blackberries"],
+	  "ingredients": ["Stirred", "Elderflower Liqueur", "Rune Infused Rose Water", "Moonlit Lavender Essence", "Shadowroot Syrup", "Thieves Blackberries"],
 	  "has_ice": false
 	},
 	{
