@@ -6,10 +6,16 @@ var memory = {}
 func _ready() -> void:
 	# You're free to *not* list every memory in here, when they're first
 	# introduced, they'll just be "false"
+	
+	
+	
 	memory = {
 		"knife": false,
 		"suspicion": false,
-		"paranoia": false
+		"paranoia": false,
+		"clues": {
+
+		}
 	}
 
 func _to_string():
