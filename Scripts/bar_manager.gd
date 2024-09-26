@@ -106,6 +106,7 @@ func _spawn_patron() -> void:
 	
 	if patron is BarPatron:
 		# Get a seat
+		print(patron.name)
 		var index = randi() % available_bar_seats.size()
 		var seat = available_bar_seats[index]
 		available_bar_seats.remove_at(index)
@@ -129,8 +130,9 @@ func _spawn_patron() -> void:
 
 
 func _start_dialogue(patron: BarPatron) -> void:
-	patron_response.text = ""
-	_refresh_choices(patron)
+	if patron.order_taken:
+		patron_response.text = ""
+		_refresh_choices(patron)
 
 func _end_dialogue(patron: BarPatron) -> void:
 	patron_response.visible = false

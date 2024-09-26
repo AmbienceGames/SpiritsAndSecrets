@@ -20,6 +20,13 @@ scale = Vector2(4, 4)
 texture = ExtResource("1_7xgfs")
 script = ExtResource("3_hxcs4")
 
+[node name="Button" type="Button" parent="."]
+offset_left = 91.0
+offset_top = 206.0
+offset_right = 190.0
+offset_bottom = 237.0
+text = "Take Order:"
+
 [node name="Conversations" type="Node" parent="."]
 
 [node name="ConversationItem" type="Node" parent="Conversations"]
@@ -27,3 +34,5 @@ script = ExtResource("4_a27h4")
 player_choice = "Good evening"
 patron_response = "Good evening"
 memories_unlocked = Array[ExtResource("5_8qlmt")]([SubResource("Resource_7xokx")])
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

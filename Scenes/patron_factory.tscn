@@ -1,18 +1,290 @@
-[gd_scene load_steps=12 format=3 uid="uid://qbx6i5yd14y6"]
+[gd_scene load_steps=68 format=3 uid="uid://qbx6i5yd14y6"]
 
 [ext_resource type="Script" path="res://Scripts/patron_factory.gd" id="1_1q488"]
 [ext_resource type="PackedScene" uid="uid://klwqmxrykumw" path="res://Scenes/table_patron.tscn" id="3_i1g0g"]
+[ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="3_o32pr"]
+[ext_resource type="Texture2D" uid="uid://ypgkqkd25aej" path="res://Assets/Art/ethred.png" id="4_6ise2"]
 [ext_resource type="PackedScene" uid="uid://dk82hd3qv3811" path="res://Scenes/Characters/glanthor.tscn" id="4_dp4ab"]
-[ext_resource type="PackedScene" uid="uid://b2kradyuylbs0" path="res://Scenes/Characters/ethred.tscn" id="4_ot0lg"]
 [ext_resource type="PackedScene" uid="uid://qvyi1fv2peie" path="res://Scenes/Characters/constantine.tscn" id="4_xs122"]
+[ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="5_hyloi"]
 [ext_resource type="PackedScene" uid="uid://bs0n4v0ek7125" path="res://Scenes/Characters/klaus.tscn" id="5_s0ngd"]
+[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="6_1cibs"]
 [ext_resource type="PackedScene" uid="uid://dtvcyaew16lfn" path="res://Scenes/Characters/lucius.tscn" id="6_3jiwb"]
 [ext_resource type="PackedScene" uid="uid://05loujsr87g5" path="res://Scenes/Characters/lilianne.tscn" id="6_a08jv"]
+[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="7_diht7"]
 [ext_resource type="PackedScene" uid="uid://cc3a1v1k1bxd7" path="res://Scenes/Characters/theo.tscn" id="7_opxmn"]
 [ext_resource type="PackedScene" uid="uid://f26ertkimhya" path="res://Scenes/Characters/traveler.tscn" id="8_lynvo"]
 [ext_resource type="PackedScene" uid="uid://cfoc2qc6o2xd7" path="res://Scenes/Characters/trent.tscn" id="9_nf6vf"]
 
+[sub_resource type="Resource" id="Resource_hn414"]
+script = ExtResource("7_diht7")
+memory_name = "GreetedEthred"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_560sl"]
+script = ExtResource("7_diht7")
+memory_name = "GreetedEthred"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_n4fms"]
+script = ExtResource("7_diht7")
+memory_name = "EthredWork"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_hyton"]
+script = ExtResource("7_diht7")
+memory_name = "EthredWork"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_gq5fc"]
+script = ExtResource("7_diht7")
+memory_name = "EthredWork"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_3dhbn"]
+script = ExtResource("7_diht7")
+memory_name = "EthredNext"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_bwmvs"]
+script = ExtResource("7_diht7")
+memory_name = "EthredNext"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_t5ghe"]
+script = ExtResource("7_diht7")
+memory_name = "EthredTwo"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_oshm4"]
+script = ExtResource("7_diht7")
+memory_name = "EthredTwo"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_2vwgu"]
+script = ExtResource("7_diht7")
+memory_name = "EthredRattled"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_pw0g0"]
+script = ExtResource("7_diht7")
+memory_name = "EthredRattled"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_lhcfq"]
+script = ExtResource("7_diht7")
+memory_name = "EthredThree"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_id2ik"]
+script = ExtResource("7_diht7")
+memory_name = "EthredThree"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_smldl"]
+script = ExtResource("7_diht7")
+memory_name = "OffKilter"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_mhypn"]
+script = ExtResource("7_diht7")
+memory_name = "OffKilter"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_c7svk"]
+script = ExtResource("7_diht7")
+memory_name = "EthredDistraction"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_q5i35"]
+script = ExtResource("7_diht7")
+memory_name = "EthredDistraction"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_qr6d1"]
+script = ExtResource("7_diht7")
+memory_name = " VampireHunt"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_dq8yq"]
+script = ExtResource("7_diht7")
+memory_name = "EthredVampireHunt"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_1isxy"]
+script = ExtResource("7_diht7")
+memory_name = "EthredDistraction"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_rhhgo"]
+script = ExtResource("7_diht7")
+memory_name = "EthredVampireHunt"
+inverse_memory = true
+
+[sub_resource type="Resource" id="Resource_nbspm"]
+script = ExtResource("7_diht7")
+memory_name = "EthredScared"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_uw4ee"]
+script = ExtResource("7_diht7")
+memory_name = "EthredScared"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_41bic"]
+script = ExtResource("7_diht7")
+memory_name = "EthredScaredWhy"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_15a6e"]
+script = ExtResource("7_diht7")
+memory_name = "EthredScaredWhy"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_88jc8"]
+script = ExtResource("7_diht7")
+memory_name = "EthredFriend"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_k0x0j"]
+script = ExtResource("7_diht7")
+memory_name = "EthredFriend"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_ml482"]
+script = ExtResource("7_diht7")
+memory_name = "EthredSecret"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_bt70p"]
+script = ExtResource("7_diht7")
+memory_name = "EthredSecret"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_c846o"]
+script = ExtResource("7_diht7")
+memory_name = "EthredKiller"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_dxrr3"]
+script = ExtResource("7_diht7")
+memory_name = "EthredKiller"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_iuscp"]
+script = ExtResource("7_diht7")
+memory_name = "EthredUnsure"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_mhsx6"]
+script = ExtResource("7_diht7")
+memory_name = "EthredKiller"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_tie3p"]
+script = ExtResource("7_diht7")
+memory_name = "EthredUnsure"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_8rsiv"]
+script = ExtResource("7_diht7")
+memory_name = "EthredUnsure"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_l0m0x"]
+script = ExtResource("7_diht7")
+memory_name = "EthredVampire"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_afmuh"]
+script = ExtResource("7_diht7")
+memory_name = "EthredVampire"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_0csys"]
+script = ExtResource("7_diht7")
+memory_name = "EthredAmnesia"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_qi3xo"]
+script = ExtResource("7_diht7")
+memory_name = "EthredVampire"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_wswu0"]
+script = ExtResource("7_diht7")
+memory_name = "EthredAmnesia"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_jypsl"]
+script = ExtResource("7_diht7")
+memory_name = "EthredAmnesia"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_86iiy"]
+script = ExtResource("7_diht7")
+memory_name = "EthredGuilt"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_c55sw"]
+script = ExtResource("7_diht7")
+memory_name = "EthredAmnesia"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_qfnen"]
+script = ExtResource("7_diht7")
+memory_name = "EthredGuilt"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_nlxal"]
+script = ExtResource("7_diht7")
+memory_name = "EthredGuilt"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_ob6xp"]
+script = ExtResource("7_diht7")
+memory_name = "EthredGuilt"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_qfpqs"]
+script = ExtResource("7_diht7")
+memory_name = "EthredVampireHunt"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_2adxj"]
+script = ExtResource("7_diht7")
+memory_name = "EthredScared"
+inverse_memory = true
+
+[sub_resource type="Resource" id="Resource_2chrf"]
+script = ExtResource("7_diht7")
+memory_name = "NoVampire"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_hgyg0"]
+script = ExtResource("7_diht7")
+memory_name = "NoVampire"
+inverse_memory = false
+
+[sub_resource type="Resource" id="Resource_se4o3"]
+script = ExtResource("7_diht7")
+memory_name = "AngryTrent"
+inverse_memory = false
+
+[sub_resource type="PackedScene" id="PackedScene_ftybe"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"names": PackedStringArray("Ethred", "Node2D", "script", "BarPatron", "Sprite2D", "position", "scale", "texture", "script", "Conversations", "Node", "conv0", "Node", "script", "player_choice", "patron_response", "memories_unlocked", "startDay", "endDay", "conv1", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv2", "Node", "script", "player_choice", "patron_response", "memories_required", "startDay", "endDay", "conv3", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv4", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv5", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv6", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv7", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv8", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv9", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv10", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv11", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv12", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv13", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv14", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv15", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv16", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv17", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv18", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv19", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv20", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv21", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv22", "Node", "script", "player_choice", "memories_required", "startDay", "endDay", "conv23", "Node", "script", "player_choice", "memories_required", "startDay", "endDay", "conv24", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay", "conv25", "Node", "script", "player_choice", "patron_response", "memories_required", "memories_unlocked", "startDay", "endDay"),
+"node_count": 29,
+"node_paths": [NodePath("."), NodePath("."), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations"), NodePath("./Conversations")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0, 1073741824, 0, 4, 3, -1, 4, 5, 1, 6, 2, 7, 3, 8, 4, 0, 1073741825, 0, 10, 9, -1, 0, 0, 1073741826, 0, 12, 11, -1, 6, 13, 5, 14, 6, 15, 7, 16, 8, 17, 9, 18, 10, 0, 1073741827, 0, 20, 19, -1, 7, 21, 11, 22, 12, 23, 13, 24, 14, 25, 15, 26, 16, 27, 17, 0, 1073741828, 0, 29, 28, -1, 6, 30, 18, 31, 19, 32, 20, 33, 21, 34, 22, 35, 23, 0, 1073741829, 0, 37, 36, -1, 7, 38, 24, 39, 25, 40, 26, 41, 27, 42, 28, 43, 29, 44, 30, 0, 1073741830, 0, 46, 45, -1, 7, 47, 31, 48, 32, 49, 33, 50, 34, 51, 35, 52, 36, 53, 37, 0, 1073741831, 0, 55, 54, -1, 7, 56, 38, 57, 39, 58, 40, 59, 41, 60, 42, 61, 43, 62, 44, 0, 1073741832, 0, 64, 63, -1, 7, 65, 45, 66, 46, 67, 47, 68, 48, 69, 49, 70, 50, 71, 51, 0, 1073741833, 0, 73, 72, -1, 7, 74, 52, 75, 53, 76, 54, 77, 55, 78, 56, 79, 57, 80, 58, 0, 1073741834, 0, 82, 81, -1, 7, 83, 59, 84, 60, 85, 61, 86, 62, 87, 63, 88, 64, 89, 65, 0, 1073741835, 0, 91, 90, -1, 7, 92, 66, 93, 67, 94, 68, 95, 69, 96, 70, 97, 71, 98, 72, 0, 1073741836, 0, 100, 99, -1, 7, 101, 73, 102, 74, 103, 75, 104, 76, 105, 77, 106, 78, 107, 79, 0, 1073741837, 0, 109, 108, -1, 7, 110, 80, 111, 81, 112, 82, 113, 83, 114, 84, 115, 85, 116, 86, 0, 1073741838, 0, 118, 117, -1, 7, 119, 87, 120, 88, 121, 89, 122, 90, 123, 91, 124, 92, 125, 93, 0, 1073741839, 0, 127, 126, -1, 7, 128, 94, 129, 95, 130, 96, 131, 97, 132, 98, 133, 99, 134, 100, 0, 1073741840, 0, 136, 135, -1, 7, 137, 101, 138, 102, 139, 103, 140, 104, 141, 105, 142, 106, 143, 107, 0, 1073741841, 0, 145, 144, -1, 7, 146, 108, 147, 109, 148, 110, 149, 111, 150, 112, 151, 113, 152, 114, 0, 1073741842, 0, 154, 153, -1, 7, 155, 115, 156, 116, 157, 117, 158, 118, 159, 119, 160, 120, 161, 121, 0, 1073741843, 0, 163, 162, -1, 7, 164, 122, 165, 123, 166, 124, 167, 125, 168, 126, 169, 127, 170, 128, 0, 1073741844, 0, 172, 171, -1, 7, 173, 129, 174, 130, 175, 131, 176, 132, 177, 133, 178, 134, 179, 135, 0, 1073741845, 0, 181, 180, -1, 7, 182, 136, 183, 137, 184, 138, 185, 139, 186, 140, 187, 141, 188, 142, 0, 1073741846, 0, 190, 189, -1, 7, 191, 143, 192, 144, 193, 145, 194, 146, 195, 147, 196, 148, 197, 149, 0, 1073741847, 0, 199, 198, -1, 7, 200, 150, 201, 151, 202, 152, 203, 153, 204, 154, 205, 155, 206, 156, 0, 1073741848, 0, 208, 207, -1, 5, 209, 157, 210, 158, 211, 159, 212, 160, 213, 161, 0, 1073741849, 0, 215, 214, -1, 5, 216, 162, 217, 163, 218, 164, 219, 165, 220, 166, 0, 1073741850, 0, 222, 221, -1, 7, 223, 167, 224, 168, 225, 169, 226, 170, 227, 171, 228, 172, 229, 173, 0, 1073741851, 0, 231, 230, -1, 7, 232, 174, 233, 175, 234, 176, 235, 177, 236, 178, 237, 179, 238, 180, 0),
+"variants": [ExtResource("3_o32pr"), Vector2(128, 176), Vector2(4, 4), ExtResource("4_6ise2"), ExtResource("5_hyloi"), ExtResource("6_1cibs"), "Hello Ethred!", "Hello, [name]! Good to see you.", Array[ExtResource("7_diht7")]([SubResource("Resource_hn414")]), 1, 1, ExtResource("6_1cibs"), "What have you been up to?", "The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. ", Array[ExtResource("7_diht7")]([SubResource("Resource_560sl")]), Array[ExtResource("7_diht7")]([SubResource("Resource_n4fms")]), 1, 1, ExtResource("6_1cibs"), "How's the new party been treating you?", "Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years.", Array[ExtResource("7_diht7")]([SubResource("Resource_hyton")]), 1, 1, ExtResource("6_1cibs"), "Necromancer been causing trouble?", "Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps", Array[ExtResource("7_diht7")]([SubResource("Resource_gq5fc")]), Array[ExtResource("7_diht7")]([SubResource("Resource_3dhbn")]), 1, 1, ExtResource("6_1cibs"), "Hey, Ethred. You heard?", "Oh! You startled me. Yeah, I heard. Can you get me something strong and solid.", Array[ExtResource("7_diht7")]([SubResource("Resource_bwmvs")]), Array[ExtResource("7_diht7")]([SubResource("Resource_t5ghe")]), 2, 2, ExtResource("6_1cibs"), "I'm in shock. Any ideas who could've done it?", "No, no idea. Get me another drink when you have the chance, please. Make it two.", Array[ExtResource("7_diht7")]([SubResource("Resource_oshm4")]), Array[ExtResource("7_diht7")]([SubResource("Resource_2vwgu")]), 2, 2, ExtResource("6_1cibs"), "Ethred! What can I get you.", "Ah... just a Celestial Sparkle. I may have overdone it last night.", Array[ExtResource("7_diht7")]([SubResource("Resource_pw0g0")]), Array[ExtResource("7_diht7")]([SubResource("Resource_lhcfq")]), 3, 3, ExtResource("6_1cibs"), "No kidding. ", "Just feeling a little off-kilter since Constantine.", Array[ExtResource("7_diht7")]([SubResource("Resource_id2ik")]), Array[ExtResource("7_diht7")]([SubResource("Resource_smldl")]), 3, 3, ExtResource("6_1cibs"), "It's understandable. I'm still waiting for him to walk through the door and ask for a Constantine Special.", "Yeah. I guess. I wish there was a little more activity with my party. Give me something to do. Someplace to be besides here.", Array[ExtResource("7_diht7")]([SubResource("Resource_mhypn")]), Array[ExtResource("7_diht7")]([SubResource("Resource_c7svk")]), 3, 3, ExtResource("6_1cibs"), "People are saying it was a vampire. I heard they're trying to organize a hunt.", "I know. Everyone's talking about it. ", Array[ExtResource("7_diht7")]([SubResource("Resource_q5i35"), SubResource("Resource_qr6d1")]), Array[ExtResource("7_diht7")]([SubResource("Resource_dq8yq")]), 3, 3, ExtResource("6_1cibs"), "You don't want to find who it is?", "Of course I do. I just. I'm scared.", Array[ExtResource("7_diht7")]([SubResource("Resource_1isxy"), SubResource("Resource_rhhgo")]), Array[ExtResource("7_diht7")]([SubResource("Resource_nbspm")]), 3, 3, ExtResource("6_1cibs"), "Ethred, you can more than handle a vampire. We've fought much worse together.", "That's not what I'm scared of.", Array[ExtResource("7_diht7")]([SubResource("Resource_uw4ee")]), Array[ExtResource("7_diht7")]([SubResource("Resource_41bic")]), 3, 3, ExtResource("6_1cibs"), "What is it, then? I don't think I've ever seen you like this.", "*there is a long pause* You're a very good friend of mine, y/n", Array[ExtResource("7_diht7")]([SubResource("Resource_15a6e")]), Array[ExtResource("7_diht7")]([SubResource("Resource_88jc8")]), 3, 3, ExtResource("6_1cibs"), "Of course. We adventured together for years.", "Can you keep a secret?", Array[ExtResource("7_diht7")]([SubResource("Resource_k0x0j")]), Array[ExtResource("7_diht7")]([SubResource("Resource_ml482")]), 3, 3, ExtResource("6_1cibs"), "Yes", "I think I may have killed Constantine.", Array[ExtResource("7_diht7")]([SubResource("Resource_bt70p")]), Array[ExtResource("7_diht7")]([SubResource("Resource_c846o")]), 3, 3, ExtResource("6_1cibs"), "What!", "Shhhh! You wanna let the whole tavern know? Obviously, I would never do it on purpose. I don't even know if it was me, okay?", Array[ExtResource("7_diht7")]([SubResource("Resource_dxrr3")]), Array[ExtResource("7_diht7")]([SubResource("Resource_iuscp")]), 3, 3, ExtResource("6_1cibs"), "May have?", "It's complicated. I don't remember, but it could have been me.", Array[ExtResource("7_diht7")]([SubResource("Resource_mhsx6")]), Array[ExtResource("7_diht7")]([SubResource("Resource_tie3p")]), 3, 3, ExtResource("6_1cibs"), "How could it be you?", "I'm a vampire.", Array[ExtResource("7_diht7")]([SubResource("Resource_8rsiv")]), Array[ExtResource("7_diht7")]([SubResource("Resource_l0m0x")]), 3, 3, ExtResource("6_1cibs"), "What?", "I said I'm a vampire. I have to kill to feed. Usually sheep or other animals, but I can't control myself when I get really hungry. And I haven't eaten in a while.", Array[ExtResource("7_diht7")]([SubResource("Resource_afmuh")]), Array[ExtResource("7_diht7")]([SubResource("Resource_0csys")]), 3, 3, ExtResource("6_1cibs"), "You killed Constantine!", "You don't know that! I don't remember what happened that night. I would never kill Constantine. But sometimes I get hungry and I just can't control myself.", Array[ExtResource("7_diht7")]([SubResource("Resource_qi3xo")]), Array[ExtResource("7_diht7")]([SubResource("Resource_wswu0")]), 3, 3, ExtResource("6_1cibs"), "How can you just not remember?", "Sometimes my instincts just take over. All I remember is going to sleep at night and waking up in the morning. Please don't turn me in. No one else knows.", Array[ExtResource("7_diht7")]([SubResource("Resource_jypsl")]), Array[ExtResource("7_diht7")]([SubResource("Resource_86iiy")]), 3, 3, ExtResource("6_1cibs"), "But you would never do that", "I don't know. I don't know. Sometimes my instincts take over. I hope it wasn't me. Please don't turn me in. No one else knows.", Array[ExtResource("7_diht7")]([SubResource("Resource_c55sw")]), Array[ExtResource("7_diht7")]([SubResource("Resource_qfnen")]), 3, 3, ExtResource("6_1cibs"), "*call the guard and have her arrested*", Array[ExtResource("7_diht7")]([SubResource("Resource_nlxal")]), 3, 3, ExtResource("6_1cibs"), "I won't", Array[ExtResource("7_diht7")]([SubResource("Resource_ob6xp")]), 3, 3, ExtResource("6_1cibs"), "I figured you'd jump on the chance to hunt a vampire. Especially if it killed Constantine", "Theres no proof this vampire even exists. This could all be Trent getting people worked up over nothing", Array[ExtResource("7_diht7")]([SubResource("Resource_qfpqs"), SubResource("Resource_2adxj")]), Array[ExtResource("7_diht7")]([SubResource("Resource_2chrf")]), 3, 3, ExtResource("6_1cibs"), "You think Trent would do that?", "I think Trent will take any excuse to be irrationally angry.", Array[ExtResource("7_diht7")]([SubResource("Resource_hgyg0")]), Array[ExtResource("7_diht7")]([SubResource("Resource_se4o3")]), 3, 3],
+"version": 3
+}
+
 [node name="PatronFactory" type="Node2D"]
 script = ExtResource("1_1q488")
-bar_patrons = Array[PackedScene]([ExtResource("4_xs122"), ExtResource("4_ot0lg"), ExtResource("4_dp4ab"), ExtResource("5_s0ngd"), ExtResource("6_a08jv"), ExtResource("6_3jiwb"), ExtResource("7_opxmn"), ExtResource("8_lynvo"), ExtResource("9_nf6vf")])
+bar_patrons = Array[PackedScene]([ExtResource("4_xs122"), SubResource("PackedScene_ftybe"), ExtResource("4_dp4ab"), ExtResource("5_s0ngd"), ExtResource("6_a08jv"), ExtResource("6_3jiwb"), ExtResource("7_opxmn"), ExtResource("8_lynvo"), ExtResource("9_nf6vf")])
 table_patron = ExtResource("3_i1g0g")

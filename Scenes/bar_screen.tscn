@@ -18,16 +18,16 @@ texture = ExtResource("1_hdnv4")
 [node name="BarPositions" type="Node" parent="."]
 
 [node name="bp1" type="Node2D" parent="BarPositions"]
-position = Vector2(20, 212)
+position = Vector2(61, 256)
 
 [node name="bp2" type="Node2D" parent="BarPositions"]
-position = Vector2(316, 212)
+position = Vector2(357, 256)
 
 [node name="bp3" type="Node2D" parent="BarPositions"]
-position = Vector2(612, 212)
+position = Vector2(653, 256)
 
 [node name="bp4" type="Node2D" parent="BarPositions"]
-position = Vector2(908, 212)
+position = Vector2(949, 256)
 
 [node name="o" type="Node2D" parent="BarPositions"]
 position = Vector2(1268, 212)

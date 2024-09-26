@@ -44,17 +44,88 @@ var ingredient_flavors = {
 	"Sylvan Sage": ["aromatic", "solid", "herb"],
 	"Thieves Blackberries": ["tart", "solid", "fruity"]
 }
+
+var favorite_recipes = {
+	"constantine" : [
+		"Dragon’s Breath", 
+		"Honey Blossom", 
+		"Pixie’s Delight", 
+		"Enchanted Berry", 
+		"Midnight Berry Bliss"
+	],
+	"ethred" : [
+		"Dragon’s Breath", 
+		"Fire and Ice", 
+		"Thick Thadrick", 
+		"Small Guys Only", 
+		"Halfling's Apple Whiskey Surprise"
+	],
+	"glanthor" : [
+		"Spiced Stout", 
+		"Treant’s Whisper", 
+		"Frosty Fruit Fizz", 
+		"Sea of Blood", 
+		"Pixie’s Delight"
+	],
+	"klaus" : [
+		"Shadow Over The Sun", 
+		"Celestial Sparkle", 
+		"Thick Thadrick", 
+		"Frosty Fruit Fizz", 
+		"Treant’s Whisper"
+	],
+	"lilianne" : [
+		"Celestial Sparkle", 
+		"Honey Blossom", 
+		"Citrus Breeze", 
+		"Small Guys Only", 
+		"Shadow Over The Sun"
+	],
+	"lucius" : [
+		"Caramel Spiced Rum", 
+		"Midnight Berry Bliss", 
+		"Enchanted Berry", 
+		"Revivification Needed", 
+		"Honey Blossom"
+	],
+	"theo" : [
+		"Shadow Over The Sun", 
+		"Treant’s Whisper", 
+		"Fire and Ice", 
+		"Citrus Breeze", 
+		"Frosty Fruit Fizz"
+	],
+	"traveler" : [
+		"Revivification Needed", 
+		"Halfling's Apple Whiskey Surprise", 
+		"Caramel Spiced Rum", 
+		"Sea of Blood", 
+		"Dragon’s Breath"
+	],
+	"trent" : [
+		"Sea of Blood", 
+		"Spiced Stout", 
+		"Revivification Needed", 
+		"Small Guys Only", 
+		"Fire and Ice"
+	]
+};
+
 var special_ingredients = ["Ice", "Soda Water", "Dwarven Stout", "Elderflower Liqueur", "Elven Moonshine", "Halflings Whiskey", "Pirates Dark Rum"]
 var unlocked_ingredients = []
-
 var recipes = []
+var current_order = null
+var viable_recipes = []
+var viable_check = false
+			
 func get_cast_for_day() -> Array[PackedScene]:
 	var names = cast[day-1]
 	var path = "res://Scenes/Characters"
 	var dir = DirAccess.open(path)
 	var res: Array[PackedScene] = []
 	for name in names:
-		res.append(load(path + "/" + name + ".tscn"))
+		var patron = load(path + "/" + name + ".tscn")
+		res.append(patron)
 	return res
 
 
@@ -88,8 +159,13 @@ func create_recipes_from_json(json_data: Dictionary) -> Array:
 		recipes_list.append(new_recipe)
 	
 	return recipes_list
-
-
+	
+func get_patron_order(patron_name):
+	var valid_recipes = []
+	for item in favorite_recipes[patron_name.to_lower()]:
+		if item in viable_recipes:
+			valid_recipes.append(item)
+	return valid_recipes[(randi_range(0, valid_recipes.size()-1))]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -101,6 +177,16 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if not viable_check:
+		for single_recipe in recipes:
+			var check = false
+			for single_ingredient in single_recipe.ingredients:
+				print(single_ingredient)
+				if single_ingredient not in Globals.unlocked_ingredients and single_ingredient not in Globals.special_ingredients:
+					check = true
+					break
+			if not check:
+				viable_recipes.append(single_recipe.recipe_name)
+		viable_check = true
 
 

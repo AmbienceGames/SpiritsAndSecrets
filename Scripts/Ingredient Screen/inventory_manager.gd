@@ -19,6 +19,11 @@ func _process(delta):
 	total_price = curr_total_price
 	$CurrrentPrice.text = "Current Price of missing Ingredients: " + str(total_price) + " Gold!" + \
 						"\nCurrent Gold: " + str(Globals.player_balance)
+	if Globals.current_order != null:
+		recipe = Globals.current_order
+		$Order.text = recipe.generate_recipe_string()
+		order = load("res://Scripts/order.gd").new()
+		order.recipe = recipe
 
 func _on_refill_pressed():			
 	if total_price <= Globals.player_balance:
@@ -30,24 +35,6 @@ func _on_refill_pressed():
 		$Warning.text = "You spent " + str(total_price) + " Gold to refill your ingredients!"
 	else:
 		$Warning.text = "You don't have enough money, complete some orders first!"
-	
-func _on_new_order_pressed():
-	var viable_recipes = []
-	for single_recipe in Globals.recipes:
-		var check = false
-		for single_ingredient in single_recipe.ingredients:
-			print(single_ingredient)
-			if single_ingredient not in Globals.unlocked_ingredients and single_ingredient not in Globals.special_ingredients:
-				check = true
-				break
-		if not check:
-			viable_recipes.append(single_recipe)
-	print(viable_recipes)
-	recipe = viable_recipes[(randi_range(0, viable_recipes.size()-1))]
-	
-	$Order.text = recipe.generate_recipe_string()
-	order = load("res://Scripts/order.gd").new()
-	order.recipe = recipe
 
 func _on_submit_drink_button_down():
 	for child in get_parent().get_children():

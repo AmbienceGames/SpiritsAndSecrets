@@ -83,6 +83,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 				Globals.player_balance -= unlock_cost
 				set_label()
 				Globals.unlocked_ingredients.append(name.substr("Ingredients".length()))
+				Globals.viable_check = false
 
 func _on_area_2d_area_entered(area):
 	if area.get_parent().name == "Drink":

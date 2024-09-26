@@ -5,10 +5,12 @@ signal sprite_clicked(assoc)
 
 @onready
 var conversations: Array[Node] = get_node("Conversations").get_children()
+var order
+var order_taken = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
-	
+	order = Globals.get_patron_order(self.name)
+	$Button.text += "\n" + order
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -27,3 +29,15 @@ func get_conversations():
 			break;
 	
 	return returned_conversations
+
+
+
+func _on_button_pressed():
+	if order_taken == false:
+		for recipe in Globals.recipes:
+			if recipe.recipe_name == order:
+				Globals.current_order = recipe
+				break
+		order_taken = true
+		
+		

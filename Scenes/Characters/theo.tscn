@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cc3a1v1k1bxd7"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_oexvf"]
-[ext_resource type="Texture2D" uid="uid://cfp6b3wbjg7n2" path="res://Assets/Art/bar_patron.png" id="2_sg5nw"]
+[ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="2_sg5nw"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_uqlcj"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_587pq"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_xktvr"]
@@ -26,7 +26,7 @@ script = ExtResource("5_xktvr")
 memory_name = "RentLate"
 inverse_memory = false
 
-[node name="BarPatron" type="Node2D"]
+[node name="Theo" type="Node2D"]
 script = ExtResource("1_oexvf")
 
 [node name="BarPatron" type="Sprite2D" parent="."]
@@ -34,6 +34,13 @@ position = Vector2(128, 176)
 scale = Vector2(4, 4)
 texture = ExtResource("2_sg5nw")
 script = ExtResource("3_uqlcj")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 87.0
+offset_top = 125.0
+offset_right = 186.0
+offset_bottom = 156.0
+text = "Take Order:"
 
 [node name="Conversations" type="Node" parent="."]
 
@@ -58,3 +65,5 @@ player_choice = "Why is Trent always behind on rent?"
 patron_response = "Oh, I shouldn't talk, you know? It's his business."
 memories_required = Array[ExtResource("5_xktvr")]([SubResource("Resource_w6b28")])
 startDay = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

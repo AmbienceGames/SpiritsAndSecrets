@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://dk82hd3qv3811"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_3hkfg"]
-[ext_resource type="Texture2D" uid="uid://cfp6b3wbjg7n2" path="res://Assets/Art/bar_patron.png" id="2_42o0l"]
+[ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="2_42o0l"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_hxidi"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_yw2d6"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_plb6l"]
@@ -151,7 +151,7 @@ script = ExtResource("5_plb6l")
 memory_name = "GlanthorDone"
 inverse_memory = false
 
-[node name="BarPatron" type="Node2D"]
+[node name="Glanthor" type="Node2D"]
 script = ExtResource("1_3hkfg")
 
 [node name="BarPatron" type="Sprite2D" parent="."]
@@ -159,6 +159,13 @@ position = Vector2(128, 176)
 scale = Vector2(4, 4)
 texture = ExtResource("2_42o0l")
 script = ExtResource("3_hxidi")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 87.0
+offset_top = 125.0
+offset_right = 186.0
+offset_bottom = 156.0
+text = "Take Order:"
 
 [node name="Conversations" type="Node" parent="."]
 
@@ -281,3 +288,5 @@ script = ExtResource("4_yw2d6")
 player_choice = "Your information has really helped, Glanthor. Want anything else to drink?"
 patron_response = "No thanks."
 memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_vace2")])
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

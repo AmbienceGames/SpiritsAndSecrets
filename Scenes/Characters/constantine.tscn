@@ -1,7 +1,7 @@
 [gd_scene load_steps=38 format=3 uid="uid://qvyi1fv2peie"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_bi6qi"]
-[ext_resource type="Texture2D" uid="uid://77w7gj2wxlhx" path="res://Assets/Art/klaus.png" id="2_fgioo"]
+[ext_resource type="Texture2D" uid="uid://dltybg3shlsrh" path="res://Assets/Art/patrons/Constantine.png" id="2_uh64b"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_86nnr"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="3_toxus"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_2gu1s"]
@@ -170,10 +170,17 @@ inverse_memory = false
 script = ExtResource("1_bi6qi")
 
 [node name="BarPatron" type="Sprite2D" parent="."]
-position = Vector2(128, 176)
-scale = Vector2(4, 4)
-texture = ExtResource("2_fgioo")
+position = Vector2(128, 128)
+scale = Vector2(2, 2)
+texture = ExtResource("2_uh64b")
 script = ExtResource("3_86nnr")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 87.0
+offset_top = 125.0
+offset_right = 186.0
+offset_bottom = 156.0
+text = "Take Order:"
 
 [node name="Conversations" type="Node" parent="."]
 
@@ -325,3 +332,5 @@ patron_response = "Thanks. Goodnight."
 memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_0rbcr")])
 startDay = 1
 endDay = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

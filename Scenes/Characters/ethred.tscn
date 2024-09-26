@@ -1,7 +1,7 @@
-[gd_scene load_steps=57 format=3 uid="uid://b2kradyuylbs0"]
+[gd_scene load_steps=57 format=3 uid="uid://qklr5bxs61lt"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_meqax"]
-[ext_resource type="Texture2D" uid="uid://b038d83rg1xl0" path="res://Assets/Art/ethred.png" id="2_0cq7m"]
+[ext_resource type="Texture2D" uid="uid://ypgkqkd25aej" path="res://Assets/Art/ethred.png" id="2_0cq7m"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_v7iaf"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="3_xujja"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_aoja3"]
@@ -270,6 +270,13 @@ scale = Vector2(4, 4)
 texture = ExtResource("2_0cq7m")
 script = ExtResource("3_v7iaf")
 
+[node name="Button" type="Button" parent="."]
+offset_left = 87.0
+offset_top = 125.0
+offset_right = 186.0
+offset_bottom = 156.0
+text = "Take Order:"
+
 [node name="Conversations" type="Node" parent="."]
 
 [node name="conv0" type="Node" parent="Conversations"]
@@ -499,3 +506,5 @@ memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_hgyg0")
 memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_se4o3")])
 startDay = 3
 endDay = 3
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
