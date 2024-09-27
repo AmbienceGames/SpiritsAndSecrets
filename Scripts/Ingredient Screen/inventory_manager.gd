@@ -47,4 +47,5 @@ func _on_submit_drink_button_down():
 	Globals.player_balance += money_made
 	recipe = null
 	order = null
+	Globals.current_order = null
 	drink.queue_free()

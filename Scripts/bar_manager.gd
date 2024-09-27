@@ -137,7 +137,7 @@ func _start_dialogue(patron: BarPatron) -> void:
 func _end_dialogue(patron: BarPatron) -> void:
 	patron_response.visible = false
 	
-	for i in patron.get_conversations().size():
+	for i in range(patron.get_conversations().size()):
 		var button = choices[i]
 		button.disabled = true
 		button.visible = false
@@ -163,7 +163,7 @@ func _refresh_choices(patron: BarPatron):
 	
 	var conversations: Array[ConversationItem] = patron.get_conversations()
 	var conversation: ConversationItem
-	for index in conversations.size():
+	for index in range(conversations.size()):
 		conversation = conversations[index]
 		var choice_button = choices[index]
 		

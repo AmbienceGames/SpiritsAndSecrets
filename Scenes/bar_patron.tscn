@@ -25,7 +25,6 @@ offset_left = 91.0
 offset_top = 206.0
 offset_right = 190.0
 offset_bottom = 237.0
-text = "Take Order:"
 
 [node name="Conversations" type="Node" parent="."]
 

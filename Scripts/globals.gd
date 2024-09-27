@@ -71,7 +71,7 @@ var favorite_recipes = {
 		"Shadow Over The Sun", 
 		"Celestial Sparkle", 
 		"Thick Thadrick", 
-		"Frosty Fruit Fizz", 
+		"Citrus Breeze", 
 		"Treant’s Whisper"
 	],
 	"lilianne" : [
@@ -162,9 +162,12 @@ func create_recipes_from_json(json_data: Dictionary) -> Array:
 	
 func get_patron_order(patron_name):
 	var valid_recipes = []
+	print(viable_recipes)
 	for item in favorite_recipes[patron_name.to_lower()]:
+		print(item)
 		if item in viable_recipes:
 			valid_recipes.append(item)
+	print(valid_recipes)
 	return valid_recipes[(randi_range(0, valid_recipes.size()-1))]
 
 # Called when the node enters the scene tree for the first time.
@@ -178,14 +181,19 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not viable_check:
+		print("Unlocked Ingredients:", Globals.unlocked_ingredients)
+		print("Special Ingredients:", Globals.special_ingredients)
 		for single_recipe in recipes:
 			var check = false
 			for single_ingredient in single_recipe.ingredients:
 				print(single_ingredient)
 				if single_ingredient not in Globals.unlocked_ingredients and single_ingredient not in Globals.special_ingredients:
 					check = true
+					print("BREAK \n")
 					break
+				print(single_ingredient)
 			if not check:
+				print(single_recipe.recipe_name)
 				viable_recipes.append(single_recipe.recipe_name)
 		viable_check = true
 

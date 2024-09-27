@@ -26,7 +26,6 @@ func get_random_patron() -> Patron:
 
 func get_instance(patron_scene: PackedScene) -> Patron:
 	var patron = patron_scene.instantiate() as Patron
-	patron._ready()
 	return patron
 
 func add_patron(patron: Patron) -> void:

@@ -21,13 +21,13 @@
 	{
 	  "recipe_name": "Citrus Breeze",
 	  "glass_type": "Cocktail Glass",
-	  "ingredients": ["Shaken", "Pirates Dark Rum", "Celestial Citrus Blend", "Mystic Mint Leaves"],
+	  "ingredients": ["Shaken", "Pirates Dark Rum", "Celestial Citrus Blend", "Mystic Mint"],
 	  "has_ice": false
 	},
 	{
 	  "recipe_name": "Enchanted Berry",
 	  "glass_type": "Tall Glass",
-	  "ingredients": ["Shaken", "Elven Moonshine", "Feywild Berry Juice", "Mystic Mint Leaves"],
+	  "ingredients": ["Shaken", "Elven Moonshine", "Feywild Berry Juice", "Mystic Mint"],
 	  "has_ice": false
 	},
 	{
