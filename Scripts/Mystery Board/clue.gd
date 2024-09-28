@@ -10,6 +10,8 @@ var is_connected: bool = false
 var connected_to: Array = []  #Array of connected clues
 var is_cancelable: bool = false
 var clue_that_cancels = null  # Reference to the clue that cancels this one
+var is_dragging = false
+var line = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,7 +20,20 @@ func _ready():
 
 func pin_clue():
 	is_pinned = true
+	line = Line2D.new()
+	line.add_point($Pin.position)
+	line.add_point(get_local_mouse_position())
+	add_child(line)
+	$Pin.show()
+	Input.set_custom_mouse_cursor(load("res://Assets/Art/Mystery Board/PinCursor.png"))
 	#need more code to actually place the clue rightfully lol
+
+func unpin_clue():
+	remove_child(line)
+	is_pinned = false
+	line = null
+	Input.set_custom_mouse_cursor(null)
+	$Pin.hide()
 	
 func connect_to_clue(clue: Clue):
 	if clue != null and clue not in connected_to:
@@ -59,4 +74,20 @@ func disconnect_clue(clue: Clue):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if is_dragging:
+		global_position = get_global_mouse_position()
+	if is_pinned:
+		line.set_point_position(1, get_local_mouse_position())
+
+func _on_area_2d_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			is_dragging = true
+		else:
+			is_dragging = false
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
+		print("right clicked")
+		if is_pinned:
+			unpin_clue()
+		else:
+			pin_clue()

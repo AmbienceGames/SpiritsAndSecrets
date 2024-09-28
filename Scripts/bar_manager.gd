@@ -32,7 +32,6 @@ var exit_button: Button = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print(bar_positions)
-	
 	# Replace with function body.
 
 

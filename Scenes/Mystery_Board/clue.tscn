@@ -35,3 +35,5 @@ offset_left = -63.0
 offset_top = -41.0
 offset_right = 63.0
 offset_bottom = 63.0
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -5,7 +5,7 @@ signal sprite_clicked(assoc)
 
 @onready
 var conversations: Array[Node] = get_node("Conversations").get_children()
-var order
+var order = "Default"
 var order_taken = false
 var guard = false
 # Called when the node enters the scene tree for the first time.
@@ -13,12 +13,16 @@ func _ready() -> void:
 	if guard:
 		return
 	print(self.name)
-	order = Globals.get_patron_order(self.name)
-	$Button.text = "Take Order:\n" + order
+	if order:
+		order = Globals.get_patron_order(self.name)
+		$Button.text = "Take Order:\n" + order
 	guard = true
+	if order_taken:
+		$Button.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	print(order)
 	if Globals.current_order and order:
 		$Button.hide()
 	elif not Globals.current_order and not order_taken:
@@ -26,6 +30,9 @@ func _process(delta: float) -> void:
 	if Globals.current_order == null and order == null and not order_taken:
 		print("Drink Submitted")
 		order_taken = true
+		$Button.hide()
+	if order_taken:
+		print("hiding button")
 		$Button.hide()
 	
 

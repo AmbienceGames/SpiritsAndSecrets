@@ -20,256 +20,307 @@
 script = ExtResource("7_diht7")
 memory_name = "GreetedEthred"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_560sl"]
 script = ExtResource("7_diht7")
 memory_name = "GreetedEthred"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_n4fms"]
 script = ExtResource("7_diht7")
 memory_name = "EthredWork"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_hyton"]
 script = ExtResource("7_diht7")
 memory_name = "EthredWork"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_gq5fc"]
 script = ExtResource("7_diht7")
 memory_name = "EthredWork"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_3dhbn"]
 script = ExtResource("7_diht7")
 memory_name = "EthredNext"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_bwmvs"]
 script = ExtResource("7_diht7")
 memory_name = "EthredNext"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_t5ghe"]
 script = ExtResource("7_diht7")
 memory_name = "EthredTwo"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_oshm4"]
 script = ExtResource("7_diht7")
 memory_name = "EthredTwo"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_2vwgu"]
 script = ExtResource("7_diht7")
 memory_name = "EthredRattled"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_pw0g0"]
 script = ExtResource("7_diht7")
 memory_name = "EthredRattled"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_lhcfq"]
 script = ExtResource("7_diht7")
 memory_name = "EthredThree"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_id2ik"]
 script = ExtResource("7_diht7")
 memory_name = "EthredThree"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_smldl"]
 script = ExtResource("7_diht7")
 memory_name = "OffKilter"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_mhypn"]
 script = ExtResource("7_diht7")
 memory_name = "OffKilter"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_c7svk"]
 script = ExtResource("7_diht7")
 memory_name = "EthredDistraction"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_q5i35"]
 script = ExtResource("7_diht7")
 memory_name = "EthredDistraction"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_qr6d1"]
 script = ExtResource("7_diht7")
 memory_name = " VampireHunt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_dq8yq"]
 script = ExtResource("7_diht7")
 memory_name = "EthredVampireHunt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_1isxy"]
 script = ExtResource("7_diht7")
 memory_name = "EthredDistraction"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_rhhgo"]
 script = ExtResource("7_diht7")
 memory_name = "EthredVampireHunt"
 inverse_memory = true
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_nbspm"]
 script = ExtResource("7_diht7")
 memory_name = "EthredScared"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_uw4ee"]
 script = ExtResource("7_diht7")
 memory_name = "EthredScared"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_41bic"]
 script = ExtResource("7_diht7")
 memory_name = "EthredScaredWhy"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_15a6e"]
 script = ExtResource("7_diht7")
 memory_name = "EthredScaredWhy"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_88jc8"]
 script = ExtResource("7_diht7")
 memory_name = "EthredFriend"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_k0x0j"]
 script = ExtResource("7_diht7")
 memory_name = "EthredFriend"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_ml482"]
 script = ExtResource("7_diht7")
 memory_name = "EthredSecret"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_bt70p"]
 script = ExtResource("7_diht7")
 memory_name = "EthredSecret"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_c846o"]
 script = ExtResource("7_diht7")
 memory_name = "EthredKiller"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_dxrr3"]
 script = ExtResource("7_diht7")
 memory_name = "EthredKiller"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_iuscp"]
 script = ExtResource("7_diht7")
 memory_name = "EthredUnsure"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_mhsx6"]
 script = ExtResource("7_diht7")
 memory_name = "EthredKiller"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_tie3p"]
 script = ExtResource("7_diht7")
 memory_name = "EthredUnsure"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_8rsiv"]
 script = ExtResource("7_diht7")
 memory_name = "EthredUnsure"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_l0m0x"]
 script = ExtResource("7_diht7")
 memory_name = "EthredVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_afmuh"]
 script = ExtResource("7_diht7")
 memory_name = "EthredVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_0csys"]
 script = ExtResource("7_diht7")
 memory_name = "EthredAmnesia"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_qi3xo"]
 script = ExtResource("7_diht7")
 memory_name = "EthredVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_wswu0"]
 script = ExtResource("7_diht7")
 memory_name = "EthredAmnesia"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_jypsl"]
 script = ExtResource("7_diht7")
 memory_name = "EthredAmnesia"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_86iiy"]
 script = ExtResource("7_diht7")
 memory_name = "EthredGuilt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_c55sw"]
 script = ExtResource("7_diht7")
 memory_name = "EthredAmnesia"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_qfnen"]
 script = ExtResource("7_diht7")
 memory_name = "EthredGuilt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_nlxal"]
 script = ExtResource("7_diht7")
 memory_name = "EthredGuilt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_ob6xp"]
 script = ExtResource("7_diht7")
 memory_name = "EthredGuilt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_qfpqs"]
 script = ExtResource("7_diht7")
 memory_name = "EthredVampireHunt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_2adxj"]
 script = ExtResource("7_diht7")
 memory_name = "EthredScared"
 inverse_memory = true
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_2chrf"]
 script = ExtResource("7_diht7")
 memory_name = "NoVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_hgyg0"]
 script = ExtResource("7_diht7")
 memory_name = "NoVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_se4o3"]
 script = ExtResource("7_diht7")
 memory_name = "AngryTrent"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="PackedScene" id="PackedScene_ftybe"]
 _bundled = {
