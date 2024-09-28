@@ -9,6 +9,8 @@ var memory_name: String
 # (check if we DON'T have it)
 @export
 var inverse_memory: bool = false
+
+@export
 var is_clue: bool = false
 
 func _to_string() -> String:

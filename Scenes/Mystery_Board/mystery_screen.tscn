@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://chffl4ymlsb0"]
+
+[ext_resource type="Texture2D" uid="uid://c5ijxa1dh80hx" path="res://Assets/Art/Mystery Board/MysteryBoard.png" id="1_3df3j"]
+[ext_resource type="PackedScene" uid="uid://c8clmsi0tc1wt" path="res://Scenes/Mystery_Board/clue_manager.tscn" id="2_d74iu"]
+
+[node name="MysteryScreen" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(4, 4)
+texture = ExtResource("1_3df3j")
+
+[node name="ClueManager" parent="." instance=ExtResource("2_d74iu")]

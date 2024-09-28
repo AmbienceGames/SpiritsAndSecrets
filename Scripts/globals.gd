@@ -117,6 +117,9 @@ var recipes = []
 var current_order = null
 var viable_recipes = []
 var viable_check = false
+
+
+var clues_updated = false
 			
 func get_cast_for_day() -> Array[PackedScene]:
 	var names = cast[day-1]

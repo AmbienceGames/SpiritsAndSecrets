@@ -73,6 +73,7 @@ func _grant_memory():
 		BartenderMemory.memory[memory_unlocked] = not inverse_unlock
 		if memory.is_clue:
 			BartenderMemory.memory["clues"][memory_unlocked] = [memory_unlocked, patron_response]
+			Globals.clues_updated = false
 
 # Call this when the conversation is complete
 func complete():

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8clmsi0tc1wt"]
+
+[ext_resource type="Script" path="res://Scripts/Mystery Board/clue_manager.gd" id="1_o1uy8"]
+
+[node name="ClueManager" type="Node2D"]
+script = ExtResource("1_o1uy8")

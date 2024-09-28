@@ -10,51 +10,61 @@
 script = ExtResource("5_bqf5p")
 memory_name = "WhiteLady"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_elsnk"]
 script = ExtResource("5_bqf5p")
 memory_name = "WhiteLady"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_o3gxb"]
 script = ExtResource("5_bqf5p")
 memory_name = "Justice"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_44vys"]
 script = ExtResource("5_bqf5p")
 memory_name = "Justice"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_42lm3"]
 script = ExtResource("5_bqf5p")
 memory_name = "Vengeance"
 inverse_memory = false
+is_clue = true
 
 [sub_resource type="Resource" id="Resource_7bo5g"]
 script = ExtResource("5_bqf5p")
 memory_name = "WhiteLady"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_upc40"]
 script = ExtResource("5_bqf5p")
 memory_name = "WhiteLady"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_qsgdt"]
 script = ExtResource("5_bqf5p")
 memory_name = " LuciusDrunk"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_w7ilp"]
 script = ExtResource("5_bqf5p")
 memory_name = "FromRavenwood"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_mfkej"]
 script = ExtResource("5_bqf5p")
 memory_name = "EthredWork"
 inverse_memory = false
+is_clue = false
 
 [node name="Lucius" type="Node2D"]
 script = ExtResource("1_4xtvn")

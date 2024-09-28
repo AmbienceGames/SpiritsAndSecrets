@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://7kcetgwojuqy" path="res://Scenes/bar_screen.tscn" id="2_jhhkw"]
 [ext_resource type="PackedScene" uid="uid://cdokfy3ehg4v3" path="res://Scenes/maint_screen.tscn" id="4_ndhab"]
 [ext_resource type="PackedScene" uid="uid://bsn2bqb5h34na" path="res://Scenes/Ingredient_Screen/ingredient_screen.tscn" id="5_7bh5s"]
-[ext_resource type="PackedScene" uid="uid://chffl4ymlsb0" path="res://Scenes/mystery_screen.tscn" id="5_crxro"]
+[ext_resource type="PackedScene" uid="uid://chffl4ymlsb0" path="res://Scenes/Mystery_Board/mystery_screen.tscn" id="5_crxro"]
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="6_b4r7a"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_63bxj"]
