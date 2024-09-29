@@ -10,41 +10,49 @@
 script = ExtResource("5_achob")
 memory_name = "WhiteLady"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_xqxpf"]
 script = ExtResource("5_achob")
 memory_name = "DyingParty"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_uwc44"]
 script = ExtResource("5_achob")
 memory_name = "DyingParty"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_phbby"]
 script = ExtResource("5_achob")
 memory_name = "LilyTired"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_1xaqw"]
 script = ExtResource("5_achob")
 memory_name = "LilyTired"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_cnnx2"]
 script = ExtResource("5_achob")
 memory_name = "LoserParty"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_hsr0r"]
 script = ExtResource("5_achob")
 memory_name = "LoserParty"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_w4dbc"]
 script = ExtResource("5_achob")
 memory_name = "DislikeLucius"
 inverse_memory = false
+is_clue = false
 
 [node name="Lilianne" type="Node2D"]
 script = ExtResource("1_7ox62")

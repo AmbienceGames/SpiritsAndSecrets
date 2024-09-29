@@ -10,146 +10,175 @@
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_bkook"]
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_vrrpt"]
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = true
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_8ubdw"]
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_25o07"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorKnowsTrent"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_kcntu"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorKnowsTrent"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_xwm3h"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWontTell"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_wdawk"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWontTell"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_o85on"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentAtBank"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_jpxtr"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentAtBank"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_tmwld"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentNotHere"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_phn28"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentNotHere"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_5h5qu"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentNotHere"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_6rgnt"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWatchingTrent"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_2ag16"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWatchingTrent"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_jqsiw"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWatchingTrent"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_avfw7"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorSuspicious"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_swdxc"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorSuspicious"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_s5ey6"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_pyagm"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_3nuo2"]
 script = ExtResource("5_plb6l")
 memory_name = " GlanthorDrunk"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_t4e6q"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentDrunkHate"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_sn3hb"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_p68h7"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDayOne"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_137dx"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_vo2m0"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDayOne"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_5ne6n"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentDrunkHate"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_63cb2"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDone"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_vace2"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDone"
 inverse_memory = false
+is_clue = false
 
 [node name="Glanthor" type="Node2D"]
 script = ExtResource("1_3hkfg")

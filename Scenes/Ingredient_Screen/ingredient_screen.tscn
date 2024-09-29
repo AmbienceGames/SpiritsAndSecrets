@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://bsn2bqb5h34na"]
+[gd_scene load_steps=98 format=3 uid="uid://bsn2bqb5h34na"]
 
 [ext_resource type="Texture2D" uid="uid://dm4ceqs7j6f7j" path="res://Assets/Art/mixing_screen.png" id="1_wdbaw"]
 [ext_resource type="PackedScene" uid="uid://c0fm2d1mpfa0n" path="res://Scenes/Ingredient_Screen/trash.tscn" id="2_0a21t"]
@@ -96,6 +96,7 @@
 [ext_resource type="Texture2D" uid="uid://b1ivhfxr5vit8" path="res://Assets/Art/Mixers/celestial-citrus-blend-half.png" id="59_ypfoe"]
 [ext_resource type="Texture2D" uid="uid://2km68g6cna28" path="res://Assets/Art/Mixers/celestial-citrus-blend-empty.png" id="60_20o5d"]
 [ext_resource type="PackedScene" uid="uid://jg3wpvyafcb5" path="res://Scenes/Ingredient_Screen/inventory_manager.tscn" id="96_07lwm"]
+[ext_resource type="PackedScene" uid="uid://crmgwwswau44c" path="res://Scenes/patron_waiting.tscn" id="97_i1bo3"]
 
 [node name="IngredientScreen" type="Node2D"]
 
@@ -438,3 +439,6 @@ position = Vector2(720, 596)
 
 [node name="Inventory Manager" parent="." instance=ExtResource("96_07lwm")]
 position = Vector2(1358, 12)
+
+[node name="Patron Waiting" parent="." instance=ExtResource("97_i1bo3")]
+position = Vector2(1885, 529)

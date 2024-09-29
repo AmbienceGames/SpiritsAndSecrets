@@ -10,126 +10,151 @@
 script = ExtResource("5_twsmb")
 memory_name = "TrentDown"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_bsft8"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentDown"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_01j5w"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentBoss"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_6fdtq"]
 script = ExtResource("5_twsmb")
 memory_name = "RentLate"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_8n5qp"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentRude"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_npm7i"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentQuestions"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_mowg5"]
 script = ExtResource("5_twsmb")
 memory_name = "VampireSuspect"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_erdbi"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentQuestions"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_mwv0g"]
 script = ExtResource("5_twsmb")
 memory_name = "VampireSuspect"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_igbsc"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentQuestions"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_6gooc"]
 script = ExtResource("5_twsmb")
 memory_name = "VampireSuspect"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_btvqe"]
 script = ExtResource("5_twsmb")
 memory_name = "VampireSuspect"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_ui2um"]
 script = ExtResource("5_twsmb")
 memory_name = "ScaredOfVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_s7w4p"]
 script = ExtResource("5_twsmb")
 memory_name = "ScaredOfVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_ajqjp"]
 script = ExtResource("5_twsmb")
 memory_name = "VampireHunt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_oqxcu"]
 script = ExtResource("5_twsmb")
 memory_name = "ScaredOfVampire"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_55e0s"]
 script = ExtResource("5_twsmb")
 memory_name = "VampirePatron"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_fg4wg"]
 script = ExtResource("5_twsmb")
 memory_name = "VampireHunt"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_r8dty"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentWantsJustice"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_t66cj"]
 script = ExtResource("5_twsmb")
 memory_name = "VampirePatron"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_xgoq5"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentWantsJustice"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_7c1hs"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentWantsJustice"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_2ap7k"]
 script = ExtResource("5_twsmb")
 memory_name = " Drunk"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_3o63d"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentWantOver"
 inverse_memory = false
+is_clue = false
 
 [sub_resource type="Resource" id="Resource_738uc"]
 script = ExtResource("5_twsmb")
 memory_name = "TrentWantsJustice"
 inverse_memory = false
+is_clue = false
 
 [node name="Trent" type="Node2D"]
 script = ExtResource("1_xcef3")
@@ -263,3 +288,5 @@ patron_response = "What, just because we didn't get along, I can't want to find 
 memories_required = Array[ExtResource("5_twsmb")]([SubResource("Resource_738uc")])
 startDay = 3
 endDay = 3
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

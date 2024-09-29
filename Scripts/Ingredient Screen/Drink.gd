@@ -28,7 +28,6 @@ func _ready():
 		capitalized_words.append(word.capitalize())
 	glass_name = " ".join(capitalized_words)
 	$Bottle.texture = load(bottle_type)
-	print("drink made, type: " + glass_name)
 	place = position
 	$Label.text += glass_name + "\n"
 	$Timer.wait_time = cooldown_duration
@@ -43,7 +42,6 @@ func _process(delta):
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		print("moving drink")
 		if event.pressed:
 			is_dragging = true
 		else:
@@ -55,7 +53,6 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			if mixer_transfer and ingredients and can_transfer:  # Only transfer if cooldown allows
 				can_transfer = false  # Disable transfer until cooldown ends
 				$Timer.start()  # Start cooldown timer
-				print("transfered items from drink to shaker, timer started")
 				emit_signal("send_mixer", ingredients)  # Transfer ingredients to the mixer
 				ingredients = []
 				clear_insides()
@@ -64,14 +61,12 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			position = place
 
 func _on_cooldown_finished():
-	print("timer finished")
 	can_transfer = true  # Reset cooldown after the timer finishes
 
 
 func _on_area_2d_area_entered(area):
 	var parent = area.get_parent()
 	if area.name == "TrashArea":
-		print("deleting")
 		in_garbage = true
 	elif parent.name.begins_with("Ingredient") and not parent.is_bottle and parent.curr_count != 0:
 		hovered_ingredient = parent.name.substr("Ingredients".length())
@@ -94,7 +89,6 @@ func _on_area_2d_area_exited(area):
 			area.get_parent().disconnect("send_mixer", Callable(self, "on_receive_list"))
 
 func on_receive_list(list_data):
-	print("recieved items in drink from mixer, timer started")
 	can_transfer = false  # Disable transfer until cooldown ends
 	$Timer.start()  # Start cooldown timer
 	ingredients = list_data

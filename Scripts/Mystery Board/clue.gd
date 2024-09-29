@@ -20,6 +20,7 @@ func _ready():
 
 func pin_clue():
 	is_pinned = true
+	Globals.pinning = self
 	line = Line2D.new()
 	line.add_point($Pin.position)
 	line.add_point(get_local_mouse_position())
@@ -32,28 +33,29 @@ func unpin_clue():
 	remove_child(line)
 	is_pinned = false
 	line = null
+	Globals.pinning = null
 	Input.set_custom_mouse_cursor(null)
 	$Pin.hide()
 	
-func connect_to_clue(clue: Clue):
+func connect_to_clue(clue):
 	if clue != null and clue not in connected_to:
 		$Pin.show()
 		connected_to.append(clue)
 		is_connected = true
 		
-func create_connection(clue_a: Clue, clue_b: Clue):
-	if clue_a.is_connected or clue_b.is_connected: # Prevents the clues connecting if they're already connected, obviously
+func create_connection(clue_a: Clue):
+	if clue_a.is_connected or is_connected: # Prevents the clues connecting if they're already connected, obviously
 		return
 	
 	# Create a visual line to connect the clues, but there will probably be a better pixelated line so this is just temporary
 	var line = Line2D.new()
 	line.add_point(clue_a.find_child("Pin").global_position)
-	line.add_point(clue_b.find_child("Pin").global_position)
+	line.add_point(find_child("Pin").global_position)
 	add_child(line)
 	
 	# Connect the clues to each other
-	clue_a.connect_to_clue(clue_b)
-	clue_b.connect_to_clue(clue_a)
+	clue_a.connect_to_clue(self)
+	connect_to_clue(clue_a)
 
 #used to remove connections between two clues
 func remove_connection(clue_a: Clue, clue_b: Clue):
@@ -80,14 +82,19 @@ func _process(delta):
 		line.set_point_position(1, get_local_mouse_position())
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
+	
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		if event.pressed:
+		if event.pressed and not Globals.top_clue:
 			is_dragging = true
+			Globals.top_clue = true
 		else:
 			is_dragging = false
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
-		print("right clicked")
-		if is_pinned:
+			Globals.top_clue = false
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed and Input.is_action_just_pressed("Pin"):
+		if is_pinned and Globals.pinning:
 			unpin_clue()
+		elif not is_pinned and Globals.pinning not in [self, null]:
+			create_connection(Globals.pinning)
+			Globals.pinning.unpin_clue()
 		else:
 			pin_clue()

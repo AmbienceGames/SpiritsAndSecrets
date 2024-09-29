@@ -37,7 +37,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if not Globals.person_waiting:
+		for patron in bar_seats:
+			if patron and Globals.patron_orders[patron.name]:
+				Globals.person_waiting = true
+				break
+
 
 func advance_day() -> void:
 	_empty_bar()
@@ -157,12 +162,15 @@ func _choice_pressed(conversation: ConversationItem, patron: BarPatron):
 	_refresh_choices(patron)
 
 func _refresh_choices(patron: BarPatron):
-	exit_button.pressed.connect(_end_dialogue.bind(patron))
+	if not exit_button.pressed.is_connected(_end_dialogue):
+		exit_button.pressed.connect(_end_dialogue.bind(patron))
 	exit_button.visible = true
 	
 	var conversations: Array[ConversationItem] = patron.get_conversations()
 	var conversation: ConversationItem
+	print(conversations)
 	for index in range(conversations.size()):
+		print(conversations[index])
 		conversation = conversations[index]
 		var choice_button = choices[index]
 		
@@ -177,9 +185,11 @@ func _refresh_choices(patron: BarPatron):
 		# Update choice buttons
 		choice_button.text = conversation.player_choice
 		#disconnect choice from last character's dialogue
-		choice_button.pressed.disconnect(_choice_pressed)
-		choice_button.pressed.connect(
-			_choice_pressed.bind(conversation, patron)
-		)
-		choice_button.disabled = false
-		choice_button.visible = true
+		if choice_button.pressed.is_connected(_choice_pressed):
+			choice_button.pressed.disconnect(_choice_pressed)
+		if not choice_button.pressed.is_connected(_choice_pressed):
+			choice_button.pressed.connect(
+				_choice_pressed.bind(conversation, patron)
+			)
+			choice_button.disabled = false
+			choice_button.visible = true

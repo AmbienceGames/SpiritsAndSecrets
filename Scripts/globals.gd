@@ -111,15 +111,27 @@ var favorite_recipes = {
 	]
 };
 
+var patron_orders = {
+	"Constantine" : "Default",
+	"Ethred" : "Default",
+	"Glanthor" : "Default",
+	"Klaus" : "Default",
+	"Lilianne" : "Default",
+	"Lucius" : "Default",
+	"Theo" : "Default",
+	"Traveler" : "Default",
+	"Trent" : "Default"
+};
 var special_ingredients = ["Ice", "Soda Water", "Dwarven Stout", "Elderflower Liqueur", "Elven Moonshine", "Halflings Whiskey", "Pirates Dark Rum"]
 var unlocked_ingredients = []
 var recipes = []
 var current_order = null
 var viable_recipes = []
 var viable_check = false
-
-
+var pinning = null
+var person_waiting = false
 var clues_updated = false
+var top_clue = false
 			
 func get_cast_for_day() -> Array[PackedScene]:
 	var names = cast[day-1]
@@ -165,13 +177,10 @@ func create_recipes_from_json(json_data: Dictionary) -> Array:
 	
 func get_patron_order(patron_name):
 	var valid_recipes = []
-	print(viable_recipes)
 	for item in favorite_recipes[patron_name.to_lower()]:
-		print(item)
 		if item in viable_recipes:
 			valid_recipes.append(item)
-	print(valid_recipes)
-	return valid_recipes[(randi_range(0, valid_recipes.size()-1))]
+	patron_orders[patron_name] = valid_recipes[(randi_range(0, valid_recipes.size()-1))]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
