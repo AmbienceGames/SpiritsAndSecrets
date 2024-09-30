@@ -122,7 +122,7 @@ var patron_orders = {
 	"Traveler" : "Default",
 	"Trent" : "Default"
 };
-var special_ingredients = ["Ice", "Soda Water", "Dwarven Stout", "Elderflower Liqueur", "Elven Moonshine", "Halflings Whiskey", "Pirates Dark Rum"]
+var special_ingredients = ["Shaken", "Stirred", "Ice", "Soda Water", "Dwarven Stout", "Elderflower Liqueur", "Elven Moonshine", "Halflings Whiskey", "Pirates Dark Rum"]
 var unlocked_ingredients = []
 var recipes = []
 var current_order = null
@@ -193,19 +193,13 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not viable_check:
-		print("Unlocked Ingredients:", Globals.unlocked_ingredients)
-		print("Special Ingredients:", Globals.special_ingredients)
 		for single_recipe in recipes:
 			var check = false
 			for single_ingredient in single_recipe.ingredients:
-				print(single_ingredient)
 				if single_ingredient not in Globals.unlocked_ingredients and single_ingredient not in Globals.special_ingredients:
 					check = true
-					print("BREAK \n")
 					break
-				print(single_ingredient)
 			if not check:
-				print(single_recipe.recipe_name)
 				viable_recipes.append(single_recipe.recipe_name)
 		viable_check = true
 

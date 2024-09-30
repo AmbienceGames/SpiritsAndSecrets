@@ -38,7 +38,6 @@ func get_conversations():
 	
 	var pos: int = 0
 	for conversation in conversations:
-		print(conversation)
 		if conversation.can_access():
 			returned_conversations[pos] = conversation
 			pos += 1 

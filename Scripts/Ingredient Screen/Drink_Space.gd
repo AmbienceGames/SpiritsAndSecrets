@@ -20,11 +20,8 @@ func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and not event.pressed and not occupied:
 		# Make sure the event happens within a certain area (dragged_node, for example)
 		if dragged_node:
-			print("released inside dragged node area")
 			if dragged_node.is_bottle:
 				create_drink(dragged_node)
-		else:
-			print("released outside")
 
 
 func create_drink(dragged_node):
@@ -34,13 +31,11 @@ func create_drink(dragged_node):
 	drink.position = position
 	self.get_parent().add_child(drink)
 	occupied = true
-	print("drink created")
 	
 func _on_area_2d_area_entered(area):
 	var parent = area.get_parent()	
 	if parent.name.begins_with("Ingredient") and parent.is_bottle:
 		dragged_node = parent
-		print(dragged_node, "entered")
 
 
 

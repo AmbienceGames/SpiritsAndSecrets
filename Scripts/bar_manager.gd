@@ -31,7 +31,7 @@ var exit_button: Button = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print(bar_positions)
+	pass
 	# Replace with function body.
 
 
@@ -61,13 +61,11 @@ func _fill_bar() -> void:
 	
 	for i in range(len(available_bar_seats)):
 		var bpat = patron_factory.get_random_patron()
-		print(bpat)
 		var seat = available_bar_seats[i]
 		bpat.global_position = bar_positions[seat].global_position
 		bpat.sprite_clicked.connect(_start_dialogue)
 		bar_seats[seat] = bpat
 		add_child(bpat)
-	print()
 	available_bar_seats = []
 	
 		
@@ -94,11 +92,13 @@ func _empty_bar() -> void:
 		bar_seats[index] = null
 		available_bar_seats.append(index)
 		
+	if exit_button.pressed.is_connected(_end_dialogue):
+		exit_button.pressed.disconnect(_end_dialogue)
+		
 
 func _spawn_patron() -> void:
 
 	if len(available_bar_seats) == 0 and len(available_table_seats) == 0:
-		print("Reached patron limit")
 		return
 	
 	var patron = patron_factory.get_random_patron()
@@ -110,7 +110,6 @@ func _spawn_patron() -> void:
 	
 	if patron is BarPatron:
 		# Get a seat
-		print(patron.name)
 		var index = randi() % available_bar_seats.size()
 		var seat = available_bar_seats[index]
 		available_bar_seats.remove_at(index)
@@ -147,7 +146,8 @@ func _end_dialogue(patron: BarPatron) -> void:
 		button.visible = false
 	
 	exit_button.visible = false
-		
+	if exit_button.pressed.is_connected(_end_dialogue):
+		exit_button.pressed.disconnect(_end_dialogue)
 
 func _choice_pressed(conversation: ConversationItem, patron: BarPatron):
 	patron_response.text = conversation.patron_response
@@ -168,9 +168,7 @@ func _refresh_choices(patron: BarPatron):
 	
 	var conversations: Array[ConversationItem] = patron.get_conversations()
 	var conversation: ConversationItem
-	print(conversations)
 	for index in range(conversations.size()):
-		print(conversations[index])
 		conversation = conversations[index]
 		var choice_button = choices[index]
 		

@@ -15,19 +15,20 @@ var ingredients: Array
 var has_ice: bool
 
 func generate_recipe_string() -> String:
+	var temp_ingredients = ingredients
 	var shaken = false
 	var stirred = false
-	if ingredients[0] in ["Shaken", "Stirred"]:
-		if ingredients[0] == "Shaken":
+	if temp_ingredients[0] in ["Shaken", "Stirred"]:
+		if temp_ingredients[0] == "Shaken":
 			shaken = true
-		elif ingredients[0] == "Stirred":
+		elif temp_ingredients[0] == "Stirred":
 			stirred = true
-		ingredients = ingredients.slice(1)
+		temp_ingredients = temp_ingredients.slice(1)
 	
 	
 	var str = recipe_name + ":\nAdd to " + glass_type + ":"
 	
-	for i in ingredients:
+	for i in temp_ingredients:
 		str += "\n- " + i
 	
 	if shaken: 

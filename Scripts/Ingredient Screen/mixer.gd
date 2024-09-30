@@ -29,10 +29,8 @@ func _process(delta):
 		var tmp1 = (last_velocity.x * last_velocity.y)
 		var tmp2 = (velocity.x * velocity.y)
 		if tmp1 > 0 and tmp2 < 0 or tmp2 > 0 and tmp1 < 0:
-			print("shaking...", shakes)
 			shakes += 1
 			if shakes > 7:
-				print("shook")
 				ingredients.insert(0, "Shaken")
 				var text = $Label.text
 				$Label.text = text.substr(0, 8) + "Shaken \n" + text.substr(8)
@@ -61,7 +59,6 @@ func _on_area_2d_area_exited(area):
 		drink = null
 
 func on_receive_list(list_data):
-	print("recieved in mixer")
 	ingredients += list_data
 	shakeable = true
 	for ingredient in list_data:
@@ -69,12 +66,10 @@ func on_receive_list(list_data):
 	
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		print("moving drink")
 		if event.pressed:
 			is_dragging = true
 		else:
 			if mixer_transfer and ingredients and drink.can_transfer and ((drink.ingredients and not ingredients) or (not drink.ingredients and ingredients)):
-				print("TRANSFERING BACK")
 				emit_signal("send_mixer", ingredients)
 				ingredients = []
 				clear_insides()

@@ -10,17 +10,13 @@ func compare_to(g) -> float:
 	var score = 1.0
 	
 	if recipe != null:
-		print("Required:")
 		for ingredient in recipe.ingredients:
-			print(ingredient)
 			if ingredient not in g.ingredients:
 				score -= .3
 		if recipe.glass_type != g.glass_name:
 			score -= .2
 		var extra_flavors = 1
-		print("Extra:")
 		for ingredient in g.ingredients:
-			print(ingredient)
 			if ingredient not in recipe.ingredients:
 				extra_flavors -= 1
 		score += extra_flavors * 0.1
@@ -38,6 +34,5 @@ func compare_to(g) -> float:
 				extra_flavors -= 1
 		
 		score += extra_flavors * 0.1
-	print(score)
 	return score
 

@@ -22,7 +22,7 @@ func _on_exit_game_pressed():
 	get_tree().quit(0)
 
 func _on_settings_pressed():
-	print("me when i set the things")
+	pass
 
 func _on_back_pressed():
 	visible = false
