@@ -2,6 +2,8 @@ extends Node
 
 
 var day: int = 1
+var time: float = 0.0
+var paused = false
 
 var cast: Array = [
 	["trent","glanthor","constantine", "klaus","theo","lucius","lilianne","ethred"],
@@ -111,17 +113,18 @@ var favorite_recipes = {
 	]
 };
 
-var patron_orders = {
-	"Constantine" : "Default",
-	"Ethred" : "Default",
-	"Glanthor" : "Default",
-	"Klaus" : "Default",
-	"Lilianne" : "Default",
-	"Lucius" : "Default",
-	"Theo" : "Default",
-	"Traveler" : "Default",
-	"Trent" : "Default"
+var patron_orders_info = {
+	"Constantine" : ["Default", 0, 0],
+	"Ethred" : ["Default", 0, 0],
+	"Glanthor" : ["Default", 0, 0],
+	"Klaus" : ["Default", 0, 0],
+	"Lilianne" : ["Default", 0, 0],
+	"Lucius" : ["Default", 0, 0],
+	"Theo" : ["Default", 0, 0],
+	"Traveler" : ["Default", 0, 0],
+	"Trent" : ["Default", 0, 0]
 };
+
 var special_ingredients = ["Shaken", "Stirred", "Ice", "Soda Water", "Dwarven Stout", "Elderflower Liqueur", "Elven Moonshine", "Halflings Whiskey", "Pirates Dark Rum"]
 var unlocked_ingredients = []
 var recipes = []
@@ -180,7 +183,7 @@ func get_patron_order(patron_name):
 	for item in favorite_recipes[patron_name.to_lower()]:
 		if item in viable_recipes:
 			valid_recipes.append(item)
-	patron_orders[patron_name] = valid_recipes[(randi_range(0, valid_recipes.size()-1))]
+	patron_orders_info[patron_name][0] = valid_recipes[(randi_range(0, valid_recipes.size()-1))]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -192,6 +195,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if not paused:
+		time += delta
 	if not viable_check:
 		for single_recipe in recipes:
 			var check = false

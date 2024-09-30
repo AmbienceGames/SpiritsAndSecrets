@@ -37,9 +37,21 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if int(Globals.time) - Globals.time < .0167 and Globals.time - int(Globals.time) < .0167:
+		if null in bar_seats and int(Globals.time) % 3 == 0:
+			_spawn_patron()
+		if int(Globals.time) % 5 == 0:
+			_empty_bar()
+		if int(Globals.time) % 10 == 0:
+			for patron in bar_seats:
+				if patron and Globals.patron_orders_info[patron.name][2] == 0:
+					Globals.get_patron_order(patron.name)
+					patron.find_child("Button").text = Globals.patron_orders_info[patron.name][0] + "\n Orders remaining: " + str(Globals.patron_orders_info[patron.name][1])
+					patron.find_child("Button").disabled = false
+					
 	if not Globals.person_waiting:
 		for patron in bar_seats:
-			if patron and Globals.patron_orders[patron.name]:
+			if patron and Globals.patron_orders_info[patron.name][0]:
 				Globals.person_waiting = true
 				break
 
@@ -51,14 +63,6 @@ func advance_day() -> void:
 	_fill_bar()
 
 func _fill_bar() -> void:
-	for i in range(len(available_table_seats)):
-		var tpat = patron_factory.get_table_patron()
-		var seat = available_table_seats[i]
-		tpat.global_position = table_positions[seat].global_position
-		table_seats[seat] = tpat
-		add_child(tpat)
-	available_table_seats = []
-	
 	for i in range(len(available_bar_seats)):
 		var bpat = patron_factory.get_random_patron()
 		var seat = available_bar_seats[i]
@@ -70,30 +74,18 @@ func _fill_bar() -> void:
 	
 		
 func _empty_bar() -> void:
-	for index in range(len(table_seats)):
-		var tpat = table_seats[index]
-		
-		if tpat == null:
-			continue
-		
-		tpat.queue_free()
-		table_seats[index] = null
-		available_table_seats.append(index)
-	
 	for index in range(len(bar_seats)):
 		var bpat = bar_seats[index]
 		
 		if bpat == null:
 			continue
 		
-		bpat.sprite_clicked.disconnect(_start_dialogue)
-		patron_factory.add_patron(bpat)
-		bpat.queue_free()
-		bar_seats[index] = null
-		available_bar_seats.append(index)
-		
-	if exit_button.pressed.is_connected(_end_dialogue):
-		exit_button.pressed.disconnect(_end_dialogue)
+		if (Globals.patron_orders_info[bpat.name][1] == 0 and Globals.patron_orders_info[bpat.name][2] == 0) or bpat.nothing_to_say:
+			bpat.sprite_clicked.disconnect(_start_dialogue)
+			patron_factory.add_patron(bpat)
+			bpat.queue_free()
+			bar_seats[index] = null
+			available_bar_seats.append(index)
 		
 
 func _spawn_patron() -> void:
@@ -159,6 +151,7 @@ func _choice_pressed(conversation: ConversationItem, patron: BarPatron):
 		if choice.pressed.is_connected(_choice_pressed):
 			choice.pressed.disconnect(_choice_pressed)
 	
+	Globals.patron_orders_info[patron.name][2] -= 1
 	_refresh_choices(patron)
 
 func _refresh_choices(patron: BarPatron):
@@ -169,12 +162,16 @@ func _refresh_choices(patron: BarPatron):
 	if not patron.nothing_to_say:
 		exit_button.visible = true
 	var conversation: ConversationItem
+	if Globals.patron_orders_info[patron.name][2] == 0:
+		patron.order_taken = false
+		Globals.patron_orders_info[patron.name][0] = "Default"
+		
 	for index in range(conversations.size()):
 		conversation = conversations[index]
 		var choice_button = choices[index]
 		
 		# Disable choice button if no conversation available
-		if conversation == null:
+		if conversation == null or Globals.patron_orders_info[patron.name][2] == 0:
 			choice_button.text = ""
 			choice_button.disabled = true
 			choice_button.visible = false

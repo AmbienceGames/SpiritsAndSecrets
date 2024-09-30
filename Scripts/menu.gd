@@ -15,6 +15,7 @@ func _process(delta):
 
 func _on_pause_pressed():
 	visible = true
+	Globals.paused = true
 	#make it so that time stops
 
 
@@ -26,3 +27,4 @@ func _on_settings_pressed():
 
 func _on_back_pressed():
 	visible = false
+	Globals.paused = false
