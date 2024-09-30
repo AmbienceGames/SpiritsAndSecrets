@@ -19,6 +19,7 @@ offset_bottom = 23.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 
 [node name="Left" type="Button" parent="."]
+visible = false
 offset_left = 1.0
 offset_top = 714.0
 offset_right = 106.0
@@ -26,6 +27,7 @@ offset_bottom = 745.0
 text = "<- Turn Page"
 
 [node name="Right" type="Button" parent="."]
+visible = false
 offset_left = 1815.0
 offset_top = 724.0
 offset_right = 1920.0

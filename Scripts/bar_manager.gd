@@ -133,7 +133,7 @@ func _spawn_patron() -> void:
 
 
 func _start_dialogue(patron: BarPatron) -> void:
-	if patron.order_taken:
+	if patron.order_taken and not patron.nothing_to_say:
 		patron_response.text = ""
 		_refresh_choices(patron)
 
@@ -164,9 +164,10 @@ func _choice_pressed(conversation: ConversationItem, patron: BarPatron):
 func _refresh_choices(patron: BarPatron):
 	if not exit_button.pressed.is_connected(_end_dialogue):
 		exit_button.pressed.connect(_end_dialogue.bind(patron))
-	exit_button.visible = true
 	
 	var conversations: Array[ConversationItem] = patron.get_conversations()
+	if not patron.nothing_to_say:
+		exit_button.visible = true
 	var conversation: ConversationItem
 	for index in range(conversations.size()):
 		conversation = conversations[index]

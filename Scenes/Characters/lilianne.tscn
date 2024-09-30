@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://05loujsr87g5"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_7ox62"]
-[ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="2_pdq7n"]
+[ext_resource type="Texture2D" uid="uid://bysinagcy8pw6" path="res://Assets/Art/patrons/Liliane.png" id="2_2e3yl"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_2gxo5"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_a1w8s"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_achob"]
@@ -58,9 +58,9 @@ is_clue = false
 script = ExtResource("1_7ox62")
 
 [node name="BarPatron" type="Sprite2D" parent="."]
-position = Vector2(128, 176)
-scale = Vector2(4, 4)
-texture = ExtResource("2_pdq7n")
+position = Vector2(128, 128)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2e3yl")
 script = ExtResource("3_2gxo5")
 
 [node name="Button" type="Button" parent="."]
