@@ -32,6 +32,7 @@ func _process(delta):
 				break
 		if drink and is_instance_valid(drink):
 			var points = max(min(order.compare_to(drink), 1), 0)
+			print(points)
 			Globals.current_stars = int(points * 5)
 			$Stars.text = "Drink Current Stars: " + str(Globals.current_stars)
 
@@ -52,7 +53,7 @@ func _on_submit_drink_button_down():
 			drink = child
 			break
 	var points = order.compare_to(drink)
-	var money_made = max(points * 10 * recipe.ingredients.size(), 0)
+	var money_made = int(max(points * 4 * recipe.ingredients.size(), 0))
 	$Warning.text = "You made " + str(money_made) + " Gold!\nGrab a new order."
 	$Order.text = ""
 	$Stars.text = ""

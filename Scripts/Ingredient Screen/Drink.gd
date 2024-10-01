@@ -18,6 +18,7 @@ signal send_mixer(ingredient_list)
 
 func _ready():
 	var temp_name
+	Globals.current_stars = 0
 	if bottle_type.ends_with(".ctex"):
 		temp_name = bottle_type.substr(0, bottle_type.length() - 5)
 	var start_idx = temp_name.rfind("/") + 1

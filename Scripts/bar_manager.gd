@@ -1,7 +1,6 @@
 extends Node2D
 
 const BarPatron = preload("res://Scripts/bar_patron.gd");
-const TablePatron = preload("res://Scripts/table_patron.gd");
 
 
 @onready
@@ -9,14 +8,6 @@ var bar_positions: Array[Node] = get_node("BarPositions").get_children()
 var bar_seats: Array[Node2D] = [null, null, null, null]
 var available_bar_seats: Array[int] = [0, 1, 2, 3]
 
-@export
-var ordering_position: Node2D = null
-var ordering_patron: Node2D = null
-
-@onready
-var table_positions: Array[Node] = get_node("TablePositions").get_children()
-var table_seats: Array[Node2D] = [null, null, null, null]
-var available_table_seats: Array[int] = [0, 1, 2, 3]
 
 @onready
 var choices: Array[Node] = [get_node("HUD/Choice1"),get_node("HUD/Choice2"),get_node("HUD/Choice3")]
@@ -31,6 +22,8 @@ var exit_button: Button = null
 
 var locked_color: Color = Color(0.3, 0.3, 0.3, 1) # Darkened color
 var normal_color: Color = Color(1, 1, 1, 1) # Full brightness (white)
+
+var target_buttons := ["Empty bar", "Fill bar", "Advance day"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -50,6 +43,24 @@ func _process(delta: float) -> void:
 			if patron and Globals.patron_orders_info[patron.name][0]:
 				Globals.person_waiting = true
 				break
+	
+	_check_for_buttons(self)
+
+func _check_for_buttons(node: Node) -> void:
+	for child in node.get_children():
+		# If a button with the target text is found
+		if child is Button and child.text in target_buttons:
+			# Print information about the button
+			print("Found target button:", child.text)
+			print("Parent node:", child.get_parent().name)
+			# Capture the call stack
+			print("Call stack trace:\n", get_stack())
+			# Optionally, stop the process loop once the button is found
+			set_process(false)
+			return
+		# Continue checking recursively
+		if child.get_child_count() > 0:
+			_check_for_buttons(child)
 
 
 func advance_day() -> void:
@@ -81,7 +92,7 @@ func _remove_patron(patron: BarPatron) -> void:
 		
 
 func _spawn_patron() -> void:
-	if len(available_bar_seats) == 0 and len(available_table_seats) == 0:
+	if len(available_bar_seats) == 0:
 		return
 	
 	var patron = patron_factory.get_random_patron()

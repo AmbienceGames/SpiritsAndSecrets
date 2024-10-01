@@ -3,19 +3,12 @@ extends Node2D
 @export
 var bar_patrons: Array[PackedScene] = []
 
-@export 
-var table_patron: PackedScene = null
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	bar_patrons = Globals.get_cast_for_day()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-	
-
-func get_table_patron() -> Patron:
-	return get_instance(table_patron)
 
 func get_random_patron() -> Patron:
 	if len(bar_patrons) == 0:
