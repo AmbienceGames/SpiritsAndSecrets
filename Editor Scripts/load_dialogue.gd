@@ -19,6 +19,7 @@ func _run():
 		var node = Node.new()
 		node.name = "Conversations"
 		root.add_child(node)
+		print(script_path + filename.replace("tscn","txt"))
 		load_dialogue(script_path + filename.replace("tscn","txt"), root)
 		print("Dialogue loaded")
 
@@ -34,7 +35,8 @@ func _run():
 
 func load_dialogue(path: String, patron: Node) -> void:
 	var file = FileAccess.open(path,FileAccess.READ)
-	
+	if file == null:
+		print("File does not exist", path)
 	file.get_csv_line()
 	var conv = patron.find_child("Conversations",true,false)
 	var convs = []

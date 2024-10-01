@@ -6,7 +6,7 @@ var time: float = 0.0
 var paused = false
 
 var cast: Array = [
-	["trent","glanthor","constantine", "klaus","theo","lucius","lilianne","ethred"],
+	["trent","constantine", "klaus","theo","lucius","lilianne","ethred"],
 	["glanthor", "klaus","theo","lucius","lilianne","ethred"],
 	["trent","glanthor","klaus","theo","lucius","lilianne","ethred","traveler"],
 	["trent","glanthor","klaus","theo","lucius","ethred","traveler"],
@@ -123,6 +123,18 @@ var patron_orders_info = {
 	"Theo" : ["Default", 0, 0],
 	"Traveler" : ["Default", 0, 0],
 	"Trent" : ["Default", 0, 0]
+};
+
+var patron_curr_response = {
+	"Constantine" : "",
+	"Ethred" : "",
+	"Glanthor" : "",
+	"Klaus" : "",
+	"Lilianne" : "",
+	"Lucius" : "",
+	"Theo" : "",
+	"Traveler" : "",
+	"Trent" : ""
 };
 
 var special_ingredients = ["Shaken", "Stirred", "Ice", "Soda Water", "Dwarven Stout", "Elderflower Liqueur", "Elven Moonshine", "Halflings Whiskey", "Pirates Dark Rum"]

@@ -6,193 +6,193 @@
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="3_toxus"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_2gu1s"]
 
-[sub_resource type="Resource" id="Resource_iwl43"]
+[sub_resource type="Resource" id="Resource_f7pow"]
 script = ExtResource("3_toxus")
 memory_name = "StartToutorial"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_kt2xr"]
+[sub_resource type="Resource" id="Resource_m7cpg"]
 script = ExtResource("3_toxus")
 memory_name = "StartToutorial"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_257kn"]
+[sub_resource type="Resource" id="Resource_o5u3q"]
 script = ExtResource("3_toxus")
 memory_name = "GotVeryDrunk"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_4chnd"]
+[sub_resource type="Resource" id="Resource_4pryp"]
 script = ExtResource("3_toxus")
 memory_name = "GotVeryDrunk"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_b633s"]
+[sub_resource type="Resource" id="Resource_yi7uy"]
 script = ExtResource("3_toxus")
 memory_name = "MixDrink"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_iewe6"]
+[sub_resource type="Resource" id="Resource_vj0dc"]
 script = ExtResource("3_toxus")
 memory_name = "MixDrink"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_lifsl"]
+[sub_resource type="Resource" id="Resource_tlyrr"]
 script = ExtResource("3_toxus")
 memory_name = "Misplaced"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_xu5o4"]
+[sub_resource type="Resource" id="Resource_8f4hj"]
 script = ExtResource("3_toxus")
 memory_name = "Misplaced"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_2o48n"]
+[sub_resource type="Resource" id="Resource_rmrnh"]
 script = ExtResource("3_toxus")
 memory_name = "SatTable"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ocva2"]
+[sub_resource type="Resource" id="Resource_vg03r"]
 script = ExtResource("3_toxus")
 memory_name = "Misplaced"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_2o5vx"]
+[sub_resource type="Resource" id="Resource_yeacb"]
 script = ExtResource("3_toxus")
 memory_name = "SatTable"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_88vk4"]
+[sub_resource type="Resource" id="Resource_6xx7o"]
 script = ExtResource("3_toxus")
 memory_name = "SatTable"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_yc7bs"]
+[sub_resource type="Resource" id="Resource_qi7xg"]
 script = ExtResource("3_toxus")
 memory_name = "OldDays"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_umfb4"]
+[sub_resource type="Resource" id="Resource_ffh14"]
 script = ExtResource("3_toxus")
 memory_name = "OldDays"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ptwgp"]
+[sub_resource type="Resource" id="Resource_omf3v"]
 script = ExtResource("3_toxus")
 memory_name = "KeysHook"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_vmbne"]
+[sub_resource type="Resource" id="Resource_bas8w"]
 script = ExtResource("3_toxus")
 memory_name = "KeysHook"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_11upy"]
+[sub_resource type="Resource" id="Resource_pky56"]
 script = ExtResource("3_toxus")
 memory_name = "VeryVeryDrunk"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_je3p3"]
+[sub_resource type="Resource" id="Resource_ubnsm"]
 script = ExtResource("3_toxus")
 memory_name = "VeryVeryDrunk"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_gas3e"]
+[sub_resource type="Resource" id="Resource_w6gm6"]
 script = ExtResource("3_toxus")
 memory_name = "BackupSolution"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_u4yld"]
+[sub_resource type="Resource" id="Resource_ecytu"]
 script = ExtResource("3_toxus")
 memory_name = "BackupSolution"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_uvk48"]
+[sub_resource type="Resource" id="Resource_spt0k"]
 script = ExtResource("3_toxus")
 memory_name = "EndToutorial"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_st00q"]
+[sub_resource type="Resource" id="Resource_wbpi6"]
 script = ExtResource("3_toxus")
 memory_name = "EndToutorial"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_w2gtx"]
+[sub_resource type="Resource" id="Resource_suisl"]
 script = ExtResource("3_toxus")
 memory_name = "ConstOldTimes"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_j5or1"]
+[sub_resource type="Resource" id="Resource_4bgcl"]
 script = ExtResource("3_toxus")
 memory_name = "ConstOldTimes"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ppvky"]
-script = ExtResource("3_toxus")
-memory_name = "RavenwoodAccident"
-inverse_memory = false
-is_clue = true
-
-[sub_resource type="Resource" id="Resource_3w3fr"]
+[sub_resource type="Resource" id="Resource_ohvhn"]
 script = ExtResource("3_toxus")
 memory_name = "RavenwoodAccident"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_sj8f8"]
+[sub_resource type="Resource" id="Resource_xyq37"]
+script = ExtResource("3_toxus")
+memory_name = "RavenwoodAccident"
+inverse_memory = false
+is_clue = false
+
+[sub_resource type="Resource" id="Resource_5qhmk"]
 script = ExtResource("3_toxus")
 memory_name = "BankRobbery"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_emx4g"]
+[sub_resource type="Resource" id="Resource_i54yo"]
 script = ExtResource("3_toxus")
 memory_name = "BankRobbery"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_weg0k"]
-script = ExtResource("3_toxus")
-memory_name = "RobberDesc"
-inverse_memory = false
-is_clue = true
-
-[sub_resource type="Resource" id="Resource_bphyw"]
+[sub_resource type="Resource" id="Resource_ep46f"]
 script = ExtResource("3_toxus")
 memory_name = "RobberDesc"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_kmmud"]
+[sub_resource type="Resource" id="Resource_u5ige"]
+script = ExtResource("3_toxus")
+memory_name = "RobberDesc"
+inverse_memory = false
+is_clue = false
+
+[sub_resource type="Resource" id="Resource_nf2ni"]
 script = ExtResource("3_toxus")
 memory_name = "StayTheNight"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_0rbcr"]
+[sub_resource type="Resource" id="Resource_jl2wb"]
 script = ExtResource("3_toxus")
 memory_name = "StayTheNight"
 inverse_memory = false
@@ -220,7 +220,7 @@ text = "Take Order:"
 script = ExtResource("4_2gu1s")
 player_choice = "What happened?"
 patron_response = "You don’t remember? I’d think a barkeep would know how to hold their liquor a little better."
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_iwl43")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_f7pow")])
 startDay = 1
 endDay = 1
 
@@ -228,8 +228,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "Ugh..."
 patron_response = "I don't think I've seen you down that much in 30 years. Remember that night at the lion’s head? Me neither."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_kt2xr")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_257kn")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_m7cpg")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_o5u3q")])
 startDay = 1
 endDay = 1
 
@@ -237,8 +237,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "What happened?"
 patron_response = "Well, as I remember it, I helped you clean up, we decided to stay late and have a couple of drinks. After that… it all gets a little fuzzy. Considering it’s almost time for you to open again, I don’t suppose you’d be willing to mix me a drink?"
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_4chnd")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_b633s")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_4pryp")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_yi7uy")])
 startDay = 1
 endDay = 1
 
@@ -246,8 +246,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "A drink?"
 patron_response = "Still a little drunk, eh? You have the recipe in your book there. But before you get to mixing, I should tell you that you may have misplaced some things last night. I can't find you cleaning supplies anywhere."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_iewe6")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_lifsl")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_vj0dc")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_tlyrr")])
 startDay = 1
 endDay = 1
 
@@ -255,16 +255,16 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "Do you remember where?"
 patron_response = "I don't remember much after my first three Constantine Specials. I do know we sat at that table there."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_xu5o4")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_2o48n")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_8f4hj")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_rmrnh")])
 startDay = 1
 
 [node name="conv5" type="Node" parent="Conversations"]
 script = ExtResource("4_2gu1s")
 player_choice = "Is this some sort of prank? Where did you put them?"
 patron_response = "I don't remember much after my first three Constantine Specials. I do know we sat at that table there."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_ocva2")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_2o5vx")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_vg03r")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_yeacb")])
 startDay = 1
 endDay = 1
 
@@ -272,8 +272,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "What else do you remember?"
 patron_response = "Hm… we talked a lot about the old days, before your injury. You were under the table for a bit *laughs*"
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_88vk4")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_yc7bs")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_6xx7o")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_qi7xg")])
 startDay = 1
 endDay = 1
 
@@ -281,8 +281,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "Old days?"
 patron_response = "Oh, don’t make me talk about adventuring. I get tired just thinking about it. Regardless, I looked under the table. Nothing but some keys. I hung them over there with the rest."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_umfb4")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_ptwgp")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_ffh14")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_omf3v")])
 startDay = 1
 endDay = 1
 
@@ -290,8 +290,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "The keys go to the rooms. Maybe we went there. Do you remember which key it was?"
 patron_response = "No idea. Just put them on the empty hook. I don’t remember going to the rooms, though anything could’ve happened after that fourth drink. "
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_vmbne")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_11upy")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_bas8w")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_pky56")])
 startDay = 1
 endDay = 1
 
@@ -299,16 +299,16 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "Pretty far gone?"
 patron_response = "Yep. You tried to clean up a few spills, but I think you just spilled the cleaning solution everywhere. Say, where do you keep your backup solution?"
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_je3p3")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_gas3e")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_ubnsm")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_w6gm6")])
 startDay = 1
 endDay = 1
 
 [node name="conv10" type="Node" parent="Conversations"]
 script = ExtResource("4_2gu1s")
 player_choice = "The supplies must be there!"
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_u4yld")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_uvk48")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_ecytu")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_spt0k")])
 startDay = 1
 endDay = 1
 
@@ -316,8 +316,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "You seem nervous, what's bothering you?"
 patron_response = "Oh, you know, old things. Just been thinking a lot lately."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_st00q")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_w2gtx")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_wbpi6")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_suisl")])
 startDay = 1
 endDay = 1
 
@@ -325,8 +325,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "Thinking about what?"
 patron_response = "Back in Ravenwood - I still haven't gotten over it. We were sent to rescue them, and I killed them. I know, it was an accident, but we lied, blamed the kidnappers. We were wrong, and we knew it. It's been twenty five years and I still think about it. Do you think we would have ever succeeded if we didn't? All of our careers started with a lie."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_j5or1")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_ppvky")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_4bgcl")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_ohvhn")])
 startDay = 1
 endDay = 1
 
@@ -334,8 +334,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "How have things been going lately?"
 patron_response = "Things have been improving at the bank since the theft last month. I don't think the guard has caught the thief yet, though. Wish I did when I had the chance. If I ever see him again, I swear, he's done for."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_3w3fr")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_sj8f8")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_xyq37")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_5qhmk")])
 startDay = 1
 endDay = 1
 
@@ -343,8 +343,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "What was the robber like?"
 patron_response = "Unremarkable, really. He was skinny, I guess. Black hair. Big ears, sort of."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_emx4g")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_weg0k")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_i54yo")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_ep46f")])
 startDay = 1
 endDay = 1
 
@@ -352,8 +352,8 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "Bar's closing, Constantine. You've got to get home"
 patron_response = "I know, I know. Would it really be so bad if I stayed a while longer? I just want to sit and think, alone. "
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_bphyw")])
-memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_kmmud")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_u5ige")])
+memories_unlocked = Array[ExtResource("3_toxus")]([SubResource("Resource_nf2ni")])
 startDay = 1
 endDay = 1
 
@@ -361,7 +361,7 @@ endDay = 1
 script = ExtResource("4_2gu1s")
 player_choice = "Alright, man. Don't make a mess of things. "
 patron_response = "Thanks. Goodnight."
-memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_0rbcr")])
+memories_required = Array[ExtResource("3_toxus")]([SubResource("Resource_jl2wb")])
 startDay = 1
 endDay = 1
 
