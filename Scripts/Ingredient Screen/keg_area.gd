@@ -22,6 +22,7 @@ func _process(delta: float) -> void:
 
 func _on_time_to_fill_timeout() -> void:
 	drink.add_ingredient(whats_inside)
+	Globals.current_stars = 0
 
 
 func _on_area_2d_area_entered(area):

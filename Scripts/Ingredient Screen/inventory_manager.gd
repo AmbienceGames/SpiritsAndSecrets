@@ -24,6 +24,16 @@ func _process(delta):
 		$Order.text = recipe.generate_recipe_string()
 		order = load("res://Scripts/order.gd").new()
 		order.recipe = recipe
+		
+	if Globals.current_stars == 0 and order:
+		for child in get_parent().get_children():
+			if child.name == "Drink":
+				drink = child
+				break
+		if drink and is_instance_valid(drink):
+			var points = max(min(order.compare_to(drink), 1), 0)
+			Globals.current_stars = int(points * 5)
+			$Stars.text = "Drink Current Stars: " + str(Globals.current_stars)
 
 func _on_refill_pressed():			
 	if total_price <= Globals.player_balance:
@@ -44,8 +54,11 @@ func _on_submit_drink_button_down():
 	var points = order.compare_to(drink)
 	var money_made = max(points * 10 * recipe.ingredients.size(), 0)
 	$Warning.text = "You made " + str(money_made) + " Gold!\nGrab a new order."
+	$Order.text = ""
+	$Stars.text = ""
 	Globals.player_balance += money_made
 	recipe = null
 	order = null
 	Globals.current_order = null
 	drink.queue_free()
+	drink = null

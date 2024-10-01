@@ -141,6 +141,7 @@ var special_ingredients = ["Shaken", "Stirred", "Ice", "Soda Water", "Dwarven St
 var unlocked_ingredients = []
 var recipes = []
 var current_order = null
+var current_stars = 0
 var viable_recipes = []
 var viable_check = false
 var pinning = null

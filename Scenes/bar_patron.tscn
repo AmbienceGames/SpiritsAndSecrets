@@ -23,9 +23,9 @@ script = ExtResource("3_hxcs4")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 91.0
-offset_top = 206.0
+offset_top = 262.0
 offset_right = 190.0
-offset_bottom = 237.0
+offset_bottom = 293.0
 
 [node name="Conversations" type="Node" parent="."]
 

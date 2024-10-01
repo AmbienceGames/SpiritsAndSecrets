@@ -64,7 +64,7 @@ func _on_button_pressed():
 	if order_taken == false:
 		orders -= 1
 		Globals.patron_orders_info[self.name][1] = orders
-		Globals.patron_orders_info[self.name][2] = randi_range(1,5)
+		Globals.patron_orders_info[self.name][2] = Globals.current_stars + (randi_range(1,3))
 		$Button.disabled = true
 		for recipe in Globals.recipes:
 			if recipe.recipe_name == Globals.patron_orders_info[self.name][0]:

@@ -96,14 +96,17 @@ func on_receive_list(list_data):
 		$Label.text += ingredient + "\n"
 		if ingredients.find(ingredient) != 0:
 			add_flavors(ingredient)
+			Globals.current_stars = 0
 		
 func update_insides():
 	$Label.text += ingredients[-1] + "\n"
 	add_flavors(ingredients[-1])
+	Globals.current_stars = 0
 
 func clear_insides():
 	$Label.text = glass_name + "\n"
 	flavors = []
+	Globals.current_stars = 0
 	
 func _on_area_2d_mouse_entered():
 	$Label.show()

@@ -35,5 +35,11 @@ offset_top = 276.0
 offset_right = 136.0
 offset_bottom = 365.0
 
+[node name="Stars" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 376.0
+offset_right = 251.0
+offset_bottom = 444.0
+
 [connection signal="pressed" from="Refill" to="." method="_on_refill_pressed"]
 [connection signal="button_down" from="SubmitDrink" to="." method="_on_submit_drink_button_down"]
