@@ -4,7 +4,7 @@ var recipe
 var drink
 var order
 var total_price = 0
-
+var drink_submitting = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -12,6 +12,18 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if drink and drink_submitting:
+		drink.position.x += 32
+		print(drink.position.x)
+		if drink.position.x >= 1920:
+				drink_submitting = false
+				get_parent().remove_child(drink)
+				Globals.drink_submitted(drink)
+	if drink and is_instance_valid(drink) and not Globals.ordering_patron:
+		drink.queue_free()
+		drink = null
+
+		
 	var curr_total_price = 0
 	for child in get_parent().get_children():
 		if child.name.begins_with("Ingredient") and child.has_label:
@@ -60,5 +72,5 @@ func _on_submit_drink_button_down():
 	recipe = null
 	order = null
 	Globals.current_order = null
-	drink.queue_free()
-	drink = null
+	drink_submitting = true
+

@@ -24,7 +24,8 @@ var locked_color: Color = Color(0.3, 0.3, 0.3, 1) # Darkened color
 var normal_color: Color = Color(1, 1, 1, 1) # Full brightness (white)
 
 var target_buttons := ["Empty bar", "Fill bar", "Advance day"]
-
+var drink_slide = false
+var drink = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -33,6 +34,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if Globals.ordering_patron and drink_slide and is_instance_valid(drink):
+		if drink.position.x <= (Globals.ordering_patron.position.x+64):
+			drink.position.x += 35
+		else:
+			await get_tree().create_timer(2.0).timeout
+			Globals.ordering_patron = null
 	if int(Globals.time) - Globals.time < .0167 and Globals.time - int(Globals.time) < .0167:
 		if null in bar_seats and int(Globals.time) % 3 == 0:
 			_spawn_patron()
@@ -189,3 +196,15 @@ func _refresh_choices(patron: BarPatron):
 			)
 			choice_button.disabled = false
 			choice_button.visible = true
+
+func drink_sliding(drink):
+	print("Drink Slided")
+	print(get_children())
+	print("Is drink instance valid:", is_instance_valid(drink))
+	print("Drink parent before adding:", drink.get_parent())
+	add_child(drink)
+	print(get_children())
+	drink.visible = true
+	drink_slide = true
+	drink.position = Vector2(-20,552)
+	self.drink = drink

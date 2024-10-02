@@ -148,7 +148,10 @@ var pinning = null
 var person_waiting = false
 var clues_updated = false
 var top_clue = false
-			
+
+var tavern = null
+var ordering_patron = null
+
 func get_cast_for_day() -> Array[PackedScene]:
 	var names = cast[day-1]
 	var path = "res://Scenes/Characters"
@@ -221,4 +224,7 @@ func _process(delta):
 				viable_recipes.append(single_recipe.recipe_name)
 		viable_check = true
 
-
+func drink_submitted(drink):
+	if tavern:
+		tavern._cycle_right()
+	tavern.find_child("Screens").find_child("Bar").drink_sliding(drink)

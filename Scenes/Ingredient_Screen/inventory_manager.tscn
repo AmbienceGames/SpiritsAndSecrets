@@ -13,9 +13,9 @@ offset_bottom = 439.0
 text = "Refill"
 
 [node name="SubmitDrink" type="Button" parent="."]
-offset_left = 536.0
+offset_left = 888.0
 offset_top = 544.0
-offset_right = 648.0
+offset_right = 1000.0
 offset_bottom = 576.0
 text = "Submit Drink"
 

@@ -63,6 +63,7 @@ func get_conversations():
 
 func _on_button_pressed():
 	if order_taken == false:
+		Globals.ordering_patron = self
 		orders -= 1
 		Globals.patron_orders_info[self.name][1] = orders
 		update_icons()

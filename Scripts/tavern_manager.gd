@@ -6,6 +6,7 @@ var current_screen = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Globals.tavern = self	
 	tavern_screens[current_screen].visible = true
 	set_arrows()
 
@@ -69,3 +70,4 @@ func _on_left_arrow_button_down():
 func _on_left_arrow_button_up():
 	$HUD/LeftArrow.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER
 	$HUD/LeftText.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+

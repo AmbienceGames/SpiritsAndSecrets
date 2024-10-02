@@ -132,11 +132,11 @@ whats_inside = "Pirates Dark Rum"
 jar_texture = ExtResource("47_dkiiw")
 
 [node name="Trash" parent="." instance=ExtResource("2_0a21t")]
-position = Vector2(1444, 648)
+position = Vector2(560, 640)
 scale = Vector2(4, 4)
 
 [node name="Drink_Space" parent="." instance=ExtResource("2_a40mp")]
-position = Vector2(591, 648)
+position = Vector2(945, 648)
 
 [node name="Elemental Ice Shards Background" parent="." instance=ExtResource("10_n0tdo")]
 position = Vector2(764, 221)
@@ -436,7 +436,7 @@ is_bottle = true
 has_label = false
 
 [node name="Mixer" parent="." instance=ExtResource("44_1egko")]
-position = Vector2(720, 596)
+position = Vector2(804, 596)
 
 [node name="Inventory Manager" parent="." instance=ExtResource("96_07lwm")]
 
