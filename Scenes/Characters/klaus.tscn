@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://bs0n4v0ek7125"]
+[gd_scene load_steps=15 format=3 uid="uid://bs0n4v0ek7125"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_70xry"]
 [ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="2_o07g0"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_mlnaa"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_b5x7o"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_wtm7e"]
+[ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="6_oa5iv"]
 
 [sub_resource type="Resource" id="Resource_tce6t"]
 script = ExtResource("5_wtm7e")
@@ -64,9 +65,9 @@ texture = ExtResource("2_o07g0")
 script = ExtResource("3_mlnaa")
 
 [node name="Button" type="Button" parent="."]
-offset_top = 265.0
+offset_top = 298.0
 offset_right = 256.0
-offset_bottom = 297.0
+offset_bottom = 330.0
 text = "Take Order:"
 
 [node name="Conversations" type="Node" parent="."]
@@ -108,5 +109,17 @@ player_choice = "I am lucky. Let me know if you need anything else."
 patron_response = "Thanks."
 memories_required = Array[ExtResource("5_wtm7e")]([SubResource("Resource_arbyp")])
 startDay = 1
+
+[node name="Drink1" type="Sprite2D" parent="."]
+position = Vector2(95, 70)
+texture = ExtResource("6_oa5iv")
+
+[node name="Drink2" type="Sprite2D" parent="."]
+position = Vector2(127, 70)
+texture = ExtResource("6_oa5iv")
+
+[node name="Drink3" type="Sprite2D" parent="."]
+position = Vector2(159, 70)
+texture = ExtResource("6_oa5iv")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

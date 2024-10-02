@@ -42,8 +42,30 @@ func set_arrows():
 	var right_screen = current_screen + 1
 	if right_screen > len(tavern_screens) - 1:
 		right_screen = 0
-	$HUD/RightArrow.text = "To " + tavern_screens[right_screen].name + " ->"
+	$HUD/RightText.text = tavern_screens[right_screen].name
 	var left_screen = current_screen - 1
 	if left_screen < 0:
 		left_screen = len(tavern_screens) - 1
-	$HUD/LeftArrow.text = "<- To " + tavern_screens[left_screen].name
+	$HUD/LeftText.text = tavern_screens[left_screen].name
+
+
+
+
+func _on_right_arrow_button_down():
+	$HUD/RightArrow.vertical_icon_alignment = VERTICAL_ALIGNMENT_TOP
+	$HUD/RightText.vertical_alignment = VERTICAL_ALIGNMENT_TOP
+	
+
+
+func _on_right_arrow_button_up():
+	$HUD/RightArrow.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER
+	$HUD/RightText.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+
+func _on_left_arrow_button_down():
+	$HUD/LeftArrow.vertical_icon_alignment = VERTICAL_ALIGNMENT_TOP
+	$HUD/LeftText.vertical_alignment = VERTICAL_ALIGNMENT_TOP
+
+
+func _on_left_arrow_button_up():
+	$HUD/LeftArrow.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER
+	$HUD/LeftText.vertical_alignment = VERTICAL_ALIGNMENT_CENTER

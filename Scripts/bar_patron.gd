@@ -18,10 +18,11 @@ func _ready() -> void:
 	if guard:
 		return
 	if Globals.patron_orders_info[self.name][1] == 0:
-		Globals.patron_orders_info[self.name][1] = randi_range(1, 5)
+		Globals.patron_orders_info[self.name][1] = randi_range(1, 3)
+	update_icons()
 	if Globals.patron_orders_info[self.name][0]:
 		Globals.get_patron_order(self.name)
-		$Button.text = "Take Order:\n" + Globals.patron_orders_info[self.name][0] + "\n Orders remaining: " + str(Globals.patron_orders_info[self.name][1])
+		$Button.text = "Take Order: " + Globals.patron_orders_info[self.name][0]
 	orders = Globals.patron_orders_info[self.name][1]
 	guard = true
 	if order_taken:
@@ -64,7 +65,8 @@ func _on_button_pressed():
 	if order_taken == false:
 		orders -= 1
 		Globals.patron_orders_info[self.name][1] = orders
-		Globals.patron_orders_info[self.name][2] = Globals.current_stars + (randi_range(1,3))
+		update_icons()
+		Globals.patron_orders_info[self.name][2] = max(Globals.current_stars, 1)
 		$Button.disabled = true
 		for recipe in Globals.recipes:
 			if recipe.recipe_name == Globals.patron_orders_info[self.name][0]:
@@ -75,3 +77,10 @@ func _on_button_pressed():
 		Globals.person_waiting = false
 		
 		
+func update_icons():
+	if Globals.patron_orders_info[self.name][1] < 1:
+		$Drink1.visible = false
+	if Globals.patron_orders_info[self.name][1] < 2:
+		$Drink2.visible = false
+	if Globals.patron_orders_info[self.name][1] < 3:
+		$Drink3.visible = false

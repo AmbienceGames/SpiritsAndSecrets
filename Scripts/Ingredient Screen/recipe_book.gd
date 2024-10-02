@@ -54,3 +54,11 @@ func _on_right_pressed():
 		curr_page[1] = 0	
 	$BookText.text = pages[curr_page[0]]
 	$BookText2.text = pages[curr_page[1]]
+
+
+func _on_button_button_down():
+	$Button.vertical_icon_alignment = VERTICAL_ALIGNMENT_TOP
+
+
+func _on_button_button_up():
+	$Button.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER

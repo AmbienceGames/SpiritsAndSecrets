@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bv60js1b7s0hx"]
+[gd_scene load_steps=8 format=3 uid="uid://bv60js1b7s0hx"]
 
 [ext_resource type="Texture2D" uid="uid://cvd516ypo233p" path="res://Assets/Art/bar_patron.png" id="1_7xgfs"]
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_b8qst"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_hxcs4"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_a27h4"]
+[ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="4_ej7ek"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_8qlmt"]
 
 [sub_resource type="Resource" id="Resource_7xokx"]
@@ -26,6 +27,18 @@ offset_left = 91.0
 offset_top = 262.0
 offset_right = 190.0
 offset_bottom = 293.0
+
+[node name="Drink1" type="Sprite2D" parent="."]
+position = Vector2(107, 309)
+texture = ExtResource("4_ej7ek")
+
+[node name="Drink2" type="Sprite2D" parent="."]
+position = Vector2(139, 309)
+texture = ExtResource("4_ej7ek")
+
+[node name="Drink3" type="Sprite2D" parent="."]
+position = Vector2(171, 309)
+texture = ExtResource("4_ej7ek")
 
 [node name="Conversations" type="Node" parent="."]
 

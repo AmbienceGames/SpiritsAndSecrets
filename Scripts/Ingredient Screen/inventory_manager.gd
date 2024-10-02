@@ -32,8 +32,7 @@ func _process(delta):
 				break
 		if drink and is_instance_valid(drink):
 			var points = max(min(order.compare_to(drink), 1), 0)
-			print(points)
-			Globals.current_stars = int(points * 5)
+			Globals.current_stars = int(points * 10)
 			$Stars.text = "Drink Current Stars: " + str(Globals.current_stars)
 
 func _on_refill_pressed():			

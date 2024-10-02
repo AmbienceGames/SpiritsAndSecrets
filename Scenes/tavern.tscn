@@ -1,44 +1,91 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpu1cjjf0dv3x"]
+[gd_scene load_steps=15 format=3 uid="uid://dpu1cjjf0dv3x"]
 
 [ext_resource type="Script" path="res://Scripts/tavern_manager.gd" id="1_uvpce"]
 [ext_resource type="PackedScene" uid="uid://7kcetgwojuqy" path="res://Scenes/bar_screen.tscn" id="2_jhhkw"]
+[ext_resource type="Texture2D" uid="uid://domgu3ed7et8d" path="res://Assets/Art/screen_transition_arrow.png" id="5_0a65u"]
 [ext_resource type="PackedScene" uid="uid://bsn2bqb5h34na" path="res://Scenes/Ingredient_Screen/ingredient_screen.tscn" id="5_7bh5s"]
 [ext_resource type="PackedScene" uid="uid://chffl4ymlsb0" path="res://Scenes/Mystery_Board/mystery_screen.tscn" id="5_crxro"]
+[ext_resource type="Texture2D" uid="uid://crgpo72hs045p" path="res://Assets/Art/screen_transition_arrow2.png" id="6_2ekf0"]
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="6_b4r7a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4bga2"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2jrop"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ejyh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ept8a"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afopt"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxsl7"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_63bxj"]
 
 [node name="Tavern" type="Node2D" node_paths=PackedStringArray("tavern_screens")]
 script = ExtResource("1_uvpce")
-tavern_screens = [NodePath("Screens/BarScreen"), NodePath("Screens/MysteryScreen"), NodePath("Screens/IngredientScreen")]
+tavern_screens = [NodePath("Screens/Bar"), NodePath("Screens/Clues"), NodePath("Screens/Drinks")]
 
 [node name="Screens" type="Node" parent="."]
 
-[node name="BarScreen" parent="Screens" instance=ExtResource("2_jhhkw")]
+[node name="Bar" parent="Screens" instance=ExtResource("2_jhhkw")]
 visible = false
 
-[node name="MysteryScreen" parent="Screens" instance=ExtResource("5_crxro")]
+[node name="Clues" parent="Screens" instance=ExtResource("5_crxro")]
 visible = false
 
-[node name="IngredientScreen" parent="Screens" instance=ExtResource("5_7bh5s")]
+[node name="Drinks" parent="Screens" instance=ExtResource("5_7bh5s")]
 visible = false
 
 [node name="HUD" type="Node" parent="."]
 
 [node name="RightArrow" type="Button" parent="HUD"]
-offset_left = 1765.0
-offset_top = 925.0
-offset_right = 1920.0
-offset_bottom = 1080.0
+offset_left = 1760.0
+offset_top = 920.0
+offset_right = 1800.0
+offset_bottom = 960.0
+scale = Vector2(4, 4)
 theme_override_font_sizes/font_size = 12
-text = ">"
+theme_override_styles/normal = SubResource("StyleBoxFlat_4bga2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2jrop")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6ejyh")
+icon = ExtResource("5_0a65u")
+flat = true
+alignment = 0
+clip_text = true
+icon_alignment = 1
+
+[node name="RightText" type="Label" parent="HUD"]
+offset_left = 1797.0
+offset_top = 972.0
+offset_right = 1872.0
+offset_bottom = 1028.0
+vertical_alignment = 1
 
 [node name="LeftArrow" type="Button" parent="HUD"]
-offset_top = 925.0
-offset_right = 155.0
-offset_bottom = 1080.0
+offset_top = 920.0
+offset_right = 40.0
+offset_bottom = 960.0
+scale = Vector2(4, 4)
 theme_override_font_sizes/font_size = 12
-text = "<"
+theme_override_styles/normal = SubResource("StyleBoxFlat_ept8a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_afopt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vxsl7")
+icon = ExtResource("6_2ekf0")
+flat = true
+icon_alignment = 1
+
+[node name="LeftText" type="Label" parent="HUD"]
+offset_left = 48.0
+offset_top = 972.0
+offset_right = 123.0
+offset_bottom = 1028.0
+horizontal_alignment = 2
+vertical_alignment = 1
 
 [node name="Pause" type="Button" parent="HUD"]
 offset_left = 1856.0
@@ -48,6 +95,7 @@ offset_bottom = 59.0
 text = "||"
 
 [node name="menu" type="Node2D" parent="HUD"]
+visible = false
 position = Vector2(936, 458)
 script = ExtResource("6_b4r7a")
 
@@ -82,7 +130,11 @@ position = Vector2(38, 88)
 scale = Vector2(1960.25, 1102.75)
 texture = SubResource("PlaceholderTexture2D_63bxj")
 
+[connection signal="button_down" from="HUD/RightArrow" to="." method="_on_right_arrow_button_down"]
+[connection signal="button_up" from="HUD/RightArrow" to="." method="_on_right_arrow_button_up"]
 [connection signal="pressed" from="HUD/RightArrow" to="." method="_cycle_right"]
+[connection signal="button_down" from="HUD/LeftArrow" to="." method="_on_left_arrow_button_down"]
+[connection signal="button_up" from="HUD/LeftArrow" to="." method="_on_left_arrow_button_up"]
 [connection signal="pressed" from="HUD/LeftArrow" to="." method="_cycle_left"]
 [connection signal="pressed" from="HUD/Pause" to="." method="_on_pause_pressed"]
 [connection signal="pressed" from="HUD/Pause" to="HUD/menu" method="_on_pause_pressed"]
@@ -90,4 +142,4 @@ texture = SubResource("PlaceholderTexture2D_63bxj")
 [connection signal="pressed" from="HUD/menu/Settings" to="HUD/menu" method="_on_settings_pressed"]
 [connection signal="pressed" from="HUD/menu/Back" to="HUD/menu" method="_on_back_pressed"]
 
-[editable path="Screens/BarScreen"]
+[editable path="Screens/Bar"]

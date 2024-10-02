@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpyduw0b2nu18"]
 
 [ext_resource type="Script" path="res://Scripts/Mystery Board/clue.gd" id="1_xwer5"]
+[ext_resource type="Texture2D" uid="uid://datw5jwnfj5br" path="res://Assets/Art/Mystery Board/clue1.png" id="2_5pj3r"]
 [ext_resource type="Texture2D" uid="uid://b8e4luuhrrenr" path="res://Assets/Art/Mystery Board/TopDownPin.png" id="2_8gkxu"]
-[ext_resource type="Texture2D" uid="uid://ck50u3tn6myox" path="res://Assets/Art/cup.png" id="2_n61e7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tq3vq"]
 size = Vector2(128, 128)
@@ -12,7 +12,7 @@ script = ExtResource("1_xwer5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
-texture = ExtResource("2_n61e7")
+texture = ExtResource("2_5pj3r")
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -6,40 +6,46 @@
 script = ExtResource("1_s4u55")
 
 [node name="Refill" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 1277.0
+offset_top = 408.0
+offset_right = 1324.0
+offset_bottom = 439.0
 text = "Refill"
 
 [node name="SubmitDrink" type="Button" parent="."]
-offset_top = 62.0
-offset_right = 110.0
-offset_bottom = 93.0
+offset_left = 536.0
+offset_top = 544.0
+offset_right = 648.0
+offset_bottom = 576.0
 text = "Submit Drink"
 
 [node name="Order" type="Label" parent="."]
-offset_left = 170.0
-offset_top = 2.0
-offset_right = 523.0
-offset_bottom = 105.0
+offset_left = 1472.0
+offset_top = 24.0
+offset_right = 1792.0
+offset_bottom = 281.0
 
 [node name="Warning" type="Label" parent="."]
-offset_left = 1.0
-offset_top = 133.0
-offset_right = 152.0
-offset_bottom = 289.0
+offset_left = 832.0
+offset_top = 768.0
+offset_right = 1088.0
+offset_bottom = 924.0
+size_flags_horizontal = 0
+horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="CurrrentPrice" type="Label" parent="."]
-offset_left = 3.0
-offset_top = 276.0
-offset_right = 136.0
-offset_bottom = 365.0
+offset_left = 16.0
+offset_top = 360.0
+offset_right = 128.0
+offset_bottom = 416.0
 
 [node name="Stars" type="Label" parent="."]
-offset_left = 2.0
-offset_top = 376.0
-offset_right = 251.0
-offset_bottom = 444.0
+offset_left = 16.0
+offset_top = 416.0
+offset_right = 265.0
+offset_bottom = 484.0
 
 [connection signal="pressed" from="Refill" to="." method="_on_refill_pressed"]
 [connection signal="button_down" from="SubmitDrink" to="." method="_on_submit_drink_button_down"]

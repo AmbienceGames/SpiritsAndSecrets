@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://dtvcyaew16lfn"]
+[gd_scene load_steps=17 format=3 uid="uid://dtvcyaew16lfn"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_4xtvn"]
 [ext_resource type="Texture2D" uid="uid://c25q27kpp81d4" path="res://Assets/Art/patrons/Lucius.png" id="2_pbqri"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_asd2j"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_dhak0"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_bqf5p"]
+[ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="6_4ex8j"]
 
 [sub_resource type="Resource" id="Resource_mo2fp"]
 script = ExtResource("5_bqf5p")
@@ -76,9 +77,9 @@ texture = ExtResource("2_pbqri")
 script = ExtResource("3_asd2j")
 
 [node name="Button" type="Button" parent="."]
-offset_top = 265.0
+offset_top = 298.0
 offset_right = 256.0
-offset_bottom = 297.0
+offset_bottom = 330.0
 text = "Take Order:"
 
 [node name="Conversations" type="Node" parent="."]
@@ -121,5 +122,17 @@ script = ExtResource("4_dhak0")
 player_choice = "You know, if you want to serve some justice, Ethred tells me there's been a necromancer causing trouble"
 patron_response = "Is that so? Well, then I must see about this. Those who raise the dead deserve themselves to be buried. "
 memories_required = Array[ExtResource("5_bqf5p")]([SubResource("Resource_ejfnp")])
+
+[node name="Drink1" type="Sprite2D" parent="."]
+position = Vector2(94, -16)
+texture = ExtResource("6_4ex8j")
+
+[node name="Drink2" type="Sprite2D" parent="."]
+position = Vector2(126, -16)
+texture = ExtResource("6_4ex8j")
+
+[node name="Drink3" type="Sprite2D" parent="."]
+position = Vector2(158, -16)
+texture = ExtResource("6_4ex8j")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

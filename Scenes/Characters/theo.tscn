@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cc3a1v1k1bxd7"]
+[gd_scene load_steps=11 format=3 uid="uid://cc3a1v1k1bxd7"]
 
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_oexvf"]
 [ext_resource type="Texture2D" uid="uid://cpv2mnwpqgcl8" path="res://Assets/Art/patrons/Theo.png" id="2_68yt7"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_uqlcj"]
 [ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_587pq"]
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_xktvr"]
+[ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="6_pju7j"]
 
 [sub_resource type="Resource" id="Resource_vl2q3"]
 script = ExtResource("5_xktvr")
@@ -40,9 +41,9 @@ texture = ExtResource("2_68yt7")
 script = ExtResource("3_uqlcj")
 
 [node name="Button" type="Button" parent="."]
-offset_top = 265.0
+offset_top = 298.0
 offset_right = 256.0
-offset_bottom = 297.0
+offset_bottom = 330.0
 text = "Take Order:"
 
 [node name="Conversations" type="Node" parent="."]
@@ -68,5 +69,17 @@ player_choice = "Why is Trent always behind on rent?"
 patron_response = "Oh, I shouldn't talk, you know? It's his business."
 memories_required = Array[ExtResource("5_xktvr")]([SubResource("Resource_nm7mn")])
 startDay = 1
+
+[node name="Drink1" type="Sprite2D" parent="."]
+position = Vector2(96, -21)
+texture = ExtResource("6_pju7j")
+
+[node name="Drink2" type="Sprite2D" parent="."]
+position = Vector2(128, -21)
+texture = ExtResource("6_pju7j")
+
+[node name="Drink3" type="Sprite2D" parent="."]
+position = Vector2(160, -21)
+texture = ExtResource("6_pju7j")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
