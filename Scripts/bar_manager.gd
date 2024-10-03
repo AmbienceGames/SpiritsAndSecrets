@@ -144,7 +144,7 @@ func _end_dialogue(patron: BarPatron) -> void:
 		await get_tree().create_timer(randf_range(2.0,10.0)).timeout
 		patron.order_taken = false
 		Globals.get_patron_order(patron.name)
-		patron.find_child("Button").text = "Take Order: " + Globals.patron_orders_info[self.name][0]
+		patron.find_child("Button").text = "Take Order: " + Globals.patron_orders_info[patron.name][0]
 		patron.find_child("Button").disabled = false
 		patron.find_child("BarPatron").modulate = normal_color
 		_remove_patron(patron)

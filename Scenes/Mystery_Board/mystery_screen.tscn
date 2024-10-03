@@ -14,4 +14,4 @@ texture = ExtResource("1_3df3j")
 [node name="ClueManager" parent="." instance=ExtResource("2_d74iu")]
 
 [node name="Patron Waiting" parent="." instance=ExtResource("3_je3ly")]
-position = Vector2(42, 510)
+position = Vector2(64, 510)

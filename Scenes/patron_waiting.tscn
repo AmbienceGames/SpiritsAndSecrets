@@ -1,10 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://crmgwwswau44c"]
 
 [ext_resource type="Script" path="res://Scripts/Patron Waiting.gd" id="1_j2mtv"]
-[ext_resource type="Texture2D" uid="uid://lx1apugebtpo" path="res://Assets/Art/dump.png" id="2_vetko"]
+[ext_resource type="Texture2D" uid="uid://ckmcxqyhj50s0" path="res://Assets/Art/patron_waiting.png" id="2_yvv7u"]
 
 [node name="Patron Waiting" type="Node2D"]
 script = ExtResource("1_j2mtv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_vetko")
+scale = Vector2(2, 2)
+texture = ExtResource("2_yvv7u")

@@ -13,6 +13,7 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eyqp4"]
 
 [node name="RecipeBook" type="Node2D"]
+z_index = 1
 script = ExtResource("1_gao0w")
 
 [node name="BookBackground" type="Sprite2D" parent="."]

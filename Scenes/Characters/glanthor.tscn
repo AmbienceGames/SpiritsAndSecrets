@@ -7,175 +7,175 @@
 [ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_plb6l"]
 [ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="6_qib4y"]
 
-[sub_resource type="Resource" id="Resource_u0rlu"]
+[sub_resource type="Resource" id="Resource_yw063"]
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_mn56f"]
+[sub_resource type="Resource" id="Resource_qq84k"]
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_23efd"]
+[sub_resource type="Resource" id="Resource_x1srw"]
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = true
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_25yqy"]
+[sub_resource type="Resource" id="Resource_sgx4b"]
 script = ExtResource("5_plb6l")
 memory_name = "GreetedGlanthor"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_vq17y"]
+[sub_resource type="Resource" id="Resource_ldk2g"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorKnowsTrent"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ski8x"]
+[sub_resource type="Resource" id="Resource_mkxcb"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorKnowsTrent"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_stua4"]
+[sub_resource type="Resource" id="Resource_vbmww"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWontTell"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_to2u4"]
+[sub_resource type="Resource" id="Resource_qkyrj"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWontTell"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_nsm78"]
+[sub_resource type="Resource" id="Resource_i2f24"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentAtBank"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_53jcc"]
+[sub_resource type="Resource" id="Resource_brwkl"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentAtBank"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ik4nv"]
+[sub_resource type="Resource" id="Resource_12c7c"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentNotHere"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_xolpg"]
+[sub_resource type="Resource" id="Resource_jlmj0"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentNotHere"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_bt0bl"]
+[sub_resource type="Resource" id="Resource_5br23"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentNotHere"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_4due6"]
+[sub_resource type="Resource" id="Resource_4iqdc"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWatchingTrent"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_xt4md"]
+[sub_resource type="Resource" id="Resource_8of7m"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWatchingTrent"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_242ae"]
+[sub_resource type="Resource" id="Resource_pq85y"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorWatchingTrent"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_a1kkv"]
+[sub_resource type="Resource" id="Resource_jlg7s"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorSuspicious"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_fdj5g"]
+[sub_resource type="Resource" id="Resource_e0yfe"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorSuspicious"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_y54so"]
+[sub_resource type="Resource" id="Resource_bhu4k"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_rlcak"]
+[sub_resource type="Resource" id="Resource_5onfv"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_rfrj0"]
+[sub_resource type="Resource" id="Resource_n6kby"]
 script = ExtResource("5_plb6l")
 memory_name = " GlanthorDrunk"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_onsm5"]
+[sub_resource type="Resource" id="Resource_eown0"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentDrunkHate"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_osqoo"]
+[sub_resource type="Resource" id="Resource_p3nck"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_icryu"]
+[sub_resource type="Resource" id="Resource_fjv13"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDayOne"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_2172m"]
+[sub_resource type="Resource" id="Resource_y5kex"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentHatedConst"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_gog28"]
+[sub_resource type="Resource" id="Resource_pap8l"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDayOne"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_8aehh"]
+[sub_resource type="Resource" id="Resource_futjl"]
 script = ExtResource("5_plb6l")
 memory_name = "TrentDrunkHate"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_suk1s"]
+[sub_resource type="Resource" id="Resource_32qew"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDone"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_eee4i"]
+[sub_resource type="Resource" id="Resource_ud3hm"]
 script = ExtResource("5_plb6l")
 memory_name = "GlanthorDone"
 inverse_memory = false
@@ -196,128 +196,6 @@ offset_right = 256.0
 offset_bottom = 330.0
 text = "Take Order:"
 
-[node name="Conversations" type="Node" parent="."]
-
-[node name="conv0" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Evening, sir. New here?"
-patron_response = "What? Oh, yes. I'm Glanthor. Is it true that Constantine was murdered here? Sorry, I mean, it's not my place, but everyone's talking about it."
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_u0rlu")])
-startDay = 2
-
-[node name="conv1" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "That's none of your business. Constantine was a friend of mine"
-patron_response = "Oh, yes, sorry. I understand. Just interested, is all."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_mn56f"), SubResource("Resource_23efd")])
-startDay = 2
-
-[node name="conv2" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "It's true, yes. Did you know him?"
-patron_response = "Never met him. But I know someone who did."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_25yqy")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_vq17y")])
-startDay = 2
-
-[node name="conv3" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Who is it, exactly, that knew Constantine?"
-patron_response = "I've, uh, said too much. It's not my business, really. "
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_ski8x")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_stua4")])
-startDay = 2
-
-[node name="conv4" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Please, tell me, Constantine was a friend of mine"
-patron_response = "Are you sure? I guess it's alright. It's Trent. He's my neighbor, and he works at the same bank as Constantine. Constantine is his boss."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_to2u4")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_nsm78")])
-startDay = 2
-
-[node name="conv5" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Trent hasn't been in today. He usually comes by."
-patron_response = "I see. Do you think he'll come later?"
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_53jcc")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_ik4nv")])
-startDay = 2
-
-[node name="conv6" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "I'm not sure"
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_xolpg")])
-startDay = 2
-
-[node name="conv7" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Why? Can't you just speak with him at home?"
-patron_response = "Oh, no, no. I don't want to speak with him. I just want to... nevermind, I shouldn't have come here."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_bt0bl")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_4due6")])
-startDay = 2
-
-[node name="conv8" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Alright, then"
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_xt4md")])
-startDay = 2
-
-[node name="conv9" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "I'm a good listener, you can talk to me."
-patron_response = "*sigh* Fine, I came to keep an eye on him. I know he comes here a lot. It's probably nothing, but I thought... maybe he had something to do with Constantine."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_242ae")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_a1kkv")])
-startDay = 2
-
-[node name="conv10" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Why would you think that?"
-patron_response = "Well, you know he was Trent's boss. Trent really didn't like him. Trent said he was always sitting around while everyone else worked themselves to death for half the money. I'm sorry, I know he was your friend. That's just how Trent talked."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_fdj5g")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_y54so")])
-startDay = 2
-
-[node name="conv11" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "He talked like this often?"
-patron_response = "I mean, I didn't talk to him often, but when I did, he was complaining about Constantine. One night, I ran into him while he was drunk. He said he wished Constantine would just go away so he could have the manager position."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_rlcak"), SubResource("Resource_rfrj0")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_onsm5")])
-startDay = 2
-
-[node name="conv12" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "He talked like this often?"
-patron_response = "I didn't really see him too much, so I'm not sure."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_osqoo")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_icryu")])
-startDay = 2
-
-[node name="conv13" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Wow... I didn't know that. Thank you for telling me."
-patron_response = "I don't know, maybe I'm just being paranoid. But I felt bad doing nothing."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_2172m")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_gog28")])
-startDay = 2
-
-[node name="conv14" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Well, that's certainly interesting."
-patron_response = "I know it's just words, but I'm worried. "
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_8aehh")])
-memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_suk1s")])
-startDay = 2
-
-[node name="conv15" type="Node" parent="Conversations"]
-script = ExtResource("4_yw2d6")
-player_choice = "Your information has really helped, Glanthor. Want anything else to drink?"
-patron_response = "No thanks."
-memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_eee4i")])
-
 [node name="Drink1" type="Sprite2D" parent="."]
 position = Vector2(97, 71)
 texture = ExtResource("6_qib4y")
@@ -329,5 +207,127 @@ texture = ExtResource("6_qib4y")
 [node name="Drink3" type="Sprite2D" parent="."]
 position = Vector2(161, 71)
 texture = ExtResource("6_qib4y")
+
+[node name="Conversations" type="Node" parent="."]
+
+[node name="conv0" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Evening, sir. New here?"
+patron_response = "What? Oh, yes. I'm Glanthor. Is it true that Constantine was murdered here? Sorry, I mean, it's not my place, but everyone's talking about it."
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_yw063")])
+startDay = 2
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "That's none of your business. Constantine was a friend of mine"
+patron_response = "Oh, yes, sorry. I understand. Just interested, is all."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_qq84k"), SubResource("Resource_x1srw")])
+startDay = 2
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "It's true, yes. Did you know him?"
+patron_response = "Never met him. But I know someone who did."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_sgx4b")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_ldk2g")])
+startDay = 2
+
+[node name="conv3" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Who is it, exactly, that knew Constantine?"
+patron_response = "I've, uh, said too much. It's not my business, really. "
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_mkxcb")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_vbmww")])
+startDay = 2
+
+[node name="conv4" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Please, tell me, Constantine was a friend of mine"
+patron_response = "Are you sure? I guess it's alright. It's Trent. He's my neighbor, and he works at the same bank as Constantine. Constantine is his boss."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_qkyrj")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_i2f24")])
+startDay = 2
+
+[node name="conv5" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Trent hasn't been in today. He usually comes by."
+patron_response = "I see. Do you think he'll come later?"
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_brwkl")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_12c7c")])
+startDay = 2
+
+[node name="conv6" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "I'm not sure"
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_jlmj0")])
+startDay = 2
+
+[node name="conv7" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Why? Can't you just speak with him at home?"
+patron_response = "Oh, no, no. I don't want to speak with him. I just want to... nevermind, I shouldn't have come here."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_5br23")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_4iqdc")])
+startDay = 2
+
+[node name="conv8" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Alright, then"
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_8of7m")])
+startDay = 2
+
+[node name="conv9" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "I'm a good listener, you can talk to me."
+patron_response = "*sigh* Fine, I came to keep an eye on him. I know he comes here a lot. It's probably nothing, but I thought... maybe he had something to do with Constantine."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_pq85y")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_jlg7s")])
+startDay = 2
+
+[node name="conv10" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Why would you think that?"
+patron_response = "Well, you know he was Trent's boss. Trent really didn't like him. Trent said he was always sitting around while everyone else worked themselves to death for half the money. I'm sorry, I know he was your friend. That's just how Trent talked."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_e0yfe")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_bhu4k")])
+startDay = 2
+
+[node name="conv11" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "He talked like this often?"
+patron_response = "I mean, I didn't talk to him often, but when I did, he was complaining about Constantine. One night, I ran into him while he was drunk. He said he wished Constantine would just go away so he could have the manager position."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_5onfv"), SubResource("Resource_n6kby")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_eown0")])
+startDay = 2
+
+[node name="conv12" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "He talked like this often?"
+patron_response = "I didn't really see him too much, so I'm not sure."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_p3nck")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_fjv13")])
+startDay = 2
+
+[node name="conv13" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Wow... I didn't know that. Thank you for telling me."
+patron_response = "I don't know, maybe I'm just being paranoid. But I felt bad doing nothing."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_y5kex")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_pap8l")])
+startDay = 2
+
+[node name="conv14" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Well, that's certainly interesting."
+patron_response = "I know it's just words, but I'm worried. "
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_futjl")])
+memories_unlocked = Array[ExtResource("5_plb6l")]([SubResource("Resource_32qew")])
+startDay = 2
+
+[node name="conv15" type="Node" parent="Conversations"]
+script = ExtResource("4_yw2d6")
+player_choice = "Your information has really helped, Glanthor. Want anything else to drink?"
+patron_response = "No thanks."
+memories_required = Array[ExtResource("5_plb6l")]([SubResource("Resource_ud3hm")])
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

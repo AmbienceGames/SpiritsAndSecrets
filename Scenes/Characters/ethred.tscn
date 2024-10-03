@@ -3,312 +3,312 @@
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_meqax"]
 [ext_resource type="Texture2D" uid="uid://ypgkqkd25aej" path="res://Assets/Art/ethred.png" id="2_0cq7m"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_v7iaf"]
-[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="3_xujja"]
-[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_aoja3"]
+[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="5_bln4r"]
+[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="6_7bhn5"]
 [ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="6_vaxmh"]
 
-[sub_resource type="Resource" id="Resource_imhic"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_uwf17"]
+script = ExtResource("6_7bhn5")
 memory_name = "GreetedEthred"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_yfw32"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ubngn"]
+script = ExtResource("6_7bhn5")
 memory_name = "GreetedEthred"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ae30q"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ny7xs"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredWork"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_p653e"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_4gca2"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredWork"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_cxsb8"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_n08uh"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredWork"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_7wl6q"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_m8jkq"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredNext"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_6yq0i"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_04yw7"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredNext"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_4i0fx"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_wmd4e"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredTwo"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_i3ixj"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ckx6p"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredTwo"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_7l3ak"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_4cgxo"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredRattled"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_8e0n1"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_k2xgp"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredRattled"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_jof68"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_u3ima"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredThree"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_iv6v2"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_om8fl"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredThree"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ciian"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ukmm3"]
+script = ExtResource("6_7bhn5")
 memory_name = "OffKilter"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_5b43p"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_bdjvj"]
+script = ExtResource("6_7bhn5")
 memory_name = "OffKilter"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_lgl6j"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ydq74"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredDistraction"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_dffu8"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_uipke"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredDistraction"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_fyr38"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ipco0"]
+script = ExtResource("6_7bhn5")
 memory_name = " VampireHunt"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_jp6y8"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_smjmy"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredVampireHunt"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_qo1mn"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_w5mx3"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredDistraction"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_2bh1y"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_dviua"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredVampireHunt"
 inverse_memory = true
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_3sui6"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_3ao5j"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredScared"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ruaqx"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_1cese"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredScared"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_pyckm"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ghr4t"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredScaredWhy"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_van4x"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_y5dnf"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredScaredWhy"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_wvesm"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ee7ka"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredFriend"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_gredd"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_36fqt"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredFriend"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_nhgjw"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_e8dv2"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredSecret"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_n5wns"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_pk7ei"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredSecret"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_qumbm"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_8h12k"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredKiller"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_x1vxt"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_k8a5k"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredKiller"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_fyce6"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_mvqso"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredUnsure"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_33pit"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_2awsx"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredKiller"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_8gfuj"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_n4oga"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredUnsure"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_0fi6c"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_gu5js"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredUnsure"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_2hyiv"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ioa53"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredVampire"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_61xgb"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_7wcvd"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredVampire"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_klytb"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_i3l3m"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredAmnesia"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_c2atw"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_2wg6q"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredVampire"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_mesq1"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_tpqbx"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredAmnesia"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_d0gap"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_4rcwj"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredAmnesia"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_bikyu"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_2vj4p"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredGuilt"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_2pwpg"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_8rke1"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredAmnesia"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_nsj3p"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_i00ly"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredGuilt"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_2h1ft"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_rposo"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredGuilt"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_b1og3"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_mr6jj"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredGuilt"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_evu2s"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_cgkcx"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredVampireHunt"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_j86uy"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_ukf2w"]
+script = ExtResource("6_7bhn5")
 memory_name = "EthredScared"
 inverse_memory = true
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ohc3r"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_q0fwn"]
+script = ExtResource("6_7bhn5")
 memory_name = "NoVampire"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_l34lo"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_cpumv"]
+script = ExtResource("6_7bhn5")
 memory_name = "NoVampire"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_1sl3t"]
-script = ExtResource("3_xujja")
+[sub_resource type="Resource" id="Resource_8k3og"]
+script = ExtResource("6_7bhn5")
 memory_name = "AngryTrent"
 inverse_memory = false
 is_clue = false
@@ -328,236 +328,6 @@ offset_right = 256.0
 offset_bottom = 330.0
 text = "Take Order:"
 
-[node name="Conversations" type="Node" parent="."]
-
-[node name="conv0" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "Hello Ethred!"
-patron_response = "Hello, [name]! Good to see you."
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_imhic")])
-startDay = 1
-endDay = 1
-
-[node name="conv1" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "What have you been up to?"
-patron_response = "The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. "
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_yfw32")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_ae30q")])
-startDay = 1
-endDay = 1
-
-[node name="conv2" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "How's the new party been treating you?"
-patron_response = "Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_p653e")])
-startDay = 1
-endDay = 1
-
-[node name="conv3" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "Necromancer been causing trouble?"
-patron_response = "Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_cxsb8")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_7wl6q")])
-startDay = 1
-endDay = 1
-
-[node name="conv4" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "Hey, Ethred. You heard?"
-patron_response = "Oh! You startled me. Yeah, I heard. Can you get me something strong and solid."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_6yq0i")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_4i0fx")])
-startDay = 2
-endDay = 2
-
-[node name="conv5" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "I'm in shock. Any ideas who could've done it?"
-patron_response = "No, no idea. Get me another drink when you have the chance, please. Make it two."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_i3ixj")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_7l3ak")])
-startDay = 2
-endDay = 2
-
-[node name="conv6" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "Ethred! What can I get you."
-patron_response = "Ah... just a Celestial Sparkle. I may have overdone it last night."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_8e0n1")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_jof68")])
-startDay = 3
-endDay = 3
-
-[node name="conv7" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "No kidding. "
-patron_response = "Just feeling a little off-kilter since Constantine."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_iv6v2")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_ciian")])
-startDay = 3
-endDay = 3
-
-[node name="conv8" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "It's understandable. I'm still waiting for him to walk through the door and ask for a Constantine Special."
-patron_response = "Yeah. I guess. I wish there was a little more activity with my party. Give me something to do. Someplace to be besides here."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_5b43p")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_lgl6j")])
-startDay = 3
-endDay = 3
-
-[node name="conv9" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "People are saying it was a vampire. I heard they're trying to organize a hunt."
-patron_response = "I know. Everyone's talking about it. "
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_dffu8"), SubResource("Resource_fyr38")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_jp6y8")])
-startDay = 3
-endDay = 3
-
-[node name="conv10" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "You don't want to find who it is?"
-patron_response = "Of course I do. I just. I'm scared."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_qo1mn"), SubResource("Resource_2bh1y")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_3sui6")])
-startDay = 3
-endDay = 3
-
-[node name="conv11" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "Ethred, you can more than handle a vampire. We've fought much worse together."
-patron_response = "That's not what I'm scared of."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_ruaqx")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_pyckm")])
-startDay = 3
-endDay = 3
-
-[node name="conv12" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "What is it, then? I don't think I've ever seen you like this."
-patron_response = "*there is a long pause* You're a very good friend of mine, y/n"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_van4x")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_wvesm")])
-startDay = 3
-endDay = 3
-
-[node name="conv13" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "Of course. We adventured together for years."
-patron_response = "Can you keep a secret?"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_gredd")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_nhgjw")])
-startDay = 3
-endDay = 3
-
-[node name="conv14" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "Yes"
-patron_response = "I think I may have killed Constantine."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_n5wns")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_qumbm")])
-startDay = 3
-endDay = 3
-
-[node name="conv15" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "What!"
-patron_response = "Shhhh! You wanna let the whole tavern know? Obviously, I would never do it on purpose. I don't even know if it was me, okay?"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_x1vxt")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_fyce6")])
-startDay = 3
-endDay = 3
-
-[node name="conv16" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "May have?"
-patron_response = "It's complicated. I don't remember, but it could have been me."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_33pit")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_8gfuj")])
-startDay = 3
-endDay = 3
-
-[node name="conv17" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "How could it be you?"
-patron_response = "I'm a vampire."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_0fi6c")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_2hyiv")])
-startDay = 3
-endDay = 3
-
-[node name="conv18" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "What?"
-patron_response = "I said I'm a vampire. I have to kill to feed. Usually sheep or other animals, but I can't control myself when I get really hungry. And I haven't eaten in a while."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_61xgb")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_klytb")])
-startDay = 3
-endDay = 3
-
-[node name="conv19" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "You killed Constantine!"
-patron_response = "You don't know that! I don't remember what happened that night. I would never kill Constantine. But sometimes I get hungry and I just can't control myself."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_c2atw")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_mesq1")])
-startDay = 3
-endDay = 3
-
-[node name="conv20" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "How can you just not remember?"
-patron_response = "Sometimes my instincts just take over. All I remember is going to sleep at night and waking up in the morning. Please don't turn me in. No one else knows."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_d0gap")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_bikyu")])
-startDay = 3
-endDay = 3
-
-[node name="conv21" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "But you would never do that"
-patron_response = "I don't know. I don't know. Sometimes my instincts take over. I hope it wasn't me. Please don't turn me in. No one else knows."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_2pwpg")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_nsj3p")])
-startDay = 3
-endDay = 3
-
-[node name="conv22" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "*call the guard and have her arrested*"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_2h1ft")])
-startDay = 3
-endDay = 3
-
-[node name="conv23" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "I won't"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_b1og3")])
-startDay = 3
-endDay = 3
-
-[node name="conv24" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "I figured you'd jump on the chance to hunt a vampire. Especially if it killed Constantine"
-patron_response = "Theres no proof this vampire even exists. This could all be Trent getting people worked up over nothing"
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_evu2s"), SubResource("Resource_j86uy")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_ohc3r")])
-startDay = 3
-endDay = 3
-
-[node name="conv25" type="Node" parent="Conversations"]
-script = ExtResource("4_aoja3")
-player_choice = "You think Trent would do that?"
-patron_response = "I think Trent will take any excuse to be irrationally angry."
-memories_required = Array[ExtResource("3_xujja")]([SubResource("Resource_l34lo")])
-memories_unlocked = Array[ExtResource("3_xujja")]([SubResource("Resource_1sl3t")])
-startDay = 3
-endDay = 3
-
 [node name="Drink1" type="Sprite2D" parent="."]
 position = Vector2(75, 25)
 texture = ExtResource("6_vaxmh")
@@ -569,5 +339,235 @@ texture = ExtResource("6_vaxmh")
 [node name="Drink3" type="Sprite2D" parent="."]
 position = Vector2(139, 25)
 texture = ExtResource("6_vaxmh")
+
+[node name="Conversations" type="Node" parent="."]
+
+[node name="conv0" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "Hello Ethred!"
+patron_response = "Hello, [name]! Good to see you."
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_uwf17")])
+startDay = 1
+endDay = 1
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "What have you been up to?"
+patron_response = "The usual. Things have been pretty busy for my group because of the necromancer. You wouldn't believe how many skeletons have been walking around. Still, it's lots of work, so it's lots of pay. "
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ubngn")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ny7xs")])
+startDay = 1
+endDay = 1
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "How's the new party been treating you?"
+patron_response = "Well, it's not like the old days, you know? I mean, you people get old fast. Must be annoying only living eighty years."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_4gca2")])
+startDay = 1
+endDay = 1
+
+[node name="conv3" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "Necromancer been causing trouble?"
+patron_response = "Yeah, lots. There's rumors that a vampire has been involved. Vampires give me the creeps"
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_n08uh")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_m8jkq")])
+startDay = 1
+endDay = 1
+
+[node name="conv4" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "Hey, Ethred. You heard?"
+patron_response = "Oh! You startled me. Yeah, I heard. Can you get me something strong and solid."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_04yw7")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_wmd4e")])
+startDay = 2
+endDay = 2
+
+[node name="conv5" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "I'm in shock. Any ideas who could've done it?"
+patron_response = "No, no idea. Get me another drink when you have the chance, please. Make it two."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ckx6p")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_4cgxo")])
+startDay = 2
+endDay = 2
+
+[node name="conv6" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "Ethred! What can I get you."
+patron_response = "Ah... just a Celestial Sparkle. I may have overdone it last night."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_k2xgp")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_u3ima")])
+startDay = 3
+endDay = 3
+
+[node name="conv7" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "No kidding. "
+patron_response = "Just feeling a little off-kilter since Constantine."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_om8fl")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ukmm3")])
+startDay = 3
+endDay = 3
+
+[node name="conv8" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "It's understandable. I'm still waiting for him to walk through the door and ask for a Constantine Special."
+patron_response = "Yeah. I guess. I wish there was a little more activity with my party. Give me something to do. Someplace to be besides here."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_bdjvj")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ydq74")])
+startDay = 3
+endDay = 3
+
+[node name="conv9" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "People are saying it was a vampire. I heard they're trying to organize a hunt."
+patron_response = "I know. Everyone's talking about it. "
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_uipke"), SubResource("Resource_ipco0")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_smjmy")])
+startDay = 3
+endDay = 3
+
+[node name="conv10" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "You don't want to find who it is?"
+patron_response = "Of course I do. I just. I'm scared."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_w5mx3"), SubResource("Resource_dviua")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_3ao5j")])
+startDay = 3
+endDay = 3
+
+[node name="conv11" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "Ethred, you can more than handle a vampire. We've fought much worse together."
+patron_response = "That's not what I'm scared of."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_1cese")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ghr4t")])
+startDay = 3
+endDay = 3
+
+[node name="conv12" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "What is it, then? I don't think I've ever seen you like this."
+patron_response = "*there is a long pause* You're a very good friend of mine, y/n"
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_y5dnf")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ee7ka")])
+startDay = 3
+endDay = 3
+
+[node name="conv13" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "Of course. We adventured together for years."
+patron_response = "Can you keep a secret?"
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_36fqt")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_e8dv2")])
+startDay = 3
+endDay = 3
+
+[node name="conv14" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "Yes"
+patron_response = "I think I may have killed Constantine."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_pk7ei")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_8h12k")])
+startDay = 3
+endDay = 3
+
+[node name="conv15" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "What!"
+patron_response = "Shhhh! You wanna let the whole tavern know? Obviously, I would never do it on purpose. I don't even know if it was me, okay?"
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_k8a5k")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_mvqso")])
+startDay = 3
+endDay = 3
+
+[node name="conv16" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "May have?"
+patron_response = "It's complicated. I don't remember, but it could have been me."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_2awsx")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_n4oga")])
+startDay = 3
+endDay = 3
+
+[node name="conv17" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "How could it be you?"
+patron_response = "I'm a vampire."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_gu5js")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_ioa53")])
+startDay = 3
+endDay = 3
+
+[node name="conv18" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "What?"
+patron_response = "I said I'm a vampire. I have to kill to feed. Usually sheep or other animals, but I can't control myself when I get really hungry. And I haven't eaten in a while."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_7wcvd")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_i3l3m")])
+startDay = 3
+endDay = 3
+
+[node name="conv19" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "You killed Constantine!"
+patron_response = "You don't know that! I don't remember what happened that night. I would never kill Constantine. But sometimes I get hungry and I just can't control myself."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_2wg6q")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_tpqbx")])
+startDay = 3
+endDay = 3
+
+[node name="conv20" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "How can you just not remember?"
+patron_response = "Sometimes my instincts just take over. All I remember is going to sleep at night and waking up in the morning. Please don't turn me in. No one else knows."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_4rcwj")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_2vj4p")])
+startDay = 3
+endDay = 3
+
+[node name="conv21" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "But you would never do that"
+patron_response = "I don't know. I don't know. Sometimes my instincts take over. I hope it wasn't me. Please don't turn me in. No one else knows."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_8rke1")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_i00ly")])
+startDay = 3
+endDay = 3
+
+[node name="conv22" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "*call the guard and have her arrested*"
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_rposo")])
+startDay = 3
+endDay = 3
+
+[node name="conv23" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "I won't"
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_mr6jj")])
+startDay = 3
+endDay = 3
+
+[node name="conv24" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "I figured you'd jump on the chance to hunt a vampire. Especially if it killed Constantine"
+patron_response = "Theres no proof this vampire even exists. This could all be Trent getting people worked up over nothing"
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_cgkcx"), SubResource("Resource_ukf2w")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_q0fwn")])
+startDay = 3
+endDay = 3
+
+[node name="conv25" type="Node" parent="Conversations"]
+script = ExtResource("5_bln4r")
+player_choice = "You think Trent would do that?"
+patron_response = "I think Trent will take any excuse to be irrationally angry."
+memories_required = Array[ExtResource("6_7bhn5")]([SubResource("Resource_cpumv")])
+memories_unlocked = Array[ExtResource("6_7bhn5")]([SubResource("Resource_8k3og")])
+startDay = 3
+endDay = 3
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

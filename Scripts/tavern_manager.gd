@@ -4,6 +4,12 @@ extends Node2D
 var tavern_screens: Array[Node2D] = []
 var current_screen = 0
 
+var hovered_right = load("res://Assets/Art/screen_transition_arrow-hovered.png")
+var normal_right = load("res://Assets/Art/screen_transition_arrow.png")
+
+var hovered_left = load("res://Assets/Art/screen_transition_arrow2-hovered.png")
+var normal_left = load("res://Assets/Art/screen_transition_arrow2.png")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Globals.tavern = self	
@@ -71,3 +77,18 @@ func _on_left_arrow_button_up():
 	$HUD/LeftArrow.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER
 	$HUD/LeftText.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 
+
+
+func _on_left_arrow_mouse_entered():
+	$HUD/LeftArrow.icon = hovered_left
+
+
+func _on_left_arrow_mouse_exited():
+	$HUD/LeftArrow.icon = normal_left
+	
+func _on_right_arrow_mouse_entered():
+	$HUD/RightArrow.icon = hovered_right
+
+
+func _on_right_arrow_mouse_exited():
+	$HUD/RightArrow.icon = normal_right

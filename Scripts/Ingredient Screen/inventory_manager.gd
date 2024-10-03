@@ -59,18 +59,20 @@ func _on_refill_pressed():
 		$Warning.text = "You don't have enough money, complete some orders first!"
 
 func _on_submit_drink_button_down():
-	for child in get_parent().get_children():
-		if child.name == "Drink":
-			drink = child
-			break
-	var points = order.compare_to(drink)
-	var money_made = int(max(points * 4 * recipe.ingredients.size(), 0))
-	$Warning.text = "You made " + str(money_made) + " Gold!\nGrab a new order."
-	$Order.text = ""
-	$Stars.text = ""
-	Globals.player_balance += money_made
-	recipe = null
-	order = null
-	Globals.current_order = null
-	drink_submitting = true
+	if drink and order:
+		for child in get_parent().get_children():
+			if child.name == "Drink":
+				drink = child
+				break
+		var points = order.compare_to(drink)
+		var money_made = int(max(points * 4 * recipe.ingredients.size(), 0))
+		$Warning.text = "You made " + str(money_made) + " Gold!\nGrab a new order."
+		$Order.text = ""
+		$Stars.text = ""
+		Globals.player_balance += money_made
+		recipe = null
+		order = null
+		Globals.current_order = null
+		drink_submitting = true
+		Globals.patron_orders_info[Globals.ordering_patron.name][2] = max(Globals.current_stars, 1)
 

@@ -3,66 +3,66 @@
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_4xtvn"]
 [ext_resource type="Texture2D" uid="uid://c25q27kpp81d4" path="res://Assets/Art/patrons/Lucius.png" id="2_pbqri"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_asd2j"]
-[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_dhak0"]
-[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_bqf5p"]
+[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="5_q22g1"]
 [ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="6_4ex8j"]
+[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="6_b4yob"]
 
-[sub_resource type="Resource" id="Resource_mo2fp"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_clefw"]
+script = ExtResource("6_b4yob")
 memory_name = "WhiteLady"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_lj760"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_j7ty8"]
+script = ExtResource("6_b4yob")
 memory_name = "WhiteLady"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_if80u"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_t2i3n"]
+script = ExtResource("6_b4yob")
 memory_name = "Justice"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_6xjtt"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_7omvc"]
+script = ExtResource("6_b4yob")
 memory_name = "Justice"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_01o61"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_mvum3"]
+script = ExtResource("6_b4yob")
 memory_name = "Vengeance"
 inverse_memory = false
-is_clue = false
+is_clue = true
 
-[sub_resource type="Resource" id="Resource_qsksq"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_n2a0m"]
+script = ExtResource("6_b4yob")
 memory_name = "WhiteLady"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_6abrx"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_0hoqj"]
+script = ExtResource("6_b4yob")
 memory_name = "WhiteLady"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_ylpyv"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_rsv03"]
+script = ExtResource("6_b4yob")
 memory_name = " LuciusDrunk"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_6at8o"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_lft2s"]
+script = ExtResource("6_b4yob")
 memory_name = "FromRavenwood"
 inverse_memory = false
-is_clue = false
+is_clue = true
 
-[sub_resource type="Resource" id="Resource_ejfnp"]
-script = ExtResource("5_bqf5p")
+[sub_resource type="Resource" id="Resource_2sqwd"]
+script = ExtResource("6_b4yob")
 memory_name = "EthredWork"
 inverse_memory = false
 is_clue = false
@@ -82,47 +82,6 @@ offset_right = 256.0
 offset_bottom = 330.0
 text = "Take Order:"
 
-[node name="Conversations" type="Node" parent="."]
-
-[node name="conv0" type="Node" parent="Conversations"]
-script = ExtResource("4_dhak0")
-player_choice = "Good evening. New in town?"
-patron_response = "Yes! I am Lucius, devoted knight of the Order of the White Lady. It is a pleasure to make your acquaintance"
-memories_unlocked = Array[ExtResource("5_bqf5p")]([SubResource("Resource_mo2fp")])
-
-[node name="conv1" type="Node" parent="Conversations"]
-script = ExtResource("4_dhak0")
-player_choice = "What is the Order of the White Lady?"
-patron_response = "I am apalled that you do not know us! We are devoted to the White Lady, our patron of justice. I, like all other knights of my order, travel to bring justice to the lands, to rid them of evildoers. "
-memories_required = Array[ExtResource("5_bqf5p")]([SubResource("Resource_lj760")])
-memories_unlocked = Array[ExtResource("5_bqf5p")]([SubResource("Resource_if80u")])
-
-[node name="conv2" type="Node" parent="Conversations"]
-script = ExtResource("4_dhak0")
-player_choice = "Is there much justice to do here?"
-patron_response = "Justice must be delivered everywhere, my friend. It is my sacred duty to ensure that those who do wrong are given their fit punishment."
-memories_required = Array[ExtResource("5_bqf5p")]([SubResource("Resource_6xjtt")])
-memories_unlocked = Array[ExtResource("5_bqf5p")]([SubResource("Resource_01o61")])
-
-[node name="conv3" type="Node" parent="Conversations"]
-script = ExtResource("4_dhak0")
-player_choice = "Where are you from?"
-patron_response = "I hail from a small town far away. You would not know it."
-memories_required = Array[ExtResource("5_bqf5p")]([SubResource("Resource_qsksq")])
-
-[node name="conv4" type="Node" parent="Conversations"]
-script = ExtResource("4_dhak0")
-player_choice = "Where did you say you were from, again?"
-patron_response = "Whuh? Oh, Ravenwood. Far away, you know. Little town. I miss it sometimes."
-memories_required = Array[ExtResource("5_bqf5p")]([SubResource("Resource_6abrx"), SubResource("Resource_ylpyv")])
-memories_unlocked = Array[ExtResource("5_bqf5p")]([SubResource("Resource_6at8o")])
-
-[node name="conv5" type="Node" parent="Conversations"]
-script = ExtResource("4_dhak0")
-player_choice = "You know, if you want to serve some justice, Ethred tells me there's been a necromancer causing trouble"
-patron_response = "Is that so? Well, then I must see about this. Those who raise the dead deserve themselves to be buried. "
-memories_required = Array[ExtResource("5_bqf5p")]([SubResource("Resource_ejfnp")])
-
 [node name="Drink1" type="Sprite2D" parent="."]
 position = Vector2(94, -16)
 texture = ExtResource("6_4ex8j")
@@ -134,5 +93,46 @@ texture = ExtResource("6_4ex8j")
 [node name="Drink3" type="Sprite2D" parent="."]
 position = Vector2(158, -16)
 texture = ExtResource("6_4ex8j")
+
+[node name="Conversations" type="Node" parent="."]
+
+[node name="conv0" type="Node" parent="Conversations"]
+script = ExtResource("5_q22g1")
+player_choice = "Good evening. New in town?"
+patron_response = "Yes! I am Lucius, devoted knight of the Order of the White Lady. It is a pleasure to make your acquaintance"
+memories_unlocked = Array[ExtResource("6_b4yob")]([SubResource("Resource_clefw")])
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("5_q22g1")
+player_choice = "What is the Order of the White Lady?"
+patron_response = "I am apalled that you do not know us! We are devoted to the White Lady, our patron of justice. I, like all other knights of my order, travel to bring justice to the lands, to rid them of evildoers. "
+memories_required = Array[ExtResource("6_b4yob")]([SubResource("Resource_j7ty8")])
+memories_unlocked = Array[ExtResource("6_b4yob")]([SubResource("Resource_t2i3n")])
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("5_q22g1")
+player_choice = "Is there much justice to do here?"
+patron_response = "Justice must be delivered everywhere, my friend. It is my sacred duty to ensure that those who do wrong are given their fit punishment."
+memories_required = Array[ExtResource("6_b4yob")]([SubResource("Resource_7omvc")])
+memories_unlocked = Array[ExtResource("6_b4yob")]([SubResource("Resource_mvum3")])
+
+[node name="conv3" type="Node" parent="Conversations"]
+script = ExtResource("5_q22g1")
+player_choice = "Where are you from?"
+patron_response = "I hail from a small town far away. You would not know it."
+memories_required = Array[ExtResource("6_b4yob")]([SubResource("Resource_n2a0m")])
+
+[node name="conv4" type="Node" parent="Conversations"]
+script = ExtResource("5_q22g1")
+player_choice = "Where did you say you were from, again?"
+patron_response = "Whuh? Oh, Ravenwood. Far away, you know. Little town. I miss it sometimes."
+memories_required = Array[ExtResource("6_b4yob")]([SubResource("Resource_0hoqj"), SubResource("Resource_rsv03")])
+memories_unlocked = Array[ExtResource("6_b4yob")]([SubResource("Resource_lft2s")])
+
+[node name="conv5" type="Node" parent="Conversations"]
+script = ExtResource("5_q22g1")
+player_choice = "You know, if you want to serve some justice, Ethred tells me there's been a necromancer causing trouble"
+patron_response = "Is that so? Well, then I must see about this. Those who raise the dead deserve themselves to be buried. "
+memories_required = Array[ExtResource("6_b4yob")]([SubResource("Resource_2sqwd")])
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

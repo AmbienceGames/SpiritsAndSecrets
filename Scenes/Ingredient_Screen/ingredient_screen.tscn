@@ -441,6 +441,6 @@ position = Vector2(804, 596)
 [node name="Inventory Manager" parent="." instance=ExtResource("96_07lwm")]
 
 [node name="Patron Waiting" parent="." instance=ExtResource("97_i1bo3")]
-position = Vector2(1885, 529)
+position = Vector2(1856, 529)
 
 [node name="RecipeBook" parent="." instance=ExtResource("98_h0n30")]

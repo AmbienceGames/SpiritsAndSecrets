@@ -67,7 +67,6 @@ func _on_button_pressed():
 		orders -= 1
 		Globals.patron_orders_info[self.name][1] = orders
 		update_icons()
-		Globals.patron_orders_info[self.name][2] = max(Globals.current_stars, 1)
 		$Button.disabled = true
 		for recipe in Globals.recipes:
 			if recipe.recipe_name == Globals.patron_orders_info[self.name][0]:

@@ -26,8 +26,10 @@ func _process(delta):
 func add_clue(info):
 	curr_clues.append(info[0])
 	var new_clue = clueScene.instantiate()
-	new_clue.clue_name = info[0]
+	new_clue.clue_giver = info[0]
 	new_clue.clue_description = info[1]
+	var note_texture = "res://Assets/Art/Mystery Board/clue" + str(randi_range(1,5)) + ".png"
+	new_clue.find_child("Sprite2D").texture = load(note_texture)
 	board.add_child(new_clue)
 	
 	

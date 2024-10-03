@@ -3,48 +3,48 @@
 [ext_resource type="Script" path="res://Scripts/bar_patron.gd" id="1_7ox62"]
 [ext_resource type="Texture2D" uid="uid://bysinagcy8pw6" path="res://Assets/Art/patrons/Liliane.png" id="2_2e3yl"]
 [ext_resource type="Script" path="res://Scripts/sprite_clicked.gd" id="3_2gxo5"]
-[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="4_a1w8s"]
-[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="5_achob"]
+[ext_resource type="Script" path="res://Scripts/conversation_item.gd" id="5_lvc0p"]
 [ext_resource type="Texture2D" uid="uid://croo2r8gdvd85" path="res://Assets/Art/drink_icon.png" id="6_oewyb"]
+[ext_resource type="Script" path="res://Scripts/ref_memory.gd" id="6_xfbeg"]
 
-[sub_resource type="Resource" id="Resource_4r2q0"]
-script = ExtResource("5_achob")
+[sub_resource type="Resource" id="Resource_wcqj7"]
+script = ExtResource("6_xfbeg")
 memory_name = "DyingParty"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_y6cb0"]
-script = ExtResource("5_achob")
+[sub_resource type="Resource" id="Resource_jbk6f"]
+script = ExtResource("6_xfbeg")
 memory_name = "DyingParty"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_wjx8c"]
-script = ExtResource("5_achob")
+[sub_resource type="Resource" id="Resource_jjf2l"]
+script = ExtResource("6_xfbeg")
 memory_name = "LilyTired"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_dg5ds"]
-script = ExtResource("5_achob")
+[sub_resource type="Resource" id="Resource_8fi7c"]
+script = ExtResource("6_xfbeg")
 memory_name = "LilyTired"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_nr1ch"]
-script = ExtResource("5_achob")
+[sub_resource type="Resource" id="Resource_pmewg"]
+script = ExtResource("6_xfbeg")
 memory_name = "LoserParty"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_xcm1l"]
-script = ExtResource("5_achob")
+[sub_resource type="Resource" id="Resource_70ule"]
+script = ExtResource("6_xfbeg")
 memory_name = "LoserParty"
 inverse_memory = false
 is_clue = false
 
-[sub_resource type="Resource" id="Resource_wtykx"]
-script = ExtResource("5_achob")
+[sub_resource type="Resource" id="Resource_x6gp2"]
+script = ExtResource("6_xfbeg")
 memory_name = "DislikeLucius"
 inverse_memory = false
 is_clue = false
@@ -64,45 +64,6 @@ offset_right = 256.0
 offset_bottom = 330.0
 text = "Take Order:"
 
-[node name="Conversations" type="Node" parent="."]
-
-[node name="conv0" type="Node" parent="Conversations"]
-script = ExtResource("4_a1w8s")
-player_choice = "Lilianne! How do you do?"
-patron_response = "Ugh. Have I told you about the party I'm with right now? Had to revive three of them last week alone. You all weren't nearly as bothersome back in the day."
-memories_unlocked = Array[ExtResource("5_achob")]([SubResource("Resource_4r2q0")])
-startDay = 1
-
-[node name="conv1" type="Node" parent="Conversations"]
-script = ExtResource("4_a1w8s")
-player_choice = "Sounds tiring."
-patron_response = "Tell me about it. Should've quit years ago with you and Constantine."
-memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_y6cb0")])
-memories_unlocked = Array[ExtResource("5_achob")]([SubResource("Resource_wjx8c")])
-startDay = 1
-
-[node name="conv2" type="Node" parent="Conversations"]
-script = ExtResource("4_a1w8s")
-player_choice = "You can always join us."
-patron_response = "Bah, that party wouldn't be able to kill a cockroach without me to nurse their wounds. Leaving them would be as good as killing them."
-memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_dg5ds")])
-memories_unlocked = Array[ExtResource("5_achob")]([SubResource("Resource_nr1ch")])
-startDay = 1
-
-[node name="conv3" type="Node" parent="Conversations"]
-script = ExtResource("4_a1w8s")
-player_choice = "To talented to quit, huh?"
-patron_response = "Unfortunately so."
-memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_xcm1l")])
-startDay = 1
-
-[node name="conv4" type="Node" parent="Conversations"]
-script = ExtResource("4_a1w8s")
-player_choice = "Lucius?"
-patron_response = "Him. He is too brash for my liking. When you adventure as much as we have, you know there is no such thing as justice."
-memories_required = Array[ExtResource("5_achob")]([SubResource("Resource_wtykx")])
-startDay = 1
-
 [node name="Drink1" type="Sprite2D" parent="."]
 position = Vector2(62, -23)
 texture = ExtResource("6_oewyb")
@@ -114,5 +75,44 @@ texture = ExtResource("6_oewyb")
 [node name="Drink3" type="Sprite2D" parent="."]
 position = Vector2(126, -23)
 texture = ExtResource("6_oewyb")
+
+[node name="Conversations" type="Node" parent="."]
+
+[node name="conv0" type="Node" parent="Conversations"]
+script = ExtResource("5_lvc0p")
+player_choice = "Lilianne! How do you do?"
+patron_response = "Ugh. Have I told you about the party I'm with right now? Had to revive three of them last week alone. You all weren't nearly as bothersome back in the day."
+memories_unlocked = Array[ExtResource("6_xfbeg")]([SubResource("Resource_wcqj7")])
+startDay = 1
+
+[node name="conv1" type="Node" parent="Conversations"]
+script = ExtResource("5_lvc0p")
+player_choice = "Sounds tiring."
+patron_response = "Tell me about it. Should've quit years ago with you and Constantine."
+memories_required = Array[ExtResource("6_xfbeg")]([SubResource("Resource_jbk6f")])
+memories_unlocked = Array[ExtResource("6_xfbeg")]([SubResource("Resource_jjf2l")])
+startDay = 1
+
+[node name="conv2" type="Node" parent="Conversations"]
+script = ExtResource("5_lvc0p")
+player_choice = "You can always join us."
+patron_response = "Bah, that party wouldn't be able to kill a cockroach without me to nurse their wounds. Leaving them would be as good as killing them."
+memories_required = Array[ExtResource("6_xfbeg")]([SubResource("Resource_8fi7c")])
+memories_unlocked = Array[ExtResource("6_xfbeg")]([SubResource("Resource_pmewg")])
+startDay = 1
+
+[node name="conv3" type="Node" parent="Conversations"]
+script = ExtResource("5_lvc0p")
+player_choice = "To talented to quit, huh?"
+patron_response = "Unfortunately so."
+memories_required = Array[ExtResource("6_xfbeg")]([SubResource("Resource_70ule")])
+startDay = 1
+
+[node name="conv4" type="Node" parent="Conversations"]
+script = ExtResource("5_lvc0p")
+player_choice = "Lucius?"
+patron_response = "Him. He is too brash for my liking. When you adventure as much as we have, you know there is no such thing as justice."
+memories_required = Array[ExtResource("6_xfbeg")]([SubResource("Resource_x6gp2")])
+startDay = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -20,8 +20,6 @@ offset_right = 256.0
 offset_bottom = 330.0
 text = "Take Order:"
 
-[node name="Conversations" type="Node" parent="."]
-
 [node name="Drink1" type="Sprite2D" parent="."]
 position = Vector2(99, -8)
 texture = ExtResource("4_7hnvl")
@@ -33,5 +31,7 @@ texture = ExtResource("4_7hnvl")
 [node name="Drink3" type="Sprite2D" parent="."]
 position = Vector2(163, -8)
 texture = ExtResource("4_7hnvl")
+
+[node name="Conversations" type="Node" parent="."]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

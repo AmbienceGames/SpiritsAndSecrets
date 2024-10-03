@@ -35,6 +35,8 @@ func _run():
 
 func load_dialogue(path: String, patron: Node) -> void:
 	var file = FileAccess.open(path,FileAccess.READ)
+	var clues = ["RavenwoodAccident", "RobberDesc", "Vengeance", "FromRavenwood", "RentLate", "KlausResentment"]
+	
 	if file == null:
 		print("File does not exist", path)
 	file.get_csv_line()
@@ -64,6 +66,8 @@ func load_dialogue(path: String, patron: Node) -> void:
 				break
 			temp = ReferenceMemory.new()
 			temp.memory_name = s
+			if s in clues:
+				temp.is_clue = true
 			current.memories_unlocked.append(temp)
 		
 		for s in line[4].split(","):
