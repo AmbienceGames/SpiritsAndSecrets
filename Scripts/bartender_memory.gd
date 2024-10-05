@@ -14,8 +14,10 @@ func _ready() -> void:
 		"suspicion": false,
 		"paranoia": false,
 		"clues": {
-			"test": ["test", "test"],
-			"test2": ["test2", "test2"]
+			"test": ["test", "test", "name1"],
+			"test2": ["test2", "test2", "name2"],
+			"test3": ["test3", "test3", "name3"],
+			"test4": ["test4", "test4", "name4"]
 		}
 	}
 

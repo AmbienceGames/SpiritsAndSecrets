@@ -19,6 +19,9 @@ func _ready() -> void:
 		return
 	if Globals.patron_orders_info[self.name][1] == 0:
 		Globals.patron_orders_info[self.name][1] = randi_range(1, 3)
+	$Drink1.visible = true
+	$Drink2.visible = true
+	$Drink3.visible = true
 	update_icons()
 	if Globals.patron_orders_info[self.name][0]:
 		Globals.get_patron_order(self.name)

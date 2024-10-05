@@ -4,6 +4,7 @@ class_name Clue
 
 var clue_giver = ""
 var clue_description = ""
+var clue_name = ""
 
 var child_clues = []
 var parent_clue = null
@@ -13,14 +14,17 @@ var lines = []
 var is_pinning = false
 var is_pinned = false
 var pinning_line: Line2D = null
+var is_hovered = false
 
 var cursortexture = null
 
 var is_dragging = false
 
+@onready
+var lineScene = preload("res://Scenes/removable_line.tscn")
 
 func _ready():
-	$Clue_Giver.text = clue_giver
+	$Clue_Giver.text = clue_giver + " (" + clue_name + ")"
 	$Description.text = clue_description
 	var color_pin = str(randi_range(1, 10))
 	var pin_texture = "res://Assets/Art/Mystery Board/TopDownPin" + color_pin + ".png"
@@ -28,21 +32,33 @@ func _ready():
 	cursortexture = load("res://Assets/Art/Mystery Board/PinCursor" + color_pin + ".png")
 	
 func _process(delta):
+	if Globals.pinning not in [self, null] and is_hovered:
+		Input.set_custom_mouse_cursor(cursortexture)
+		if Input.is_action_just_pressed("Pin") and not parent_clue and not Globals.pinning in child_clues:
+			make_pinned()
+			Globals.pinning.make_unpinning()
+			$Clue_Parent.text = "Connected to: " + parent_clue.clue_name
 	if is_pinning:
-		pinning_line.set_point_position(1, self.to_local(get_global_mouse_position()))
+		pinning_line.set_point_position(1, get_global_mouse_position())
 	if is_dragging:
+		z_index = 1
 		position = get_global_mouse_position()
+		for line in lines:
+			line[2].find_child("Line2D").set_point_position(line.find(clue_name), position+Vector2(0,-52))
+	else:
+		z_index = 0
 		
 func make_pinning():
 	if not Globals.pinning:
 		$Pin.visible = true
 		pinning_line = Line2D.new()
-		pinning_line.default_color =Color(150, 0, 0)
-		pinning_line.add_point(Vector2(0,-52))
-		pinning_line.add_point(self.to_local(get_global_mouse_position()))
-		add_child(pinning_line)
+		pinning_line.default_color = Color("#8b0000")
+		pinning_line.width = 5
+		pinning_line.add_point(position + Vector2(0,-52))
+		pinning_line.add_point(get_global_mouse_position())
+		get_parent().add_child(pinning_line)
 		is_pinning = true
-		Globals.pinning = true
+		Globals.pinning = self
 		Input.set_custom_mouse_cursor(cursortexture)
 	
 func make_unpinning():
@@ -51,16 +67,37 @@ func make_unpinning():
 	pinning_line.queue_free()
 	pinning_line = null
 	is_pinning = false
-	Globals.pinning = false
+	Globals.pinning = null
 	Input.set_custom_mouse_cursor(null)
+
+func make_pinned():
+	Globals.pinning.is_pinned = true
+	is_pinned = true
+	var new_line = lineScene.instantiate()
+	new_line.parent_clue = Globals.pinning
+	new_line.child_clue = self
+	new_line.find_child("Line2D").add_point(position + Vector2(0,-52))
+	new_line.find_child("Line2D").add_point(Globals.pinning.position + Vector2(0,-52))
+	lines.append([clue_name, Globals.pinning.clue_name, new_line])
+	Globals.pinning.lines.append([clue_name, Globals.pinning.clue_name, new_line])
+	get_parent().add_child(new_line)
+	Globals.pinning.child_clues.append(self)
+	parent_clue = Globals.pinning
+	$Pin.visible = true
+	
+func make_unpinned():
+	pass
 	
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			if event.pressed and not Globals.top_clue:
-				is_dragging = true
-				Globals.top_clue = true
+			if event.pressed:
+				if not Globals.top_clue:
+					is_dragging = true
+					Globals.top_clue = true
+				else:
+					is_dragging = false
 			else:
 				is_dragging = false
 				Globals.top_clue = false
@@ -70,11 +107,14 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			elif is_pinning:
 				make_unpinning()
 				
-	
+
+func _on_area_2d_mouse_entered():
+	is_hovered = true
 
 
 
-
+func _on_area_2d_mouse_exited():
+	is_hovered = false
 
 
 
@@ -212,3 +252,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		#else:
 			#print("Started Pinning")
 			#pin_clue()
+
+
+
+
